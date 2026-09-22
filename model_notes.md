@@ -2,7 +2,7 @@
 
 ## Purpose and boundary
 
-This model explores how two wetland–dam branches store and route water toward a downstream river. It retains the accepted `wetland_model_equations_v3_english.md`, eight ODEs, and existing closures. The audit found consistent signs, units, state/input/output order, parameter names, and equation-to-code mapping; no equation change was needed. The example is **synthetic and uncalibrated**, not a prediction of real flood risk.
+This model explores how two wetland–dam branches store and route water toward a downstream river. It retains the accepted eight ODEs and existing closures. The audit found consistent signs, units, state/input/output order, parameter names, and equation-to-code mapping; no equation change was needed. The example is **synthetic and uncalibrated**, not a prediction of real flood risk.
 
 ```text
 Upland → Dam 1 → Gate 1 → Wetland 1 → River → Outside
@@ -110,4 +110,4 @@ Stage A numerical workflow completed; the remaining-work checklist still applies
 - [ ] Evidence-supported site-specific parameter ranges: pending suitable evidence; mathematical domains do not satisfy this requirement.
 - [ ] Your work: run the files, explain each curve and water balance in your own words, and make a small plot-parameter edit to demonstrate understanding.
 
-Fixed areas, empirical ratings, one-way internal exchanges, synthetic vegetation endpoints, and simplified ET limit interpretation. No measured geometry or calibrated parameters support real flood predictions. Later course stages cover design optimization (Part B), data acquisition (Part C), and uncertainty propagation (Part D); none is implemented here. The authoritative v3 equation document remains unchanged.
+Fixed areas, empirical ratings, one-way internal exchanges, synthetic vegetation endpoints, and simplified ET limit interpretation. No measured geometry or calibrated parameters support real flood predictions. Later course stages cover design optimization (Part B), data acquisition (Part C), and uncertainty propagation (Part D); none is implemented here.

@@ -32,7 +32,6 @@ Surface connections are one-way, with tailwater able to suppress flow. External 
 |---|---|
 | [model_notes.md](model_notes.md) | Student summary, eight ODEs, feedback explanations, A–J figure guide, and remaining-work checklist. |
 | [parameters.md](parameters.md) | Symbols, code names, units, illustrative values, admissible domains, and evidence still needed. |
-| [wetland_model_equations_v3_english.md](wetland_model_equations_v3_english.md) | Accepted mathematical specification, preserved unchanged. Its equation-review status text is a historical snapshot. |
 | `wetland_flood_model.py` | Parameters, eight-state RHS, geometry checks, official solver loader, and one baseline simulation. |
 | `algebraic_plots.py` | Seven focused algebraic comparisons; imports model relationships without loading the ODE solver. |
 | `requirements.txt` | Only the two direct numerical/plotting dependencies, pinned to locally tested versions. |
@@ -104,8 +103,8 @@ Fixed areas, empirical flow ratings, limited reverse exchange, simplified ET, an
 
 ## Attribution and future upload
 
-The implementation follows the professor-provided `earth_heat_2.py` structure (`class c`, `system(t,x,u,c)`, and `ode4u`) and the modeling workflow in `Project-ODE-how-to.md`. Those teaching materials remain local and are not bundled in the proposed upload. The ODE solver is Henri P. Gavin's official multivarious implementation, referenced above. The accepted v3 document retains its original scientific references. No project license has been selected.
+The implementation follows the professor-provided `earth_heat_2.py` structure (`class c`, `system(t,x,u,c)`, and `ode4u`) and the modeling workflow in `Project-ODE-how-to.md`. Those teaching materials remain local and are not bundled in the proposed upload. The ODE solver is Henri P. Gavin's official multivarious implementation, referenced above. No project license has been selected.
 
-The proposed upload contains this README, `.gitignore`, `requirements.txt`, the two project Python scripts, the three model Markdown documents, and the ten A–J PNGs in `plots/`. Keep `work/`, `results/`, environments, caches, local configuration/secrets, professor handouts, and private/reference documents local. `.gitignore` controls Git tracking; for a browser upload or manual archive, select the same intended files explicitly.
+The proposed upload contains this README, `.gitignore`, `requirements.txt`, the two project Python scripts, the two model Markdown documents, and the ten A–J PNGs in `plots/`. Keep `work/`, `results/`, environments, caches, local configuration/secrets, professor handouts, and private/reference documents local. `.gitignore` controls Git tracking; for a browser upload or manual archive, select the same intended files explicitly.
 
 No remote repository, Git identity, commit, or upload has been created or configured for this project.
