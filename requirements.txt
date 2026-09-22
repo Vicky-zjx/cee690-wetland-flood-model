@@ -1,0 +1,7 @@
+# Direct numerical/plotting dependencies; these versions were used locally.
+# NumPy 2+ is required by the baseline's np.trapezoid calls.
+numpy==2.2.6
+matplotlib==3.10.6
+
+# Baseline only: install the pinned official solver and its extra dependency
+# separately, following README.md. Algebraic plots do not require multivarious.

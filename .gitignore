@@ -1,0 +1,46 @@
+# Local runtime, numerical results, and external solver checkout
+/work/
+/results/
+
+# Python environments and generated caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+*.log
+logs/
+
+# Local operating-system/editor settings
+.DS_Store
+.vscode/
+.idea/
+
+# Local credentials and configuration
+.env
+.env.*
+*.local.*
+credentials.*
+secrets.*
+secrets/
+.secrets/
+*.pem
+*.key
+
+# Professor-provided reference materials remain local
+/earth_heat_2*.py
+/Project-ODE-how-to*.md
+
+# Local-only reference/private material, if added later
+/handouts/
+/papers/
+/downloads/
+/private/
+/local/
+
+# Model source, project Markdown, requirements, and A-J PNGs remain trackable.
