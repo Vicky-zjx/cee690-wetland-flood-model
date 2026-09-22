@@ -43,4 +43,8 @@ secrets/
 /private/
 /local/
 
-# Model source, project Markdown, requirements, and A-J PNGs remain trackable.
+# Development records remain local for later coursework
+/wetland_model_equations_v3_english.md
+/parameters.md
+
+# A.2 source, README, model notes, requirements, and A-J PNGs remain trackable.

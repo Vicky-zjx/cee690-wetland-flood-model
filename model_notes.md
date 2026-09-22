@@ -1,8 +1,8 @@
-# Eight-state wetland model — Stage A student summary
+# Eight-state wetland model — HW A.2
 
 ## Purpose and boundary
 
-This model explores how two wetland–dam branches store and route water toward a downstream river. It retains the accepted eight ODEs and existing closures. The audit found consistent signs, units, state/input/output order, parameter names, and equation-to-code mapping; no equation change was needed. The example is **synthetic and uncalibrated**, not a prediction of real flood risk.
+For **CEE690, Systems Modeling for Climate Response**, HW A.2 applies the ODE module to a project model. This eight-state model explores how two wetland–dam branches store and route water toward a downstream river. The example is **synthetic, illustrative, and uncalibrated**; it demonstrates model behavior rather than predicting real flood risk.
 
 ```text
 Upland → Dam 1 → Gate 1 → Wetland 1 → River → Outside
@@ -31,7 +31,7 @@ Python indices are zero-based. All eight states are water volumes in m³; time i
 | 6 | S_g | Drainable groundwater above its lower reference |
 | 7 | S_r | River-reach water |
 
-Four conceptual decisions are Gate 1 opening, Gate 2 opening, Wetland 1 design, and Wetland 2 design. Openings g_1(t),g_2(t) vary between 0 and 1. Each wetland design combines categorical type τ_i and fractional cover ρ_i∈[0,1], fixed throughout a simulation. `type_a` and `type_b` are illustrative labels, not measured species traits.
+The controls are the two gate-opening histories g_1(t),g_2(t)∈[0,1]. Each fixed wetland design combines categorical type τ_i and fractional cover ρ_i∈[0,1], selected independently for each branch and held constant throughout a simulation. `type_a` and `type_b` are illustrative labels, not measured species traits.
 
 The numerical-input order is `[g1,g2,P,T_a,R_s,v,Q_ext,h_d,h_g,B]`. The last eight remain external disturbances: precipitation [m/s], temperature [°C], radiation [W/m²], wind [m/s], external inflow [m³/s], downstream level [m], external groundwater level [m], and blockage [dimensionless]. Boundary signals are independently prescribed; Q_ext excludes runoff already generated inside the modeled footprints. External h_g differs from internal H_g.
 
@@ -50,18 +50,32 @@ Every P A, Q, and E term below has units m³/s. Positive Q_gx enters groundwater
 
 `system(t,x,u,c)` evaluates each flux once and returns `dxdt,y`. Levels and flows are algebraic outputs; peaks and event volumes are postprocessed metrics. The named channel lists document all eight states, ten inputs, and 37 outputs.
 
-## Relationships and figures to study
+Summing the eight equations cancels every internal transfer: dS_tot/dt = P A_rain + Q_ext + Q_gx − Q_out − E_tot. The baseline compares total storage change with the time integral of this external net flux.
 
-Stage is H=z+S/A; groundwater uses H_g=z_g+S_g/(S_y A_g). Availability φ=S/(S+V*) reduces withdrawals near empty storage. Upland runoff uses capped kS rates; recharge uses k_mg[S_m−S_fc]+. Wetland seepage and groundwater discharge use positive head differences, conductance, and donor availability.
+## Implemented algebraic relationships
 
-Design interpolates resistance and ET coefficients between bare and selected vegetation endpoints: R_w=(1−ρ)R_bare+ρR_veg,τ, with the same interpolation for K_ET,w. Baseline R_w=[2.1,2.2] s/m². These assumed mappings affect drainage and ET, not every wetland parameter.
+Positive part means [z]+=max(z,0). Stage is H=z+S/A; groundwater uses H_g=z_g+S_g/(S_y A_g), with specific yield S_y. Availability φ_j=S_j/(S_j+V_j*) reduces withdrawals near empty storage.
 
-The ten individually saved figures are listed below. Comparison values in A–G are teaching examples, not empirical ranges. Positive part means [z]+=max(z,0).
+For branch i=1,2, upland routing is Q_udi=min(Q̄_udi,k_udi S_u), with Q_ur=min(Q̄_ur,k_ur S_u) for the direct river bypass. Infiltration is Q_inf=A_u K_u φ_u[1−S_m/C_m]+; recharge is Q_mg=k_mg[S_m−S_fc]+, starting above the assumed field-capacity storage S_fc.
+
+The common capped rating is F(H_a,H_b,z_o,R,Q̄)=min(Q̄,[H_a−max(H_b,z_o)]+/R). Gate release is Q_Gi=g_i F(H_di,H_wi,z_Gi,R_Gi,Q̄_Gi); wetland drainage is Q_wri=F(H_wi,H_r,z_woi,R_wi,Q̄_wri); the final outlet is Q_out=(1−B)F(H_r,h_d,z_ro,R_r,Q̄_r). A, B, and F below illustrate these relationships.
+
+Dam spill is Q_dspi=c_dspi[H_di−max(z_dspi,H_wi)]+^(3/2); wetland overflow is Q_wspi=c_wspi[H_wi−max(z_wspi,H_r)]+^(3/2). Spill thresholds mark flow onset, not hard storage bounds; overflow can coexist with normal drainage.
+
+Wetland seepage is Q_wgi=C_wgi φ_wi[H_wi−H_g]+; groundwater discharge is Q_gr=C_gr φ_g[H_g−H_r]+. External exchange is Q_gx=C_gx[h_g−H_g]+−C_gx φ_g[H_g−h_g]+, so only its outward term is reduced by groundwater availability.
+
+Design interpolates resistance and ET coefficients: R_wi=(1−ρ_i)R_bare,i+ρ_i R_veg,τi,i, with the same interpolation for K_ET,wi. Baseline R_w=[2.1,2.2] s/m². These assumed mappings affect drainage and ET, not every wetland parameter.
+
+Reduced evaporative demand combines an energy term and an aerodynamic term: E_star = Δ/(Δ+γ) · ηR_s/(ρ_w λ_v) + γ/(Δ+γ) · k_a D_ρ/ρ_w [m/s]. Here Δ is the saturation-vapor-pressure slope, γ the psychrometric constant, D_ρ the vapor-density deficit, and k_a=k_0+k_v v the wind-dependent conductance; `evaporative_demand()` implements their thermodynamic expressions. Actual soil, wetland, dam, and river losses use E_j=A_j K_ET,j φ_j E_star [m³/s], with A_u for soil. This simplified demand is not standard reference ET₀.
+
+## Figure guide
+
+The ten existing figures are saved individually in `plots/`. Comparison values in A–G are teaching examples, not empirical ranges.
 
 | Figure in `plots/` | Axes and varied settings | What to learn; ODE use |
 |---|---|---|
 | **A_gate_release.png** | Effective head ΔH=H_d−max(H_w,z_G) [m] versus Q_G [m³/s]; g=.25,.50,.75,1. | Q_G=g min(Q̄_G,[ΔH]+/R_G): zero against unfavorable head; opening increases slope and cap. Transfers pool water into its wetland (3–6). |
-| **B_wetland_drainage.png** | ΔH=H_w−max(H_r,z_wo) [m] versus Q_wr [m³/s]; R_w=.8,2.10,2.88 s/m², representing bare/type_a/type_b at stated cover. | At the same effective head, higher resistance reduces uncapped discharge and delays the shared .65 m³/s cap. Both capped curves have equal discharge; this graph does not establish lower flood peaks. Transfers wetland water to river (3,4,8). |
+| **B_wetland_drainage.png** | ΔH=H_w−max(H_r,z_wo) [m] versus Q_wr [m³/s]; R_w=.8,2.10,2.88 s/m², representing bare/type_a/type_b at stated cover. | At the same effective head, higher resistance reduces uncapped discharge and delays the shared .65 m³/s cap. Once capped, the curves have equal discharge; this graph does not establish lower flood peaks. Transfers wetland water to river (3,4,8). |
 | **C_wetland_overflow.png** | ΔH=H_w−max(z_wsp,H_r) [m] versus Q_wsp [m³/s]; c=1.5,3,4.5 m^(3/2)/s. | c[ΔH]+^(3/2) is zero before onset and steepens afterward; no explicit flow cap. An additional physical path removes wetland water (3,4,8). |
 | **D_upland_infiltration.png** | Soil fraction S_m/C_m and upland storage S_u [m³] versus Q_inf [m³/s]; K_u=.5,1,2×10⁻⁶ m/s. | A_u K_u φ_u[1−S_m/C_m]+ vanishes at saturation or zero available water; bounded by infiltration capacity. Water moves upland→soil (1,2). |
 | **E_evaporative_demand.png** | Temperature [°C] versus E_star [mm/h]; radiation=100,300,600 W/m², wind=2 m/s. | Radiation supplies energy; temperature changes vapor-pressure terms and weighting. Wind enters transfer conductance. No imposed cap; actual losses also require source water. ET affects (2–6,8). |
@@ -71,8 +85,6 @@ The ten individually saved figures are listed below. Comparison values in A–G 
 | **I_baseline_response.png** | Time versus river level, outlet discharge, gate releases, and wetland flows. | Connect downstream timing with upstream releases, drainage, and overflow. |
 | **J_baseline_inputs.png** | Time versus both gates and eight disturbance channels, each with units. | Distinguish prescribed causes from calculated responses. |
 
-Thresholds and caps prevent these particular flow laws from releasing water against their allowed direction or beyond rated normal capacity. Spill thresholds are onset levels, not hard storage bounds; overflow may coexist with normal drainage.
-
 ## Feedback mechanisms
 
 Wetland storage rises → wetland level rises → normal drainage increases → this opposes further storage growth, **when downstream level and resistance are fixed, positive head permits drainage, and the cap is not active**. Below the outlet threshold or at the cap, that local drainage response is flat.
@@ -81,33 +93,28 @@ Soil storage approaches capacity → infiltration decreases → this opposes fur
 
 ## Parameters, workflow, and baseline
 
-`parameters.md` gives symbols, Python names, units, current values, categories, admissible domains, and future data needs. No defensible site-specific numerical ranges are claimed. Physical constants, illustrative geometry/coefficients, initial conditions, designs, and disturbances are separated there.
+`class c` in [wetland_flood_model.py](wetland_flood_model.py) defines parameter values, units, fixed designs, initial conditions, and forcing settings. `make_inputs()` constructs the prescribed input histories; `validate()` checks mathematical domains and assumed geometry limits. These checks do not establish evidence-supported site ranges.
 
-Run from this folder:
+After the environment setup in [README.md](README.md), run either command from the project root:
 
 ```sh
-python3 wetland_flood_model.py
+python3 algebraic_plots.py       # A–G only; NumPy and Matplotlib
+python3 wetland_flood_model.py    # A–J and one baseline; official ode4u required
 ```
 
-The workflow is **define model → generate A–G → run one baseline with ode4u → generate H–J → interpret**. For algebraic figures alone, run `python3 algebraic_plots.py`; this requires NumPy and Matplotlib, not the solver. The baseline additionally requires NumPy 2+ and official `multivarious` with its dependencies, using `work/multivarious` when present. `load_ode4u()` loads the solver only when requested; missing dependencies produce a clear message without installation or substitution. Importing either script runs no simulation. The main retains `class c`, `system(t,x,u,c)`, and the professor's execution block. Solver arrays use `(channels,time)` and linearly interpolated inputs.
+The second command follows **define model → generate A–G → run one baseline with official ode4u → generate H–J → interpret**. It additionally requires NumPy 2+ and official `multivarious` with its dependencies, using `work/multivarious` when present. `load_ode4u()` imports the solver only for simulation; importing either project script runs no simulation. The code follows the professor's `class c`, `system(t,x,u,c)`, and execution-block structure. Solver arrays use `(channels,time)` and linearly interpolated inputs.
 
-When editing geometry: **edit geometry → explicitly call `params.refresh_geometry_defaults()` if appropriate → construct `x_init` and inputs → validate → run**. This deliberately refreshes only the five linked defaults documented in `parameters.md`; independent empirical parameters remain manually editable.
+When editing geometry: **edit geometry → explicitly call `params.refresh_geometry_defaults()` if appropriate → construct `x_init` and inputs → validate → run**. The helper updates only A_g, V_w, V_d, V_g, and V_r from their documented assumptions in `class c`; independent empirical parameters remain manually editable.
 
-The baseline lasts six days with 120 s steps. Two triangular storms deliver 60 and 100 mm. Both gates vary independently; vegetation remains fixed. Initial storage is `[600,90000,3000,2500,3000,2400,409600,7000]` m³. Exact forcing histories are in `parameters.md`.
+The baseline lasts six days with 120 s steps. Two triangular storms deliver 60 and 100 mm. Both gates vary independently; vegetation remains fixed. Initial storage is `[600,90000,3000,2500,3000,2400,409600,7000]` m³. Exact forcing knots and waveforms are in `class c` and `make_inputs()`.
 
-The fresh run gives peak outlet discharge **1.357896 m³/s** and peak river level **97.879407 m**, below the illustrative 97.90 m reporting threshold. Both dam spills and wetland overflows activate. Stored water and release timing explain the delayed responses; this single baseline cannot establish a restoration benefit.
+The existing baseline gives peak outlet discharge **1.357896 m³/s** and peak river level **97.879407 m**, below the illustrative 97.90 m reporting threshold. Both dam spills and wetland overflows activate. Stored water and release timing explain the delayed responses; this single baseline cannot establish a restoration benefit.
 
-Numerical verification remained concise: execution and plots completed, states remained admissible, and maximum integrated water-balance residual was **0.076735 m³**, or **0.00004151%** of gross event inflow. `results/baseline_summary.json` records the current diagnostics. Numerical consistency does not establish physical validity; no scenario suite runs in the main workflow.
+Figures go to `plots/`; numerical arrays go to `results/baseline.npz` and diagnostics to `results/baseline_summary.json`. The existing run's maximum integrated water-balance residual was **0.076735 m³**, or **0.00004151%** of gross event inflow. This records numerical consistency, not physical validation. Rerunning overwrites the same output files.
 
-## Stage A checklist and remaining work
+## Limitations and A.2 remaining-work checklist
 
-Stage A numerical workflow completed; the remaining-work checklist still applies.
+Fixed areas, empirical ratings, one-way internal exchanges, synthetic vegetation endpoints, and simplified ET limit interpretation. Geometry, site coefficients, and forcing histories are illustrative; evidence-supported site ranges remain unavailable. HW A.2 uses these relationships and one baseline to explain the ODE model. No calibration, physical validation, or design optimization is claimed.
 
-- [x] Preserve and audit eight states, topology, balances, units, and indices.
-- [x] Separate controls, designs, disturbances, parameters, and outputs.
-- [x] Explain and plot A–G; retain one readable baseline and H–J.
-- [x] Document illustrative parameters and numerical limitations.
-- [ ] Evidence-supported site-specific parameter ranges: pending suitable evidence; mathematical domains do not satisfy this requirement.
-- [ ] Your work: run the files, explain each curve and water balance in your own words, and make a small plot-parameter edit to demonstrate understanding.
-
-Fixed areas, empirical ratings, one-way internal exchanges, synthetic vegetation endpoints, and simplified ET limit interpretation. No measured geometry or calibrated parameters support real flood predictions. Later course stages cover design optimization (Part B), data acquisition (Part C), and uncertainty propagation (Part D); none is implemented here.
+- [ ] Explain the A–G curves, H–J baseline behavior, and total water balance in your own words.
+- [ ] Identify the illustrative assumptions and explain how they limit interpretation.
