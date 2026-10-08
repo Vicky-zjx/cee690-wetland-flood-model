@@ -1,0 +1,169 @@
+block,run,pair,physical_residual,label,kind,threshold,source_id,worst_time_s,margin,units,scale,scaled_residual,physical_tolerance,strict_pass,pass_at_tolerance
+joint_comparison,new_reference,A/A,-2.4252503247494687e-34,nonnegative_S_u,B1 path,0,B1,215520.0,2.4252503247494687e-34,m3,600.0,-4.042083874582448e-37,0.0006,True,True
+joint_comparison,new_reference,A/A,-74566.37096799619,nonnegative_S_m,B1 path,0,B1,518400.0,74566.37096799619,m3,90000.0,-0.8285152329777354,0.09,True,True
+joint_comparison,new_reference,A/A,-34.78548604452107,nonnegative_S_w1,B1 path,0,B1,180120.0,34.78548604452107,m3,3000.0,-0.011595162014840357,0.003,True,True
+joint_comparison,new_reference,A/A,-44.93177265270579,nonnegative_S_w2,B1 path,0,B1,187560.0,44.93177265270579,m3,2500.0,-0.017972709061082316,0.0025,True,True
+joint_comparison,new_reference,A/A,-1086.7153369536643,nonnegative_S_d1,B1 path,0,B1,219240.0,1086.7153369536643,m3,3000.0,-0.36223844565122143,0.003,True,True
+joint_comparison,new_reference,A/A,-1059.2863287024904,nonnegative_S_d2,B1 path,0,B1,518400.0,1059.2863287024904,m3,2400.0,-0.44136930362603766,0.0024,True,True
+joint_comparison,new_reference,A/A,-409600.00000000035,nonnegative_S_g,B1 path,0,B1,0.0,409600.00000000035,m3,409600.00000000035,-1.0,0.40960000000000035,True,True
+joint_comparison,new_reference,A/A,-3051.36191658644,nonnegative_S_r,B1 path,0,B1,79080.0,3051.36191658644,m3,7000.0,-0.4359088452266343,0.006999999999999999,True,True
+joint_comparison,new_reference,A/A,-30000.0,soil_capacity,B1 path,120000.0,A2_SOURCE,0.0,30000.0,m3,90000.0,-0.3333333333333333,0.09,True,True
+joint_comparison,new_reference,A/A,-0.1471080100549642,H_d1_safe,B1 upstream safety,101.2,B2_PROPOSAL,295320.0,0.1471080100549642,m,1.0,-0.1471080100549642,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.320039388629084,H_d2_safe,B1 upstream safety,101.0,B2_PROPOSAL,296640.0,0.320039388629084,m,1.0,-0.320039388629084,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.21443600665806173,H_w1_safe,B1 upstream safety,98.9,B2_PROPOSAL,282960.0,0.21443600665806173,m,1.0,-0.21443600665806173,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.20156513691824784,H_w2_safe,B1 upstream safety,98.8,B2_PROPOSAL,284040.0,0.20156513691824784,m,1.0,-0.20156513691824784,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.48674207532945957,groundwater_geometry,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.48674207532945957,m,1.0,-0.48674207532945957,1e-06,True,True
+joint_comparison,new_reference,A/A,-2.586742075329454,groundwater_soil,model applicability; numerical margin only,100.0,A2_SOURCE,518400.0,2.586742075329454,m,1.0,-2.586742075329454,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.48674207532945957,groundwater_wetland_bed,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.48674207532945957,m,1.0,-0.48674207532945957,1e-06,True,True
+joint_comparison,new_reference,A/A,-1.4405584856165916,river_geometry,model applicability; numerical margin only,99.0,A2_SOURCE,288120.0,1.4405584856165916,m,1.0,-1.4405584856165916,1e-06,True,True
+joint_comparison,new_reference,A/A,-1.0,integration_status,numerical validity,0,B2_CONFIG,0.0,1.0,1,1.0,-1.0,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.016461703818265783,gate1_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219480.0,0.016461703818265783,m,1.0,-0.016461703818265783,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.05166293872909544,gate2_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219600.0,0.05166293872909544,m,1.0,-0.05166293872909544,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.005,gate1_lower,native/reconstructed bound,0,B1,0.0,0.005,1,1.0,-0.005,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.30400000000000005,gate1_upper,native/reconstructed bound,1,B1,273600.0,0.30400000000000005,1,1.0,-0.30400000000000005,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.65,cover1_lower,native bound,0,B1,0.0,0.65,1,1.0,-0.65,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.35,cover1_upper,native bound,1,B1,0.0,0.35,1,1.0,-0.35,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.005,gate2_lower,native/reconstructed bound,0,B1,0.0,0.005,1,1.0,-0.005,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.21999999999999997,gate2_upper,native/reconstructed bound,1,B1,280800.0,0.21999999999999997,1,1.0,-0.21999999999999997,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.6,cover2_lower,native bound,0,B1,0.0,0.6,1,1.0,-0.6,1e-06,True,True
+joint_comparison,new_reference,A/A,-0.4,cover2_upper,native bound,1,B1,0.0,0.4,1,1.0,-0.4,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-2.4252503247494687e-34,nonnegative_S_u,B1 path,0,B1,215520.0,2.4252503247494687e-34,m3,600.0,-4.042083874582448e-37,0.0006,True,True
+joint_comparison,joint_best_found,A/A,-74566.37096799619,nonnegative_S_m,B1 path,0,B1,518400.0,74566.37096799619,m3,90000.0,-0.8285152329777354,0.09,True,True
+joint_comparison,joint_best_found,A/A,-34.78548604452105,nonnegative_S_w1,B1 path,0,B1,180120.0,34.78548604452105,m3,3000.0,-0.01159516201484035,0.003,True,True
+joint_comparison,joint_best_found,A/A,-44.93177265270574,nonnegative_S_w2,B1 path,0,B1,187560.0,44.93177265270574,m3,2500.0,-0.017972709061082295,0.0025,True,True
+joint_comparison,joint_best_found,A/A,-1086.7153369536643,nonnegative_S_d1,B1 path,0,B1,219240.0,1086.7153369536643,m3,3000.0,-0.36223844565122143,0.003,True,True
+joint_comparison,joint_best_found,A/A,-1059.2863287024904,nonnegative_S_d2,B1 path,0,B1,518400.0,1059.2863287024904,m3,2400.0,-0.44136930362603766,0.0024,True,True
+joint_comparison,joint_best_found,A/A,-409600.00000000035,nonnegative_S_g,B1 path,0,B1,0.0,409600.00000000035,m3,409600.00000000035,-1.0,0.40960000000000035,True,True
+joint_comparison,joint_best_found,A/A,-3051.36191658644,nonnegative_S_r,B1 path,0,B1,79080.0,3051.36191658644,m3,7000.0,-0.4359088452266343,0.006999999999999999,True,True
+joint_comparison,joint_best_found,A/A,-30000.0,soil_capacity,B1 path,120000.0,A2_SOURCE,0.0,30000.0,m3,90000.0,-0.3333333333333333,0.09,True,True
+joint_comparison,joint_best_found,A/A,-0.1471080100549642,H_d1_safe,B1 upstream safety,101.2,B2_PROPOSAL,295320.0,0.1471080100549642,m,1.0,-0.1471080100549642,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.320039388629084,H_d2_safe,B1 upstream safety,101.0,B2_PROPOSAL,296640.0,0.320039388629084,m,1.0,-0.320039388629084,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.21443600665806173,H_w1_safe,B1 upstream safety,98.9,B2_PROPOSAL,282960.0,0.21443600665806173,m,1.0,-0.21443600665806173,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.20156513691824784,H_w2_safe,B1 upstream safety,98.8,B2_PROPOSAL,284040.0,0.20156513691824784,m,1.0,-0.20156513691824784,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.48674207532945957,groundwater_geometry,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.48674207532945957,m,1.0,-0.48674207532945957,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-2.586742075329454,groundwater_soil,model applicability; numerical margin only,100.0,A2_SOURCE,518400.0,2.586742075329454,m,1.0,-2.586742075329454,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.48674207532945957,groundwater_wetland_bed,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.48674207532945957,m,1.0,-0.48674207532945957,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-1.4405584856165916,river_geometry,model applicability; numerical margin only,99.0,A2_SOURCE,288120.0,1.4405584856165916,m,1.0,-1.4405584856165916,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-1.0,integration_status,numerical validity,0,B2_CONFIG,0.0,1.0,1,1.0,-1.0,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.01646170381826581,gate1_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219480.0,0.01646170381826581,m,1.0,-0.01646170381826581,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.05166293872909543,gate2_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219600.0,0.05166293872909543,m,1.0,-0.05166293872909543,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.0049999999999999975,gate1_lower,native/reconstructed bound,0,B1,0.0,0.0049999999999999975,1,1.0,-0.0049999999999999975,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.30399999999999994,gate1_upper,native/reconstructed bound,1,B1,273600.0,0.30399999999999994,1,1.0,-0.30399999999999994,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.65,cover1_lower,native bound,0,B1,0.0,0.65,1,1.0,-0.65,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.35,cover1_upper,native bound,1,B1,0.0,0.35,1,1.0,-0.35,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.0049999999999999975,gate2_lower,native/reconstructed bound,0,B1,0.0,0.0049999999999999975,1,1.0,-0.0049999999999999975,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.22000000000000008,gate2_upper,native/reconstructed bound,1,B1,280800.0,0.22000000000000008,1,1.0,-0.22000000000000008,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.6,cover2_lower,native bound,0,B1,0.0,0.6,1,1.0,-0.6,1e-06,True,True
+joint_comparison,joint_best_found,A/A,-0.4,cover2_upper,native bound,1,B1,0.0,0.4,1,1.0,-0.4,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-2.425241520353095e-34,nonnegative_S_u,B1 path,0,B1,215520.0,2.425241520353095e-34,m3,600.0,-4.042069200588492e-37,0.0006,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-74566.37217887487,nonnegative_S_m,B1 path,0,B1,518400.0,74566.37217887487,m3,90000.0,-0.828515246431943,0.09,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-34.78238898991862,nonnegative_S_w1,B1 path,0,B1,180180.0,34.78238898991862,m3,3000.0,-0.011594129663306207,0.003,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-44.92991918162683,nonnegative_S_w2,B1 path,0,B1,187500.0,44.92991918162683,m3,2500.0,-0.017971967672650732,0.0025,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-1086.7152001431018,nonnegative_S_d1,B1 path,0,B1,219240.0,1086.7152001431018,m3,3000.0,-0.3622384000477006,0.003,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-1059.2863242624878,nonnegative_S_d2,B1 path,0,B1,518400.0,1059.2863242624878,m3,2400.0,-0.4413693017760366,0.0024,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-409600.00000000035,nonnegative_S_g,B1 path,0,B1,0.0,409600.00000000035,m3,409600.00000000035,-1.0,0.40960000000000035,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-3051.35857353259,nonnegative_S_r,B1 path,0,B1,79140.0,3051.35857353259,m3,7000.0,-0.43590836764751284,0.006999999999999999,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-30000.0,soil_capacity,B1 path,120000.0,A2_SOURCE,0.0,30000.0,m3,90000.0,-0.3333333333333333,0.09,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.14710535008957493,H_d1_safe,B1 upstream safety,101.2,B2_PROPOSAL,295260.0,0.14710535008957493,m,1.0,-0.14710535008957493,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.32003580342876603,H_d2_safe,B1 upstream safety,101.0,B2_PROPOSAL,296700.0,0.32003580342876603,m,1.0,-0.32003580342876603,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.21443601822316793,H_w1_safe,B1 upstream safety,98.9,B2_PROPOSAL,282960.0,0.21443601822316793,m,1.0,-0.21443601822316793,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.20156514074358256,H_w2_safe,B1 upstream safety,98.8,B2_PROPOSAL,284040.0,0.20156514074358256,m,1.0,-0.20156514074358256,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.48674206697448597,groundwater_geometry,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.48674206697448597,m,1.0,-0.48674206697448597,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-2.5867420669744803,groundwater_soil,model applicability; numerical margin only,100.0,A2_SOURCE,518400.0,2.5867420669744803,m,1.0,-2.5867420669744803,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.48674206697448597,groundwater_wetland_bed,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.48674206697448597,m,1.0,-0.48674206697448597,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-1.4405581547250392,river_geometry,model applicability; numerical margin only,99.0,A2_SOURCE,288180.0,1.4405581547250392,m,1.0,-1.4405581547250392,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-1.0,integration_status,numerical validity,0,B2_CONFIG,0.0,1.0,1,1.0,-1.0,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.01645964390623822,gate1_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219420.0,0.01645964390623822,m,1.0,-0.01645964390623822,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.051657874243481505,gate2_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219540.0,0.051657874243481505,m,1.0,-0.051657874243481505,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.005,gate1_lower,native/reconstructed bound,0,B1,0.0,0.005,1,1.0,-0.005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.30400000000000005,gate1_upper,native/reconstructed bound,1,B1,273600.0,0.30400000000000005,1,1.0,-0.30400000000000005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.65,cover1_lower,native bound,0,B1,0.0,0.65,1,1.0,-0.65,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.35,cover1_upper,native bound,1,B1,0.0,0.35,1,1.0,-0.35,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.005,gate2_lower,native/reconstructed bound,0,B1,0.0,0.005,1,1.0,-0.005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.21999999999999997,gate2_upper,native/reconstructed bound,1,B1,280800.0,0.21999999999999997,1,1.0,-0.21999999999999997,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.6,cover2_lower,native bound,0,B1,0.0,0.6,1,1.0,-0.6,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_a,A/A,-0.4,cover2_upper,native bound,1,B1,0.0,0.4,1,1.0,-0.4,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-2.425241520353095e-34,nonnegative_S_u,B1 path,0,B1,215520.0,2.425241520353095e-34,m3,600.0,-4.042069200588492e-37,0.0006,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-74566.37217887487,nonnegative_S_m,B1 path,0,B1,518400.0,74566.37217887487,m3,90000.0,-0.828515246431943,0.09,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-34.84100161037215,nonnegative_S_w1,B1 path,0,B1,180180.0,34.84100161037215,m3,3000.0,-0.011613667203457384,0.003,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-60.76939940561504,nonnegative_S_w2,B1 path,0,B1,187740.0,60.76939940561504,m3,2500.0,-0.024307759762246015,0.0025,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-1086.7152001431018,nonnegative_S_d1,B1 path,0,B1,219240.0,1086.7152001431018,m3,3000.0,-0.3622384000477006,0.003,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-1059.2863242624878,nonnegative_S_d2,B1 path,0,B1,518400.0,1059.2863242624878,m3,2400.0,-0.4413693017760366,0.0024,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-409600.00000000035,nonnegative_S_g,B1 path,0,B1,0.0,409600.00000000035,m3,409600.00000000035,-1.0,0.40960000000000035,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-3057.218814700596,nonnegative_S_r,B1 path,0,B1,82680.0,3057.218814700596,m3,7000.0,-0.436745544957228,0.006999999999999999,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-30000.0,soil_capacity,B1 path,120000.0,A2_SOURCE,0.0,30000.0,m3,90000.0,-0.3333333333333333,0.09,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.14710535008957493,H_d1_safe,B1 upstream safety,101.2,B2_PROPOSAL,295260.0,0.14710535008957493,m,1.0,-0.14710535008957493,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.32003580342876603,H_d2_safe,B1 upstream safety,101.0,B2_PROPOSAL,296700.0,0.32003580342876603,m,1.0,-0.32003580342876603,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.2144266933701715,H_w1_safe,B1 upstream safety,98.9,B2_PROPOSAL,282960.0,0.2144266933701715,m,1.0,-0.2144266933701715,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.13918749317966217,H_w2_safe,B1 upstream safety,98.8,B2_PROPOSAL,283860.0,0.13918749317966217,m,1.0,-0.13918749317966217,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.48461820255822374,groundwater_geometry,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.48461820255822374,m,1.0,-0.48461820255822374,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-2.584618202558218,groundwater_soil,model applicability; numerical margin only,100.0,A2_SOURCE,518400.0,2.584618202558218,m,1.0,-2.584618202558218,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.48461820255822374,groundwater_wetland_bed,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.48461820255822374,m,1.0,-0.48461820255822374,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-1.43521075035315,river_geometry,model applicability; numerical margin only,99.0,A2_SOURCE,288000.0,1.43521075035315,m,1.0,-1.43521075035315,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-1.0,integration_status,numerical validity,0,B2_CONFIG,0.0,1.0,1,1.0,-1.0,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.01645964390623822,gate1_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219420.0,0.01645964390623822,m,1.0,-0.01645964390623822,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.051657874243481505,gate2_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219540.0,0.051657874243481505,m,1.0,-0.051657874243481505,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.005,gate1_lower,native/reconstructed bound,0,B1,0.0,0.005,1,1.0,-0.005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.30400000000000005,gate1_upper,native/reconstructed bound,1,B1,273600.0,0.30400000000000005,1,1.0,-0.30400000000000005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.65,cover1_lower,native bound,0,B1,0.0,0.65,1,1.0,-0.65,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.35,cover1_upper,native bound,1,B1,0.0,0.35,1,1.0,-0.35,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.005,gate2_lower,native/reconstructed bound,0,B1,0.0,0.005,1,1.0,-0.005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.21999999999999997,gate2_upper,native/reconstructed bound,1,B1,280800.0,0.21999999999999997,1,1.0,-0.21999999999999997,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.6,cover2_lower,native bound,0,B1,0.0,0.6,1,1.0,-0.6,1e-06,True,True
+revised_reference,controlled_revised_reference_type_a_type_b,A/B,-0.4,cover2_upper,native bound,1,B1,0.0,0.4,1,1.0,-0.4,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-2.425241520353095e-34,nonnegative_S_u,B1 path,0,B1,215520.0,2.425241520353095e-34,m3,600.0,-4.042069200588492e-37,0.0006,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-74566.37217887487,nonnegative_S_m,B1 path,0,B1,518400.0,74566.37217887487,m3,90000.0,-0.828515246431943,0.09,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-43.69115019610818,nonnegative_S_w1,B1 path,0,B1,180360.0,43.69115019610818,m3,3000.0,-0.014563716732036061,0.003,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-45.07425433302652,nonnegative_S_w2,B1 path,0,B1,187500.0,45.07425433302652,m3,2500.0,-0.01802970173321061,0.0025,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-1086.7152001431018,nonnegative_S_d1,B1 path,0,B1,219240.0,1086.7152001431018,m3,3000.0,-0.3622384000477006,0.003,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-1059.2863242624878,nonnegative_S_d2,B1 path,0,B1,518400.0,1059.2863242624878,m3,2400.0,-0.4413693017760366,0.0024,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-409600.00000000035,nonnegative_S_g,B1 path,0,B1,0.0,409600.00000000035,m3,409600.00000000035,-1.0,0.40960000000000035,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-3057.3998349340277,nonnegative_S_r,B1 path,0,B1,82680.0,3057.3998349340277,m3,7000.0,-0.4367714049905754,0.006999999999999999,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-30000.0,soil_capacity,B1 path,120000.0,A2_SOURCE,0.0,30000.0,m3,90000.0,-0.3333333333333333,0.09,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.14710535008957493,H_d1_safe,B1 upstream safety,101.2,B2_PROPOSAL,295260.0,0.14710535008957493,m,1.0,-0.14710535008957493,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.32003580342876603,H_d2_safe,B1 upstream safety,101.0,B2_PROPOSAL,296700.0,0.32003580342876603,m,1.0,-0.32003580342876603,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.16280518116940357,H_w1_safe,B1 upstream safety,98.9,B2_PROPOSAL,281520.0,0.16280518116940357,m,1.0,-0.16280518116940357,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.20155301273275938,H_w2_safe,B1 upstream safety,98.8,B2_PROPOSAL,284040.0,0.20155301273275938,m,1.0,-0.20155301273275938,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.4840574763464929,groundwater_geometry,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.4840574763464929,m,1.0,-0.4840574763464929,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-2.584057476346487,groundwater_soil,model applicability; numerical margin only,100.0,A2_SOURCE,518400.0,2.584057476346487,m,1.0,-2.584057476346487,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.4840574763464929,groundwater_wetland_bed,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.4840574763464929,m,1.0,-0.4840574763464929,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-1.4364325430469762,river_geometry,model applicability; numerical margin only,99.0,A2_SOURCE,287940.0,1.4364325430469762,m,1.0,-1.4364325430469762,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-1.0,integration_status,numerical validity,0,B2_CONFIG,0.0,1.0,1,1.0,-1.0,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.01645964390623822,gate1_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219420.0,0.01645964390623822,m,1.0,-0.01645964390623822,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.051657874243481505,gate2_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219540.0,0.051657874243481505,m,1.0,-0.051657874243481505,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.005,gate1_lower,native/reconstructed bound,0,B1,0.0,0.005,1,1.0,-0.005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.30400000000000005,gate1_upper,native/reconstructed bound,1,B1,273600.0,0.30400000000000005,1,1.0,-0.30400000000000005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.65,cover1_lower,native bound,0,B1,0.0,0.65,1,1.0,-0.65,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.35,cover1_upper,native bound,1,B1,0.0,0.35,1,1.0,-0.35,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.005,gate2_lower,native/reconstructed bound,0,B1,0.0,0.005,1,1.0,-0.005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.21999999999999997,gate2_upper,native/reconstructed bound,1,B1,280800.0,0.21999999999999997,1,1.0,-0.21999999999999997,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.6,cover2_lower,native bound,0,B1,0.0,0.6,1,1.0,-0.6,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_a,B/A,-0.4,cover2_upper,native bound,1,B1,0.0,0.4,1,1.0,-0.4,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-2.425241520353095e-34,nonnegative_S_u,B1 path,0,B1,215520.0,2.425241520353095e-34,m3,600.0,-4.042069200588492e-37,0.0006,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-74566.37217887487,nonnegative_S_m,B1 path,0,B1,518400.0,74566.37217887487,m3,90000.0,-0.828515246431943,0.09,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-43.78276800665342,nonnegative_S_w1,B1 path,0,B1,180360.0,43.78276800665342,m3,3000.0,-0.014594256002217807,0.003,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-60.97907894008805,nonnegative_S_w2,B1 path,0,B1,187740.0,60.97907894008805,m3,2500.0,-0.02439163157603522,0.0025,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-1086.7152001431018,nonnegative_S_d1,B1 path,0,B1,219240.0,1086.7152001431018,m3,3000.0,-0.3622384000477006,0.003,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-1059.2863242624878,nonnegative_S_d2,B1 path,0,B1,518400.0,1059.2863242624878,m3,2400.0,-0.4413693017760366,0.0024,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-409600.00000000035,nonnegative_S_g,B1 path,0,B1,0.0,409600.00000000035,m3,409600.00000000035,-1.0,0.40960000000000035,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-3061.7385552936357,nonnegative_S_r,B1 path,0,B1,82800.0,3061.7385552936357,m3,7000.0,-0.4373912221848051,0.006999999999999999,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-30000.0,soil_capacity,B1 path,120000.0,A2_SOURCE,0.0,30000.0,m3,90000.0,-0.3333333333333333,0.09,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.14710535008957493,H_d1_safe,B1 upstream safety,101.2,B2_PROPOSAL,295260.0,0.14710535008957493,m,1.0,-0.14710535008957493,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.32003580342876603,H_d2_safe,B1 upstream safety,101.0,B2_PROPOSAL,296700.0,0.32003580342876603,m,1.0,-0.32003580342876603,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.16279734163919102,H_w1_safe,B1 upstream safety,98.9,B2_PROPOSAL,281520.0,0.16279734163919102,m,1.0,-0.16279734163919102,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.1391781475448397,H_w2_safe,B1 upstream safety,98.8,B2_PROPOSAL,283860.0,0.1391781475448397,m,1.0,-0.1391781475448397,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.4819591062581736,groundwater_geometry,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.4819591062581736,m,1.0,-0.4819591062581736,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-2.581959106258168,groundwater_soil,model applicability; numerical margin only,100.0,A2_SOURCE,518400.0,2.581959106258168,m,1.0,-2.581959106258168,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.4819591062581736,groundwater_wetland_bed,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.4819591062581736,m,1.0,-0.4819591062581736,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-1.431037257389832,river_geometry,model applicability; numerical margin only,99.0,A2_SOURCE,287820.0,1.431037257389832,m,1.0,-1.431037257389832,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-1.0,integration_status,numerical validity,0,B2_CONFIG,0.0,1.0,1,1.0,-1.0,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.01645964390623822,gate1_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219420.0,0.01645964390623822,m,1.0,-0.01645964390623822,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.051657874243481505,gate2_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,219540.0,0.051657874243481505,m,1.0,-0.051657874243481505,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.005,gate1_lower,native/reconstructed bound,0,B1,0.0,0.005,1,1.0,-0.005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.30400000000000005,gate1_upper,native/reconstructed bound,1,B1,273600.0,0.30400000000000005,1,1.0,-0.30400000000000005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.65,cover1_lower,native bound,0,B1,0.0,0.65,1,1.0,-0.65,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.35,cover1_upper,native bound,1,B1,0.0,0.35,1,1.0,-0.35,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.005,gate2_lower,native/reconstructed bound,0,B1,0.0,0.005,1,1.0,-0.005,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.21999999999999997,gate2_upper,native/reconstructed bound,1,B1,280800.0,0.21999999999999997,1,1.0,-0.21999999999999997,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.6,cover2_lower,native bound,0,B1,0.0,0.6,1,1.0,-0.6,1e-06,True,True
+revised_reference,controlled_revised_reference_type_b_type_b,B/B,-0.4,cover2_upper,native bound,1,B1,0.0,0.4,1,1.0,-0.4,1e-06,True,True

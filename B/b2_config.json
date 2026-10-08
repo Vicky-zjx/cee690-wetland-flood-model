@@ -1,0 +1,319 @@
+{
+  "schema_version": 1,
+  "mode": "approved_illustrative",
+  "objective": "min max_t H_r(t); no discharge/volume substitution",
+  "geography": {
+    "approved": true,
+    "provisional_label": "Hypothetical 0.66 km2 installation in Underwood Creek geographic context; not the 46.879 km2 gauge basin",
+    "huc8": "04040003",
+    "station_huc12": "040400030404",
+    "polygon_path": null,
+    "polygon_sha256": null,
+    "outlet": null,
+    "crs": null,
+    "vertical_datum": "assumed common model datum; not NAVD88; no conversion to gauge elevation",
+    "event_start_utc": "2022-09-09T00:00:00Z",
+    "context_boundary_path": "work/b2/event_data/raw/underwood_wbd.geojson",
+    "context_station": "USGS-04087088",
+    "context_station_coordinates": [
+      -88.0461111,
+      43.0547222
+    ],
+    "context_station_coordinate_crs": "NAD83 geographic; station metadata",
+    "model_footprint_status": "Analytical area budget; unsited, not a surveyed/delineated parcel",
+    "event_end_utc": "2022-09-15T00:00:00Z"
+  },
+  "controls": {
+    "gate1_hours": [
+      0,
+      17,
+      18,
+      26,
+      28,
+      50,
+      65,
+      66,
+      76,
+      80,
+      110,
+      144
+    ],
+    "gate1_values": [
+      0.35,
+      0.35,
+      0.2,
+      0.2,
+      0.5,
+      0.35,
+      0.35,
+      0.2,
+      0.2,
+      0.5,
+      0.35,
+      0.35
+    ],
+    "gate2_hours": [
+      0,
+      18,
+      20,
+      27,
+      30,
+      52,
+      66,
+      68,
+      78,
+      82,
+      112,
+      144
+    ],
+    "gate2_values": [
+      0.45,
+      0.45,
+      0.3,
+      0.3,
+      0.6,
+      0.45,
+      0.45,
+      0.3,
+      0.3,
+      0.6,
+      0.45,
+      0.45
+    ],
+    "rate_limits": null,
+    "grid_status": "numerical parameterization retaining A.2 schedule exactly, not observed operations"
+  },
+  "reference": {
+    "covers": [
+      0.65,
+      0.6
+    ],
+    "categories": [
+      "type_a",
+      "type_a"
+    ]
+  },
+  "categories": {
+    "approved": true,
+    "admissible": [
+      [
+        "type_a",
+        "type_b"
+      ],
+      [
+        "type_a",
+        "type_b"
+      ]
+    ],
+    "endpoints": {
+      "type_a": {
+        "R_veg": [
+          2.8,
+          3.0
+        ],
+        "K_veg": [
+          1.1,
+          1.1
+        ],
+        "source_id": "B2_PROPOSAL",
+        "status": "Proposed synthetic response class, not a species mapping; paired endpoints retained for controlled comparison, not measured vegetation properties",
+        "interpretation": "lower resistance / smaller ET multiplier response class"
+      },
+      "type_b": {
+        "R_veg": [
+          4.0,
+          4.5
+        ],
+        "K_veg": [
+          1.25,
+          1.25
+        ],
+        "source_id": "B2_PROPOSAL",
+        "status": "Proposed synthetic response class, not a species mapping; paired endpoints retained for controlled comparison, not measured vegetation properties",
+        "interpretation": "higher resistance / larger ET multiplier response class"
+      }
+    }
+  },
+  "safety": {
+    "approved": true,
+    "dam_m": [
+      101.2,
+      101.0
+    ],
+    "wetland_m": [
+      98.9,
+      98.8
+    ],
+    "source_ids": [
+      "B2_PROPOSAL",
+      "B2_PROPOSAL",
+      "B2_PROPOSAL",
+      "B2_PROPOSAL"
+    ],
+    "status": "Approved fixed hypothetical design limits for this exploratory case; not observed flood thresholds or engineering certification",
+    "settled_crest_m": {
+      "dam": [
+        101.55,
+        101.35
+      ],
+      "wetland": [
+        99.25,
+        99.15
+      ]
+    },
+    "physical_freeboard_m": 0.35,
+    "derivation": "H_safe = specified hypothetical settled crest -0.35m; crest exceeds existing auxiliary spill onset by0.65m. Fix before simulation; never retune for feasibility.",
+    "facility_description": "Proposed embanked/contained wetland units and dam pools; all crest elevations are explicit design assumptions. NRCS informs only the freeboard concept, not these elevations or certification."
+  },
+  "gates": {
+    "approved": true,
+    "gravity": 9.80665,
+    "gate_width": [
+      1.0,
+      0.8
+    ],
+    "gate_max_opening": [
+      0.3,
+      0.3
+    ],
+    "gate_sill_z": [
+      100.0,
+      99.8
+    ],
+    "Cd_gate_free": [
+      0.6,
+      0.6
+    ],
+    "Cd_gate_submerged": [
+      0.8,
+      0.8
+    ],
+    "neglect_approach_velocity_head": true,
+    "limited_regimes_approved": true,
+    "source_ids": {
+      "gravity": "NIST_SI1038",
+      "gate_width": "B2_PROPOSAL",
+      "gate_max_opening": "B2_PROPOSAL",
+      "gate_sill_z": "B2_PROPOSAL",
+      "Cd_gate_free": "G1",
+      "Cd_gate_submerged": "G2",
+      "neglect_approach_velocity_head": "B2_PROPOSAL"
+    },
+    "proposed_operating_domain": "When g>0, pool depth above sill H>0, and pool stage exceeds wetland stage: H >=1.25*gate_max_opening*g. No automatic closure/clipping.",
+    "parameter_status": "Approved engineering assumptions for this case; not surveyed local gates or calibrated coefficients"
+  },
+  "fixed_model": {
+    "approved": true,
+    "status": "Approved inherited A.2 assumptions for first exploratory B.2 only, except explicitly declared gate/weather overrides; no local calibration"
+  },
+  "parameter_overrides": {
+    "r_H": {
+      "value": 0.7084916611553665,
+      "source_id": "NOAA_ISD",
+      "approved": true,
+      "evidence_category": "locally derived",
+      "reason": "KMWC event-time mean of RH derived from accepted T and dewpoint using existing saturation relation; exact trapezoidal integration of linearly interpolated observations over2022-09-09\u201315UTC.",
+      "locator": "work/b2/event_data/weather/KMWC_meteorology_observations_utc.csv; KMWC_coverage_gap_report.json event_statistics"
+    },
+    "p_0": {
+      "value": 98692.51171875,
+      "source_id": "NOAA_ISD",
+      "approved": true,
+      "evidence_category": "locally derived",
+      "reason": "KMWC MA1 station pressure event-time mean inPa over2022-09-09\u201315UTC; not sea-level pressure or altimeter setting.",
+      "locator": "work/b2/event_data/weather/KMWC_meteorology_observations_utc.csv; KMWC_coverage_gap_report.json event_statistics"
+    }
+  },
+  "initial_conditions": {
+    "approved": true,
+    "x0_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2500.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "source_id": "A2_SOURCE",
+    "status": "Approved assumed common initial storages; soil storage is not an observed reconstruction of September 2022"
+  },
+  "forcing": {
+    "approved": true,
+    "kind": "prepared_csv",
+    "prepared_csv": "work/b2/event_data/proposed_forcing_120s.csv",
+    "manifest_json": "work/b2/event_data/proposed_forcing_manifest.json",
+    "source_id": "B2_PROPOSAL",
+    "status": "Approved for first exploratory case only: station observations spatially transferred, gridded solar estimate, trace-zero lower bound, fixed hypothetical boundaries separately identified",
+    "proposed_fixed_boundaries": {
+      "Q_ext_m3_s": 0.0,
+      "h_d_m": 97.15,
+      "h_g_m": 97.15,
+      "B": 0.0
+    },
+    "boundary_rationale": "No external surface contributing area; free local receiving-channel boundary; constant aquifer exterior head; maintained unblocked outlet. All hypothetical, not inferred from USGS flow/elevation."
+  },
+  "reporting": {
+    "flood_threshold_m": null,
+    "threshold_source_id": null
+  },
+  "numerics": {
+    "duration_s": 518400.0,
+    "dt_s": 120.0,
+    "refine_factor": 2,
+    "height_scale_m": 1.0,
+    "volume_scales_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2500.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "strict_margin_m": 0.001,
+    "feasibility_tol": 1e-06,
+    "objective_origin_m": 97.0,
+    "failure_objective": 1000.0,
+    "failure_residual": 1000.0,
+    "peak_grid_tolerance_m": 0.001,
+    "total_ode_budget": 800,
+    "total_seconds": 900
+  },
+  "optimizer": {
+    "max_evals": 180,
+    "max_seconds": 180,
+    "tol_x": 0.0001,
+    "tol_f": 1e-06,
+    "feasibility_tol": 1e-06,
+    "penalty": 100.0,
+    "penalty_exponent": 2.0,
+    "display": 0
+  },
+  "proposal_status": "User approved FIRST EXPLORATORY B.2 case: hypothetical engineered installation driven by regional event weather; not calibrated Underwood Creek or local safety certification.",
+  "proposed_mode": "approved_illustrative: observed-event-forced hypothetical installation, not a gauged-catchment prediction",
+  "approval_record": {
+    "source": "User message approving G1\u2013G6 and conditional execution",
+    "case": "First exploratory case only",
+    "unchanged_limits": true,
+    "G5": "Additional hydraulic-applicability constraint; test original schedule first, explicitly label replacement feasibility search if required; reject invalid candidates without clipping or completing invalid trajectories."
+  },
+  "reference_search": {
+    "uniform_scales": [
+      0.0,
+      0.25,
+      0.1,
+      0.05
+    ],
+    "selection": "Largest tested hydraulically admissible uniform scale; unchanged gate knot times, covers and classes. Explicit replacement, not clipping or original baseline."
+  },
+  "search": {
+    "full_box_evaluations": 40,
+    "reference_neighborhood_evaluations": 140,
+    "local_gate_upper_multiplier": 2.0,
+    "minimum_local_upper": 0.02,
+    "interpretation": "Full physical[0,1]box followed by explicitly narrower numerical exploration around the admissible reference; physical bounds/constraints unchanged, no global-optimum claim."
+  }
+}

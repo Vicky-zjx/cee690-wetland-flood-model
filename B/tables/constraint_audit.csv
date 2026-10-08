@@ -1,0 +1,57 @@
+run,physical_residual,label,kind,threshold,source_id,worst_time_s,margin,units,scale,scaled_residual,physical_tolerance,strict_pass,pass_at_tolerance
+Replacement reference (0.1 × original openings; feasibility search),-2.425241520353095e-34,nonnegative_S_u,B1 path,0,B1,215520.0,2.425241520353095e-34,m3,600.0,-4.042069200588492e-37,0.0006,True,True
+Replacement reference (0.1 × original openings; feasibility search),-74566.37217887487,nonnegative_S_m,B1 path,0,B1,518400.0,74566.37217887487,m3,90000.0,-0.828515246431943,0.09,True,True
+Replacement reference (0.1 × original openings; feasibility search),-527.0914139257632,nonnegative_S_w1,B1 path,0,B1,215580.0,527.0914139257632,m3,3000.0,-0.17569713797525438,0.003,True,True
+Replacement reference (0.1 × original openings; feasibility search),-466.1226216602913,nonnegative_S_w2,B1 path,0,B1,215580.0,466.1226216602913,m3,2500.0,-0.18644904866411652,0.0025,True,True
+Replacement reference (0.1 × original openings; feasibility search),-574.3533503151413,nonnegative_S_d1,B1 path,0,B1,215640.0,574.3533503151413,m3,3000.0,-0.19145111677171375,0.003,True,True
+Replacement reference (0.1 × original openings; feasibility search),-183.7304261005733,nonnegative_S_d2,B1 path,0,B1,215640.0,183.7304261005733,m3,2400.0,-0.07655434420857221,0.0024,True,True
+Replacement reference (0.1 × original openings; feasibility search),-409600.00000000035,nonnegative_S_g,B1 path,0,B1,0.0,409600.00000000035,m3,409600.00000000035,-1.0,0.40960000000000035,True,True
+Replacement reference (0.1 × original openings; feasibility search),-3097.642701138874,nonnegative_S_r,B1 path,0,B1,204360.0,3097.642701138874,m3,7000.0,-0.442520385876982,0.006999999999999999,True,True
+Replacement reference (0.1 × original openings; feasibility search),-30000.0,soil_capacity,B1 path,120000.0,A2_SOURCE,0.0,30000.0,m3,90000.0,-0.3333333333333333,0.09,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.02147222952540062,H_d1_safe,B1 upstream safety,101.2,B2_PROPOSAL,285480.0,0.02147222952540062,m,1.0,-0.02147222952540062,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.020513458190379197,H_d2_safe,B1 upstream safety,101.0,B2_PROPOSAL,285480.0,0.020513458190379197,m,1.0,-0.020513458190379197,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.13434038104243484,H_w1_safe,B1 upstream safety,98.9,B2_PROPOSAL,289560.0,0.13434038104243484,m,1.0,-0.13434038104243484,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.17350361869232245,H_w2_safe,B1 upstream safety,98.8,B2_PROPOSAL,290280.0,0.17350361869232245,m,1.0,-0.17350361869232245,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.4837913836030481,groundwater_geometry,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.4837913836030481,m,1.0,-0.4837913836030481,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-2.5837913836030424,groundwater_soil,model applicability; numerical margin only,100.0,A2_SOURCE,518400.0,2.5837913836030424,m,1.0,-2.5837913836030424,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.4837913836030481,groundwater_wetland_bed,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.4837913836030481,m,1.0,-0.4837913836030481,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-1.4003877410866892,river_geometry,model applicability; numerical margin only,99.0,A2_SOURCE,294480.0,1.4003877410866892,m,1.0,-1.4003877410866892,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-1.0,integration_status,numerical validity,0,B2_CONFIG,0.0,1.0,1,1.0,-1.0,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.04431033503151355,gate1_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,215640.0,0.04431033503151355,m,1.0,-0.04431033503151355,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.0060913032625779795,gate2_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,215640.0,0.0060913032625779795,m,1.0,-0.0060913032625779795,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.020000000000000004,gate1_lower,native/reconstructed bound,0,B1,64800.0,0.020000000000000004,1,1.0,-0.020000000000000004,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.95,gate1_upper,native/reconstructed bound,1,B1,100800.0,0.95,1,1.0,-0.95,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.65,cover1_lower,native bound,0,B1,0.0,0.65,1,1.0,-0.65,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.35,cover1_upper,native bound,1,B1,0.0,0.35,1,1.0,-0.35,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.03,gate2_lower,native/reconstructed bound,0,B1,72000.0,0.03,1,1.0,-0.03,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.94,gate2_upper,native/reconstructed bound,1,B1,108000.0,0.94,1,1.0,-0.94,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.6,cover2_lower,native bound,0,B1,0.0,0.6,1,1.0,-0.6,1e-06,True,True
+Replacement reference (0.1 × original openings; feasibility search),-0.4,cover2_upper,native bound,1,B1,0.0,0.4,1,1.0,-0.4,1e-06,True,True
+Best feasible found (bounded official OPT search),-2.425241520353095e-34,nonnegative_S_u,B1 path,0,B1,215520.0,2.425241520353095e-34,m3,600.0,-4.042069200588492e-37,0.0006,True,True
+Best feasible found (bounded official OPT search),-74566.37217887487,nonnegative_S_m,B1 path,0,B1,518400.0,74566.37217887487,m3,90000.0,-0.828515246431943,0.09,True,True
+Best feasible found (bounded official OPT search),-525.5558062725713,nonnegative_S_w1,B1 path,0,B1,215580.0,525.5558062725713,m3,3000.0,-0.17518526875752377,0.003,True,True
+Best feasible found (bounded official OPT search),-462.61380806281034,nonnegative_S_w2,B1 path,0,B1,215580.0,462.61380806281034,m3,2500.0,-0.18504552322512413,0.0025,True,True
+Best feasible found (bounded official OPT search),-479.2996077379142,nonnegative_S_d1,B1 path,0,B1,215640.0,479.2996077379142,m3,3000.0,-0.15976653591263806,0.003,True,True
+Best feasible found (bounded official OPT search),-161.3639331342368,nonnegative_S_d2,B1 path,0,B1,215640.0,161.3639331342368,m3,2400.0,-0.06723497213926533,0.0024,True,True
+Best feasible found (bounded official OPT search),-409600.00000000035,nonnegative_S_g,B1 path,0,B1,0.0,409600.00000000035,m3,409600.00000000035,-1.0,0.40960000000000035,True,True
+Best feasible found (bounded official OPT search),-3097.6023586336023,nonnegative_S_r,B1 path,0,B1,204300.0,3097.6023586336023,m3,7000.0,-0.4425146226619432,0.006999999999999999,True,True
+Best feasible found (bounded official OPT search),-30000.0,soil_capacity,B1 path,120000.0,A2_SOURCE,0.0,30000.0,m3,90000.0,-0.3333333333333333,0.09,True,True
+Best feasible found (bounded official OPT search),-0.021781546571389754,H_d1_safe,B1 upstream safety,101.2,B2_PROPOSAL,285480.0,0.021781546571389754,m,1.0,-0.021781546571389754,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.021054978362428756,H_d2_safe,B1 upstream safety,101.0,B2_PROPOSAL,285480.0,0.021054978362428756,m,1.0,-0.021054978362428756,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.1499911448155018,H_w1_safe,B1 upstream safety,98.9,B2_PROPOSAL,289680.0,0.1499911448155018,m,1.0,-0.1499911448155018,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.17127103262139087,H_w2_safe,B1 upstream safety,98.8,B2_PROPOSAL,290280.0,0.17127103262139087,m,1.0,-0.17127103262139087,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.4839296492163072,groundwater_geometry,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.4839296492163072,m,1.0,-0.4839296492163072,1e-06,True,True
+Best feasible found (bounded official OPT search),-2.5839296492163015,groundwater_soil,model applicability; numerical margin only,100.0,A2_SOURCE,518400.0,2.5839296492163015,m,1.0,-2.5839296492163015,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.4839296492163072,groundwater_wetland_bed,model applicability; numerical margin only,97.9,A2_SOURCE,518400.0,0.4839296492163072,m,1.0,-0.4839296492163072,1e-06,True,True
+Best feasible found (bounded official OPT search),-1.4018292487457416,river_geometry,model applicability; numerical margin only,99.0,A2_SOURCE,294540.0,1.4018292487457416,m,1.0,-1.4018292487457416,1e-06,True,True
+Best feasible found (bounded official OPT search),-1.0,integration_status,numerical validity,0,B2_CONFIG,0.0,1.0,1,1.0,-1.0,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.033926382506227884,gate1_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,215640.0,0.033926382506227884,m,1.0,-0.033926382506227884,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.0027152876257042734,gate2_head_opening,additional approved hydraulic-applicability path constraint; inactive closed/dry/adverse cases have residual 0,0,B2_CONFIG,215640.0,0.0027152876257042734,m,1.0,-0.0027152876257042734,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.021338785931516762,gate1_lower,native/reconstructed bound,0,B1,64800.0,0.021338785931516762,1,1.0,-0.021338785931516762,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.9466530351712081,gate1_upper,native/reconstructed bound,1,B1,100800.0,0.9466530351712081,1,1.0,-0.9466530351712081,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.560771977528774,cover1_lower,native bound,0,B1,0.0,0.560771977528774,1,1.0,-0.560771977528774,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.43922802247122605,cover1_upper,native bound,1,B1,0.0,0.43922802247122605,1,1.0,-0.43922802247122605,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.032008178897275134,gate2_lower,native/reconstructed bound,0,B1,72000.0,0.032008178897275134,1,1.0,-0.032008178897275134,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.9384104255743352,gate2_upper,native/reconstructed bound,1,B1,108000.0,0.9384104255743352,1,1.0,-0.9384104255743352,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.6145066802312185,cover2_lower,native bound,0,B1,0.0,0.6145066802312185,1,1.0,-0.6145066802312185,1e-06,True,True
+Best feasible found (bounded official OPT search),-0.38549331976878154,cover2_upper,native bound,1,B1,0.0,0.38549331976878154,1,1.0,-0.38549331976878154,1e-06,True,True

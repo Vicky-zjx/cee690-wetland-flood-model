@@ -2,75 +2,53 @@
 
 **CEE690 — Systems Modeling for Climate Response, Duke University**
 
-**HW A.2 — application of the ODE module to the wetland restoration and flood mitigation model**
+The project is physically organized into A, B, C and D. Each stage guide presents its final confirmed model, methods, results and file locations. All project descriptions are in English.
 
-This project implements an eight-state ODE model to explore water storage and routing through two dam–gate–wetland branches and a downstream river. The workflow is **model definition → algebraic relationships → ODE implementation → baseline simulation → interpretation**. The numerical example is **illustrative, synthetic, and uncalibrated**.
+| Stage | Content | Guide |
+|---|---|---|
+| A | Initial eight-state model and illustrative synthetic baseline | [A — Initial model and baseline](A/README.md) |
+| B | Fixed-gate wetland optimization and dynamic no-wetland comparison | [B — Current analysis](B/README.md) |
+| C | Reserved; content not yet confirmed | [C](C/README.md) |
+| D | Reserved; content not yet confirmed | [D](D/README.md) |
 
-## System and inputs
+## Project folders
 
-The states are upland surface water, upland soil water, two wetlands, two dam pools, groundwater, and a river reach, in this order:
-
-`x = [S_u, S_m, S_w1, S_w2, S_d1, S_d2, S_g, S_r]`
-
-Each main branch follows **upland → dam pool → gate → wetland → river**. Direct upland runoff to the river and the soil–groundwater pathway remain included. The river outlet is the downstream boundary; external inflow and signed external groundwater exchange also cross the system boundary.
-
-- **Controls:** two prescribed gate-opening histories, each between 0 and 1.
-- **Fixed wetland settings:** vegetation category and fractional cover, selected independently for each branch and held fixed during the run.
-- **Disturbances:** precipitation, temperature, solar radiation, wind, external river inflow, downstream water level, external groundwater level, and outlet blockage.
-
-Storage is in m³, time in seconds, and flow in m³/s. Internal flows are one-way; receiving-water levels can suppress discharge.
-
-## Main files
-
-| File | Purpose |
-|---|---|
-| [model_notes.md](model_notes.md) | System boundary, eight ODEs, main algebraic relationships, figure guide, and baseline interpretation. |
-| [wetland_flood_model.py](wetland_flood_model.py) | Numerical constants in `class c`, model RHS, synthetic inputs, official solver integration, and baseline outputs. |
-| [algebraic_plots.py](algebraic_plots.py) | Generates A–G without loading the ODE solver. |
-| [requirements.txt](requirements.txt) | NumPy and Matplotlib versions used locally. |
-| [.gitignore](.gitignore) | Excludes local records, results, environments, caches, and private/reference material. |
-| [plots/](plots/) | Existing A–J figures for this illustrative example. |
-
-## Install and run
-
-Run these commands from the project root on macOS/Linux with Python 3.13 available as `python3`. The existing environment used Python **3.13.5**, NumPy **2.2.6**, and Matplotlib **3.10.6**.
-
-```sh
-python3 -m venv .venv
-source .venv/bin/activate
-python -m pip install -r requirements.txt
+```text
+Modeling/
+├── README.md
+├── .gitignore
+├── A/
+│   ├── README.md
+│   ├── wetland_flood_model.py
+│   ├── algebraic_plots.py
+│   ├── model_notes.md
+│   ├── requirements.txt
+│   ├── plots/          A–J figures
+│   ├── results/        Local baseline arrays and diagnostics
+│   ├── reference/      Local course and model-reference material
+│   └── work/           Shared official multivarious checkout
+├── B/
+│   ├── README.md
+│   ├── *.py            Models, study drivers, reporting and checks
+│   ├── *.json          Study configurations and source catalog
+│   ├── data_sources_and_assumptions.md
+│   ├── docs/           Detailed scientific reports
+│   ├── plots/          Figures grouped by study
+│   ├── tables/         Tables grouped by study
+│   ├── results/        Local trajectories and numerical records
+│   └── work/           Local observations, processing and provenance
+├── C/
+│   └── README.md
+└── D/
+    └── README.md
 ```
 
-### Algebraic plots only
+A and B are the physical stage folders, without assignment-number subfolders. Within B, names such as `wetland_only` and `wetland_counterfactual` identify different analyses. Wetland response labels A/A and B/B describe the two synthetic wetland classes; they do not subdivide the project stages.
 
-```sh
-python algebraic_plots.py
-```
+## Execution and interpretation
 
-This generates A–G using NumPy and Matplotlib; it does not require the ODE solver.
+Run all documented commands from this project root. Start with the [A environment setup](A/README.md#install-and-run). Both stages use Henri P. Gavin's official multivarious dependency, with the local checkout at `A/work/multivarious/`, revision `06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02`. No project license has been selected.
 
-### Baseline ODE simulation
+The current B study represents a hypothetical 0.66 km² installation driven by regional September 2022 event weather. At the finest tested timestep, its best-found wetland design lowers the reference river peak by **5.012 mm** under fixed gate operations. The separate no-wetland dynamic comparison is not another optimization. These uncalibrated simulations do not establish measured Milwaukee flood reductions or local engineering certification.
 
-The baseline uses Henri P. Gavin's official [multivarious solver](https://github.com/hpgavin/multivarious), specifically `ode4u`. The verified source revision is `06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02` (package version 1.2.1). Its package initializer also requires SciPy; SciPy **1.16.2** was used locally. Install the baseline dependencies separately (the VCS install requires Git):
-
-```sh
-python -m pip install scipy==1.16.2
-python -m pip install --no-deps "multivarious @ git+https://github.com/hpgavin/multivarious.git@06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02"
-python wetland_flood_model.py
-```
-
-If the verified official checkout already exists at `work/multivarious`, the loader uses it before the installed package, so the VCS installation can be omitted. That checkout remains an external, ignored dependency. No solver is bundled or substituted.
-
-The script generates A–G, runs one six-day baseline with a 120 s step, and generates H–J. Figures go to `plots/`; numerical arrays and diagnostics go to the ignored `results/baseline.npz` and `results/baseline_summary.json`. Rerunning overwrites these outputs.
-
-**Execution record:** algebraic plotting and the baseline were run in the existing environment with the verified official checkout. A fresh virtual-environment installation and the VCS installation commands above have not been tested. This documentation cleanup did not rerun or change the simulation.
-
-## Figures and interpretation
-
-A–G show gate release, wetland drainage, wetland overflow, upland infiltration, evaporative demand, river-outlet blockage, and groundwater exchange, respectively. H shows all eight storage histories; I shows river and wetland responses; J shows the two controls and eight disturbances. [Model notes](model_notes.md) explain each figure.
-
-![Illustrative baseline river and wetland responses](plots/I_baseline_response.png)
-
-The recorded baseline gives peak river outflow **1.357896 m³/s** and peak river level **97.879407 m**. Storage and release timing shape the response; this single run does not establish a wetland-restoration benefit. Fixed geometry, empirical flow laws, simplified evaporation, and synthetic inputs limit interpretation. Numerical balance checks are not physical validation, and the results are not real flood predictions.
-
-The implementation follows the course-provided `earth_heat_2.py` template (`class c`, `system(t,x,u,c)`, and `ode4u`). Professor handouts and local development records are excluded from the submitted files. No project license has been selected.
+[.gitignore](.gitignore) keeps stage-local numerical results, working data, the external solver, course references, environments, caches and private material local. Saved configuration and provenance records retain their original path labels; [B/project_paths.py](B/project_paths.py) resolves those labels to the current physical locations. Saved numerical outputs are preserved. This organization is local; no GitHub publication is included.

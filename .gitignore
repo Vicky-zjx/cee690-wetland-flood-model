@@ -1,6 +1,9 @@
-# Local runtime, numerical results, and external solver checkout
-/work/
-/results/
+# Local numerical outputs, working records, and external solver checkout
+/A/results/
+/B/results/
+/A/work/
+/B/work/
+/A/reference/
 
 # Python environments and generated caches
 .venv/
@@ -33,18 +36,18 @@ secrets/
 *.key
 
 # Professor-provided reference materials remain local
-/earth_heat_2*.py
-/Project-ODE-how-to*.md
+earth_heat_2*.py
+Project-ODE-how-to*.md
 
 # Local-only reference/private material, if added later
-/handouts/
-/papers/
-/downloads/
-/private/
-/local/
+handouts/
+papers/
+downloads/
+private/
+local/
 
-# Development records remain local for later coursework
-/wetland_model_equations_v3_english.md
-/parameters.md
+# Preserved model-reference documents remain local
+wetland_model_equations_v3_english.md
+parameters.md
 
-# A.2 source, README, model notes, requirements, and A-J PNGs remain trackable.
+# Stage source, Markdown guides, requirements, tables and PNG figures remain trackable.

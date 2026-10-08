@@ -1,0 +1,59 @@
+{
+  "analysis": "Wetland-design-only optimization under one fixed hydraulically admissible gate schedule",
+  "authorization": "User scope revision: gates excluded from design vector; G5 retained as model applicability only",
+  "model_config": "b2/no_spillway_config.json",
+  "model_config_sha256": "b4f07d6fd516c39b14e34a7210aa8f00aa6f01e93cb8eaa9a788ecf9cad186c1",
+  "fixed_gate_source": "results/b2/no_spillway_revision/reference.npz",
+  "fixed_gate_source_sha256": "77a6f06cbf03422146dadc0a66aaee36528dfcd5999baf4a37bc9780e43d0c8c",
+  "design_definition": "D_i=(tau_i,rho_i); enumerate tau pairs; continuous OPT vector is [rho_1,rho_2] only",
+  "continuous_bounds": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "cover_starts": [
+    [
+      0.65,
+      0.6
+    ],
+    [
+      0.3,
+      0.8
+    ],
+    [
+      0.8,
+      0.35
+    ]
+  ],
+  "reference_categories": [
+    "type_a",
+    "type_a"
+  ],
+  "reference_covers": [
+    0.65,
+    0.6
+  ],
+  "excluded_optimizer_residuals": [
+    "gate1_head_opening",
+    "gate2_head_opening"
+  ],
+  "G5_policy": "Unchanged RHS hydraulic guard and separate applicability diagnostics; no G5 row supplied to OPT. Invalid hydraulics have no complete objective and fail generic integration status.",
+  "settings": {
+    "max_evals": 100,
+    "max_seconds": 180,
+    "tol_x": 0.0001,
+    "tol_f": 1e-06,
+    "feasibility_tol": 1e-06,
+    "penalty": 100.0,
+    "penalty_exponent": 2.0,
+    "display": 0
+  },
+  "maximum_batch_seconds": 1500,
+  "maximum_study_ode_attempts": 1250,
+  "scope_note": "No-spillway equations, wetland overflow, forcing, x0, geometry, all physical limits and the river-peak objective unchanged. Previous joint study remains historical."
+}

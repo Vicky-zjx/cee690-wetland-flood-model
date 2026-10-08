@@ -1,0 +1,19 @@
+metric,units,reference_label,reference_value,candidate_label,candidate_value,interpretation
+peak_stage_m,m (assumed datum),Replacement reference (0.1 × original openings; feasibility search),97.5986122589133,Best feasible found (bounded official OPT search),97.59717075125425,Physical objective max H_r; no optimizer penalty
+peak_time_s,s,Replacement reference (0.1 × original openings; feasibility search),294480.0,Best feasible found (bounded official OPT search),294540.0,Sampled physical peak time
+peak_outlet_m3s,m3/s,Replacement reference (0.1 × original openings; feasibility search),0.9969161309184452,Best feasible found (bounded official OPT search),0.9937127805649955,Maximum physical outlet discharge
+outlet_volume_m3,m3,Replacement reference (0.1 × original openings; feasibility search),76457.72417133058,Best feasible found (bounded official OPT search),76896.40155972261,Time-integrated outlet discharge
+balance_max_m3,m3,Replacement reference (0.1 × original openings; feasibility search),0.021958012286631856,Best feasible found (bounded official OPT search),0.02140847143891733,Maximum absolute numerical water-balance residual
+balance_relative,1,Replacement reference (0.1 × original openings; feasibility search),2.2897257801668327e-07,Best feasible found (bounded official OPT search),2.2324210555933455e-07,Relative numerical water-balance residual
+peak_near_horizon,boolean,Replacement reference (0.1 × original openings; feasibility search),False,Best feasible found (bounded official OPT search),False,Peak occurs within final 5% of horizon
+river_rising_at_end,boolean,Replacement reference (0.1 × original openings; feasibility search),False,Best feasible found (bounded official OPT search),False,Positive final sampled river-level change
+flood_duration_h,h,Replacement reference (0.1 × original openings; feasibility search),,Best feasible found (bounded official OPT search),,Blank when no flood threshold was supplied
+end_storage_S_u,m3,Replacement reference (0.1 × original openings; feasibility search),2.950062322380511e-21,Best feasible found (bounded official OPT search),2.950062322380511e-21,Physical end-of-horizon storage
+end_storage_S_m,m3,Replacement reference (0.1 × original openings; feasibility search),74566.37217887487,Best feasible found (bounded official OPT search),74566.37217887487,Physical end-of-horizon storage
+end_storage_S_w1,m3,Replacement reference (0.1 × original openings; feasibility search),869.3832300587529,Best feasible found (bounded official OPT search),864.5858479677269,Physical end-of-horizon storage
+end_storage_S_w2,m3,Replacement reference (0.1 × original openings; feasibility search),758.4645669113366,Best feasible found (bounded official OPT search),775.087103644012,Physical end-of-horizon storage
+end_storage_S_d1,m3,Replacement reference (0.1 × original openings; feasibility search),4629.576549927414,Best feasible found (bounded official OPT search),4397.5045055919145,Physical end-of-horizon storage
+end_storage_S_d2,m3,Replacement reference (0.1 × original openings; feasibility search),2839.2027937635216,Best feasible found (bounded official OPT search),2629.7009203118428,Physical end-of-horizon storage
+end_storage_S_g,m3,Replacement reference (0.1 × original openings; feasibility search),437146.70289880916,Best feasible found (bounded official OPT search),437129.0049003129,Physical end-of-horizon storage
+end_storage_S_r,m3,Replacement reference (0.1 × original openings; feasibility search),3374.2594105722465,Best feasible found (bounded official OPT search),3386.891296534541,Physical end-of-horizon storage
+absolute_peak_reduction,m,Replacement reference (0.1 × original openings; feasibility search),0.0,Best feasible found (bounded official OPT search),0.0014415076590523768,Reference physical peak minus candidate physical peak; blank if no candidate

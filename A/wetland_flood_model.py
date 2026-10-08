@@ -497,7 +497,7 @@ if __name__ == "__main__":
     x_init = params.x_init
 
     # 2. Inspect the algebraic relationships before the whole-system simulation.
-    from algebraic_plots import make_algebraic_plots
+    from A.algebraic_plots import make_algebraic_plots
     make_algebraic_plots(params)
 
     # 3. Build controls/disturbances and integrate with the professor's solver.

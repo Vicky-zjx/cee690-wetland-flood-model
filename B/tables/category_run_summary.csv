@@ -1,0 +1,9 @@
+category_pair,phase,termination,callback_budget,actual_callbacks,official_returned,iterations,converged,incumbent_feasible,incumbent_best_physical_peak_m,phase_feasible_callbacks,phase_invalid_callbacks
+type_a/type_a,full_box,evaluation_budget,40,40,False,,False,True,97.59861228075584,0,40
+type_a/type_a,reference_neighborhood,stalled,140,87,True,28,False,True,97.59716883306781,57,30
+type_a/type_b,full_box,evaluation_budget,40,40,False,,False,True,97.59977366987475,0,40
+type_a/type_b,reference_neighborhood,stalled,140,84,True,25,False,True,97.59841108516342,54,30
+type_b/type_a,full_box,evaluation_budget,40,40,False,,False,True,97.5992893491426,0,40
+type_b/type_a,reference_neighborhood,stalled,140,57,True,16,False,True,97.59798933024703,39,18
+type_b/type_b,full_box,evaluation_budget,40,40,False,,False,True,97.6004540554354,0,40
+type_b/type_b,reference_neighborhood,stalled,140,79,True,23,False,True,97.59910351394178,51,28

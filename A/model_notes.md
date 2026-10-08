@@ -70,9 +70,9 @@ Reduced evaporative demand combines an energy term and an aerodynamic term: E_st
 
 ## Figure guide
 
-The ten existing figures are saved individually in `plots/`. Comparison values in A–G are teaching examples, not empirical ranges.
+The ten existing figures are saved individually in `A/plots/`. Comparison values in A–G are teaching examples, not empirical ranges.
 
-| Figure in `plots/` | Axes and varied settings | What to learn; ODE use |
+| Figure in `A/plots/` | Axes and varied settings | What to learn; ODE use |
 |---|---|---|
 | **A_gate_release.png** | Effective head ΔH=H_d−max(H_w,z_G) [m] versus Q_G [m³/s]; g=.25,.50,.75,1. | Q_G=g min(Q̄_G,[ΔH]+/R_G): zero against unfavorable head; opening increases slope and cap. Transfers pool water into its wetland (3–6). |
 | **B_wetland_drainage.png** | ΔH=H_w−max(H_r,z_wo) [m] versus Q_wr [m³/s]; R_w=.8,2.10,2.88 s/m², representing bare/type_a/type_b at stated cover. | At the same effective head, higher resistance reduces uncapped discharge and delays the shared .65 m³/s cap. Once capped, the curves have equal discharge; this graph does not establish lower flood peaks. Transfers wetland water to river (3,4,8). |
@@ -95,14 +95,14 @@ Soil storage approaches capacity → infiltration decreases → this opposes fur
 
 `class c` in [wetland_flood_model.py](wetland_flood_model.py) defines parameter values, units, fixed designs, initial conditions, and forcing settings. `make_inputs()` constructs the prescribed input histories; `validate()` checks mathematical domains and assumed geometry limits. These checks do not establish evidence-supported site ranges.
 
-After the environment setup in [README.md](README.md), run either command from the project root:
+After the environment setup in [A/README.md](README.md), run either command from the project root:
 
 ```sh
-python3 algebraic_plots.py       # A–G only; NumPy and Matplotlib
-python3 wetland_flood_model.py    # A–J and one baseline; official ode4u required
+python3 -m A.algebraic_plots       # A–G only; NumPy and Matplotlib
+python3 -m A.wetland_flood_model    # A–J and one baseline; official ode4u required
 ```
 
-The second command follows **define model → generate A–G → run one baseline with official ode4u → generate H–J → interpret**. It additionally requires NumPy 2+ and official `multivarious` with its dependencies, using `work/multivarious` when present. `load_ode4u()` imports the solver only for simulation; importing either project script runs no simulation. The code follows the professor's `class c`, `system(t,x,u,c)`, and execution-block structure. Solver arrays use `(channels,time)` and linearly interpolated inputs.
+The second command follows **define model → generate A–G → run one baseline with official ode4u → generate H–J → interpret**. It additionally requires NumPy 2+ and official `multivarious` with its dependencies, using `A/work/multivarious` when present. `load_ode4u()` imports the solver only for simulation; importing either project script runs no simulation. The code follows the professor's `class c`, `system(t,x,u,c)`, and execution-block structure. Solver arrays use `(channels,time)` and linearly interpolated inputs.
 
 When editing geometry: **edit geometry → explicitly call `params.refresh_geometry_defaults()` if appropriate → construct `x_init` and inputs → validate → run**. The helper updates only A_g, V_w, V_d, V_g, and V_r from their documented assumptions in `class c`; independent empirical parameters remain manually editable.
 
@@ -110,7 +110,7 @@ The baseline lasts six days with 120 s steps. Two triangular storms deliver 60 a
 
 The existing baseline gives peak outlet discharge **1.357896 m³/s** and peak river level **97.879407 m**, below the illustrative 97.90 m reporting threshold. Both dam spills and wetland overflows activate. Stored water and release timing explain the delayed responses; this single baseline cannot establish a restoration benefit.
 
-Figures go to `plots/`; numerical arrays go to `results/baseline.npz` and diagnostics to `results/baseline_summary.json`. The existing run's maximum integrated water-balance residual was **0.076735 m³**, or **0.00004151%** of gross event inflow. This records numerical consistency, not physical validation. Rerunning overwrites the same output files.
+Figures go to `A/plots/`; numerical arrays go to `A/results/baseline.npz` and diagnostics to `A/results/baseline_summary.json`. The existing run's maximum integrated water-balance residual was **0.076735 m³**, or **0.00004151%** of gross event inflow. This records numerical consistency, not physical validation. Rerunning overwrites the same output files.
 
 ## Limitations and A.2 remaining-work checklist
 

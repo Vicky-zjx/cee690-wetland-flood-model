@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
 """Seven educational views of the accepted v3 algebraic relationships.
 
-Run: python3 algebraic_plots.py
+Run: python3 -m A.algebraic_plots
 These are illustrative parameter comparisons, not calibrated site ranges.
 The model file sets the Matplotlib cache/backend before pyplot is imported.
 """
-from wetland_flood_model import (
+from A.wetland_flood_model import (
     c, positive_part, availability, head_flow, evaporative_demand, ROOT,
 )
 import numpy as np

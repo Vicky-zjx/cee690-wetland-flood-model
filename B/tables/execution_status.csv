@@ -1,0 +1,16 @@
+check,status,value,units,interpretation
+Official source inspected,verified,multivarious1.2.1@06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02,revision,Official nms and ode4u; source unchanged; no substitute optimizer
+Official Example A,executed,66,callbacks,"21iterations; optimizer smoke only, not wetland optimization"
+Official adapter smoke checks,passed,12,checks,Actual official example and interface/budget/failure tests
+Gate/workflow/data preparation tests,passed,63,tests,22gate +33workflow +8data; artificial fixtures do not supply project parameters
+A.2 official ode4u plumbing peak outlet,executed,1.3578956737526984,m3/s,Original synthetic A.2 plumbing check only; NOT revised B.2 baseline or optimization
+Protected A.2 files,unchanged,19,files,SHA-256 matches; README separately verified append-only
+Evidence register,checked,156,rows,"All95 classc attributes plus concrete proposed inputs/safety/gates;54 sourceIDs, only3 necessary additions this step"
+Project preflight and run guard,blocked as required,6,gap groups,Preflight exposes concrete approvals; run exits2 beforebaseline/OPT; populatedproposals remainunapproved
+Revised B.2 baseline / optimization / figures,not executed,,,Awaitingapproval of concrete configuration andgate-domainrestriction; noactualcomparisonfigures
+Local event observations in simulation,none used,0,records,Actual USGS/NOAA records andPOWERgrid downloaded/processed; noB2model simulation
+USGSmain event observations,downloaded and processed,1250 per series,records,Sep2–15UTC;00060/00065/63160;allA;15minutecoveragecomplete
+USGSrecession extension,downloaded and processed,289 per series,records,Sep15–18UTC;contextonly;modelhorizonunchanged
+NOAAobservations andPOWERsolar,downloaded and processed,bounded13daywindow plusNOAAendpointbrackets,,"KMWCweather/KMKErain/POWERsolar;QC,traceandtimingassumptionsdocumented"
+Proposed model forcing,prepared; unapproved,4321,120s rows,145.3mm quantifiedrain and21166.81Wh/m2solar conserved; trace0/spatial/timingassumptions awaitapproval
+New framework or test infrastructure,none added,0,new tests,Only existingtests adjusted forpopulatedunapprovedproposals; existing63checks pass
