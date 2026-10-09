@@ -1,5 +1,7 @@
 # Controlled B.2 initial-guess and scaling check
 
+**Historical study scope:** numerical proposals, gate schedules, approvals and results below describe the earlier exploratory/joint study at the time recorded. They are not the final fixed-gate wetland-only configuration. Use [the current B guide](../README.md), [active parameter record](../data_sources_and_assumptions.md#active-parameter-provenance) and [final optimization report](12_wetland_only_optimization.md) for accepted values. Hydraulic-source discussion remains relevant only within its stated applicability.
+
 This bounded study retains the approved hypothetical engineered system, eight-state equations, gate hydraulics, G1–G6 assumptions, B.1 objective and constraints, forcing, initial storages, physical bounds and control-knot times. A/B remain synthetic hydraulic/ET response classes. The reference remains the previously accepted A/A replacement schedule at 0.1 times the original gate openings; it was not retuned.
 
 Completed 12 OPT runs after 12 full-event starting-candidate checks; 0 screened candidates were rejected. Each category received the feasible starts recorded in the [summary CSV](../tables/multistart_summary.csv).

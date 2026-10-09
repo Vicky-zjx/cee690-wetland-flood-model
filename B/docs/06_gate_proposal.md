@@ -1,5 +1,7 @@
 # Approved exploratory B.2 gate restriction and fixed geometry
 
+**Historical study scope:** numerical proposals, gate schedules, approvals and results below describe the earlier exploratory/joint study at the time recorded. They are not the final fixed-gate wetland-only configuration. Use [the current B guide](../README.md), [active parameter record](../data_sources_and_assumptions.md#active-parameter-provenance) and [final optimization report](12_wetland_only_optimization.md) for accepted values. Hydraulic-source discussion remains relevant only within its stated applicability.
+
 **Status: approved by the user for the first exploratory case, 2026-10-01 (G4–G5).** These are hypothetical gates for the approved 0.66 km² installation, not surveyed Milwaukee structures or locally calibrated gates. Dimensions and coefficients are fixed engineering assumptions. This document records the approved method and required checks; actual reference/search outcomes are reported separately. A.2 remains unchanged.
 
 ## Approved additional hydraulic-applicability constraint

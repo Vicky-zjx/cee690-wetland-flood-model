@@ -1,5 +1,7 @@
 # B.2 gate-law revision: implemented branches and approved restricted domain
 
+**Historical study scope:** numerical proposals, gate schedules, approvals and results below describe the earlier exploratory/joint study at the time recorded. They are not the final fixed-gate wetland-only configuration. Use [the current B guide](../README.md), [active parameter record](../data_sources_and_assumptions.md#active-parameter-provenance) and [final optimization report](12_wetland_only_optimization.md) for accepted values. Hydraulic-source discussion remains relevant only within its stated applicability.
+
 Access/review date: **2026-10-01**. This targeted revision concerns Q_G1 and Q_G2 only. A.2 sources/results, the eight storage balances, other flow laws, and separate dam spillways are unchanged. The copied “svg” equation was unavailable; no claim is made to have recovered it.
 
 The old rating was `g_i * min(Q_Gcap[i], positive_head/R_G[i])`. The new helper uses the independently verified USACE relationships below. It contains neither R_G nor Q_Gcap, no extra opening multiplier, and no unexplained minimum of free/submerged formulas. **It is not a complete all-regime gate model.** The user has approved fixed hypothetical dimensions/coefficients and an explicit additional head/opening applicability constraint for the first exploratory case. Unsupported low-head regimes remain outside that approved domain; passing fixtures alone did not provide this authorization.

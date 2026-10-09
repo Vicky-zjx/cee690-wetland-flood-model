@@ -1,5 +1,7 @@
 # First exploratory B.2 case — actual execution results
 
+**Historical study scope:** numerical proposals, gate schedules, approvals and results below describe the earlier exploratory/joint study at the time recorded. They are not the final fixed-gate wetland-only configuration. Use [the current B guide](../README.md), [active parameter record](../data_sources_and_assumptions.md#active-parameter-provenance) and [final optimization report](12_wetland_only_optimization.md) for accepted values. Hydraulic-source discussion remains relevant only within its stated applicability.
+
 The approved **hypothetical 0.66 km² engineered installation**, driven by regional weather for **2022-09-09 00:00 UTC to 2022-09-15 00:00 UTC**, produced a hydraulically valid replacement reference and a feasible candidate from the professor's official OPT module. The refined physical river peak decreased from **97.598612259 m** to **97.597170751 m**, a reduction of **0.001441508 m (1.442 mm)**. This is a small improvement in this uncalibrated hypothetical model, not demonstrated real-world flood mitigation, an Underwood Creek calibration, or engineering safety certification.
 
 The submitted B.1 objective remains `min max_t H_r(t)`. The B.1 constraints and four approved design limits are unchanged. The user-approved gate head/opening condition is an **additional hydraulic-applicability constraint**, not a numerical convergence check. A.2 code, parameters embedded in its source, and A–J results were not altered or rerun.
@@ -16,9 +18,9 @@ The original gate schedule is **hydraulically invalid** under the approved B.2 g
 | Physical residual, 1.25a − H | **+0.000647871740 m** |
 | Normalized gate opening | 0.45 |
 
-Integration stopped before evaluating an unsupported gate discharge. This timestamp identifies the first detected invalid integration stage, not an analytically located continuous-time crossing. No complete original-baseline trajectory or river peak is reported. See the local [original baseline diagnostic](../results/original_baseline_check.json).
+Integration stopped before evaluating an unsupported gate discharge. This timestamp identifies the first detected invalid integration stage, not an analytically located continuous-time crossing. No complete original-baseline trajectory or river peak is reported. See the local original baseline diagnostic (local-only `B/results/original_baseline_check.json`).
 
-A separate, labeled **reference feasibility search** tested uniform open-loop multipliers `[0, 0.25, 0.10, 0.05]` of the original gate knots. Closed gates, 0.10 and 0.05 completed valid simulations; 0.25 was rejected. The largest tested hydraulically admissible multiplier, **0.10**, was selected. Covers remained 0.65 and 0.60, synthetic classes remained A/A, and knot times were unchanged. This is not clipping during integration and is not the original baseline. No geometry, initial state, forcing or safety limit was adjusted. The resulting replacement reference also satisfies the unchanged safety limits. See [reference search records](../results/reference_search.json).
+A separate, labeled **reference feasibility search** tested uniform open-loop multipliers `[0, 0.25, 0.10, 0.05]` of the original gate knots. Closed gates, 0.10 and 0.05 completed valid simulations; 0.25 was rejected. The largest tested hydraulically admissible multiplier, **0.10**, was selected. Covers remained 0.65 and 0.60, synthetic classes remained A/A, and knot times were unchanged. This is not clipping during integration and is not the original baseline. No geometry, initial state, forcing or safety limit was adjusted. The resulting replacement reference also satisfies the unchanged safety limits. See reference search records (local-only `B/results/reference_search.json`).
 
 ## Approved physical scope and input checks
 
@@ -26,7 +28,7 @@ Wetlands are explicitly proposed **embanked/contained units**. Assumed settled c
 
 The gate tailwater is the associated wetland level. Since `98.90 < 100.00` and `98.80 < 99.80`, every safety-feasible wetland trajectory is below its gate sill by at least 1.10 m or 1.00 m. Wetland-induced gate submergence is therefore excluded under these tailwater assumptions. All recorded gate evaluations in the refined reference and candidate were free-flow evaluations. The relevant restriction remains `1.25a − H ≤ 0` when a gate is open, wet and forward-flowing; it is enforced at every RHS/RK stage without clipping.
 
-The [independent forcing audit](../results/exploratory_forcing_audit.json) passed all 22 checks:
+The independent forcing audit (local-only `B/results/exploratory_forcing_audit.json`) passed all 22 checks:
 
 - **Station observations:** KMKE precipitation accumulation records and KMWC temperature/wind reports. They are regional point observations spatially transferred to the hypothetical installation, not observations of its footprint. Fixed RH 0.7084916611553665 and pressure 98,692.51171875 Pa are derived event-time station means.
 - **Rain:** 4,321 UTC nodes at 120 s; total **145.3 mm**. Selected accumulation intervals are nonoverlapping and contiguous. Each source-interval integral is preserved to within 1.66 × 10⁻¹¹ mm. Five trace intervals use an approved **quantified-zero lower bound**, not measured zero rainfall. Two missing individual hourly amounts are only resolved at the retained three-hour trace-accumulation level.
@@ -95,7 +97,7 @@ Fresh/coarse-to-refined peak differences were **2.18425384e-08 m** for the refer
 
 - Figures: [gate rating](../plots/B2_0_gate_rating.png), [river peak](../plots/B2_1_river_stage.png), [gate schedules](../plots/B2_2_controls.png), [upstream limits](../plots/B2_3_upstream_safety.png), [OPT history](../plots/B2_4_optimization_history.png), [gate applicability](../plots/B2_5_gate_applicability.png).
 - Tables: [physical performance](../tables/performance.csv), [decisions](../tables/decision_values.csv), [all constraint residuals](../tables/constraint_audit.csv), [termination by phase](../tables/category_run_summary.csv), [parameter/input evidence](../tables/evidence_register.csv).
-- Local numerical records: [run status](../results/run_status.json), [exact run configuration](../results/run_config.json), `B/results/reference.npz`, `B/results/best_feasible.npz`, and eight `*_optimizer.json` files. Local `B/results/` and `B/work/` remain ignored by Git.
+- Local numerical records: run status (local-only `B/results/run_status.json`), exact run configuration (local-only `B/results/run_config.json`), `B/results/reference.npz`, `B/results/best_feasible.npz`, and eight `*_optimizer.json` files. Local `B/results/` and `B/work/` remain ignored by Git.
 
 From the existing project environment:
 

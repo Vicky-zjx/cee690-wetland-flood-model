@@ -165,7 +165,7 @@ python3 -B -m B.wetland_only_study --compare
 python3 -B -m B.wetland_only_study --report
 ```
 
-Completed numerical stages refuse to overwrite their saved results. `--report` regenerates these reports and figures only. Results are local under `B/results/wetland_only/`; all earlier joint-study and A.2 files remain historical and unchanged. This analysis is hypothetical and uncalibrated, with no claim of local engineering certification, species recommendation or global optimality. No Git commit or publication is included.
+Completed numerical stages refuse to overwrite their saved results. `--report` regenerates these reports and figures only. Results are local under `B/results/wetland_only/`; all earlier joint-study and A.2 files remain historical and unchanged. This analysis is hypothetical and uncalibrated, with no claim of local engineering certification, species recommendation or global optimality. The source, documentation, figures and selected tables are published; numerical arrays and raw working records remain local.
 
 ![01 wetland design mechanisms](../plots/wetland_only/01_wetland_design_mechanisms.png)
 

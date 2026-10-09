@@ -1,5 +1,7 @@
 # B.2 revision without dam spillways
 
+**Study scope:** this preserved report covers the no-spillway joint gate-plus-wetland search. The accepted fixed gate schedule was selected here, but the current wetland-only results and settings are in [the final optimization report](12_wetland_only_optimization.md) and [active parameter record](../data_sources_and_assumptions.md#active-parameter-provenance). The joint-search benefit is not the current wetland-only benefit.
+
 This new study removes the two pool-to-wetland dam spillways from B.2. Each pool releases to its wetland through its gate only. Wetland overflow to the river, normal wetland drainage, the direct upland-to-river bypass, soil and groundwater pathways remain. There is no replacement emergency spill, automatic gate control or water-level clipping. The unchanged safety limits and hydraulic-applicability constraints determine feasibility. A.2 and all historical B.2 results are separate and preserved.
 
 The installation remains hypothetical and uncalibrated, with regional event weather and synthetic A/B vegetation-response classes. Read [data sources and assumptions](../data_sources_and_assumptions.md) for the active topology, unchanged provenance, design assumptions and interpretation limits. Older studies with dam spillways cannot supply numerical results for this topology.
