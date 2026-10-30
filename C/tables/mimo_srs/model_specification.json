@@ -1,0 +1,223 @@
+{
+  "settings": {
+    "max_order": 1,
+    "pTrain": 70,
+    "L1_pnlty": 1.0,
+    "basis_fctn": "P",
+    "seed": 6902026,
+    "external_bound": 0.9,
+    "smoke_samples": 512,
+    "timezone": "America/Chicago",
+    "data_alignment": "approved_fit_only_causal_hour_end"
+  },
+  "predictors": [
+    "P_completed_1h_at_cutoff",
+    "T_latest_at_cutoff",
+    "Rs_completed_clock_hour",
+    "W_latest_at_cutoff",
+    "sin_annual",
+    "cos_annual",
+    "sin_diurnal",
+    "cos_diurnal"
+  ],
+  "outputs": [
+    "P",
+    "T",
+    "Rs",
+    "W"
+  ],
+  "units": [
+    "mm/h",
+    "degC",
+    "W/m2",
+    "m/s"
+  ],
+  "alignment": {
+    "evaluation_type": "Retrospective observation-time-aligned conditional evaluation",
+    "prediction_cutoff": "c is an exact UTC hour. Every predictor report or interpreted source interval must end no later than c.",
+    "target_reference": "t = c + 1 hour is the next selection/reference time, not a claim that all targets cover (c,t].",
+    "nominal_clock_window": "(c, c+1 hour]; retained only as a reference for comparing actual measurement supports.",
+    "rain_predictor": "P_completed_1h_at_cutoff: latest accepted native one-hour accumulation ending in (c-1 hour,c]; age is c minus actual accumulation end, strictly less than 60 minutes.",
+    "rain_target": "Latest accepted native one-hour accumulation ending in (c,c+1 hour]. Preserve its actual start/end even when its start precedes c. Do not redistribute any accumulation.",
+    "temperature_wind": "Predictors are latest QC report values at/before c with age at most 60 minutes. Targets use the same rule at t. DATE is the observation/report timestamp; instrument averaging-window bounds are not in the cache.",
+    "solar": "Use the existing hourly grid value labelled c-1 hour as the predictor. Its assumed hour-start support is [c-1 hour,c]; the target is labelled c and assumed to cover [c,c+1 hour]. Cached POWER metadata confirms UTC and Wh/m2 but does not independently specify this interval anchor.",
+    "historical_availability_assumption": "For retrospective selection only, assume a station report is usable at its reported observation/accumulation end, and a POWER hourly estimate at the assumed end of its hour. Publication latency is unknown and is not modeled.",
+    "limits": "Station report/accumulation timing is checked directly. Solar timing remains conditional on the declared interval-anchor assumption. These mixed-support targets are not an exact one-hour-ahead forecast of four uniform clock-hour quantities.",
+    "missing_values": "Leave unavailable or stale values missing; never zero-fill rainfall or carry a source indefinitely."
+  },
+  "polynomial_orders": [
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "scaling": {
+    "X": {
+      "midpoint": [
+        23.75,
+        2.5,
+        499.915,
+        8.75,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "scale": [
+        26.38888888888889,
+        37.22222222222222,
+        555.4611111111111,
+        9.722222222222221,
+        1.1111111111111112,
+        1.1111111111111112,
+        1.1111111111111112,
+        1.1111111111111112
+      ],
+      "minimum": [
+        0.0,
+        -31.0,
+        0.0,
+        0.0,
+        -1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "maximum": [
+        47.5,
+        36.0,
+        999.83,
+        17.5,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "bound": 0.9
+    },
+    "Y": {
+      "midpoint": [
+        23.75,
+        2.5,
+        499.915,
+        8.75
+      ],
+      "scale": [
+        26.38888888888889,
+        37.22222222222222,
+        555.4611111111111,
+        9.722222222222221
+      ],
+      "minimum": [
+        0.0,
+        -31.0,
+        0.0,
+        0.0
+      ],
+      "maximum": [
+        47.5,
+        36.0,
+        999.83,
+        17.5
+      ],
+      "bound": 0.9
+    }
+  },
+  "official": {
+    "source_path": "/Users/zhangjiaxuan/Documents/Codex/Modeling/A/work/multivarious/multivarious/fit/mimo_srs.py",
+    "source_sha256": "36c56bf25006bcc0b9f3af1092c3c0eff07fce150f589341443ab5b1e8ccf38b",
+    "package_version": "1.2.1",
+    "checkout_revision": "06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02",
+    "l1_source_path": "/Users/zhangjiaxuan/Documents/Codex/Modeling/A/work/multivarious/multivarious/fit/l1.py",
+    "l1_sha256": "31552f92b035997a257e54ab4ff5d4302343016aec6ec43d3ce4a7f047a31407",
+    "example_sha256": "ccd4126cd118f6a0210408151ad70676056005036dc660bd81baae2fff9dffd6"
+  },
+  "coefficient_equation": "y_scaled = intercept + sum(coefficient_j * x_scaled_j)",
+  "internal_split": "Seeded random 70/30 development split; internal diagnostic only, not an independent chronological test."
+}

@@ -1,0 +1,3 @@
+period,hourly_rows,eligible_adjacent_finite_pairs,no_exact_previous_hour,missing_or_nonfinite_response,missing_or_nonfinite_lag,future_source_exclusions,eligible_aligned_pairs
+development,43824,41924,1,1350,549,0,41924
+external_2024,8784,7029,0,1589,166,0,7029

@@ -4,7 +4,7 @@
 
 **Jiaxuan Zhang**
 
-This project develops a dynamic water-storage model and uses it to study how wetland design changes a downstream river peak. Stage A establishes the initial eight-state model and a synthetic baseline. Stage B uses regional September 2022 event weather to drive a hypothetical engineered installation, optimizes wetland designs under fixed gate operations, and compares the wetland cases with a separate dynamic bypass case.
+This project develops a dynamic water-storage model and uses it to study how wetland design changes a downstream river peak. Stage A establishes the initial eight-state model and a synthetic baseline. Stage B uses regional September 2022 event weather to drive a hypothetical engineered installation, optimizes wetland designs under fixed gate operations, and compares the wetland cases with a separate dynamic bypass case. Stage C retains meteorological data preparation, statistical fitting and weather diagnostic figures/tables for the HW C.2 scope. The official FIT/mimo_srs conditional-response application has now run with isolated causal data alignment and external 2024 evaluation; its results and limitations are reported on the Stage C page.
 
 This page presents the model, data, method and main results. The stage pages contain the full explanations, parameter sources, figures and execution instructions. All scientific results are uncalibrated simulations; they do not establish observed flood reductions or engineering certification.
 
@@ -12,7 +12,7 @@ This page presents the model, data, method and main results. The stage pages con
 |---|---|---|
 | A | Initial eight-state model, algebraic relationships and synthetic baseline | [A — Model, data and baseline](A/README.md) |
 | B | Fixed-gate wetland optimization, no-wetland comparison and design-bound verification | [B — Data, optimization and results](B/README.md) |
-| C | Reserved; no confirmed analysis or results yet | [C](C/README.md) |
+| C | Meteorological fitting; official FIT/mimo_srs one-step response, external 2024 evaluation and figures/tables | [C — Weather fitting and diagnostics](C/README.md) |
 | D | Reserved; no confirmed analysis or results yet | [D](D/README.md) |
 
 ## The modeled system
@@ -143,7 +143,16 @@ Modeling/
 │   ├── results/        Local trajectories and numerical records
 │   └── work/           Local observations, processing and provenance
 ├── C/
-│   └── README.md
+│   ├── README.md
+│   ├── run_fitting.py  Weather preparation, fitting and validation entry point
+│   ├── configs/       Fitting-only configuration
+│   ├── uncertainty/   Existing weather statistics modules
+│   ├── docs/          Sources, statistical methods and execution status
+│   ├── tests/         Retained data/fitting tests
+│   ├── data/          Local source data, QC and fitted parameters
+│   ├── results/       Local weather-validation records
+│   ├── plots/         Weather diagnostic figures
+│   └── tables/        Weather diagnostic tables
 └── D/
     └── README.md
 ```

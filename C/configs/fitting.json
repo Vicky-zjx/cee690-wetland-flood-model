@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "study": "HW C.2 scope: retained meteorological data preparation, statistical fitting and diagnostic figures/tables",
+  "seed": 6902026,
+  "data": {
+    "train_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "validation_years": [
+      2024
+    ],
+    "precipitation_station": "72640014839",
+    "met_station": "72640594869",
+    "latitude": 43.0547222,
+    "longitude": -88.0461111,
+    "raw_dir": "data/raw",
+    "processed_path": "data/processed/weather_hourly.csv",
+    "max_met_gap_hours": 2,
+    "download": true
+  },
+  "weather": {
+    "latitude": 43.0547222,
+    "longitude": -88.0461111,
+    "timezone": "America/Chicago",
+    "pit_seed": 1729,
+    "burn_in_hours": 336,
+    "block_hours": 48,
+    "bootstrap_month_radius": 1,
+    "minimum_group_samples": 80,
+    "max_var_radius": 0.98
+  },
+  "validation": {
+    "wet_frequency_absolute": 0.03,
+    "positive_p99_relative": 0.5,
+    "storm_p95_relative": 0.5,
+    "wet_spell_p95_relative": 0.5,
+    "lag1_absolute": 0.25,
+    "physical_violations": 0,
+    "criteria_status": "Declared before inspecting generated validation results. Exploratory adequacy screens, not physical calibration or extreme-risk certification."
+  },
+  "paths": {
+    "fitted_model": "data/processed/weather_model.json",
+    "validation_dir": "results/weather_validation",
+    "plot_root": "plots",
+    "table_root": "tables"
+  },
+  "methods": [
+    "copula_var",
+    "block_bootstrap"
+  ],
+  "mimo": {
+    "max_order": 1,
+    "pTrain": 70,
+    "L1_pnlty": 1.0,
+    "basis_fctn": "P",
+    "seed": 6902026,
+    "external_bound": 0.9,
+    "smoke_samples": 512,
+    "timezone": "America/Chicago",
+    "data_alignment": "approved_fit_only_causal_hour_end"
+  }
+}

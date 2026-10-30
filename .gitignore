@@ -51,3 +51,7 @@ wetland_model_equations_v3_english.md
 parameters.md
 
 # Stage source, Markdown guides, requirements, tables and PNG figures remain trackable.
+
+# Stage C local observations, fitted models and diagnostic outputs
+/C/data/
+/C/results/

@@ -1,0 +1,4 @@
+period,hourly_rows,one_hour_eligible,common_eligible,missing_older_rain_history,invalid_native_rain_support,nonconsecutive_native_rain_intervals,invalid_target_rain_support
+fit_2019_2022,35064,33784,33412,371,0,1,0
+validation_2023,8760,8140,8078,62,0,0,0
+external_2024,8784,7029,6951,78,0,0,0

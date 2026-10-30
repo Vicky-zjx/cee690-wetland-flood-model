@@ -1,0 +1,11 @@
+period,model,observed_positive_runs,complete_bounded_runs,incomplete_boundary_or_gap_runs
+validation_2023,l1_1,205,180,25
+validation_2023,l1_0p1,205,180,25
+validation_2023,l1_0p01,205,180,25
+validation_2023,one_hour,205,180,25
+validation_2023,persistence,205,180,25
+external_2024,l1_1,148,128,20
+external_2024,l1_0p1,148,128,20
+external_2024,l1_0p01,148,128,20
+external_2024,one_hour,148,128,20
+external_2024,persistence,148,128,20
