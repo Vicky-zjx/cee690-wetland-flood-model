@@ -1,6 +1,6 @@
 # Meteorological disturbance model and validation
 
-This module fits and diagnoses historical precipitation, air temperature, solar radiation and wind speed. The retained workflow is independent of the A/B ODE models. It contains custom NumPy/SciPy statistical methods; official FIT/mimo_srs has not yet been applied. These methods are retained as shared fitting work pending the detailed C.1/C.2 specification.
+This document describes the retained custom weather-modeling work: marginal distributions, Copula/VAR and block bootstrap. The official FIT application is documented separately in the [main C.2 report](c2_fit_summary.md). These supplementary distributional diagnostics are not timestamp prediction scores or the professor's FIT implementation. The detailed full assignment rubric remains unavailable.
 
 ## Data and clocks
 

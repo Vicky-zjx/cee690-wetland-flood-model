@@ -210,11 +210,11 @@
     }
   },
   "official": {
-    "source_path": "/Users/zhangjiaxuan/Documents/Codex/Modeling/A/work/multivarious/multivarious/fit/mimo_srs.py",
+    "source_path": "A/work/multivarious/multivarious/fit/mimo_srs.py",
     "source_sha256": "36c56bf25006bcc0b9f3af1092c3c0eff07fce150f589341443ab5b1e8ccf38b",
     "package_version": "1.2.1",
     "checkout_revision": "06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02",
-    "l1_source_path": "/Users/zhangjiaxuan/Documents/Codex/Modeling/A/work/multivarious/multivarious/fit/l1.py",
+    "l1_source_path": "A/work/multivarious/multivarious/fit/l1.py",
     "l1_sha256": "31552f92b035997a257e54ab4ff5d4302343016aec6ec43d3ce4a7f047a31407",
     "example_sha256": "ccd4126cd118f6a0210408151ad70676056005036dc660bd81baae2fff9dffd6"
   },

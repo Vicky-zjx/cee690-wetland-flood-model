@@ -1,5 +1,7 @@
 # Stage C meteorological data and quality control
 
+**Scope:** this report describes the original standardized weather dataset and its QC, including midpoint interpolation and precipitation redistribution. The official FIT application uses a separate backward-looking alignment from the same cached sources, with different eligible counts and source intervals; see [main C.2 data and time alignment](c2_fit_summary.md#b-data-and-time-alignment). Do not transfer the standardized-table timing or completeness figures to FIT. Raw/processed artifacts listed here are local-only, excluded from GitHub; [reproduction instructions](../README.md#reproduction) distinguish the public tables from cached data.
+
 Stage C uses actual multi-year regional data. These records are distinct from the approved September 2022 deterministic forcing in Stage B, which is unchanged. The initial fitting split is **2019–2023 training and 2024 chronological validation**. Six complete calendar-year windows were requested; this does not mean every station hour was observed. Missing data remain in the standardized table.
 
 ## Sources and geographic support

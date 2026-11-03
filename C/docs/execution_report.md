@@ -12,7 +12,7 @@ The fitted models are seasonal mixed-marginal Gaussian-copula VAR(1) and aligned
 
 VAR spectral radius is **0.9724845824**, below one. Latent-correlation and innovation-covariance Frobenius repairs are approximately `1.17e-15` and `4.24e-16`. Stability does not imply adequate temporal reproduction: complete-daylight residual lag-one correlations are −0.0502, 0.4418, 0.5228 and 0.0157 for precipitation, temperature, radiation and wind. Temperature and radiation retain substantial residual structure.
 
-Global seed is `6902026`; method and scenario IDs define independent `SeedSequence` streams. Randomized PIT seed is `1729`; VAR burn-in is 336 hours. Every scenario has saved metadata, training/fitted-model versions and forcing-file hash. Both ODEs read the same saved CSV. All 20 scenario pairs passed forcing-file and canonical-array equality checks, including those later excluded.
+Global seed is `6902026`; method and scenario IDs define independent `SeedSequence` streams. Randomized PIT seed is `1729`; VAR burn-in is 336 hours. Historical context only: an earlier, subsequently removed downstream extension recorded forcing-equality checks for 20 scenario pairs. Those checks are not current C.2 outputs and do not establish successful paired ODE trajectories. The retained workflow generates weather-validation calendars only; it does not run either ODE model.
 
 ## Held-out weather validation
 
@@ -42,10 +42,13 @@ Exact checks and diagnostic figures are in [`C/tables/weather_validation/`](../t
 
 The retained entry point is `python3 -B -m C.run_fitting all`. It fits the same training data and reruns the same held-out weather diagnostics with the original seeds, methods and thresholds. It does not execute A/B models or generate downstream response statistics. The two generated held-out calendars are retained solely as weather-validation examples.
 
-The weather-only entry point was executed successfully after scope reduction. All **21 retained tests passed**. The fitted model, both generated validation calendars, both check tables and all **12 PNG figures** reproduced the pre-cleanup files byte-for-byte. Original source responses, acquisition metadata, standardized observations, QC and chronological split records remained unchanged. Existing failed weather checks remain failed; they were not retuned.
+The weather-only entry point was executed successfully after scope reduction. At that earlier execution, **21 retained tests passed**; this is a historical count, not the current focused-check count. The fitted model, both generated validation calendars, both check tables and all **12 PNG figures** reproduced the pre-cleanup files byte-for-byte. Original source responses, acquisition metadata, standardized observations, QC and chronological split records remained unchanged. Existing failed weather checks remain failed; they were not retuned.
 
-The existing environment is `/opt/miniconda3/bin/python3` (Python 3.13.5), NumPy 2.2.6, SciPy 1.16.2, pandas 2.3.2, Matplotlib 3.10.6 and requests 2.32.4. No packages were installed or removed. The execution log is `C/results/logs/fitting.log`; retained-test output is `C/results/fitting_tests.log`.
+The historical execution environment used Python 3.13.5, NumPy 2.2.6, SciPy 1.16.2, pandas 2.3.2, Matplotlib 3.10.6 and requests 2.32.4. No packages were installed or removed. The execution log is `C/results/logs/fitting.log`; retained-test output is `C/results/fitting_tests.log`.
 
 The four weather/data implementation modules and their statistical methods are unchanged. Marginal/correlation/Cholesky/VAR/bootstrap components remain because they support the existing fitting diagnostics and the detailed C.1/C.2 specification has not been located. They are not described as the professor's FIT implementation.
 
 The subsequent [official FIT application](c2_fit_summary.md) adds the project-specific predictor/response definition, actual official call, coefficient/scaling tables and external fit/residual figures. Its approved causal data alignment and results are separate from the weather-model outputs retained here. The original official implementation and example remain unchanged in `A/work/multivarious`.
+
+
+For exact dependency layout, artifact availability and the distinction between published results, local replay and rebuilding sources, see [Stage C reproduction](../README.md#reproduction). Paths under `C/data/` and `C/results/` above are local-only and excluded from GitHub. Historical logs are not linked as public artifacts.

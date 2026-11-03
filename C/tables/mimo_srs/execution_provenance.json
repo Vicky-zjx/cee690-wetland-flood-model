@@ -1,0 +1,412 @@
+{
+  "record_scope": "Documentation-only extract of existing execution records; no fitting was performed to create this file.",
+  "source_records_are_local_only": true,
+  "official": {
+    "source_path": "A/work/multivarious/multivarious/fit/mimo_srs.py",
+    "source_sha256": "36c56bf25006bcc0b9f3af1092c3c0eff07fce150f589341443ab5b1e8ccf38b",
+    "package_version": "1.2.1",
+    "checkout_revision": "06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02",
+    "l1_source_path": "A/work/multivarious/multivarious/fit/l1.py",
+    "l1_sha256": "31552f92b035997a257e54ab4ff5d4302343016aec6ec43d3ce4a7f047a31407",
+    "example_sha256": "ccd4126cd118f6a0210408151ad70676056005036dc660bd81baae2fff9dffd6"
+  },
+  "official_repository": "https://github.com/hpgavin/multivarious.git",
+  "main_result": {
+    "source_record": "C/results/mimo_srs/run_status.json",
+    "source_record_sha256": "e4f933de0bb8a4e2b8900a9dc4198caba8dcf8f3fa9c01f08ae1920984a7b0f8",
+    "status": "completed",
+    "settings": {
+      "max_order": 1,
+      "pTrain": 70,
+      "L1_pnlty": 1.0,
+      "basis_fctn": "P",
+      "seed": 6902026,
+      "external_bound": 0.9,
+      "smoke_samples": 512,
+      "timezone": "America/Chicago",
+      "data_alignment": "approved_fit_only_causal_hour_end"
+    },
+    "input_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+    "causal_data_sha256": "c63760cce03006ac1e8df16cbd617e36b22643a470c314697bd33642c61f638d",
+    "implementation_sha256": {
+      "C/run_fitting.py": "18efc2739643f2fd1799f50aa1194fb5fb45f66b0cc98616e81aafa1292dd13b",
+      "C/mimo_fit.py": "179050a89cbf6729cc3091c8f9ff67378a043e8eec2f86ca903fbf91a6ad8120",
+      "C/mimo_causal_data.py": "e0e8469ab61f4a66788f2ab566f0c215e24e8cc2bf3854c88e765d012ff30350",
+      "C/mimo_source_audit.py": "bf175a68562ba4cc2f64582312d1c9b1f070415fc432dae438a3c0d77cf9ef0c",
+      "C/mimo_figures.py": "7d00a63b90c240ddadb9c7cb0de51687408f0ebd8e2b2419ea0f0bc7c74d145b"
+    },
+    "real_project_fit_executed": true,
+    "external_evaluation_executed": true,
+    "saved_predictions_reproduced_exactly": true,
+    "physical_coefficient_equivalence_verified": true,
+    "sample_counts": [
+      {
+        "period": "development",
+        "hourly_rows": 43824,
+        "eligible_adjacent_finite_pairs": 41924,
+        "no_exact_previous_hour": 1,
+        "missing_or_nonfinite_response": 1350,
+        "missing_or_nonfinite_lag": 549,
+        "future_source_exclusions": 0,
+        "eligible_aligned_pairs": 41924
+      },
+      {
+        "period": "external_2024",
+        "hourly_rows": 8784,
+        "eligible_adjacent_finite_pairs": 7029,
+        "no_exact_previous_hour": 0,
+        "missing_or_nonfinite_response": 1589,
+        "missing_or_nonfinite_lag": 166,
+        "future_source_exclusions": 0,
+        "eligible_aligned_pairs": 7029
+      }
+    ],
+    "development_target_reference_years": [
+      2019,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "external_target_reference_years": [
+      2024
+    ],
+    "execution": {
+      "status": "completed",
+      "purpose": "development_pool_fit",
+      "arguments": {
+        "max_order": 1,
+        "pTrain": 70,
+        "L1_pnlty": 1.0,
+        "basis_fctn": "P"
+      },
+      "scaling": [
+        0,
+        0
+      ],
+      "random_seed": 6902026,
+      "X_shape": [
+        8,
+        41924
+      ],
+      "Y_shape": [
+        4,
+        41924
+      ],
+      "returned_shapes": [
+        [
+          9,
+          8
+        ],
+        [
+          9,
+          4
+        ],
+        [
+          8,
+          1
+        ],
+        [
+          4,
+          1
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          4,
+          4
+        ],
+        [
+          8,
+          12578
+        ],
+        [
+          4,
+          12578
+        ],
+        [
+          4,
+          12578
+        ]
+      ],
+      "supplied_samples": 41924,
+      "retained_samples": 41924,
+      "removed_samples": 0,
+      "internal_training_samples": 29346,
+      "internal_testing_samples": 12578,
+      "exact_internal_split_verified": true,
+      "internal_filter_threshold": 5.057445493716027,
+      "termination": "Function returned finite arrays; no convergence flag exposed by mimo_srs.",
+      "regularization": "1.0 is the initial positive penalty; official l1 adapts it internally."
+    },
+    "independent_stationarity_status": "not assessed",
+    "effective_final_penalty_status": "not recorded in the original execution metadata",
+    "alignment_definition": {
+      "evaluation_type": "Retrospective observation-time-aligned conditional evaluation",
+      "prediction_cutoff": "c is an exact UTC hour. Every predictor report or interpreted source interval must end no later than c.",
+      "target_reference": "t = c + 1 hour is the next selection/reference time, not a claim that all targets cover (c,t].",
+      "nominal_clock_window": "(c, c+1 hour]; retained only as a reference for comparing actual measurement supports.",
+      "rain_predictor": "P_completed_1h_at_cutoff: latest accepted native one-hour accumulation ending in (c-1 hour,c]; age is c minus actual accumulation end, strictly less than 60 minutes.",
+      "rain_target": "Latest accepted native one-hour accumulation ending in (c,c+1 hour]. Preserve its actual start/end even when its start precedes c. Do not redistribute any accumulation.",
+      "temperature_wind": "Predictors are latest QC report values at/before c with age at most 60 minutes. Targets use the same rule at t. DATE is the observation/report timestamp; instrument averaging-window bounds are not in the cache.",
+      "solar": "Use the existing hourly grid value labelled c-1 hour as the predictor. Its assumed hour-start support is [c-1 hour,c]; the target is labelled c and assumed to cover [c,c+1 hour]. Cached POWER metadata confirms UTC and Wh/m2 but does not independently specify this interval anchor.",
+      "historical_availability_assumption": "For retrospective selection only, assume a station report is usable at its reported observation/accumulation end, and a POWER hourly estimate at the assumed end of its hour. Publication latency is unknown and is not modeled.",
+      "limits": "Station report/accumulation timing is checked directly. Solar timing remains conditional on the declared interval-anchor assumption. These mixed-support targets are not an exact one-hour-ahead forecast of four uniform clock-hour quantities.",
+      "missing_values": "Leave unavailable or stale values missing; never zero-fill rainfall or carry a source indefinitely."
+    },
+    "alignment_counts": {
+      "development": {
+        "rows": 43824,
+        "joint_complete_rows": 42473,
+        "complete_adjacent_pairs": 41924,
+        "excluded_pairs": 1900,
+        "negative_temperature_responses_in_pairs": 8570,
+        "missing_by_variable": {
+          "precipitation_mm_per_h": 650,
+          "temperature_C": 671,
+          "solar_W_per_m2": 1,
+          "wind_m_per_s": 682
+        }
+      },
+      "external_evaluation": {
+        "rows": 8784,
+        "joint_complete_rows": 7195,
+        "complete_adjacent_pairs": 7029,
+        "excluded_pairs": 1755,
+        "negative_temperature_responses_in_pairs": 836,
+        "missing_by_variable": {
+          "precipitation_mm_per_h": 743,
+          "temperature_C": 187,
+          "solar_W_per_m2": 0,
+          "wind_m_per_s": 1058
+        }
+      }
+    }
+  },
+  "supplementary_comparisons": {
+    "mimo_rain_history": {
+      "source_record": "C/results/mimo_rain_history/run_status.json",
+      "source_record_sha256": "1c6e3a2ed9db8bc02130a1b20b4c59926aad1b5618206bf756f279356ca5e378",
+      "status": "completed",
+      "sample_counts": [
+        {
+          "period": "fit_2019_2022",
+          "hourly_rows": 35064,
+          "one_hour_eligible": 33784,
+          "common_eligible": 33412,
+          "missing_older_rain_history": 371,
+          "invalid_native_rain_support": 0,
+          "nonconsecutive_native_rain_intervals": 1,
+          "invalid_target_rain_support": 0
+        },
+        {
+          "period": "validation_2023",
+          "hourly_rows": 8760,
+          "one_hour_eligible": 8140,
+          "common_eligible": 8078,
+          "missing_older_rain_history": 62,
+          "invalid_native_rain_support": 0,
+          "nonconsecutive_native_rain_intervals": 0,
+          "invalid_target_rain_support": 0
+        },
+        {
+          "period": "external_2024",
+          "hourly_rows": 8784,
+          "one_hour_eligible": 7029,
+          "common_eligible": 6951,
+          "missing_older_rain_history": 78,
+          "invalid_native_rain_support": 0,
+          "nonconsecutive_native_rain_intervals": 0,
+          "invalid_target_rain_support": 0
+        }
+      ],
+      "source_sha256": "c63760cce03006ac1e8df16cbd617e36b22643a470c314697bd33642c61f638d",
+      "saved_predictions_reproduced_exactly": true,
+      "fit_target_reference_years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "validation_target_reference_years": [
+        2023
+      ],
+      "external_target_reference_years": [
+        2024
+      ],
+      "selection": {
+        "frozen_utc": "2026-10-29T04:19:47.420464+00:00",
+        "selected": "one_hour",
+        "criterion": "Smaller 2023 rainfall RMSE; ties choose one_hour. Other metrics are reported, not used to tune."
+      },
+      "executions": {
+        "one_hour": {
+          "status": "completed",
+          "arguments": {
+            "max_order": 1,
+            "pTrain": 70,
+            "L1_pnlty": 1.0,
+            "basis_fctn": "P"
+          },
+          "supplied_samples": 33412,
+          "retained_samples": 33412,
+          "removed_samples": 0,
+          "internal_training_samples": 23388,
+          "internal_testing_samples": 10024,
+          "exact_internal_split_verified": true,
+          "termination": "Official function returned finite arrays; no convergence flag is exposed.",
+          "regularization": "Initial positive L1=1.0; official routine adapts the penalty internally."
+        },
+        "three_hour": {
+          "status": "completed",
+          "arguments": {
+            "max_order": 1,
+            "pTrain": 70,
+            "L1_pnlty": 1.0,
+            "basis_fctn": "P"
+          },
+          "supplied_samples": 33412,
+          "retained_samples": 33412,
+          "removed_samples": 0,
+          "internal_training_samples": 23388,
+          "internal_testing_samples": 10024,
+          "exact_internal_split_verified": true,
+          "termination": "Official function returned finite arrays; no convergence flag is exposed.",
+          "regularization": "Initial positive L1=1.0; official routine adapts the penalty internally."
+        }
+      },
+      "numerical_diagnostics": "independent stationarity not assessed"
+    },
+    "mimo_rain_square": {
+      "source_record": "C/results/mimo_rain_square/run_status.json",
+      "source_record_sha256": "912900e74c0d3d5e165630ee4accb4b5a9aa4567f205f97bd7ac3182457884da",
+      "status": "completed",
+      "sample_counts": {
+        "fit_2019_2022": 33412,
+        "validation_2023": 8078,
+        "external_2024": 6951
+      },
+      "reference_and_persistence_replayed_identically": true,
+      "fit_target_reference_years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "validation_target_reference_years": [
+        2023
+      ],
+      "external_target_reference_years": [
+        2024
+      ],
+      "selection": {
+        "frozen_utc": "2026-10-29T04:40:44.600200+00:00",
+        "selected": "rain_square",
+        "criterion": "2023 rainfall RMSE only; ties keep one_hour."
+      },
+      "executions": {
+        "rain_square": {
+          "status": "completed",
+          "arguments": {
+            "max_order": 1,
+            "pTrain": 70,
+            "L1_pnlty": 1.0,
+            "basis_fctn": "P"
+          },
+          "supplied_samples": 33412,
+          "retained_samples": 33412,
+          "removed_samples": 0,
+          "internal_training_samples": 23388,
+          "internal_testing_samples": 10024,
+          "termination": "Function returned finite arrays; official mimo_srs exposes no convergence flag.",
+          "regularization": "Initial L1 penalty 1.0; official adaptive penalty behavior unchanged."
+        }
+      },
+      "numerical_diagnostics": "not assessed in the original experiment; squared-feature diagnostics are available through its verified exact replay in the penalty comparison"
+    },
+    "mimo_rain_penalty": {
+      "source_record": "C/results/mimo_rain_penalty/run_status.json",
+      "source_record_sha256": "199c91b12a18c3b648906598eb9df470a47ab88ae51c14530fa1d50715b97961",
+      "status": "completed",
+      "sample_counts": {
+        "fit_2019_2022": 33412,
+        "validation_2023": 8078,
+        "external_2024": 6951
+      },
+      "original_square_model_replayed_exactly": true,
+      "saved_predictions_replayed_exactly": true,
+      "fit_target_reference_years": [
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "validation_target_reference_years": [
+        2023
+      ],
+      "external_target_reference_years": [
+        2024
+      ],
+      "selection": {
+        "frozen_utc": "2026-10-30T01:30:28.833109+00:00",
+        "criterion": "2023 rainfall RMSE among cases passing the predeclared rain KKT diagnostic; ties keep larger initial penalty.",
+        "selected_after_numerical_screen": "l1_0p1",
+        "numerical_rule": "Maximum stationarity residual <= 1e-06 for SSE + alpha*L1 at the last accepted-step alpha, all scaled coefficients including intercept.",
+        "caveat": "Diagnostic added here, not a convergence certificate from official mimo_srs; all raw outputs remain reported."
+      },
+      "executions": {
+        "l1_1": {
+          "status": "completed",
+          "arguments": {
+            "max_order": 1,
+            "pTrain": 70,
+            "L1_pnlty": 1.0,
+            "basis_fctn": "P",
+            "seed": 6902026,
+            "external_bound": 0.9,
+            "smoke_samples": 512,
+            "timezone": "America/Chicago",
+            "data_alignment": "approved_fit_only_causal_hour_end"
+          },
+          "supplied_samples": 33412,
+          "retained_samples": 33412
+        },
+        "l1_0p1": {
+          "status": "completed",
+          "arguments": {
+            "max_order": 1,
+            "pTrain": 70,
+            "L1_pnlty": 0.1,
+            "basis_fctn": "P",
+            "seed": 6902026,
+            "external_bound": 0.9,
+            "smoke_samples": 512,
+            "timezone": "America/Chicago",
+            "data_alignment": "approved_fit_only_causal_hour_end"
+          },
+          "supplied_samples": 33412,
+          "retained_samples": 33412
+        },
+        "l1_0p01": {
+          "status": "completed",
+          "arguments": {
+            "max_order": 1,
+            "pTrain": 70,
+            "L1_pnlty": 0.01,
+            "basis_fctn": "P",
+            "seed": 6902026,
+            "external_bound": 0.9,
+            "smoke_samples": 512,
+            "timezone": "America/Chicago",
+            "data_alignment": "approved_fit_only_causal_hour_end"
+          },
+          "supplied_samples": 33412,
+          "retained_samples": 33412
+        }
+      },
+      "numerical_diagnostics": "C/tables/mimo_rain_penalty/solver_diagnostics.csv; output-specific checks, not an official convergence flag"
+    }
+  }
+}
