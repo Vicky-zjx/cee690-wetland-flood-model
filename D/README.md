@@ -2,7 +2,7 @@
 
 [Project overview](../README.md)
 
-**Status:** the analyses below are completed. The final HW D.2 submission report has not been written. These are conditional experiments for a hypothetical installation, not calibrated flood probabilities or local engineering certification.
+**Status:** the implemented D.2 studies and their consolidation audit are complete. The final HW D.2 submission report has not been written. The [current audit and study ledger](d2_analysis/consolidation/README.md), [master figure/table index](d2_analysis/consolidation/FIGURE_TABLE_INDEX.md), and [professor-method requirements review](d2_analysis/consolidation/methodology_audit.md) distinguish completed work from remaining final-project requirements. These are conditional experiments for a hypothetical installation, not calibrated flood probabilities or local engineering certification.
 
 The eight-state wetland and six-state no-wetland models use matched inputs and the accepted Stage D feedback policy. Original A/B/C equations and results remain preserved.
 
@@ -10,11 +10,15 @@ The eight-state wetland and six-state no-wetland models use matched inputs and t
 |---|---|---|
 | Physical parameter uncertainty | 27 deterministic sensitivity cases and 64 paired exploratory Monte Carlo samples under the September 2022 reference storm | [Methods, results and reproduction](d2_analysis/parameter_uncertainty/README.md) |
 | Historical-storm robustness | Five distinct 144-hour windows, reusing the same 64 parameter vectors; 320 retained paired outcomes, including the benchmark once | [Technical findings](d2_analysis/historical_storm_robustness/FINDINGS.md) |
+| Saved-result robustness checks | Initial-time zero peaks, storage accounting, tied ECDFs, sample-size sensitivity and exploratory reweighting; no new ODE runs | [Technical findings](d2_analysis/robustness_checks/FINDINGS.md) |
+| Antecedent conditions | 12 pairs under 24/72 h historical prefixes; all state and controller memory carried into the original event, plus one numerical refinement pair | [Technical findings](d2_analysis/antecedent_conditions/FINDINGS.md) |
 | Earlier weather pilot and response metrics | Original nonfreezing weather scenarios, initial-peak diagnostics and numerical refinement | [D.2 validation](d2_analysis/README.md) |
 | Feedback controller | Accepted level-based policy, actuator limits, hydraulic/safety checks and paired pilot | [Policy and validation](feedback_control/README.md) |
 | Hydraulic development history | Original G5 diagnosis, energy/geometry audit, and separate Stage D hydraulic candidate | [G5](g5_diagnostics/README.md), [feasibility](low_head_feasibility/README.md), [hydraulic variant](gate_hydraulics_revision/README.md) |
 
-Historical-event peak reductions are nonnegative in the tested draws, but their magnitudes vary and some full-window differences are zero because both peaks occur at the initial condition. Duration and cumulative outlet-volume contrasts can have the opposite sign. All initial peaks and outcome categories remain in the published tables. The exploratory parameter law and selected windows do not establish weather occurrence probabilities.
+The 320 historical pairs already include the original 64-pair September benchmark; these are not 384 independent outcomes. Repeated resolutions, waveform checks and reweighting do not increase the ensemble size. Older study notes retain their experiment-time status language; the consolidation ledger records what was subsequently completed.
+
+Historical-event peak reductions are nonnegative in the tested draws, but their magnitudes vary and some full-window differences are zero because both peaks occur at the initial condition. Duration and cumulative outlet-volume contrasts can have the opposite sign. All initial peaks and outcome categories remain in the published tables. The exploratory parameter law and selected windows do not establish weather occurrence probabilities. In the antecedent study, all 12 original-event windows have positive peak attenuation, while four complete prefix-plus-event horizons remain zero. Its event and full-period outlet-volume contrasts have opposite signs; the initial additional 5,500 m³ is retained and accounted for.
 
 ![Separate historical-event peak distributions](d2_analysis/historical_storm_robustness/plots/02_per_event_peak_distributions.png)
 

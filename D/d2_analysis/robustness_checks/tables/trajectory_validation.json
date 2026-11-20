@@ -1,0 +1,272 @@
+{
+  "status": "saved_result_checks_passed",
+  "no_ODE_executed": true,
+  "summary_pairs_checked": 320,
+  "primary_peak_summary_rows": 10,
+  "full_array_pairs_checked": 258,
+  "exact_zero_primary_pairs": 87,
+  "all_zero_iff_both_initial": true,
+  "zero_pair_array_coverage_complete": true,
+  "zero_pairs_with_nonidentical_hydrographs": 87,
+  "summary_source": "D/d2_analysis/historical_storm_robustness/tables/all_event_paired_metrics.csv",
+  "summary_sha256": "a3416586127dcac698e8aab79dbf2b3fdc6bf455f48982fe5a0c32bac0c0cb65",
+  "manifest_sha256": "66371c784b4a2f9f7ea1c23f142bd7626e505c3558b5b86b4d4b1009631d2115",
+  "analysis_script_sha256": "fee7d4eeb232ae5af893385643808f9dede63a98cbfc8395f2d4a4b31ee1ae1e",
+  "primary_definition": "max over saved0..144h including initial; difference no_wetland minus wetland; zero exact saved floating value0",
+  "secondary_definition": "max after largest quantified wet-spell start through144h; separate descriptive metric, never replaces primary",
+  "missing_waveform_pairs": [
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00002"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00003"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00004"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00005"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00006"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00007"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00008"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00009"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00010"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00011"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00012"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00013"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00014"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00015"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00016"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00017"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00018"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00019"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00020"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00021"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00022"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00023"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00024"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00025"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00026"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00027"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00028"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00029"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00030"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00031"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00032"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00033"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00034"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00035"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00036"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00037"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00038"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00039"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00040"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00041"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00042"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00043"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00044"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00045"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00046"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00047"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00048"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00049"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00050"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00051"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00052"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00053"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00054"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00055"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00056"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00057"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00058"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00059"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00060"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00061"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00062"
+    },
+    {
+      "event_id": "benchmark_september_2022",
+      "sample_id": "mc_00063"
+    }
+  ],
+  "source_peak_comparison_tolerance_m": 1e-12,
+  "waveform_different_reporting_tolerance_m": 1e-09,
+  "actual_gate_max_difference_from_arrays_m": 5.717648576819556e-15,
+  "saved_gate_history_max_difference_m": 5.728750807065808e-15,
+  "saved_latch_mismatch_count": 0
+}

@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "script": "cross_study_audit.py",
+      "exit_code": 0,
+      "status": "pass",
+      "checks": 3355,
+      "stderr": "",
+      "stdout": null
+    },
+    {
+      "script": "diagnostics_crosscheck.py",
+      "exit_code": 0,
+      "status": "pass",
+      "checks": 9652,
+      "stderr": "",
+      "stdout": null
+    }
+  ],
+  "method": "Isolated git checkout-index snapshot; only tracked/staged files present; same existing installed Python dependencies; no solver checkout, private Downloads documents or excluded dense ensembles",
+  "indexed_files": 2511,
+  "full_local_trajectory_audit_tested": false,
+  "fresh_dependency_install_tested": false,
+  "ODE_integrations": 0,
+  "clone_style_summary_audit_supported": true
+}

@@ -1,0 +1,297 @@
+{
+  "status": "pass",
+  "audit_utc": "2026-11-20T05:19:19.413859+00:00",
+  "scope": "Saved JSON/CSV recomputation only. No ODE, fitting, sampling, Git or previous result writes. Dense-array validation is separately recorded in existing independent audits.",
+  "checks_total": 3355,
+  "checks_by_group": {
+    "weather": 6,
+    "weather_summary": 90,
+    "parameter_lineage": 507,
+    "priors": 2,
+    "pair_accounting": 35,
+    "no_flood_threshold": 14,
+    "rating": 35,
+    "paired_sign": 21,
+    "parameter_summaries": 270,
+    "numerical_evidence": 1,
+    "reuse": 2,
+    "historical": 5,
+    "historical_summaries": 990,
+    "zero_atoms": 11,
+    "recorded_array_audits": 2,
+    "ecdf": 90,
+    "storage": 9,
+    "storage_summary": 20,
+    "weights": 727,
+    "antecedent": 4,
+    "antecedent_paired": 240,
+    "antecedent_mass": 48,
+    "antecedent_rating": 48,
+    "window_duration": 72,
+    "window_accounting": 72,
+    "antecedent_summary": 32,
+    "ledger": 1,
+    "preservation": 1
+  },
+  "failures": [],
+  "new_ODE_runs": 0,
+  "new_parameter_draws": 0,
+  "unique_reviewed_primary_configurations": 375,
+  "distinct_grid_or_MC_parameter_vectors": 91,
+  "iid_parameter_draws": 64,
+  "weather_pilot": {
+    "planned": 20,
+    "valid_pairs": 16,
+    "cold_excluded": 4,
+    "both_initial_peaks": 15,
+    "maximum_peak_reduction_m": 0.11032859290585861
+  },
+  "parameter_study": {
+    "sensitivity": {
+      "pairs": 27,
+      "positive": 27,
+      "zero": 0,
+      "negative": 0,
+      "mean_peak_reduction_m": 0.09103339846459985,
+      "median_peak_reduction_m": 0.08035742946387359,
+      "minimum_peak_reduction_m": 0.015462719030423955,
+      "maximum_peak_reduction_m": 0.1716600089176552,
+      "mean_outlet_volume_difference_m3": 1463.3656412838204,
+      "longer_wetland_initial_reference_duration": 13,
+      "reused_ids": [
+        "grid_000",
+        "grid_013",
+        "grid_026"
+      ]
+    },
+    "monte_carlo": {
+      "pairs": 64,
+      "positive": 64,
+      "zero": 0,
+      "negative": 0,
+      "mean_peak_reduction_m": 0.09157348323679493,
+      "median_peak_reduction_m": 0.09405493099082207,
+      "minimum_peak_reduction_m": 0.03428446463773582,
+      "maximum_peak_reduction_m": 0.15921765405772703,
+      "mean_outlet_volume_difference_m3": 1490.668724585412,
+      "longer_wetland_initial_reference_duration": 27,
+      "reused_ids": [
+        "mc_00000",
+        "mc_00001"
+      ]
+    }
+  },
+  "historical_storms": {
+    "benchmark_september_2022": {
+      "pairs": 64,
+      "positive": 64,
+      "zero": 0,
+      "negative": 0,
+      "mean_peak_reduction_m": 0.09157348323679493,
+      "median_peak_reduction_m": 0.09405493099082207,
+      "minimum_peak_reduction_m": 0.03428446463773582,
+      "maximum_peak_reduction_m": 0.15921765405772703,
+      "mean_outlet_volume_difference_m3": 1490.668724585412,
+      "longer_wetland_initial_reference_duration": 27
+    },
+    "historical_20230813T0800Z": {
+      "pairs": 64,
+      "positive": 55,
+      "zero": 9,
+      "negative": 0,
+      "mean_peak_reduction_m": 0.09104476607585754,
+      "median_peak_reduction_m": 0.08685929416242999,
+      "minimum_peak_reduction_m": 0.0,
+      "maximum_peak_reduction_m": 0.21383684976616735,
+      "mean_outlet_volume_difference_m3": -523.7069473484862,
+      "longer_wetland_initial_reference_duration": 8
+    },
+    "historical_20220704T2100Z": {
+      "pairs": 64,
+      "positive": 53,
+      "zero": 11,
+      "negative": 0,
+      "mean_peak_reduction_m": 0.07381376736701828,
+      "median_peak_reduction_m": 0.06959809363340241,
+      "minimum_peak_reduction_m": 0.0,
+      "maximum_peak_reduction_m": 0.17646112382574586,
+      "mean_outlet_volume_difference_m3": -668.1207354117314,
+      "longer_wetland_initial_reference_duration": 4
+    },
+    "historical_20190825T0200Z": {
+      "pairs": 64,
+      "positive": 27,
+      "zero": 37,
+      "negative": 0,
+      "mean_peak_reduction_m": 0.026178374669468374,
+      "median_peak_reduction_m": 0.0,
+      "minimum_peak_reduction_m": 0.0,
+      "maximum_peak_reduction_m": 0.12152534848338803,
+      "mean_outlet_volume_difference_m3": -908.9537021176968,
+      "longer_wetland_initial_reference_duration": 1
+    },
+    "historical_20240804T1500Z": {
+      "pairs": 64,
+      "positive": 34,
+      "zero": 30,
+      "negative": 0,
+      "mean_peak_reduction_m": 0.041003206981566453,
+      "median_peak_reduction_m": 0.007341058205433626,
+      "minimum_peak_reduction_m": 0.0,
+      "maximum_peak_reduction_m": 0.1647441767664759,
+      "mean_outlet_volume_difference_m3": -741.3955874569934,
+      "longer_wetland_initial_reference_duration": 1
+    }
+  },
+  "ecdf": {
+    "rows_recomputed": 42030,
+    "max_CP95_endpoint_error": 0,
+    "scope": "Pointwise fixed-grid intervals under the declared iid parameter priors"
+  },
+  "storage": {
+    "endpoint_pairs": 320,
+    "full_waveform_pairs": 258,
+    "initial_extra_wetland_water_m3": 5500,
+    "maximum_recomputed_identity_error_m3": 1.2369127944111824e-10,
+    "event_means": [
+      {
+        "event_id": "benchmark_september_2022",
+        "mean_final_stock_term_m3": 6218.455773209524,
+        "mean_nonoutlet_external_term_m3": 772.2124559297788,
+        "mean_delta_outlet_no_minus_wet_m3": 1490.668724585412,
+        "mean_final_groundwater_stock_difference_m3": 6167.153210812784,
+        "mean_wetland_compartments_final_m3": 13.194430324400244
+      },
+      {
+        "event_id": "historical_20230813T0800Z",
+        "mean_final_stock_term_m3": 4218.184894649053,
+        "mean_nonoutlet_external_term_m3": 758.1076578265356,
+        "mean_delta_outlet_no_minus_wet_m3": -523.7069473484862,
+        "mean_final_groundwater_stock_difference_m3": 4192.216358628241,
+        "mean_wetland_compartments_final_m3": 0.0010517360268956209
+      },
+      {
+        "event_id": "historical_20220704T2100Z",
+        "mean_final_stock_term_m3": 4047.400192331176,
+        "mean_nonoutlet_external_term_m3": 784.4785729284424,
+        "mean_delta_outlet_no_minus_wet_m3": -668.1207354117314,
+        "mean_final_groundwater_stock_difference_m3": 4022.470819607678,
+        "mean_wetland_compartments_final_m3": 1.8981298191142487e-05
+      },
+      {
+        "event_id": "historical_20190825T0200Z",
+        "mean_final_stock_term_m3": 3889.919413342868,
+        "mean_nonoutlet_external_term_m3": 701.1263853220896,
+        "mean_delta_outlet_no_minus_wet_m3": -908.9537021176968,
+        "mean_final_groundwater_stock_difference_m3": 3865.9465252203217,
+        "mean_wetland_compartments_final_m3": 3.6489695905201936e-05
+      },
+      {
+        "event_id": "historical_20240804T1500Z",
+        "mean_final_stock_term_m3": 3980.675641631894,
+        "mean_nonoutlet_external_term_m3": 777.9282705573283,
+        "mean_delta_outlet_no_minus_wet_m3": -741.3955874569934,
+        "mean_final_groundwater_stock_difference_m3": 3956.160649353521,
+        "mean_wetland_compartments_final_m3": 0.0001858372168216101
+      }
+    ]
+  },
+  "importance_reweighting": {
+    "new_draws": 0,
+    "uniform_weight_ESS": 43.993499284037846,
+    "maximum_uniform_weight": 0.049785109632902856
+  },
+  "antecedent": {
+    "primary_pairs": 12,
+    "baseline_pairs_reused": 6,
+    "refinement_pairs": 1,
+    "model_executions": 26,
+    "event_window_summaries": [
+      {
+        "event_id": "historical_20190825T0200Z",
+        "antecedent_hours": 24,
+        "scope": "event_window",
+        "selected_configurations": 3,
+        "probability_interpretation": false,
+        "valid_pairs": 3,
+        "positive_peak_contrasts": 3,
+        "zero_peak_contrasts": 0,
+        "negative_peak_contrasts": 0,
+        "minimum_peak_reduction_mm": 31.888943778938028,
+        "mean_peak_reduction_mm": 71.9695417831853,
+        "maximum_peak_reduction_mm": 102.71490116187465,
+        "mean_outlet_difference_m3": 2202.0513426689345
+      },
+      {
+        "event_id": "historical_20190825T0200Z",
+        "antecedent_hours": 72,
+        "scope": "event_window",
+        "selected_configurations": 3,
+        "probability_interpretation": false,
+        "valid_pairs": 3,
+        "positive_peak_contrasts": 3,
+        "zero_peak_contrasts": 0,
+        "negative_peak_contrasts": 0,
+        "minimum_peak_reduction_mm": 31.905408840543714,
+        "mean_peak_reduction_mm": 69.82667746757916,
+        "maximum_peak_reduction_mm": 98.18348019354062,
+        "mean_outlet_difference_m3": 2189.6813775077376
+      },
+      {
+        "event_id": "historical_20240804T1500Z",
+        "antecedent_hours": 24,
+        "scope": "event_window",
+        "selected_configurations": 3,
+        "probability_interpretation": false,
+        "valid_pairs": 3,
+        "positive_peak_contrasts": 3,
+        "zero_peak_contrasts": 0,
+        "negative_peak_contrasts": 0,
+        "minimum_peak_reduction_mm": 40.968235346355186,
+        "mean_peak_reduction_mm": 92.76314135829011,
+        "maximum_peak_reduction_mm": 132.91654563361988,
+        "mean_outlet_difference_m3": 2261.3029877618123
+      },
+      {
+        "event_id": "historical_20240804T1500Z",
+        "antecedent_hours": 72,
+        "scope": "event_window",
+        "selected_configurations": 3,
+        "probability_interpretation": false,
+        "valid_pairs": 3,
+        "positive_peak_contrasts": 3,
+        "zero_peak_contrasts": 0,
+        "negative_peak_contrasts": 0,
+        "minimum_peak_reduction_mm": 40.40378970606184,
+        "mean_peak_reduction_mm": 90.28456956620327,
+        "maximum_peak_reduction_mm": 128.55112264257684,
+        "mean_outlet_difference_m3": 1993.4083196703893
+      }
+    ],
+    "minimum_safety_margin_m": 0.592090761467233,
+    "max_phase_relative_balance": 3.3881302199921126e-07,
+    "state_seam_error_m3": 0.0
+  },
+  "input_files": 32,
+  "input_collection_sha256": "4b2f17f3e2945f63886b2357440f26e9674ceb5485d242a311e4da09428b3d30",
+  "changed_inputs": [],
+  "script_sha256": "81dd42f014144301702ae1aa07a5e0746fd467a055692ffacfedf87cd204ebff",
+  "key_plan_sha256": {
+    "D/d2_analysis/parameter_uncertainty/results/study_plan.json": "bfd1b8dcf4ef75d6cbd35e8d8c3ba4814bc3ef17679a730ff20d6cb83170c4ea",
+    "D/d2_analysis/historical_storm_robustness/study_plan.json": "580cf84f31bbc312280b87b37066656afe0f56c5880d501dc8b02c0a5ae7370e",
+    "D/d2_analysis/antecedent_conditions/study_plan.json": "36e6237aab2b6dcc2843f0df1e0a6290a5de0d38ddd7fcaf393b218200c03e7a"
+  },
+  "limitations": [
+    "375 is not a pooled iid sample count or all historical CPU executions.",
+    "No accepted downstream flood threshold; initial-reference duration/excess is not flood risk.",
+    "64 parameter draws and 27 grid points use explicit hypothetical assumptions, not calibrated empirical distributions.",
+    "Five fixed storms are matched repeated evaluations, not 320 independent storms or parameter draws.",
+    "Initial wetland model water exceeds no-wetland by 5500 m3; accounting is not causal water tracing.",
+    "62 benchmark full waveforms are unavailable; all 64 benchmark endpoint records exist.",
+    "Numerical evidence applies to tested points/resolutions only; no universal convergence or real-system certification.",
+    "Accepted trajectories exercise energy-gate/closed regimes, not unused transition or frozen-weather physics.",
+    "Benchmark and added-event forcing preparation differ as documented.",
+    "Importance ESS is not an iid sample count or a binomial interval denominator.",
+    "Full-prefix and event-window metrics address different questions; event-start states/controllers are carried, not reset."
+  ]
+}

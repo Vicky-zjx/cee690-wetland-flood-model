@@ -1,0 +1,5 @@
+law,n_original_draws,weight_ess_diagnostic,ess_fraction,maximum_normalized_weight,minimum_normalized_weight,mean_raw_density_ratio,sum_normalized_weights,target_rho_latent_Ku_routing,calibrated_distribution,weighted_confidence_bands_computed
+baseline_loguniform,64,64.0,1.0,0.015625,0.015625,1.0,1.0,0.0,False,False
+uniform_multipliers,64,43.99349928403785,0.6873984263130914,0.04978510963290285,0.0023019949155366993,0.9642978965462384,1.0,0.0,False,False
+copula_negative,64,57.71958943278043,0.9018685848871942,0.04477786149254929,0.007601078403796593,1.0609962807055369,1.0,-0.25,False,False
+copula_positive,64,60.409930665371,0.9439051666464219,0.025699315904229483,0.0027405134483512827,0.9520293653750809,1.0,0.25,False,False

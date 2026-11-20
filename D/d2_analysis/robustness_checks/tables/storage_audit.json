@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "physical_model_runs": 0,
+  "new_initial_condition_experiments": 0,
+  "planned_pairs": 320,
+  "endpoint_pairs": 320,
+  "full_trajectory_pairs": 258,
+  "benchmark_endpoint_pairs": 64,
+  "benchmark_full_trajectory_pairs": 2,
+  "unavailable_endpoint_cases": [],
+  "maximum_endpoint_identity_error_m3": 1.1641532182693481e-10,
+  "maximum_saved_outlet_integral_difference_m3": 0.0,
+  "maximum_npz_block_net_difference_m3": 1.1641532182693481e-10,
+  "maximum_paired_decomposition_error_m3": 1.2369127944111824e-10,
+  "maximum_absolute_residual_term_m3": 0.0009590097652107943,
+  "additional_initial_wetland_water_m3": 5500.0,
+  "sign": "All delta terms mean no-wetland minus wetland, except final_stock_term=wetland final minus no-wetland final",
+  "identity": "Delta V_out = Delta S_initial - Delta S_final + Delta N + Delta residual; N=external_net+V_out",
+  "balance_definition": "residual = S_final - S_initial - external_net",
+  "no_internal_transfer_sum": true,
+  "no_water_tagging": true,
+  "no_ET_specific_attribution": true,
+  "benchmark_endpoint_note": "All 64 benchmark endpoint pairs are directly recorded in complete diagnostic JSONs, although the previous summary CSV omitted final-storage columns.",
+  "temporal_scope_note": "Timing and post-rain integrals use 256 new-event pairs plus benchmark mc_00000/mc_00001 only; no unsupported benchmark trajectories are reconstructed.",
+  "data_sources": [
+    {
+      "event_id": "benchmark_september_2022",
+      "paired_results": "D/d2_analysis/historical_storm_robustness/results/ensemble/benchmark_september_2022/paired_results.csv",
+      "paired_results_sha256": "ae5e8ea7c80a26f29dbc59bf85d2967983cc0d6c8f1593d41e5db4f24cbe42e7",
+      "forcing_sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394",
+      "last_rain_interval_end_h": 107.86666666666666
+    },
+    {
+      "event_id": "historical_20230813T0800Z",
+      "paired_results": "D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20230813T0800Z/paired_results.csv",
+      "paired_results_sha256": "91616dce3c5761d281c5db377ef75968fe1e29dc5308130cba3124872182e6f2",
+      "forcing_sha256": "39bd50a6ba448684a162d0d87a482c897352d188335daec4b069fc36d050ff8c",
+      "last_rain_interval_end_h": 100.0
+    },
+    {
+      "event_id": "historical_20220704T2100Z",
+      "paired_results": "D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20220704T2100Z/paired_results.csv",
+      "paired_results_sha256": "d33efd513b69879f6b551fa210dafc0a91a5a2783f395c56fb2a8aa25899178e",
+      "forcing_sha256": "5fe60cc023ceb3dd4c436d23627e6aa06da67d05485c622076f61a07fc3fdd7f",
+      "last_rain_interval_end_h": 93.0
+    },
+    {
+      "event_id": "historical_20190825T0200Z",
+      "paired_results": "D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20190825T0200Z/paired_results.csv",
+      "paired_results_sha256": "d058ba5a7fcd02c698af69410754bfe95dcc7b91bfe56e33f4f7d8a9d73fa380",
+      "forcing_sha256": "85f44c26651e2164f310702c42abce14701f147f15822a1de8647299b5352737",
+      "last_rain_interval_end_h": 74.0
+    },
+    {
+      "event_id": "historical_20240804T1500Z",
+      "paired_results": "D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20240804T1500Z/paired_results.csv",
+      "paired_results_sha256": "3ee292bb54aeed350c56611f8cdc7daa780063616fbbaed922ad40f75e4f3635",
+      "forcing_sha256": "da6068843c31b892823353bb81c43cf0c28ab17df77f3f3ad52046eb0c5be586",
+      "last_rain_interval_end_h": 48.0
+    }
+  ],
+  "antecedent_window_audit_sha256": "6229f3ea4cb53c8adec3981a0b5f3bf5cc2bb7c18a5f2f5dfee7e390a9eb98a6",
+  "antecedent_continuous_coverage_sha256": "4dbaf7409f761dd2b4677717f874d4d55af03d18c134bfc718910b892ec9770a",
+  "study_plan_sha256": "580cf84f31bbc312280b87b37066656afe0f56c5880d501dc8b02c0a5ae7370e",
+  "analysis_source_sha256": "4bd4058fa872b08187a352657b7514beab41c98187effb12a07f31707795a264"
+}

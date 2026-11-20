@@ -1,0 +1,12 @@
+{
+  "baseline_loguniform": "q(m)=product[1/(m_j*ln(4))], 0.5<=m_j<=2; independent; all 64 weights equal",
+  "uniform_multipliers": "p(m)=1/(1.5^3) on the same cube; p/q=product[m_j*ln(4)/1.5]",
+  "copula_negative": "Same log-uniform marginals; u=ln(m/0.5)/ln(4), z=Phi^-1(u); R12=R21=-0.25, other off-diagonals zero",
+  "copula_positive": "Same log-uniform marginals; u=ln(m/0.5)/ln(4), z=Phi^-1(u); R12=R21=+0.25, other off-diagonals zero",
+  "copula_ratio": "p/q=det(R)^(-1/2)*exp[-z^T(R^-1-I)z/2]",
+  "estimate": "sum_i normalized_weight_i * saved_output_i; normalized_weight=(p/q)/sum(p/q)",
+  "why_dependence": "Infiltration and routing share the upland compartment. Neither sign nor magnitude is established; symmetric modest latent correlations are descriptive assumptions, not measured physical dependence.",
+  "scope": "No samples created, no ODE run, no distribution fitted. Common routing multiplier remains one category; no extra independent rates.",
+  "ess": "1/sum(normalized_weight^2), a weight-concentration diagnostic only. Does not replace n for binomial intervals or certify tail coverage.",
+  "quantile": "Inverse weighted empirical CDF; differs from numpy's interpolated sample median at an even sample size."
+}

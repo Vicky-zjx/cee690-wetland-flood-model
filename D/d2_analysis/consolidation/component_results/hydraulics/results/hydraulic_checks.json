@@ -1,0 +1,524 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "original endpoint discrepancy independently recomputed",
+      "passed": true,
+      "old_coefficient_SI": 2.1257714646687678,
+      "ideal_coefficient_SI": 1.7046037880029699,
+      "excess_percent": 24.707658144959144,
+      "energy_head": "pool WSE minus sill"
+    },
+    {
+      "check": "2.6: SI conversion and nonnegative loss",
+      "passed": true,
+      "Cw_SI": 1.4354260691515952,
+      "loss": 0.3642092556531271,
+      "critical_depth_head_ratio": 0.5944933409356905
+    },
+    {
+      "check": "2.6: critical-flow derivation",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: closed",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: dry",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: below_sill",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: equal",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: adverse",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: energy bound/nonnegative",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: opening monotonicity",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: continuity at 1.0",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: continuity at 1.25",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: continuity at 1.5",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: head monotonicity",
+      "passed": true,
+      "minimum_discharge_increment_m3s": 1.6001130671933206e-05
+    },
+    {
+      "check": "2.6/1.0: dimensional similarity",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: explicit shallow rejection",
+      "passed": true
+    },
+    {
+      "check": "2.6/1.0: explicit drowned rejection",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: closed",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: dry",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: below_sill",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: equal",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: adverse",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: energy bound/nonnegative",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: opening monotonicity",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: continuity at 1.0",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: continuity at 1.25",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: continuity at 1.5",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: head monotonicity",
+      "passed": true,
+      "minimum_discharge_increment_m3s": 1.280090453754934e-05
+    },
+    {
+      "check": "2.6/0.8: dimensional similarity",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: explicit shallow rejection",
+      "passed": true
+    },
+    {
+      "check": "2.6/0.8: explicit drowned rejection",
+      "passed": true
+    },
+    {
+      "check": "2.8: SI conversion and nonnegative loss",
+      "passed": true,
+      "Cw_SI": 1.545843459086333,
+      "loss": 0.20203847305437472,
+      "critical_depth_head_ratio": 0.6246021141939094
+    },
+    {
+      "check": "2.8: critical-flow derivation",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: closed",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: dry",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: below_sill",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: equal",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: adverse",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: energy bound/nonnegative",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: opening monotonicity",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: continuity at 1.0",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: continuity at 1.25",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: continuity at 1.5",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: head monotonicity",
+      "passed": true,
+      "minimum_discharge_increment_m3s": 1.7046372860068937e-05
+    },
+    {
+      "check": "2.8/1.0: dimensional similarity",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: explicit shallow rejection",
+      "passed": true
+    },
+    {
+      "check": "2.8/1.0: explicit drowned rejection",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: closed",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: dry",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: below_sill",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: equal",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: adverse",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: energy bound/nonnegative",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: opening monotonicity",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: continuity at 1.0",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: continuity at 1.25",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: continuity at 1.5",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: head monotonicity",
+      "passed": true,
+      "minimum_discharge_increment_m3s": 1.363709828805515e-05
+    },
+    {
+      "check": "2.8/0.8: dimensional similarity",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: explicit shallow rejection",
+      "passed": true
+    },
+    {
+      "check": "2.8/0.8: explicit drowned rejection",
+      "passed": true
+    },
+    {
+      "check": "3.0: SI conversion and nonnegative loss",
+      "passed": true,
+      "Cw_SI": 1.6562608490210713,
+      "loss": 0.05809563939792217,
+      "critical_depth_head_ratio": 0.6540017827544988
+    },
+    {
+      "check": "3.0: critical-flow derivation",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: closed",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: dry",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: below_sill",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: equal",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: adverse",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: energy bound/nonnegative",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: opening monotonicity",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: continuity at 1.0",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: continuity at 1.25",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: continuity at 1.5",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: head monotonicity",
+      "passed": true,
+      "minimum_discharge_increment_m3s": 1.8168902963050515e-05
+    },
+    {
+      "check": "3.0/1.0: dimensional similarity",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: explicit shallow rejection",
+      "passed": true
+    },
+    {
+      "check": "3.0/1.0: explicit drowned rejection",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: closed",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: dry",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: below_sill",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: equal",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: adverse",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: energy bound/nonnegative",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: opening monotonicity",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: continuity at 1.0",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: continuity at 1.25",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: continuity at 1.5",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: head monotonicity",
+      "passed": true,
+      "minimum_discharge_increment_m3s": 1.4535122370401554e-05
+    },
+    {
+      "check": "3.0/0.8: dimensional similarity",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: explicit shallow rejection",
+      "passed": true
+    },
+    {
+      "check": "3.0/0.8: explicit drowned rejection",
+      "passed": true
+    },
+    {
+      "check": "wetland/2.6: every non-gate output unchanged",
+      "passed": true
+    },
+    {
+      "check": "wetland/2.6: only internal gate transfer changes",
+      "passed": true
+    },
+    {
+      "check": "wetland/2.6: full ODE physical mass identity",
+      "passed": true,
+      "residual_m3_s": 1.1102230246251565e-16
+    },
+    {
+      "check": "wetland/2.8: every non-gate output unchanged",
+      "passed": true
+    },
+    {
+      "check": "wetland/2.8: only internal gate transfer changes",
+      "passed": true
+    },
+    {
+      "check": "wetland/2.8: full ODE physical mass identity",
+      "passed": true,
+      "residual_m3_s": 5.551115123125783e-17
+    },
+    {
+      "check": "wetland/3.0: every non-gate output unchanged",
+      "passed": true
+    },
+    {
+      "check": "wetland/3.0: only internal gate transfer changes",
+      "passed": true
+    },
+    {
+      "check": "wetland/3.0: full ODE physical mass identity",
+      "passed": true,
+      "residual_m3_s": 1.1102230246251565e-16
+    },
+    {
+      "check": "wetland: closed-gate regression",
+      "passed": true
+    },
+    {
+      "check": "wetland: low-head full balance r=0.75",
+      "passed": true
+    },
+    {
+      "check": "wetland: low-head full balance r=1.0",
+      "passed": true
+    },
+    {
+      "check": "wetland: low-head full balance r=1.1",
+      "passed": true
+    },
+    {
+      "check": "wetland: low-head full balance r=1.25",
+      "passed": true
+    },
+    {
+      "check": "wetland: low-head full balance r=1.5",
+      "passed": true
+    },
+    {
+      "check": "wetland: low-head full balance r=3.0",
+      "passed": true
+    },
+    {
+      "check": "no_wetland/2.6: every non-gate output unchanged",
+      "passed": true
+    },
+    {
+      "check": "no_wetland/2.6: only internal gate transfer changes",
+      "passed": true
+    },
+    {
+      "check": "no_wetland/2.6: full ODE physical mass identity",
+      "passed": true,
+      "residual_m3_s": -5.551115123125783e-17
+    },
+    {
+      "check": "no_wetland/2.8: every non-gate output unchanged",
+      "passed": true
+    },
+    {
+      "check": "no_wetland/2.8: only internal gate transfer changes",
+      "passed": true
+    },
+    {
+      "check": "no_wetland/2.8: full ODE physical mass identity",
+      "passed": true,
+      "residual_m3_s": 0.0
+    },
+    {
+      "check": "no_wetland/3.0: every non-gate output unchanged",
+      "passed": true
+    },
+    {
+      "check": "no_wetland/3.0: only internal gate transfer changes",
+      "passed": true
+    },
+    {
+      "check": "no_wetland/3.0: full ODE physical mass identity",
+      "passed": true,
+      "residual_m3_s": -5.551115123125783e-17
+    },
+    {
+      "check": "no_wetland: closed-gate regression",
+      "passed": true
+    },
+    {
+      "check": "no_wetland: low-head full balance r=0.75",
+      "passed": true
+    },
+    {
+      "check": "no_wetland: low-head full balance r=1.0",
+      "passed": true
+    },
+    {
+      "check": "no_wetland: low-head full balance r=1.1",
+      "passed": true
+    },
+    {
+      "check": "no_wetland: low-head full balance r=1.25",
+      "passed": true
+    },
+    {
+      "check": "no_wetland: low-head full balance r=1.5",
+      "passed": true
+    },
+    {
+      "check": "no_wetland: low-head full balance r=3.0",
+      "passed": true
+    }
+  ],
+  "check_count": 123,
+  "scope": "Numerical/physical consistency checks, not empirical validation"
+}

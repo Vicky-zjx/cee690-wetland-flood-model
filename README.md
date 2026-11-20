@@ -13,7 +13,7 @@ This page presents the model, data, method and main results. The stage pages con
 | A | Initial eight-state model, algebraic relationships and synthetic baseline | [A — Model, data and baseline](A/README.md) |
 | B | Fixed-gate wetland optimization, no-wetland comparison and design-bound verification | [B — Data, optimization and results](B/README.md) |
 | C | Meteorological fitting; official FIT/mimo_srs one-step response, external 2024 evaluation and figures/tables | [C — Weather fitting and diagnostics](C/README.md) |
-| D | Feedback-controlled parameter uncertainty and historical-storm robustness; completed analyses, final submission report pending | [D](D/README.md) |
+| D | Feedback-controlled uncertainty, historical-storm robustness, initial-storage/ECDF checks and continuous antecedent experiments; audited results, final report pending | [D](D/README.md) |
 
 ## The modeled system
 
@@ -169,7 +169,7 @@ A and B are the physical stage folders, without assignment-number subfolders. Wi
 
 Run commands from the repository root. The [A environment guide](A/README.md#install-and-run) gives the exact dependency revision and installation status. Algebraic A plots require NumPy and Matplotlib; dynamic calculations additionally use the official solver. The existing local environment and official checkout were tested; a fresh installation is not claimed to have been tested.
 
-Stage D's completed [27-case sensitivity and 64-pair parameter study](D/d2_analysis/parameter_uncertainty/README.md) and [five-window historical-storm robustness analysis](D/d2_analysis/historical_storm_robustness/FINDINGS.md) retain the validated Stage D feedback controller. See the [Stage D publication and reproduction guide](D/reproducibility_inputs/README.md) for included summaries, selected trajectory fixtures, external solver setup and remaining workstation-path limitations. Bulk Stage D trajectories remain local; selected results and figures are tracked.
+Stage D's completed [27-case sensitivity and 64-pair parameter study](D/d2_analysis/parameter_uncertainty/README.md) and [five-window historical-storm robustness analysis](D/d2_analysis/historical_storm_robustness/FINDINGS.md) retain the validated Stage D feedback controller. See the [Stage D publication and reproduction guide](D/reproducibility_inputs/README.md) for included summaries, selected trajectory fixtures, external solver setup and remaining workstation-path limitations. Bulk Stage D trajectories remain local; selected results and figures are tracked. The [current D.2 consolidation audit](D/d2_analysis/consolidation/README.md) links the completed robustness/antecedent checks, separates reused ensembles, and records remaining final-project method requirements. The [master figure and table index](D/d2_analysis/consolidation/FIGURE_TABLE_INDEX.md) provides the current submission-writing evidence map.
 
 ```sh
 python -m A.algebraic_plots       # A–G algebraic figures

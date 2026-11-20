@@ -1,0 +1,275 @@
+{
+  "passed": true,
+  "check_count": 46,
+  "checks": [
+    {
+      "check": "Original actual initial opening retained",
+      "passed": true
+    },
+    {
+      "check": "Initial command is not instantaneous actual motion",
+      "passed": true
+    },
+    {
+      "check": "Fixed clock independent of ODE grid",
+      "passed": true
+    },
+    {
+      "check": "RHS-like off-clock update rejected",
+      "passed": true
+    },
+    {
+      "check": "Hysteresis changes command at identical intermediate head",
+      "passed": true
+    },
+    {
+      "check": "Reopen occurs at upper threshold",
+      "passed": true
+    },
+    {
+      "check": "Close occurs at lower threshold",
+      "passed": true
+    },
+    {
+      "check": "No instantaneous hydraulic-avoidance clipping",
+      "passed": true
+    },
+    {
+      "check": "Finite full stroke reaches exact shutoff",
+      "passed": true
+    },
+    {
+      "check": "Closing block 0 rate and endpoint bounds",
+      "passed": true
+    },
+    {
+      "check": "Closing block 1 rate and endpoint bounds",
+      "passed": true
+    },
+    {
+      "check": "Closing block 2 rate and endpoint bounds",
+      "passed": true
+    },
+    {
+      "check": "Closing block 3 rate and endpoint bounds",
+      "passed": true
+    },
+    {
+      "check": "Closing block 4 rate and endpoint bounds",
+      "passed": true
+    },
+    {
+      "check": "Command bounds at head 0.1",
+      "passed": true
+    },
+    {
+      "check": "Command bounds at head 0.15",
+      "passed": true
+    },
+    {
+      "check": "Enabled target monotonic head 0.15",
+      "passed": true
+    },
+    {
+      "check": "Command bounds at head 0.2",
+      "passed": true
+    },
+    {
+      "check": "Enabled target monotonic head 0.2",
+      "passed": true
+    },
+    {
+      "check": "Command bounds at head 0.25",
+      "passed": true
+    },
+    {
+      "check": "Commanded energy-gate ratio at head 0.25",
+      "passed": true,
+      "ratio": 2.5
+    },
+    {
+      "check": "Enabled target monotonic head 0.25",
+      "passed": true
+    },
+    {
+      "check": "Command bounds at head 0.3",
+      "passed": true
+    },
+    {
+      "check": "Commanded energy-gate ratio at head 0.3",
+      "passed": true,
+      "ratio": 2.9999999999999996
+    },
+    {
+      "check": "Enabled target monotonic head 0.3",
+      "passed": true
+    },
+    {
+      "check": "Command bounds at head 0.4",
+      "passed": true
+    },
+    {
+      "check": "Commanded energy-gate ratio at head 0.4",
+      "passed": true,
+      "ratio": 2.857142857142857
+    },
+    {
+      "check": "Enabled target monotonic head 0.4",
+      "passed": true
+    },
+    {
+      "check": "Command bounds at head 0.6",
+      "passed": true
+    },
+    {
+      "check": "Commanded energy-gate ratio at head 0.6",
+      "passed": true,
+      "ratio": 2.7272727272727275
+    },
+    {
+      "check": "Enabled target monotonic head 0.6",
+      "passed": true
+    },
+    {
+      "check": "Command bounds at head 0.8",
+      "passed": true
+    },
+    {
+      "check": "Commanded energy-gate ratio at head 0.8",
+      "passed": true,
+      "ratio": 2.666666666666667
+    },
+    {
+      "check": "Enabled target monotonic head 0.8",
+      "passed": true
+    },
+    {
+      "check": "Command bounds at head 1.2",
+      "passed": true
+    },
+    {
+      "check": "Commanded energy-gate ratio at head 1.2",
+      "passed": true,
+      "ratio": 4.0
+    },
+    {
+      "check": "Enabled target monotonic head 1.2",
+      "passed": true
+    },
+    {
+      "check": "Command bounds at head 2.0",
+      "passed": true
+    },
+    {
+      "check": "Commanded energy-gate ratio at head 2.0",
+      "passed": true,
+      "ratio": 6.666666666666667
+    },
+    {
+      "check": "Enabled target monotonic head 2.0",
+      "passed": true
+    },
+    {
+      "check": "Nominal initial heads support explicit ON initialization",
+      "passed": true
+    },
+    {
+      "check": "ET envelope exceeds sampled demand",
+      "passed": true
+    },
+    {
+      "check": "Branch 1 model-based low-head buffer including saved-weather ET",
+      "passed": true,
+      "branch": 1,
+      "head_at_close_m": 0.2,
+      "unsupported_weir_head_m": 0.05,
+      "delay_plus_closure_s": 720.0,
+      "ideal_release_plus_ET_drawdown_bound_m": 0.011400709076229254,
+      "remaining_head_margin_m": 0.13859929092377077
+    },
+    {
+      "check": "Branch 1 finite full-open safe-head capacities",
+      "passed": true,
+      "capacities": [
+        {
+          "Cw_US": 2.6,
+          "Q_m3_s": 0.6935183747271522
+        },
+        {
+          "Cw_US": 2.8,
+          "Q_m3_s": 0.738821089788992
+        },
+        {
+          "Cw_US": 3.0,
+          "Q_m3_s": 0.7874736049479298
+        }
+      ]
+    },
+    {
+      "check": "Branch 2 model-based low-head buffer including saved-weather ET",
+      "passed": true,
+      "branch": 2,
+      "head_at_close_m": 0.2,
+      "unsupported_weir_head_m": 0.05,
+      "delay_plus_closure_s": 720.0,
+      "ideal_release_plus_ET_drawdown_bound_m": 0.01140070907622925,
+      "remaining_head_margin_m": 0.13859929092377077
+    },
+    {
+      "check": "Branch 2 finite full-open safe-head capacities",
+      "passed": true,
+      "capacities": [
+        {
+          "Cw_US": 2.6,
+          "Q_m3_s": 0.5548146997817217
+        },
+        {
+          "Cw_US": 2.8,
+          "Q_m3_s": 0.5910568718311936
+        },
+        {
+          "Cw_US": 3.0,
+          "Q_m3_s": 0.6299788839583438
+        }
+      ]
+    }
+  ],
+  "policy": {
+    "name": "upstream_level_hysteresis_v1",
+    "status": "Predetermined hypothetical operating policy; not optimized or calibrated",
+    "control_period_s": 120.0,
+    "close_head_m": 0.2,
+    "reopen_head_m": 0.3,
+    "full_open_head_m": 0.8,
+    "enabled_low_head_target_m": 0.1,
+    "maximum_opening_m": 0.3,
+    "opening_rate_limit_m_per_s": 0.0005,
+    "closing_rate_limit_m_per_s": 0.0005,
+    "initial_enabled": [
+      true,
+      true
+    ],
+    "unchanged_dam_safe_head_m": [
+      1.2,
+      1.2
+    ],
+    "rate_basis": "Illustrative analogue to USACE rule-operation example 0.1 ft/min = 0.000508 m/s; not a measured actuator specification",
+    "head_basis": "Upstream pool elevation minus its existing gate sill; identical relative-head thresholds for both branches",
+    "slew_basis": "At each scheduled update choose a rate-limited endpoint; actual opening moves linearly to that endpoint during the next 120 seconds. Small movements use less than the maximum rate.",
+    "selection_basis": "Low-water hysteresis and energy-gate target ratios provide an applicability buffer; full opening is requested 0.4 m below the unchanged dam limit. Values declared before simulations."
+  },
+  "evaporation_screen": {
+    "nonfreezing_saved_scenarios": 16,
+    "largest_sampled_demand_m_s": 1.876186449559095e-07,
+    "componentwise_input_envelope": [
+      36.0,
+      846.65,
+      13.4
+    ],
+    "minimum_temperature_C": 1.0,
+    "envelope_demand_m_s": 5.878783827163901e-07,
+    "derivation": "Bound each positive ET term using weighting fractions <=1; maximum radiation/wind/vapor pressure and minimum absolute temperature",
+    "interpretation": "Model-based deterministic upper-envelope screen; not a physical field guarantee"
+  },
+  "scope": "Controller consistency and physical-margin screen; actual ODE safety and numerical sensitivity are tested separately"
+}

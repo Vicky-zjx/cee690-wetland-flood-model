@@ -1,0 +1,6 @@
+event_id,event_start_utc,contiguous_supported_antecedent_hours,contiguous_start_utc,previous_unusable_hour_utc,limiting_reason
+benchmark_september_2022,2022-09-09 00:00:00+00:00,351,2022-08-25 09:00:00+00:00,2022-08-25 08:00:00+00:00,precipitation_mm_per_h missing/nonfinite; incomplete native rainfall coverage
+historical_20230813T0800Z,2023-08-13 08:00:00+00:00,93,2023-08-09 11:00:00+00:00,2023-08-09 10:00:00+00:00,temperature_C missing/nonfinite; wind_m_per_s missing/nonfinite
+historical_20220704T2100Z,2022-07-04 21:00:00+00:00,0,2022-07-04 21:00:00+00:00,2022-07-04 20:00:00+00:00,precipitation_mm_per_h missing/nonfinite; incomplete native rainfall coverage
+historical_20190825T0200Z,2019-08-25 02:00:00+00:00,254,2019-08-14 12:00:00+00:00,2019-08-14 11:00:00+00:00,precipitation_mm_per_h missing/nonfinite; incomplete native rainfall coverage
+historical_20240804T1500Z,2024-08-04 15:00:00+00:00,109,2024-07-31 02:00:00+00:00,2024-07-31 01:00:00+00:00,precipitation_mm_per_h missing/nonfinite; incomplete native rainfall coverage

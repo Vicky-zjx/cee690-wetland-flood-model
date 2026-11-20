@@ -1,0 +1,26 @@
+{
+  "rule": "Lowest saved sample ID in each primary exact-zero / positive class; fixed before trajectory audit and plotting; no largest-benefit selection",
+  "source_summary_sha256": "a3416586127dcac698e8aab79dbf2b3fdc6bf455f48982fe5a0c32bac0c0cb65",
+  "choices": {
+    "benchmark_september_2022": {
+      "first_zero": null,
+      "first_positive": "mc_00000"
+    },
+    "historical_20230813T0800Z": {
+      "first_zero": "mc_00002",
+      "first_positive": "mc_00000"
+    },
+    "historical_20220704T2100Z": {
+      "first_zero": "mc_00002",
+      "first_positive": "mc_00000"
+    },
+    "historical_20190825T0200Z": {
+      "first_zero": "mc_00000",
+      "first_positive": "mc_00001"
+    },
+    "historical_20240804T1500Z": {
+      "first_zero": "mc_00000",
+      "first_positive": "mc_00001"
+    }
+  }
+}

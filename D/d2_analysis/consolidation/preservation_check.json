@@ -1,0 +1,13 @@
+{
+  "files_checked": 5290,
+  "changed": [],
+  "allowed_administrative_changes": [
+    "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/README.md",
+    "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/reproducibility_inputs/README.md",
+    "/Users/zhangjiaxuan/Documents/Codex/Modeling/README.md"
+  ],
+  "missing": [],
+  "new_protected_files": [],
+  "passed": true,
+  "scope": "All prior project/scientific outputs and external professor/D.1 sources; current consolidation directory excluded; only four named navigation/ignore files may change"
+}

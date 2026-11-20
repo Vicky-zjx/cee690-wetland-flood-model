@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "component_checks": 178,
+  "checks": [
+    {
+      "component": "policy",
+      "passed": true,
+      "count": 46,
+      "saved_report_equal": true,
+      "original_source": "D/feedback_control/verify.py",
+      "original_source_sha256": "96a39ec21e7ca0fc09dc1494f35d2b450e6fb37077bc4dc5a76c693d43ad5a8b",
+      "saved_report": "D/feedback_control/results/policy_checks.json",
+      "saved_report_sha256": "114c6b56cfb37b43017d16eb49af04b3256581edfb9bf1bdc22f36a68e0e55e4",
+      "current_report": "component_results/policy/results/policy_checks.json"
+    },
+    {
+      "component": "hydraulics",
+      "passed": true,
+      "count": 123,
+      "saved_report_equal": true,
+      "original_source": "D/gate_hydraulics_revision/verify.py",
+      "original_source_sha256": "0c656fc30ed3acc96ffa16373dccdbbbb13b7ccd5bd0a72cff11d4349b063024",
+      "saved_report": "D/gate_hydraulics_revision/results/hydraulic_checks.json",
+      "saved_report_sha256": "aa8803378e9b1bae3ec48fb7c3305913d3c2e1838dcead39ea6a910cf4ed7bc1",
+      "current_report": "component_results/hydraulics/results/hydraulic_checks.json"
+    },
+    {
+      "component": "metrics",
+      "passed": true,
+      "count": 9,
+      "saved_report_equal": true,
+      "original_source": "D/d2_analysis/analysis.py",
+      "original_source_sha256": "c96aa649eda681744ae680cf57c799d22e797bc4a79fe0987fdf53c428b4b3bd",
+      "saved_report": "D/d2_analysis/results/metric_checks.json",
+      "saved_report_sha256": "315d90e479aa275a99ccc481c12fb57ae6f122d3ce68d38b11286f7337df82df",
+      "current_report": "component_results/metrics/metric_checks.json"
+    }
+  ],
+  "ODE_integrations": 0,
+  "method": "Existing component function body, private output destination only; original modules/files unchanged"
+}

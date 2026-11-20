@@ -1,0 +1,150 @@
+{
+  "conditioning_id": "historical_20240804T1500Z__antecedent_24h",
+  "scenario_id": "historical_20240804T1500Z__antecedent_24h",
+  "event_id": "historical_20240804T1500Z",
+  "antecedent_hours": 24,
+  "event_offset_s": 86400,
+  "total_duration_s": 604800,
+  "event_duration_s": 518400,
+  "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/antecedent_conditions/forcing/historical_20240804T1500Z__antecedent_24h.csv",
+  "forcing_sha256": "7639875fe8a5d2730f0110c68cc0b092f708c651ce013550b4cd711201a56b9e",
+  "start_utc": "2024-08-03 15:00:00+00:00",
+  "event_start_utc": "2024-08-04 15:00:00+00:00",
+  "end_utc": "2024-08-10 15:00:00+00:00",
+  "seed_sequence_entropy": null,
+  "original_event_forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20240804T1500Z.csv",
+  "original_event_forcing_sha256": "da6068843c31b892823353bb81c43cf0c28ab17df77f3f3ad52046eb0c5be586",
+  "original_event_rows_byte_exact": true,
+  "antecedent_rows_source_byte_exact": true,
+  "antecedent_rain_mm": 0.0,
+  "antecedent_solar_energy_Wh_m2": 6741.289999999999,
+  "antecedent_min_temperature_C": 20.0,
+  "antecedent_missing_variables": {
+    "precipitation_mm_per_h": 0,
+    "temperature_C": 0,
+    "solar_W_per_m2": 0,
+    "wind_m_per_s": 0
+  },
+  "antecedent_qc": {
+    "precipitation_trace_lower_bound": 0,
+    "temperature_interpolated": 24,
+    "wind_interpolated": 24,
+    "temperature_short_gap_filled": 0,
+    "wind_short_gap_filled": 0
+  },
+  "native_audit": {
+    "raw_sources": {
+      "NOAA_72640014839_2024.csv": {
+        "file": "C/data/raw/NOAA_72640014839_2024.csv",
+        "sha256": "c87a5ee463ceec959ce493bb03499f841731882db7e980b5f61ef015f35c3668",
+        "request": {
+          "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+          "retrieved_utc": "2026-10-28T19:23:17.205710+00:00",
+          "ok": true,
+          "http_status": 200,
+          "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+          "bytes": 2343261,
+          "sha256": "c87a5ee463ceec959ce493bb03499f841731882db7e980b5f61ef015f35c3668"
+        }
+      },
+      "NOAA_72640594869_2024.csv": {
+        "file": "C/data/raw/NOAA_72640594869_2024.csv",
+        "sha256": "8f7fc189bffdb83c03692d894df56c710104d50e0bed1793761a2efa6fcf5016",
+        "request": {
+          "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+          "retrieved_utc": "2026-10-28T19:23:17.480008+00:00",
+          "ok": true,
+          "http_status": 200,
+          "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+          "bytes": 2730566,
+          "sha256": "8f7fc189bffdb83c03692d894df56c710104d50e0bed1793761a2efa6fcf5016"
+        }
+      },
+      "POWER_solar_2024.json": {
+        "file": "C/data/raw/POWER_solar_2024.json",
+        "sha256": "ed24ce8f16fb2e5db3388656e5b1eee2d335852836431afe139e3ed88604444a",
+        "request": {
+          "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20240101&end=20241231&format=JSON&time-standard=UTC",
+          "retrieved_utc": "2026-10-28T19:22:09.153491+00:00",
+          "ok": true,
+          "http_status": 200,
+          "final_url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20240101&end=20241231&format=JSON&time-standard=UTC",
+          "bytes": 160911,
+          "sha256": "ed24ce8f16fb2e5db3388656e5b1eee2d335852836431afe139e3ed88604444a"
+        }
+      }
+    },
+    "native_rain_selected_intervals": 25,
+    "native_rain_end_minutes": [
+      52
+    ],
+    "native_trace_intervals": 0,
+    "native_rain_reconstruction_error_mm": 0.0,
+    "native_met_reconstruction_error": {
+      "temperature_C": 4.285716670437978e-09,
+      "wind_m_per_s": 4.440892098500626e-16
+    },
+    "solar_cached_grid_reconstruction_error_W_m2": 0.0,
+    "solar_native_units": "Wh/m^2",
+    "solar_source": [
+      "SYN1DEG"
+    ],
+    "rain_parser_annual_qc": {
+      "absent_fields": 26155,
+      "not_one_hour": 746,
+      "missing_bad_quality_or_unsupported_condition": 84,
+      "overlapping_intervals_excluded": 3,
+      "selected_intervals": 8040,
+      "trace_intervals": 532
+    },
+    "actual_interval_files": [
+      "historical_20240804T1500Z__antecedent_24h_native_rain.csv",
+      "historical_20240804T1500Z__antecedent_24h_native_met_brackets.csv"
+    ]
+  },
+  "mapping": "Prefix and original event separately mapped by unchanged hourly adapter; event shifted only; no T/wind interpolation across seam",
+  "source_standardized_csv": "C/data/processed/weather_hourly.csv",
+  "source_standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+  "mapping_validation": [
+    {
+      "conditioning_id": "historical_20240804T1500Z__antecedent_24h",
+      "dt_s": 15.0,
+      "source_precipitation_m": 0.0412000000003,
+      "integrated_precipitation_m": 0.041200000000300004,
+      "precipitation_error_m": 6.938893903907228e-18,
+      "source_solar_Wh_m2": 35808.34,
+      "integrated_solar_Wh_m2": 35808.34,
+      "solar_error_Wh_m2": 0.0,
+      "event_weather_and_boundary_inputs_bit_exact": true,
+      "event_output_knots_shift_exact": true,
+      "event_offset_s": 86400,
+      "antecedent_hours": 24,
+      "seam_temperature_jump_C": 1.2763157900000017,
+      "seam_wind_jump_m_s": 0.0,
+      "seam_precipitation_rate_jump_m_s": 0.0,
+      "seam_solar_mean_jump_W_m2": 193.41999999999996,
+      "mapping": "Unchanged mapper applied independently to antecedent and original144h event; time shifted only; controller/state remain continuous in caller",
+      "pass_conservation": true
+    },
+    {
+      "conditioning_id": "historical_20240804T1500Z__antecedent_24h",
+      "dt_s": 7.5,
+      "source_precipitation_m": 0.0412000000003,
+      "integrated_precipitation_m": 0.041200000000300004,
+      "precipitation_error_m": 6.938893903907228e-18,
+      "source_solar_Wh_m2": 35808.34,
+      "integrated_solar_Wh_m2": 35808.34,
+      "solar_error_Wh_m2": 0.0,
+      "event_weather_and_boundary_inputs_bit_exact": true,
+      "event_output_knots_shift_exact": true,
+      "event_offset_s": 86400,
+      "antecedent_hours": 24,
+      "seam_temperature_jump_C": 1.2763157900000017,
+      "seam_wind_jump_m_s": 0.0,
+      "seam_precipitation_rate_jump_m_s": 0.0,
+      "seam_solar_mean_jump_W_m2": 193.41999999999996,
+      "mapping": "Unchanged mapper applied independently to antecedent and original144h event; time shifted only; controller/state remain continuous in caller",
+      "pass_conservation": true
+    }
+  ]
+}

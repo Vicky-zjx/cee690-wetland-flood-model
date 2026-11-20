@@ -1,0 +1,55 @@
+{
+  "figure": "D/d2_analysis/antecedent_conditions/plots/05_weather_inputs.png",
+  "source": [
+    {
+      "event_id": "historical_20190825T0200Z",
+      "forcing_sha256": "cc2119142d87fd63618d93af983466597684ff8e2f395326bce292584af9620c",
+      "original_event_forcing_sha256": "85f44c26651e2164f310702c42abce14701f147f15822a1de8647299b5352737",
+      "mapping_check": {
+        "source_precipitation_m": 0.042800000004369995,
+        "integrated_precipitation_m": 0.04280000000437,
+        "precipitation_error_m": 6.938893903907228e-18,
+        "source_solar_Wh_m2": 45687.55,
+        "integrated_solar_Wh_m2": 45687.55,
+        "solar_error_Wh_m2": 0.0,
+        "event_weather_and_boundary_inputs_bit_exact": true,
+        "event_output_knots_shift_exact": true,
+        "event_offset_s": 259200,
+        "antecedent_hours": 72,
+        "seam_temperature_jump_C": -1.5,
+        "seam_wind_jump_m_s": -1.65,
+        "seam_precipitation_rate_jump_m_s": 0.0,
+        "seam_solar_mean_jump_W_m2": 0.0,
+        "mapping": "Unchanged mapper applied independently to antecedent and original144h event; time shifted only; controller/state remain continuous in caller",
+        "pass_conservation": true
+      }
+    },
+    {
+      "event_id": "historical_20240804T1500Z",
+      "forcing_sha256": "a8f5fe1dfbf64f7c4a183f4403035ced52cafa2f258bc01574394b14630aa29a",
+      "original_event_forcing_sha256": "da6068843c31b892823353bb81c43cf0c28ab17df77f3f3ad52046eb0c5be586",
+      "mapping_check": {
+        "source_precipitation_m": 0.05970000000029999,
+        "integrated_precipitation_m": 0.0597000000003,
+        "precipitation_error_m": 6.938893903907228e-18,
+        "source_solar_Wh_m2": 46589.520000000004,
+        "integrated_solar_Wh_m2": 46589.52,
+        "solar_error_Wh_m2": -7.275957614183426e-12,
+        "event_weather_and_boundary_inputs_bit_exact": true,
+        "event_output_knots_shift_exact": true,
+        "event_offset_s": 259200,
+        "antecedent_hours": 72,
+        "seam_temperature_jump_C": 1.2763157900000017,
+        "seam_wind_jump_m_s": 0.0,
+        "seam_precipitation_rate_jump_m_s": 0.0,
+        "seam_solar_mean_jump_W_m2": 193.41999999999996,
+        "mapping": "Unchanged mapper applied independently to antecedent and original144h event; time shifted only; controller/state remain continuous in caller",
+        "pass_conservation": true
+      }
+    }
+  ],
+  "time_grid_s": 15,
+  "model_executed": false,
+  "input_generation": "Existing provider mapping only; no new weather values or downloads",
+  "script_sha256": "0b4fa4386a143d8024f70079ecf7a03b9d7df324408dc0efabcacb475fb6ddb2"
+}

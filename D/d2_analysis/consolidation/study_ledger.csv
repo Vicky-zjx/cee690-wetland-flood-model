@@ -1,0 +1,13 @@
+study_id,role,planned_pairs_or_evaluations,valid_pairs_or_evaluations,cold_excluded_pairs,additional_primary_configurations_in_reviewed_union,primary_result_copies,new_random_draws_or_weather_ids,interpretation
+weather_pilot,primary,20,16,4,16,0,20,20 generated IDs; four cold preflight exclusions; 16 complete warm pairs
+factorial,primary,27,27,0,27,3,0,No probability weights; two pilot corners and prior deterministic center reused
+fixed_storm_MC,primary,64,64,0,64,2,64,64 iid exploratory parameter vectors; first two pilot results reused
+historical_storms,primary,320,320,0,256,76,0,64 benchmark pairs duplicate MC; 12 new-event primary outcomes copied from pilot; no redraw
+robustness,reanalysis,320,320,0,0,320,0,87 zero peak contrasts; 320 endpoint pairs and 258 retained waveform pairs
+antecedent,primary,12,12,0,12,0,0,Two events x two prefixes x three saved vectors; six no-prefix baseline pairs reused separately
+importance_verification,reanalysis,320,320,0,0,320,0,Existing 64 draws reweighted across five events; no new 32- or 64-draw ensemble
+weather_refinement,numerical_repeat,16,16,0,0,0,0,Same 16 warm configurations at 7.5 s; deterministic controls separate
+parameter_pilot,numerical_repeat,8,8,0,0,0,0,Four primary configurations x two resolutions; not eight new samples
+historical_pilot,numerical_repeat,24,24,0,0,0,0,Twelve primary configurations x two resolutions; 15 s outcomes reused
+historical_regression,exact_repeat,1,1,0,0,0,0,Fresh benchmark mc_00000 pair; no new physical configuration
+antecedent_refinement,numerical_repeat,1,1,0,0,0,0,One of twelve configurations repeated at 7.5 s; two additional model runs

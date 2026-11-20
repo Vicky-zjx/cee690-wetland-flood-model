@@ -1,0 +1,249 @@
+{
+  "experiment": "Predeclared 24 h / 72 h continuous antecedent conditioning",
+  "events": [
+    {
+      "event_id": "historical_20190825T0200Z",
+      "scenario_id": "historical_20190825T0200Z",
+      "benchmark": false,
+      "start_utc": "2019-08-25 02:00:00+00:00",
+      "end_utc": "2019-08-31 02:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20190825T0200Z.csv",
+      "forcing_sha256": "85f44c26651e2164f310702c42abce14701f147f15822a1de8647299b5352737",
+      "seed_sequence_entropy": null,
+      "hours": 144,
+      "complete_forcing": true,
+      "forcing_schema": "Original StageC joint hourly rows, UTC interval starts, all QC flags retained exactly",
+      "rainfall_total_mm": 42.80000000437,
+      "max_hourly_mm": 11.36666667,
+      "max_24h_mm": 42.3000000044,
+      "ranking_24h_mm": 42.300000004400005,
+      "ranking_core_start_utc": "2019-08-26 02:00:00+00:00",
+      "ranking_core_end_utc": "2019-08-27 02:00:00+00:00",
+      "rainfall_rank": 133,
+      "selected_additional_rank": 3,
+      "minimum_temperature_C": 11.0,
+      "solar_energy_Wh_m2": 29296.97,
+      "source": "Observed KMKE rainfall and KMWC meteorology with POWER grid solar; existing StageC conservative hourly alignment",
+      "qc_counts": {
+        "precipitation_trace_lower_bound": 8,
+        "temperature_interpolated": 143,
+        "wind_interpolated": 143,
+        "temperature_short_gap_filled": 2,
+        "wind_short_gap_filled": 2
+      },
+      "native_rain_audit": {
+        "raw_file": "C/data/raw/NOAA_72640014839_2019.csv",
+        "raw_sha256": "f14dc8e223e455964e273a2e530a1a5b6f795269be314c41f1cf619be466e862",
+        "native_selected_intervals": 145,
+        "complete_native_one_hour_intervals": 143,
+        "native_end_minutes": [
+          52
+        ],
+        "maximum_native_one_hour_depth_mm": 11.9,
+        "maximum_24_consecutive_native_hours_mm": 42.300000000000004,
+        "native_trace_intervals_intersecting_window": 5,
+        "overlap_reconstruction_max_error_mm": 3.3333353854914094e-09,
+        "represented_native_window_depth_mm": 42.8,
+        "interpretation": "Native interval depth is an observation; UTC-hour amount is a conservative redistribution with assumed within-hour timing.",
+        "annual_parser_qc": {
+          "absent_fields": 25501,
+          "not_one_hour": 907,
+          "missing_bad_quality_or_unsupported_condition": 46,
+          "overlapping_intervals_excluded": 3,
+          "selected_intervals": 8567,
+          "trace_intervals": 804
+        }
+      },
+      "provenance": {
+        "standardized_file": "C/data/processed/weather_hourly.csv",
+        "standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+        "first_source_row": 5666,
+        "last_source_row": 5809,
+        "row_preservation": "Original CSV header and144 row byte strings copied without rewriting values"
+      },
+      "positive_rain_hours": 17,
+      "first_to_last_positive_span_h": 41,
+      "quantified_wet_spell_count": 2,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2019-08-26 11:00:00+00:00",
+        "end_utc": "2019-08-27 02:00:00+00:00",
+        "span_h": 15,
+        "positive_hours": 15,
+        "depth_mm": 42.3000000044
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    },
+    {
+      "event_id": "historical_20240804T1500Z",
+      "scenario_id": "historical_20240804T1500Z",
+      "benchmark": false,
+      "start_utc": "2024-08-04 15:00:00+00:00",
+      "end_utc": "2024-08-10 15:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20240804T1500Z.csv",
+      "forcing_sha256": "da6068843c31b892823353bb81c43cf0c28ab17df77f3f3ad52046eb0c5be586",
+      "seed_sequence_entropy": null,
+      "hours": 144,
+      "complete_forcing": true,
+      "forcing_schema": "Original StageC joint hourly rows, UTC interval starts, all QC flags retained exactly",
+      "rainfall_total_mm": 41.200000000299994,
+      "max_hourly_mm": 20.02,
+      "max_24h_mm": 41.2000000003,
+      "ranking_24h_mm": 41.200000000299994,
+      "ranking_core_start_utc": "2024-08-05 15:00:00+00:00",
+      "ranking_core_end_utc": "2024-08-06 15:00:00+00:00",
+      "rainfall_rank": 148,
+      "selected_additional_rank": 4,
+      "minimum_temperature_C": 11.0,
+      "solar_energy_Wh_m2": 29067.050000000003,
+      "source": "Observed KMKE rainfall and KMWC meteorology with POWER grid solar; existing StageC conservative hourly alignment",
+      "qc_counts": {
+        "precipitation_trace_lower_bound": 9,
+        "temperature_interpolated": 144,
+        "wind_interpolated": 144,
+        "temperature_short_gap_filled": 0,
+        "wind_short_gap_filled": 0
+      },
+      "native_rain_audit": {
+        "raw_file": "C/data/raw/NOAA_72640014839_2024.csv",
+        "raw_sha256": "c87a5ee463ceec959ce493bb03499f841731882db7e980b5f61ef015f35c3668",
+        "native_selected_intervals": 145,
+        "complete_native_one_hour_intervals": 143,
+        "native_end_minutes": [
+          52
+        ],
+        "maximum_native_one_hour_depth_mm": 23.1,
+        "maximum_24_consecutive_native_hours_mm": 41.2,
+        "native_trace_intervals_intersecting_window": 5,
+        "overlap_reconstruction_max_error_mm": 3.33333360913457e-10,
+        "represented_native_window_depth_mm": 41.2,
+        "interpretation": "Native interval depth is an observation; UTC-hour amount is a conservative redistribution with assumed within-hour timing.",
+        "annual_parser_qc": {
+          "absent_fields": 26155,
+          "not_one_hour": 746,
+          "missing_bad_quality_or_unsupported_condition": 84,
+          "overlapping_intervals_excluded": 3,
+          "selected_intervals": 8040,
+          "trace_intervals": 532
+        }
+      },
+      "provenance": {
+        "standardized_file": "C/data/processed/weather_hourly.csv",
+        "standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+        "first_source_row": 49023,
+        "last_source_row": 49166,
+        "row_preservation": "Original CSV header and144 row byte strings copied without rewriting values"
+      },
+      "positive_rain_hours": 9,
+      "first_to_last_positive_span_h": 9,
+      "quantified_wet_spell_count": 1,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2024-08-06 06:00:00+00:00",
+        "end_utc": "2024-08-06 15:00:00+00:00",
+        "span_h": 9,
+        "positive_hours": 9,
+        "depth_mm": 41.200000000299994
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    }
+  ],
+  "points": [
+    {
+      "sample_id": "mc_00016",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5631927082247021,
+      "m_routing": 0.6208461554659039,
+      "m_R_r": 0.5147092120047647,
+      "physical_values": {
+        "K_u": 5.631927082247021e-07,
+        "k_ud": [
+          2.1557158175899442e-05,
+          1.7245726540719556e-05
+        ],
+        "k_ur": 8.622863270359778e-06,
+        "R_r": 0.23161914540214412
+      },
+      "draw_index": 16
+    },
+    {
+      "sample_id": "mc_00024",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.8462077488275175,
+      "m_routing": 1.1400493014053454,
+      "m_R_r": 1.1761245143107526,
+      "physical_values": {
+        "K_u": 8.462077488275174e-07,
+        "k_ud": [
+          3.9585045187685606e-05,
+          3.166803615014848e-05
+        ],
+        "k_ur": 1.583401807507424e-05,
+        "R_r": 0.5292560314398387
+      },
+      "draw_index": 24
+    },
+    {
+      "sample_id": "mc_00018",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.424934479761205,
+      "m_routing": 1.4161030546355675,
+      "m_R_r": 1.9288937828168002,
+      "physical_values": {
+        "K_u": 1.424934479761205e-06,
+        "k_ud": [
+          4.917024495262387e-05,
+          3.93361959620991e-05
+        ],
+        "k_ur": 1.966809798104955e-05,
+        "R_r": 0.8680022022675601
+      },
+      "draw_index": 18
+    }
+  ],
+  "antecedent_hours": [
+    24,
+    72
+  ],
+  "design_selection": "Existing low/central/high mean-log-multiplier pilot IDs, selected before these simulations; not benefit or severity ranks",
+  "primary_dt_s": 15.0,
+  "refined_dt_s": 7.5,
+  "control_period_s": 120.0,
+  "unique_physical_pairs": 12,
+  "primary_model_runs": 24,
+  "numerical_refinement_model_runs": 2,
+  "pilot": {
+    "event_id": "historical_20240804T1500Z",
+    "antecedent_hours": 72,
+    "sample_id": "mc_00018",
+    "selection": "Longest 72 h prefix, latest event, highest predeclared mean-log point; selected before observing new outcomes"
+  },
+  "pilot_tolerances": {
+    "max_state_equivalent_depth_difference_m": 0.0001,
+    "max_stage_difference_m": 0.0001,
+    "max_physical_peak_stage_difference_m": 0.0001,
+    "max_actual_gate_opening_difference_m": 1e-05,
+    "latch_mismatch_requires_review": true,
+    "valid_unsafe_is_numerically_eligible": true
+  },
+  "numerics": {
+    "primary_dt_s": 15.0,
+    "refined_dt_s": 7.5,
+    "control_period_s": 120.0,
+    "mass_balance_relative_tolerance": 0.0001
+  },
+  "existing_no_antecedent_results": "Reuse original saved pilot arrays at 15 s; no original trajectory rerun",
+  "initial_conditions": "Accepted physical states, initial openings 0.0015 m and original enabled latches at prefix start; no reset at event boundary",
+  "event_weather": "Original 144 h solver weather inputs unchanged; separately mapped prefix with explicit boundary endpoint holds",
+  "parameter_sampling_calls": 0,
+  "weather_generation_calls": 0,
+  "source_sha256": {
+    "D/d2_analysis/historical_storm_robustness/study_plan.json": "580cf84f31bbc312280b87b37066656afe0f56c5880d501dc8b02c0a5ae7370e",
+    "D/d2_analysis/robustness_checks/FINDINGS.md": "16dce5e544d8d0b6969758d11e24a3c123bda4be6be7bd7aede7644668d47099",
+    "D/d2_analysis/antecedent_conditions/forcing/manifest.json": "b97d5e02f726bb47e9e1f9d5e34a242b7ffb7f4af01c7c95915bf19505cb59c7",
+    "D/d2_analysis/antecedent_conditions/adapter.py": "55a3028801f453950c398ee614cb89c8bd6055c7c769ff3dc4cf51c57b5dc496",
+    "D/d2_analysis/antecedent_conditions/forcing/provider.py": "8aa03573cd4de7a442db2bfd42349285e33c7a069001a71298e729df61464655",
+    "D/feedback_control/run_policy.py": "73a69dbe4ab8f13b93227697fd763ce3fb25e24f1eedff49a3bbe5269b711aa3",
+    "D/feedback_control/policy.json": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+    "D/d2_analysis/antecedent_conditions/run_study.py": "6c50ab273e4e0a3fb3e3b9500e65f2b27abf5b331e1a2bf47e21c748d5e70440"
+  },
+  "source_parameter_plan_sha256": "bfd1b8dcf4ef75d6cbd35e8d8c3ba4814bc3ef17679a730ff20d6cb83170c4ea"
+}

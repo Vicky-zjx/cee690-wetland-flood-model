@@ -1,0 +1,7 @@
+factor,metric,contexts,positive,zero,negative,minimum_endpoint_change,maximum_endpoint_change,monotone_three_point_contexts
+m_K_u,delta_peak_stage_m,9,8,0,1,-0.030176935146855044,0.025803742096499604,8
+m_K_u,delta_peak_discharge_m3_s,9,8,0,1,-0.1341197117638001,0.0848260156887034,8
+m_routing,delta_peak_stage_m,9,4,0,5,-0.02071476103414227,0.02807183108760114,7
+m_routing,delta_peak_discharge_m3_s,9,4,0,5,-0.09206560459618784,0.12476369372267182,7
+m_R_r,delta_peak_stage_m,9,9,0,0,0.09618539490057287,0.1353368536451569,9
+m_R_r,delta_peak_discharge_m3_s,9,4,0,5,-0.045259519590293396,0.0950527512509799,6

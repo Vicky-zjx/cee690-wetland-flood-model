@@ -1,0 +1,268 @@
+{
+  "passed": true,
+  "base_commit": "ffc7ee4f81b70af2c687288250f9082de1657b9f",
+  "branch": "main",
+  "upstream": "origin/main",
+  "remote": "git@github.com:Vicky-zjx/cee690-wetland-flood-model.git",
+  "staged_review_scope": "Exact index bytes; report/manifest self-digests omitted; Git commit is final authority",
+  "scientific_studies_preserved": {
+    "files_checked": 5290,
+    "changed": [],
+    "allowed_administrative_changes": [
+      "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/README.md",
+      "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/reproducibility_inputs/README.md",
+      "/Users/zhangjiaxuan/Documents/Codex/Modeling/README.md"
+    ],
+    "missing": [],
+    "new_protected_files": [],
+    "passed": true,
+    "scope": "All prior project/scientific outputs and external professor/D.1 sources; current consolidation directory excluded; only four named navigation/ignore files may change"
+  },
+  "nonreport_staged_files": 214,
+  "nonreport_staged_bytes": 21984183,
+  "stages_by_status": {
+    "M": 3,
+    "A": 211
+  },
+  "file_types": {
+    ".md": 21,
+    ".py": 19,
+    ".csv": 74,
+    ".json": 62,
+    ".png": 12,
+    ".gz": 26
+  },
+  "secret_scan": {
+    "scope": "Known credential/private-key patterns and assigned-secret literals; plain and gzip text",
+    "text_files_checked": 204,
+    "gzip_text_files_checked": 26,
+    "findings": [],
+    "not_a_security_certification": true
+  },
+  "ignored_new_study_files": 54,
+  "ignored_new_study_bytes": 364947464,
+  "ignored_new_study_paths": [
+    {
+      "path": "D/d2_analysis/antecedent_conditions/pilot_execution.log",
+      "bytes": 169
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/remaining_execution.log",
+      "bytes": 1847
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00024/mc_00024__wetland__15s.npz",
+      "bytes": 16147632
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00024/mc_00024__wetland__15s_controller.csv.gz",
+      "bytes": 129391
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00024/mc_00024__no_wetland__15s.npz",
+      "bytes": 12471709
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00024/mc_00024__no_wetland__15s_controller.csv.gz",
+      "bytes": 129379
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00024/mc_00024__wetland__15s.npz",
+      "bytes": 16251669
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00024/mc_00024__wetland__15s_controller.csv.gz",
+      "bytes": 134562
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00024/mc_00024__no_wetland__15s.npz",
+      "bytes": 12482566
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00024/mc_00024__no_wetland__15s_controller.csv.gz",
+      "bytes": 134575
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00016/mc_00016__wetland__15s.npz",
+      "bytes": 12672354
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00016/mc_00016__wetland__15s_controller.csv.gz",
+      "bytes": 107135
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00016/mc_00016__no_wetland__15s_controller.csv.gz",
+      "bytes": 107138
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00016/mc_00016__no_wetland__15s.npz",
+      "bytes": 9759833
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00018/mc_00018__wetland__15s_controller.csv.gz",
+      "bytes": 102109
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00018/mc_00018__wetland__15s.npz",
+      "bytes": 12659678
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00018/mc_00018__no_wetland__15s_controller.csv.gz",
+      "bytes": 102112
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00018/mc_00018__no_wetland__15s.npz",
+      "bytes": 9742722
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00016/mc_00016__wetland__15s.npz",
+      "bytes": 12619904
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00016/mc_00016__wetland__15s_controller.csv.gz",
+      "bytes": 105691
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00016/mc_00016__no_wetland__15s_controller.csv.gz",
+      "bytes": 105694
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00016/mc_00016__no_wetland__15s.npz",
+      "bytes": 9687669
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00018/mc_00018__wetland__15s_controller.csv.gz",
+      "bytes": 102577
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00018/mc_00018__wetland__15s.npz",
+      "bytes": 12608561
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00018/mc_00018__no_wetland__15s_controller.csv.gz",
+      "bytes": 102580
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00018/mc_00018__no_wetland__15s.npz",
+      "bytes": 9709053
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00018/mc_00018__wetland__15s_controller.csv.gz",
+      "bytes": 133521
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00018/mc_00018__wetland__7p5s_controller.csv.gz",
+      "bytes": 133485
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00018/mc_00018__no_wetland__7p5s.npz",
+      "bytes": 24240921
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00018/mc_00018__wetland__7p5s.npz",
+      "bytes": 31443953
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00018/mc_00018__wetland__15s.npz",
+      "bytes": 16198009
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00018/mc_00018__no_wetland__15s_controller.csv.gz",
+      "bytes": 133406
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00018/mc_00018__no_wetland__7p5s_controller.csv.gz",
+      "bytes": 133582
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00018/mc_00018__no_wetland__15s.npz",
+      "bytes": 12481646
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00016/mc_00016__wetland__15s.npz",
+      "bytes": 16216031
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00016/mc_00016__wetland__15s_controller.csv.gz",
+      "bytes": 134741
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00016/mc_00016__no_wetland__15s_controller.csv.gz",
+      "bytes": 134744
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__72h__mc_00016/mc_00016__no_wetland__15s.npz",
+      "bytes": 12481718
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00018/mc_00018__wetland__15s_controller.csv.gz",
+      "bytes": 129135
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00018/mc_00018__wetland__15s.npz",
+      "bytes": 16123975
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00018/mc_00018__no_wetland__15s_controller.csv.gz",
+      "bytes": 129138
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00018/mc_00018__no_wetland__15s.npz",
+      "bytes": 12458626
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00016/mc_00016__wetland__15s.npz",
+      "bytes": 16137148
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00016/mc_00016__wetland__15s_controller.csv.gz",
+      "bytes": 130464
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00016/mc_00016__no_wetland__15s_controller.csv.gz",
+      "bytes": 130467
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__72h__mc_00016/mc_00016__no_wetland__15s.npz",
+      "bytes": 12477905
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00024/mc_00024__wetland__15s.npz",
+      "bytes": 12637341
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00024/mc_00024__wetland__15s_controller.csv.gz",
+      "bytes": 105896
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00024/mc_00024__no_wetland__15s.npz",
+      "bytes": 9700124
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20240804T1500Z__24h__mc_00024/mc_00024__no_wetland__15s_controller.csv.gz",
+      "bytes": 105827
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00024/mc_00024__wetland__15s.npz",
+      "bytes": 12678020
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00024/mc_00024__wetland__15s_controller.csv.gz",
+      "bytes": 103830
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00024/mc_00024__no_wetland__15s.npz",
+      "bytes": 9751669
+    },
+    {
+      "path": "D/d2_analysis/antecedent_conditions/results/historical_20190825T0200Z__24h__mc_00024/mc_00024__no_wetland__15s_controller.csv.gz",
+      "bytes": 103833
+    }
+  ],
+  "intended_untracked_preserved": [
+    "B/presentations/Current_Wetland_Research_Comparison.png",
+    "B/presentations/Current_Wetland_Research_Comparison.pptx"
+  ],
+  "ODE_integrations": 0,
+  "final_submission_report_written": false
+}

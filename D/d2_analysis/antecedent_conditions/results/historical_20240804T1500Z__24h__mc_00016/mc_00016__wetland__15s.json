@@ -1,0 +1,1485 @@
+{
+  "scenario_id": "historical_20240804T1500Z__antecedent_24h",
+  "case_name": "wetland",
+  "design_source_label": "best",
+  "dt_s": 15.0,
+  "hydraulic_arm": "D",
+  "hydraulic_variant_settings": {
+    "crest_length_m": 1.0,
+    "Cw_US": 2.8,
+    "contraction_at_zero_relative_opening": 0.617,
+    "transition_end_ratio": 1.5,
+    "minimum_crest_head_length_ratio": 0.05,
+    "maximum_crest_head_length_ratio": 0.5
+  },
+  "fixed_configuration": {
+    "source_sha256": {
+      "A/wetland_flood_model.py": "2b94de4cf0aad9d875c72c0a4d927ca7169e0bc70d6cea4b475683ea7d7979b1",
+      "B/no_spillway_model.py": "54ea9a6e730af5a532f5b7f5e321d9f0a3c771edfbc5755d5c78185497b57649",
+      "B/wetland_counterfactual.py": "30b00f96f014ecd849cd4c11477acae1f2108afdf23dc299ff922babfefaccc1",
+      "B/gate_hydraulics.py": "d5f0779ec1593b837cbff2851a16bc5fe3f7602b4b8484576247e62b77e24cdc",
+      "A/work/multivarious/multivarious/ode/ode4u.py": "0b55c31e77b0bae0205342e9e3118fb11db7c35f2fee2468149587151b077569",
+      "B/no_spillway_config.json": "b4f07d6fd516c39b14e34a7210aa8f00aa6f01e93cb8eaa9a788ecf9cad186c1",
+      "B/wetland_only_config.json": "c4f695ca2b10da53a8095452a165961af304300715a302ae4de5602981f0565c",
+      "B/results/no_spillway_revision/reference.npz": "77a6f06cbf03422146dadc0a66aaee36528dfcd5999baf4a37bc9780e43d0c8c",
+      "B/results/wetland_only/wetland_best_120s.npz": "062c121ba72e1447cb5fe9b08b870d592c3880de736dc01d26afcfb16290cd15"
+    },
+    "solver": {
+      "version": "1.2.1",
+      "revision": "06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02",
+      "ode4u_signature": "(odefun, time, x0, u=None, c=None)"
+    },
+    "model_scope": "Accepted Stage B no-independent-dam-spillway models; wetland overflow retained",
+    "design_categories": [
+      "type_b",
+      "type_b"
+    ],
+    "design_covers": [
+      0.2714117624187232,
+      0.2141279193188096
+    ],
+    "gate1_hours": [
+      0,
+      17,
+      18,
+      26,
+      28,
+      50,
+      65,
+      66,
+      76,
+      80,
+      110,
+      144
+    ],
+    "gate2_hours": [
+      0,
+      18,
+      20,
+      27,
+      30,
+      52,
+      66,
+      68,
+      78,
+      82,
+      112,
+      144
+    ],
+    "boundaries": {
+      "Q_ext_m3_s": 0.0,
+      "h_d_m": 97.15,
+      "h_g_m": 97.15,
+      "B": 0.0
+    },
+    "initial_wetland_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2500.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "initial_no_wetland_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "initial_extra_wetland_water_m3": 5500.0,
+    "initial_condition_note": "Accepted physical initial storages and actuator/latch initialization at the antecedent start, including 5500 m3 additional wetland water. One continuous unchanged physical/controller run through complete existing antecedent forcing and the unchanged 144-hour event. Event-start states and controller memory are evolved conditions, not observations or reset states.",
+    "datum": "assumed common model datum; not NAVD88; no conversion to gauge elevation",
+    "dt_s": 15.0,
+    "duration_s": 604800.0,
+    "conditional_on": "Accepted physical initial storages and actuator/latch initialization at the antecedent start, including 5500 m3 additional wetland water. One continuous unchanged physical/controller run through complete existing antecedent forcing and the unchanged 144-hour event. Event-start states and controller memory are evolved conditions, not observations or reset states.",
+    "original_fixed_gate_values": [
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.336,
+      0.384,
+      0.696,
+      0.36,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.36,
+      0.42,
+      0.78,
+      0.324,
+      0.005,
+      0.005
+    ],
+    "schedule_scale": null,
+    "schedule_is_original": false,
+    "design_source_label": "best",
+    "schedule_kind": "sampled_feedback_exact_linear_actuator",
+    "constant_opening": null,
+    "schedule_description": "Unchanged 120 s feedback policy, continuous across antecedent/event boundary",
+    "recovered_adapter_sha256": "483124a917aac6e56c28bb1eab26c2afef5cc4b913438ebcfc7fa8dfe92616ba",
+    "parameter_evaluation": {
+      "parameter_vector_sha256": "22224c13a771a4123e69cfca283cea94a2075db23f693baf60a60fa38239e62a",
+      "requested_physical_overrides": {
+        "K_u": 5.631927082247021e-07,
+        "k_ud": [
+          2.1557158175899442e-05,
+          1.7245726540719556e-05
+        ],
+        "k_ur": 8.622863270359778e-06,
+        "R_r": 0.23161914540214412
+      },
+      "effective_physical_values": {
+        "K_u": 5.631927082247021e-07,
+        "k_ud": [
+          2.1557158175899442e-05,
+          1.7245726540719556e-05
+        ],
+        "k_ur": 8.622863270359778e-06,
+        "R_r": 0.23161914540214412
+      },
+      "units": {
+        "K_u": "m/s",
+        "k_ud": "1/s (two branches)",
+        "k_ur": "1/s",
+        "R_r": "s/m2"
+      },
+      "unspecified_values_rule": "Retain existing nominal values; never sample or infer a value",
+      "soil_capacity_m3": 120000.0,
+      "soil_field_capacity_m3": 60000.0,
+      "derived_initial_soil_fraction": 0.75,
+      "initial_wetland_m3": [
+        600.0,
+        90000.0,
+        3000.0,
+        2500.0,
+        3000.0,
+        2400.0,
+        409600.00000000035,
+        7000.0
+      ],
+      "initial_no_wetland_m3": [
+        600.0,
+        90000.0,
+        3000.0,
+        2400.0,
+        409600.00000000035,
+        7000.0
+      ],
+      "additional_initial_wetland_water_m3": 5500.0,
+      "gate_parameters": [
+        {
+          "gravity": 9.80665,
+          "gate_width": 1.0,
+          "gate_max_opening": 0.3,
+          "gate_sill_z": 100.0,
+          "Cd_gate_free": 0.6,
+          "Cd_gate_submerged": 0.8,
+          "neglect_approach_velocity_head": true
+        },
+        {
+          "gravity": 9.80665,
+          "gate_width": 0.8,
+          "gate_max_opening": 0.3,
+          "gate_sill_z": 99.8,
+          "Cd_gate_free": 0.6,
+          "Cd_gate_submerged": 0.8,
+          "neglect_approach_velocity_head": true
+        }
+      ],
+      "initial_actual_opening_m": [
+        0.0015,
+        0.0015
+      ],
+      "controller_period_s": 120.0,
+      "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "design_categories": [
+        "type_b",
+        "type_b"
+      ],
+      "design_covers": [
+        0.2714117624187232,
+        0.2141279193188096
+      ],
+      "design_label": "Historical B-selected wetland design; no new optimization",
+      "deterministic_weather_id": "historical_20240804T1500Z__antecedent_24h",
+      "prepared_forcing_path": "D/d2_analysis/antecedent_conditions/forcing/historical_20240804T1500Z__antecedent_24h.csv",
+      "prepared_forcing_sha256": "7639875fe8a5d2730f0110c68cc0b092f708c651ce013550b4cd711201a56b9e",
+      "prepared_forcing_manifest_sha256": "b97d5e02f726bb47e9e1f9d5e34a242b7ffb7f4af01c7c95915bf19505cb59c7",
+      "boundaries": {
+        "Q_ext_m3_s": 0.0,
+        "h_d_m": 97.15,
+        "h_g_m": 97.15,
+        "B": 0.0
+      },
+      "dt_s": 15.0,
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "conditioning": "Accepted physical initial storages and actuator/latch initialization at the antecedent start, including 5500 m3 additional wetland water. One continuous unchanged physical/controller run through complete existing antecedent forcing and the unchanged 144-hour event. Event-start states and controller memory are evolved conditions, not observations or reset states.",
+      "adapter_method": "Private function globals with a per-call loader proxy; no original function/module/cache mutation",
+      "adapter_sha256": "55a3028801f453950c398ee614cb89c8bd6055c7c769ff3dc4cf51c57b5dc496",
+      "frozen_driver_sha256": "73a69dbe4ab8f13b93227697fd763ce3fb25e24f1eedff49a3bbe5269b711aa3",
+      "refinement_metadata": null,
+      "nominal_2022_template_provenance": {
+        "deterministic_weather_id": "deterministic_september_2022",
+        "prepared_forcing_path": "B/work/event_data/proposed_forcing_120s.csv",
+        "prepared_forcing_sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394",
+        "prepared_forcing_manifest_sha256": "e122da512246112a5960ebb94a371dee146a9338ace8f5c0d30a518eedd0974d",
+        "adapter_sha256": "5683059710c59b0d8e2e06fce7d124bc6703c40b05c281990062bdd31c6f5305"
+      },
+      "parameter_template_adapter_sha256": "5683059710c59b0d8e2e06fce7d124bc6703c40b05c281990062bdd31c6f5305",
+      "conditioning_start_utc": "2024-08-03 15:00:00+00:00",
+      "event_start_utc": "2024-08-04 15:00:00+00:00",
+      "event_end_utc": "2024-08-10 15:00:00+00:00",
+      "duration_s": 604800.0,
+      "event_offset_s": 86400.0,
+      "forcing_method": "Separate unchanged hourly antecedent/event mappings; shifted grids preserve original event endpoint-hold inputs",
+      "weather_seed": null,
+      "weather_source_kind": "Existing station-derived/interpolated weather and grid-estimated solar, with retained QC/trace flags"
+    },
+    "conditioning_duration_s": 86400.0,
+    "event_duration_s": 518400.0,
+    "historical_fixed_gate_values": [
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.336,
+      0.384,
+      0.696,
+      0.36,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.36,
+      0.42,
+      0.78,
+      0.324,
+      0.005,
+      0.005
+    ],
+    "controller_policy": {
+      "name": "upstream_level_hysteresis_v1",
+      "status": "Predetermined hypothetical operating policy; not optimized or calibrated",
+      "control_period_s": 120.0,
+      "close_head_m": 0.2,
+      "reopen_head_m": 0.3,
+      "full_open_head_m": 0.8,
+      "enabled_low_head_target_m": 0.1,
+      "maximum_opening_m": 0.3,
+      "opening_rate_limit_m_per_s": 0.0005,
+      "closing_rate_limit_m_per_s": 0.0005,
+      "initial_enabled": [
+        true,
+        true
+      ],
+      "unchanged_dam_safe_head_m": [
+        1.2,
+        1.2
+      ],
+      "rate_basis": "Illustrative analogue to USACE rule-operation example 0.1 ft/min = 0.000508 m/s; not a measured actuator specification",
+      "head_basis": "Upstream pool elevation minus its existing gate sill; identical relative-head thresholds for both branches",
+      "slew_basis": "At each scheduled update choose a rate-limited endpoint; actual opening moves linearly to that endpoint during the next 120 seconds. Small movements use less than the maximum rate.",
+      "selection_basis": "Low-water hysteresis and energy-gate target ratios provide an applicability buffer; full opening is requested 0.4 m below the unchanged dam limit. Values declared before simulations."
+    },
+    "control_period_s": 120.0,
+    "initial_actual_opening_m": [
+      0.0015,
+      0.0015
+    ],
+    "controller_state_location": "Outside hydrologic ODE: two gate positions and two latches",
+    "hydraulic_arm": "D",
+    "hydraulic_variant_settings": {
+      "crest_length_m": 1.0,
+      "Cw_US": 2.8,
+      "contraction_at_zero_relative_opening": 0.617,
+      "transition_end_ratio": 1.5,
+      "minimum_crest_head_length_ratio": 0.05,
+      "maximum_crest_head_length_ratio": 0.5
+    },
+    "stage_d_feedback_source_sha256": {
+      "D/feedback_control/run_policy.py": "73a69dbe4ab8f13b93227697fd763ce3fb25e24f1eedff49a3bbe5269b711aa3",
+      "D/feedback_control/policy.py": "46bc401b72edd8702674d6f659cdead9e7cfc42334253680f22b7b6aaad19ecb",
+      "D/feedback_control/policy.json": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "D/gate_hydraulics_revision/model.py": "730e36db790ac0c7e3ff1ac14c9708e4a8b9e5defc380397f3b53b0c73bcf3c6",
+      "D/gate_hydraulics_revision/hydraulics.py": "7c5a58997a15f13210ad3ccc38c593d59b1cb91dd008f9ff7fb7577382ce120e"
+    }
+  },
+  "state_names": [
+    "S_u",
+    "S_m",
+    "S_w1",
+    "S_w2",
+    "S_d1",
+    "S_d2",
+    "S_g",
+    "S_r"
+  ],
+  "initial_storage_m3": [
+    600.0,
+    90000.0,
+    3000.0,
+    2500.0,
+    3000.0,
+    2400.0,
+    409600.00000000035,
+    7000.0
+  ],
+  "original_seed": null,
+  "control_period_s": 120.0,
+  "hydrologic_state_count": 8,
+  "controller_memory_is_not_water_storage": true,
+  "ode_started": true,
+  "completed_until_s": 604800.0,
+  "rainfall_area_m2": 660000.0,
+  "former_wetland_rainfall_area_m2": 22000.0,
+  "former_wetland_rainfall_routing": "wetland storages",
+  "safety_is_a_reported_outcome": true,
+  "physical_river_peak_m": 97.35,
+  "physical_river_peak_discharge_m3_s": 0.8634864775653266,
+  "full_valid_trajectory_available": true,
+  "full_integration_horizon_completed": true,
+  "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/antecedent_conditions/forcing/historical_20240804T1500Z__antecedent_24h.csv",
+  "forcing_file_sha256": "7639875fe8a5d2730f0110c68cc0b092f708c651ce013550b4cd711201a56b9e",
+  "forcing_array_sha256": "1ff9e93be6c3e2ff1be520f04cc6419ff2f24dea5ee08b92fe6379715635b0ec",
+  "timestamp_meaning": "UTC beginning of a one-hour accumulation/mean interval",
+  "forcing_rows": 168,
+  "antecedent_hours": 24,
+  "event_offset_s": 86400,
+  "original_event_rows_byte_exact": true,
+  "mapping_seam": "Separate unchanged hourly mappings; original event endpoint holds preserved",
+  "event_start_utc": "2024-08-03T15:00:00+00:00",
+  "forcing_conservation": {
+    "source_precipitation_m": 0.0412000000003,
+    "integrated_precipitation_m": 0.04120000000029984,
+    "precipitation_error_m": -1.5959455978986625e-16,
+    "source_solar_Wh_m2": 35808.34,
+    "integrated_solar_Wh_m2": 35808.33999999969,
+    "solar_error_Wh_m2": -3.055902197957039e-10,
+    "event_weather_and_boundary_inputs_bit_exact": true,
+    "event_output_knots_shift_exact": true,
+    "event_offset_s": 86400,
+    "antecedent_hours": 24,
+    "seam_temperature_jump_C": 1.2763157900000017,
+    "seam_wind_jump_m_s": 0.0,
+    "seam_precipitation_rate_jump_m_s": 0.0,
+    "seam_solar_mean_jump_W_m2": 193.41999999999996,
+    "mapping": "Exact 120 s controller blocks contained in original weather intervals; P/Rs jumps are not averaged across hour boundaries",
+    "pass_conservation": true
+  },
+  "controller_updates": 5040,
+  "controller_completed_blocks": 5040,
+  "controller_last_attained_opening_m": [
+    0.0,
+    0.0
+  ],
+  "all_rhs_observations": {
+    "ode_segment_calls": 5040,
+    "rhs_attempts": 166320,
+    "rhs_successes": 166320,
+    "rhs_failures": 0,
+    "last_rhs_time_s": 604800.0,
+    "observation_scope": "Every official ode4u RHS/RK stage; separate preflight validator RHS is not counted. Attempted maxima may include the first rejected stage.",
+    "safety_successful_rhs": [
+      {
+        "variable": "H_d1",
+        "threshold_m": 101.2,
+        "peak_m": 100.42793256084924,
+        "peak_time_s": 260482.5,
+        "margin_m": 0.77206743915076,
+        "exceeded": false
+      },
+      {
+        "variable": "H_d2",
+        "threshold_m": 101.0,
+        "peak_m": 100.22793256084924,
+        "peak_time_s": 260482.5,
+        "margin_m": 0.77206743915076,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w1",
+        "threshold_m": 98.9,
+        "peak_m": 98.27637586965483,
+        "peak_time_s": 275812.5,
+        "margin_m": 0.6236241303451777,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w2",
+        "threshold_m": 98.8,
+        "peak_m": 98.1519447026914,
+        "peak_time_s": 274567.5,
+        "margin_m": 0.648055297308602,
+        "exceeded": false
+      }
+    ],
+    "safety_attempted_rhs": [
+      {
+        "variable": "H_d1",
+        "threshold_m": 101.2,
+        "peak_m": 100.42793256084924,
+        "peak_time_s": 260482.5,
+        "margin_m": 0.77206743915076,
+        "exceeded": false
+      },
+      {
+        "variable": "H_d2",
+        "threshold_m": 101.0,
+        "peak_m": 100.22793256084924,
+        "peak_time_s": 260482.5,
+        "margin_m": 0.77206743915076,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w1",
+        "threshold_m": 98.9,
+        "peak_m": 98.27637586965483,
+        "peak_time_s": 275812.5,
+        "margin_m": 0.6236241303451777,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w2",
+        "threshold_m": 98.8,
+        "peak_m": 98.1519447026914,
+        "peak_time_s": 274567.5,
+        "margin_m": 0.648055297308602,
+        "exceeded": false
+      }
+    ],
+    "wetland_safety_applicable": true,
+    "geometry_attempted_rhs": [
+      {
+        "variable": "H_g",
+        "threshold_m": 97.9,
+        "peak_m": 97.33127425143762,
+        "peak_time_s": 452137.5,
+        "margin_m": 0.568725748562386,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 0.567725748562386
+      },
+      {
+        "variable": "H_g",
+        "threshold_m": 100.0,
+        "peak_m": 97.33127425143762,
+        "peak_time_s": 452137.5,
+        "margin_m": 2.6687257485623803,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 2.6677257485623804
+      },
+      {
+        "variable": "H_r",
+        "threshold_m": 99.0,
+        "peak_m": 97.35,
+        "peak_time_s": 0.0,
+        "margin_m": 1.6500000000000057,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 1.6490000000000058
+      },
+      {
+        "variable": "H_g",
+        "threshold_m": 97.9,
+        "peak_m": 97.33127425143762,
+        "peak_time_s": 452137.5,
+        "margin_m": 0.568725748562386,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 0.567725748562386
+      }
+    ],
+    "min_storage_by_state_m3": {
+      "S_u": 2.3870543672358005e-36,
+      "S_m": 63793.054326431266,
+      "S_w1": 5.943937127056397e-06,
+      "S_w2": 0.00020603937954708813,
+      "S_d1": 1904.4868366472544,
+      "S_d2": 1523.5894693178195,
+      "S_g": 409600.00000000035,
+      "S_r": 3023.7327197426316
+    },
+    "max_soil_capacity_residual_m3": -30000.0,
+    "minimum_G5_by_branch": [
+      {
+        "branch": 1,
+        "margin_m": 0.07487553453989904,
+        "residual_m": -0.07487553453989904,
+        "time_s": 294360.0,
+        "upstream_stage_m": 100.1998755345399,
+        "tailwater_stage_m": 98.23669559782532,
+        "water_depth_m": 0.19987553453989904,
+        "opening_height_m": 0.1,
+        "H_over_a": 1.9987553453989904
+      },
+      {
+        "branch": 2,
+        "margin_m": 0.07487553453989904,
+        "residual_m": -0.07487553453989904,
+        "time_s": 294360.0,
+        "upstream_stage_m": 99.9998755345399,
+        "tailwater_stage_m": 98.10914191594217,
+        "water_depth_m": 0.19987553453989904,
+        "opening_height_m": 0.1,
+        "H_over_a": 1.9987553453989904
+      }
+    ],
+    "minimum_gate_sill_above_tailwater_m": [
+      1.723624130345172,
+      1.648055297308602
+    ],
+    "derivative_physical_mass_identity_max_abs_m3_s": 1.3322676295501878e-15,
+    "declared_external_net_identity_max_abs_m3_s": 0.0,
+    "physical_mass_identity": "sum(dx) = P*A_rain + Q_ext + Q_gx - Q_out - E_tot; internal transfers cancel once",
+    "first_rhs_exception": null
+  },
+  "hydraulic_diagnostics": {
+    "regime_rhs_counts": {
+      "gate_1:energy_gate": 17782,
+      "gate_2:energy_gate": 17782,
+      "gate_1:closed": 148538,
+      "gate_2:closed": 148538
+    },
+    "energy_head_range_m": {
+      "1": [
+        0.19044868366472656,
+        0.4279325608492428
+      ],
+      "2": [
+        0.19044868366472656,
+        0.4279325608492428
+      ]
+    }
+  },
+  "last_completed_state_m3": [
+    2.3870543876142045e-36,
+    63793.05432643137,
+    5.943937128570039e-06,
+    0.00020603937957809057,
+    1915.5513895934207,
+    1532.4411116747292,
+    425469.1866517476,
+    3055.0287155957026
+  ],
+  "actual_gate_successful_rhs_observations": [
+    {
+      "branch": 1,
+      "successful_rhs_evaluations": 166320,
+      "minimum_head_m": 0.19044868366472656,
+      "maximum_head_m": 0.4279325608492428,
+      "minimum_actual_opening_m": 0.0,
+      "maximum_actual_opening_m": 0.15117265232988644,
+      "minimum_open_gate_H_over_a": 1.9987553453989904,
+      "minimum_open_gate_ratio_record": {
+        "time_s": 294360.0,
+        "H_over_a": 1.9987553453989904,
+        "water_depth_m": 0.19987553453989904,
+        "opening_height_m": 0.1,
+        "tailwater_stage_m": 98.23669559782532,
+        "upstream_stage_m": 100.1998755345399
+      }
+    },
+    {
+      "branch": 2,
+      "successful_rhs_evaluations": 166320,
+      "minimum_head_m": 0.19044868366472656,
+      "maximum_head_m": 0.4279325608492428,
+      "minimum_actual_opening_m": 0.0,
+      "maximum_actual_opening_m": 0.15117265232988644,
+      "minimum_open_gate_H_over_a": 1.9987553453989904,
+      "minimum_open_gate_ratio_record": {
+        "time_s": 294360.0,
+        "H_over_a": 1.9987553453989904,
+        "water_depth_m": 0.19987553453989904,
+        "opening_height_m": 0.1,
+        "tailwater_stage_m": 98.10914191594217,
+        "upstream_stage_m": 99.9998755345399
+      }
+    }
+  ],
+  "completed_blocks_mass_diagnostics": {
+    "scope": "Accepted completed control blocks only; not a full-horizon balance for an incomplete trajectory",
+    "through_time_s": 604800.0,
+    "external_net_volume_m3": -22334.74012974867,
+    "external_inflow_volume_m3": 27192.000000198055,
+    "maximum_balance_residual_m3": 0.002692607021344884,
+    "final_balance_residual_m3": 0.002536774514737772,
+    "integrated_precipitation_m": 0.04120000000029984,
+    "integrated_solar_Wh_m2": 35808.33999999969
+  },
+  "expected_output_samples": 40321,
+  "original_G5_margin_role": "Active unchanged hydraulic applicability for B arm; descriptive historical diagnostic for D arm",
+  "maximum_planned_opening_rate_m_per_s": 0.0005,
+  "maximum_planned_closing_rate_m_per_s": 0.0005,
+  "balance_max_m3": 0.002692607021344884,
+  "balance_relative": 9.902202932205325e-08,
+  "balance_relative_tolerance": 0.0001,
+  "balance_method": "External net flux integrated per control block before concatenating; internal transfers cancel once",
+  "safety": [
+    {
+      "variable": "H_d1",
+      "threshold_m": 101.2,
+      "peak_m": 100.42793248947888,
+      "peak_time_s": 260490.0,
+      "margin_m": 0.7720675105211257,
+      "exceeded": false
+    },
+    {
+      "variable": "H_d2",
+      "threshold_m": 101.0,
+      "peak_m": 100.22793248947887,
+      "peak_time_s": 260490.0,
+      "margin_m": 0.7720675105211257,
+      "exceeded": false
+    },
+    {
+      "variable": "H_w1",
+      "threshold_m": 98.9,
+      "peak_m": 98.27637586494022,
+      "peak_time_s": 275820.0,
+      "margin_m": 0.6236241350597851,
+      "exceeded": false
+    },
+    {
+      "variable": "H_w2",
+      "threshold_m": 98.8,
+      "peak_m": 98.1519446954186,
+      "peak_time_s": 274560.0,
+      "margin_m": 0.6480553045813906,
+      "exceeded": false
+    }
+  ],
+  "safety_violation": false,
+  "safety_violation_at_output_nodes": false,
+  "safety_violation_any_successful_rhs": false,
+  "min_storage_m3": 2.3870543876142045e-36,
+  "mapped_input_array_sha256": "4f55f8964638a2c49c84fe109f8e734b0d666fe0a3f8baaab65f018ff58355e7",
+  "solver_termination": "Completed fixed interval under fixed-clock feedback",
+  "classification": "completed_valid_safety_feasible",
+  "physical_river_peak_time_s": 0.0,
+  "physical_river_peak_discharge_time_s": 0.0,
+  "parameter_evaluation": {
+    "parameter_vector_sha256": "22224c13a771a4123e69cfca283cea94a2075db23f693baf60a60fa38239e62a",
+    "requested_physical_overrides": {
+      "K_u": 5.631927082247021e-07,
+      "k_ud": [
+        2.1557158175899442e-05,
+        1.7245726540719556e-05
+      ],
+      "k_ur": 8.622863270359778e-06,
+      "R_r": 0.23161914540214412
+    },
+    "effective_physical_values": {
+      "K_u": 5.631927082247021e-07,
+      "k_ud": [
+        2.1557158175899442e-05,
+        1.7245726540719556e-05
+      ],
+      "k_ur": 8.622863270359778e-06,
+      "R_r": 0.23161914540214412
+    },
+    "units": {
+      "K_u": "m/s",
+      "k_ud": "1/s (two branches)",
+      "k_ur": "1/s",
+      "R_r": "s/m2"
+    },
+    "unspecified_values_rule": "Retain existing nominal values; never sample or infer a value",
+    "soil_capacity_m3": 120000.0,
+    "soil_field_capacity_m3": 60000.0,
+    "derived_initial_soil_fraction": 0.75,
+    "initial_wetland_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2500.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "initial_no_wetland_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "additional_initial_wetland_water_m3": 5500.0,
+    "gate_parameters": [
+      {
+        "gravity": 9.80665,
+        "gate_width": 1.0,
+        "gate_max_opening": 0.3,
+        "gate_sill_z": 100.0,
+        "Cd_gate_free": 0.6,
+        "Cd_gate_submerged": 0.8,
+        "neglect_approach_velocity_head": true
+      },
+      {
+        "gravity": 9.80665,
+        "gate_width": 0.8,
+        "gate_max_opening": 0.3,
+        "gate_sill_z": 99.8,
+        "Cd_gate_free": 0.6,
+        "Cd_gate_submerged": 0.8,
+        "neglect_approach_velocity_head": true
+      }
+    ],
+    "initial_actual_opening_m": [
+      0.0015,
+      0.0015
+    ],
+    "controller_period_s": 120.0,
+    "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+    "design_categories": [
+      "type_b",
+      "type_b"
+    ],
+    "design_covers": [
+      0.2714117624187232,
+      0.2141279193188096
+    ],
+    "design_label": "Historical B-selected wetland design; no new optimization",
+    "deterministic_weather_id": "historical_20240804T1500Z__antecedent_24h",
+    "prepared_forcing_path": "D/d2_analysis/antecedent_conditions/forcing/historical_20240804T1500Z__antecedent_24h.csv",
+    "prepared_forcing_sha256": "7639875fe8a5d2730f0110c68cc0b092f708c651ce013550b4cd711201a56b9e",
+    "prepared_forcing_manifest_sha256": "b97d5e02f726bb47e9e1f9d5e34a242b7ffb7f4af01c7c95915bf19505cb59c7",
+    "boundaries": {
+      "Q_ext_m3_s": 0.0,
+      "h_d_m": 97.15,
+      "h_g_m": 97.15,
+      "B": 0.0
+    },
+    "dt_s": 15.0,
+    "hydraulic_arm": "D",
+    "Cw_US": 2.8,
+    "conditioning": "Accepted physical initial storages and actuator/latch initialization at the antecedent start, including 5500 m3 additional wetland water. One continuous unchanged physical/controller run through complete existing antecedent forcing and the unchanged 144-hour event. Event-start states and controller memory are evolved conditions, not observations or reset states.",
+    "adapter_method": "Private function globals with a per-call loader proxy; no original function/module/cache mutation",
+    "adapter_sha256": "55a3028801f453950c398ee614cb89c8bd6055c7c769ff3dc4cf51c57b5dc496",
+    "frozen_driver_sha256": "73a69dbe4ab8f13b93227697fd763ce3fb25e24f1eedff49a3bbe5269b711aa3",
+    "refinement_metadata": null,
+    "nominal_2022_template_provenance": {
+      "deterministic_weather_id": "deterministic_september_2022",
+      "prepared_forcing_path": "B/work/event_data/proposed_forcing_120s.csv",
+      "prepared_forcing_sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394",
+      "prepared_forcing_manifest_sha256": "e122da512246112a5960ebb94a371dee146a9338ace8f5c0d30a518eedd0974d",
+      "adapter_sha256": "5683059710c59b0d8e2e06fce7d124bc6703c40b05c281990062bdd31c6f5305"
+    },
+    "parameter_template_adapter_sha256": "5683059710c59b0d8e2e06fce7d124bc6703c40b05c281990062bdd31c6f5305",
+    "conditioning_start_utc": "2024-08-03 15:00:00+00:00",
+    "event_start_utc": "2024-08-04 15:00:00+00:00",
+    "event_end_utc": "2024-08-10 15:00:00+00:00",
+    "duration_s": 604800.0,
+    "event_offset_s": 86400.0,
+    "forcing_method": "Separate unchanged hourly antecedent/event mappings; shifted grids preserve original event endpoint-hold inputs",
+    "weather_seed": null,
+    "weather_source_kind": "Existing station-derived/interpolated weather and grid-estimated solar, with retained QC/trace flags"
+  },
+  "phase_diagnostics": {
+    "antecedent": {
+      "start_time_s": 0.0,
+      "target_end_time_s": 86400.0,
+      "attempted_blocks": 720,
+      "completed_blocks": 720,
+      "initial_storage_m3": [
+        600.0,
+        90000.0,
+        3000.0,
+        2500.0,
+        3000.0,
+        2400.0,
+        409600.00000000035,
+        7000.0
+      ],
+      "final_storage_m3": [
+        1.935076855653625e-05,
+        82812.6626112097,
+        315.6504922842299,
+        284.70246685392834,
+        1972.8260292504067,
+        1578.2608234003385,
+        415836.23105290456,
+        3028.970626898993
+      ],
+      "completed_until_s": 86400.0,
+      "external_net_volume_m3": -12270.698410427874,
+      "outlet_volume_m3": 9342.567077949341,
+      "external_inflow_volume_m3": 0.0,
+      "integrated_precipitation_m": 0.0,
+      "integrated_solar_Wh_m2": 6741.290000000002,
+      "maximum_balance_residual_m3": 0.002532580438128207,
+      "final_balance_residual_m3": 0.002532580438128207,
+      "minimum_open_gate_H_over_a": [
+        1.9990009675893816,
+        1.9990009675893816
+      ],
+      "source_precipitation_m": 0.0,
+      "source_solar_Wh_m2": 6741.289999999999,
+      "complete": true,
+      "rain_error_m": 0.0,
+      "solar_error_Wh_m2": 2.7284841053187847e-12,
+      "forcing_conservation_passed": true,
+      "relative_balance_tolerance": 0.0001,
+      "balance_scale_m3": 518100.00000000035,
+      "balance_scale_rule": "Phase external inflow volume; phase initial total storage only if no positive external inflow",
+      "relative_balance_residual": 4.888207755507055e-09,
+      "balance_passed": true,
+      "net_nonoutlet_external_volume_m3": -2928.1313324785333,
+      "rhs_observations": {
+        "ode_segment_calls": 720,
+        "rhs_attempts": 23760,
+        "rhs_successes": 23760,
+        "rhs_failures": 0,
+        "last_rhs_time_s": 86400.0,
+        "observation_scope": "Every official ode4u RHS/RK stage; separate preflight validator RHS is not counted. Attempted maxima may include the first rejected stage.",
+        "safety_successful_rhs": [
+          {
+            "variable": "H_d1",
+            "threshold_m": 101.2,
+            "peak_m": 100.30000708360201,
+            "peak_time_s": 7.5,
+            "margin_m": 0.8999929163979914,
+            "exceeded": false
+          },
+          {
+            "variable": "H_d2",
+            "threshold_m": 101.0,
+            "peak_m": 100.10000708360201,
+            "peak_time_s": 7.5,
+            "margin_m": 0.8999929163979914,
+            "exceeded": false
+          },
+          {
+            "variable": "H_w1",
+            "threshold_m": 98.9,
+            "peak_m": 98.25,
+            "peak_time_s": 0.0,
+            "margin_m": 0.6500000000000057,
+            "exceeded": false
+          },
+          {
+            "variable": "H_w2",
+            "threshold_m": 98.8,
+            "peak_m": 98.15,
+            "peak_time_s": 0.0,
+            "margin_m": 0.6499999999999915,
+            "exceeded": false
+          }
+        ],
+        "safety_attempted_rhs": [
+          {
+            "variable": "H_d1",
+            "threshold_m": 101.2,
+            "peak_m": 100.30000708360201,
+            "peak_time_s": 7.5,
+            "margin_m": 0.8999929163979914,
+            "exceeded": false
+          },
+          {
+            "variable": "H_d2",
+            "threshold_m": 101.0,
+            "peak_m": 100.10000708360201,
+            "peak_time_s": 7.5,
+            "margin_m": 0.8999929163979914,
+            "exceeded": false
+          },
+          {
+            "variable": "H_w1",
+            "threshold_m": 98.9,
+            "peak_m": 98.25,
+            "peak_time_s": 0.0,
+            "margin_m": 0.6500000000000057,
+            "exceeded": false
+          },
+          {
+            "variable": "H_w2",
+            "threshold_m": 98.8,
+            "peak_m": 98.15,
+            "peak_time_s": 0.0,
+            "margin_m": 0.6499999999999915,
+            "exceeded": false
+          }
+        ],
+        "wetland_safety_applicable": true,
+        "geometry_attempted_rhs": [
+          {
+            "variable": "H_g",
+            "threshold_m": 97.9,
+            "peak_m": 97.24872055510083,
+            "peak_time_s": 86400.0,
+            "margin_m": 0.6512794448991741,
+            "exceeded": false,
+            "invalid_at_equality": true,
+            "strict_margin_m": 0.001,
+            "applicability_violated": false,
+            "margin_after_configured_strict_margin_m": 0.6502794448991741
+          },
+          {
+            "variable": "H_g",
+            "threshold_m": 100.0,
+            "peak_m": 97.24872055510083,
+            "peak_time_s": 86400.0,
+            "margin_m": 2.7512794448991684,
+            "exceeded": false,
+            "invalid_at_equality": true,
+            "strict_margin_m": 0.001,
+            "applicability_violated": false,
+            "margin_after_configured_strict_margin_m": 2.7502794448991685
+          },
+          {
+            "variable": "H_r",
+            "threshold_m": 99.0,
+            "peak_m": 97.35,
+            "peak_time_s": 0.0,
+            "margin_m": 1.6500000000000057,
+            "exceeded": false,
+            "invalid_at_equality": true,
+            "strict_margin_m": 0.001,
+            "applicability_violated": false,
+            "margin_after_configured_strict_margin_m": 1.6490000000000058
+          },
+          {
+            "variable": "H_g",
+            "threshold_m": 97.9,
+            "peak_m": 97.24872055510083,
+            "peak_time_s": 86400.0,
+            "margin_m": 0.6512794448991741,
+            "exceeded": false,
+            "invalid_at_equality": true,
+            "strict_margin_m": 0.001,
+            "applicability_violated": false,
+            "margin_after_configured_strict_margin_m": 0.6502794448991741
+          }
+        ],
+        "min_storage_by_state_m3": {
+          "S_u": 1.935076849673938e-05,
+          "S_m": 82812.66261120955,
+          "S_w1": 315.65049228357464,
+          "S_w2": 284.70246685363145,
+          "S_d1": 1972.8260292504067,
+          "S_d2": 1578.2608234003385,
+          "S_g": 409600.00000000035,
+          "S_r": 3028.9706268928735
+        },
+        "max_soil_capacity_residual_m3": -30000.0,
+        "minimum_G5_by_branch": [
+          {
+            "branch": 1,
+            "margin_m": 0.07490009675893816,
+            "residual_m": -0.07490009675893816,
+            "time_s": 10200.0,
+            "upstream_stage_m": 100.19990009675894,
+            "tailwater_stage_m": 98.2273500657812,
+            "water_depth_m": 0.19990009675893816,
+            "opening_height_m": 0.1,
+            "H_over_a": 1.9990009675893816
+          },
+          {
+            "branch": 2,
+            "margin_m": 0.07490009675893816,
+            "residual_m": -0.07490009675893816,
+            "time_s": 10200.0,
+            "upstream_stage_m": 99.99990009675894,
+            "tailwater_stage_m": 98.1155746299279,
+            "water_depth_m": 0.19990009675893816,
+            "opening_height_m": 0.1,
+            "H_over_a": 1.9990009675893816
+          }
+        ],
+        "minimum_gate_sill_above_tailwater_m": [
+          1.75,
+          1.6499999999999915
+        ],
+        "derivative_physical_mass_identity_max_abs_m3_s": 2.220446049250313e-16,
+        "declared_external_net_identity_max_abs_m3_s": 0.0,
+        "physical_mass_identity": "sum(dx) = P*A_rain + Q_ext + Q_gx - Q_out - E_tot; internal transfers cancel once",
+        "first_rhs_exception": null
+      },
+      "safety_exceeded_at_successful_rhs": false,
+      "scope": "Completed control-block accounting and phase-specific RHS stages; partial-phase quantities are not complete event outcomes"
+    },
+    "event": {
+      "start_time_s": 86400.0,
+      "target_end_time_s": 604800.0,
+      "attempted_blocks": 4320,
+      "completed_blocks": 4320,
+      "initial_storage_m3": [
+        1.935076855653625e-05,
+        82812.6626112097,
+        315.6504922842299,
+        284.70246685392834,
+        1972.8260292504067,
+        1578.2608234003385,
+        415836.23105290456,
+        3028.970626898993
+      ],
+      "final_storage_m3": [
+        2.3870543876142045e-36,
+        63793.05432643137,
+        5.943937128570039e-06,
+        0.00020603937957809057,
+        1915.5513895934207,
+        1532.4411116747292,
+        425469.1866517476,
+        3055.0287155957026
+      ],
+      "completed_until_s": 604800.0,
+      "external_net_volume_m3": -10064.041719320887,
+      "outlet_volume_m3": 21780.8270628714,
+      "external_inflow_volume_m3": 27192.000000198055,
+      "integrated_precipitation_m": 0.04120000000029984,
+      "integrated_solar_Wh_m2": 29067.050000000112,
+      "maximum_balance_residual_m3": 0.00016577773021708708,
+      "final_balance_residual_m3": 4.194169378024526e-06,
+      "minimum_open_gate_H_over_a": [
+        1.9987553453989904,
+        1.9987553453989904
+      ],
+      "source_precipitation_m": 0.0412000000003,
+      "source_solar_Wh_m2": 29067.050000000003,
+      "complete": true,
+      "rain_error_m": -1.5959455978986625e-16,
+      "solar_error_Wh_m2": 1.0913936421275139e-10,
+      "forcing_conservation_passed": true,
+      "relative_balance_tolerance": 0.0001,
+      "balance_scale_m3": 27192.000000198055,
+      "balance_scale_rule": "Phase external inflow volume; phase initial total storage only if no positive external inflow",
+      "relative_balance_residual": 6.096562599877892e-09,
+      "balance_passed": true,
+      "net_nonoutlet_external_volume_m3": 11716.785343550515,
+      "rhs_observations": {
+        "ode_segment_calls": 4320,
+        "rhs_attempts": 142560,
+        "rhs_successes": 142560,
+        "rhs_failures": 0,
+        "last_rhs_time_s": 604800.0,
+        "observation_scope": "Every official ode4u RHS/RK stage; separate preflight validator RHS is not counted. Attempted maxima may include the first rejected stage.",
+        "safety_successful_rhs": [
+          {
+            "variable": "H_d1",
+            "threshold_m": 101.2,
+            "peak_m": 100.42793256084924,
+            "peak_time_s": 260482.5,
+            "margin_m": 0.77206743915076,
+            "exceeded": false
+          },
+          {
+            "variable": "H_d2",
+            "threshold_m": 101.0,
+            "peak_m": 100.22793256084924,
+            "peak_time_s": 260482.5,
+            "margin_m": 0.77206743915076,
+            "exceeded": false
+          },
+          {
+            "variable": "H_w1",
+            "threshold_m": 98.9,
+            "peak_m": 98.27637586965483,
+            "peak_time_s": 275812.5,
+            "margin_m": 0.6236241303451777,
+            "exceeded": false
+          },
+          {
+            "variable": "H_w2",
+            "threshold_m": 98.8,
+            "peak_m": 98.1519447026914,
+            "peak_time_s": 274567.5,
+            "margin_m": 0.648055297308602,
+            "exceeded": false
+          }
+        ],
+        "safety_attempted_rhs": [
+          {
+            "variable": "H_d1",
+            "threshold_m": 101.2,
+            "peak_m": 100.42793256084924,
+            "peak_time_s": 260482.5,
+            "margin_m": 0.77206743915076,
+            "exceeded": false
+          },
+          {
+            "variable": "H_d2",
+            "threshold_m": 101.0,
+            "peak_m": 100.22793256084924,
+            "peak_time_s": 260482.5,
+            "margin_m": 0.77206743915076,
+            "exceeded": false
+          },
+          {
+            "variable": "H_w1",
+            "threshold_m": 98.9,
+            "peak_m": 98.27637586965483,
+            "peak_time_s": 275812.5,
+            "margin_m": 0.6236241303451777,
+            "exceeded": false
+          },
+          {
+            "variable": "H_w2",
+            "threshold_m": 98.8,
+            "peak_m": 98.1519447026914,
+            "peak_time_s": 274567.5,
+            "margin_m": 0.648055297308602,
+            "exceeded": false
+          }
+        ],
+        "wetland_safety_applicable": true,
+        "geometry_attempted_rhs": [
+          {
+            "variable": "H_g",
+            "threshold_m": 97.9,
+            "peak_m": 97.33127425143762,
+            "peak_time_s": 452137.5,
+            "margin_m": 0.568725748562386,
+            "exceeded": false,
+            "invalid_at_equality": true,
+            "strict_margin_m": 0.001,
+            "applicability_violated": false,
+            "margin_after_configured_strict_margin_m": 0.567725748562386
+          },
+          {
+            "variable": "H_g",
+            "threshold_m": 100.0,
+            "peak_m": 97.33127425143762,
+            "peak_time_s": 452137.5,
+            "margin_m": 2.6687257485623803,
+            "exceeded": false,
+            "invalid_at_equality": true,
+            "strict_margin_m": 0.001,
+            "applicability_violated": false,
+            "margin_after_configured_strict_margin_m": 2.6677257485623804
+          },
+          {
+            "variable": "H_r",
+            "threshold_m": 99.0,
+            "peak_m": 97.21696735219736,
+            "peak_time_s": 274312.5,
+            "margin_m": 1.7830326478026421,
+            "exceeded": false,
+            "invalid_at_equality": true,
+            "strict_margin_m": 0.001,
+            "applicability_violated": false,
+            "margin_after_configured_strict_margin_m": 1.7820326478026423
+          },
+          {
+            "variable": "H_g",
+            "threshold_m": 97.9,
+            "peak_m": 97.33127425143762,
+            "peak_time_s": 452137.5,
+            "margin_m": 0.568725748562386,
+            "exceeded": false,
+            "invalid_at_equality": true,
+            "strict_margin_m": 0.001,
+            "applicability_violated": false,
+            "margin_after_configured_strict_margin_m": 0.567725748562386
+          }
+        ],
+        "min_storage_by_state_m3": {
+          "S_u": 2.3870543672358005e-36,
+          "S_m": 63793.054326431266,
+          "S_w1": 5.943937127056397e-06,
+          "S_w2": 0.00020603937954708813,
+          "S_d1": 1904.4868366472544,
+          "S_d2": 1523.5894693178195,
+          "S_g": 415836.23105290456,
+          "S_r": 3023.7327197426316
+        },
+        "max_soil_capacity_residual_m3": -37187.3373887903,
+        "minimum_G5_by_branch": [
+          {
+            "branch": 1,
+            "margin_m": 0.07487553453989904,
+            "residual_m": -0.07487553453989904,
+            "time_s": 294360.0,
+            "upstream_stage_m": 100.1998755345399,
+            "tailwater_stage_m": 98.23669559782532,
+            "water_depth_m": 0.19987553453989904,
+            "opening_height_m": 0.1,
+            "H_over_a": 1.9987553453989904
+          },
+          {
+            "branch": 2,
+            "margin_m": 0.07487553453989904,
+            "residual_m": -0.07487553453989904,
+            "time_s": 294360.0,
+            "upstream_stage_m": 99.9998755345399,
+            "tailwater_stage_m": 98.10914191594217,
+            "water_depth_m": 0.19987553453989904,
+            "opening_height_m": 0.1,
+            "H_over_a": 1.9987553453989904
+          }
+        ],
+        "minimum_gate_sill_above_tailwater_m": [
+          1.723624130345172,
+          1.648055297308602
+        ],
+        "derivative_physical_mass_identity_max_abs_m3_s": 1.3322676295501878e-15,
+        "declared_external_net_identity_max_abs_m3_s": 0.0,
+        "physical_mass_identity": "sum(dx) = P*A_rain + Q_ext + Q_gx - Q_out - E_tot; internal transfers cancel once",
+        "first_rhs_exception": null
+      },
+      "safety_exceeded_at_successful_rhs": false,
+      "scope": "Completed control-block accounting and phase-specific RHS stages; partial-phase quantities are not complete event outcomes"
+    }
+  },
+  "event_boundary_handoff": {
+    "reached": true,
+    "state_exact": true,
+    "actual_opening_exact": true,
+    "boundary_time_s": 86400.0,
+    "controller_reinitialized": false,
+    "state_before_m3": [
+      1.935076855653625e-05,
+      82812.6626112097,
+      315.6504922842299,
+      284.70246685392834,
+      1972.8260292504067,
+      1578.2608234003385,
+      415836.23105290456,
+      3028.970626898993
+    ],
+    "state_after_m3": [
+      1.935076855653625e-05,
+      82812.6626112097,
+      315.6504922842299,
+      284.70246685392834,
+      1972.8260292504067,
+      1578.2608234003385,
+      415836.23105290456,
+      3028.970626898993
+    ],
+    "actual_opening_before_m": [
+      0.0,
+      0.0
+    ],
+    "actual_opening_after_m": [
+      0.0,
+      0.0
+    ],
+    "latches_before": [
+      false,
+      false
+    ],
+    "latches_before_next_update": [
+      false,
+      false
+    ],
+    "latches_after_boundary_update": [
+      false,
+      false
+    ],
+    "latch_memory_exact": true,
+    "raw_actual_opening_before_m": [
+      0.0,
+      0.0
+    ],
+    "raw_actual_opening_after_m": [
+      0.0,
+      0.0
+    ],
+    "raw_actual_opening_exact": true,
+    "previous_block_end_s": 86400.0,
+    "next_update_time_s": 86400.0,
+    "next_planned_end_opening_m": [
+      0.0,
+      0.0
+    ],
+    "interpretation": "Boundary update may legitimately change a latch from the carried state; compare previous_enabled, not post-update enabled"
+  },
+  "antecedent_experiment": {
+    "event_id": "historical_20240804T1500Z",
+    "sample_id": "mc_00016",
+    "antecedent_hours": 24,
+    "event_offset_s": 86400.0,
+    "event_duration_s": 518400.0,
+    "total_duration_s": 604800.0,
+    "forcing": {
+      "conditioning_id": "historical_20240804T1500Z__antecedent_24h",
+      "scenario_id": "historical_20240804T1500Z__antecedent_24h",
+      "event_id": "historical_20240804T1500Z",
+      "antecedent_hours": 24,
+      "event_offset_s": 86400,
+      "total_duration_s": 604800,
+      "event_duration_s": 518400,
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/antecedent_conditions/forcing/historical_20240804T1500Z__antecedent_24h.csv",
+      "forcing_sha256": "7639875fe8a5d2730f0110c68cc0b092f708c651ce013550b4cd711201a56b9e",
+      "start_utc": "2024-08-03 15:00:00+00:00",
+      "event_start_utc": "2024-08-04 15:00:00+00:00",
+      "end_utc": "2024-08-10 15:00:00+00:00",
+      "seed_sequence_entropy": null,
+      "original_event_forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20240804T1500Z.csv",
+      "original_event_forcing_sha256": "da6068843c31b892823353bb81c43cf0c28ab17df77f3f3ad52046eb0c5be586",
+      "original_event_rows_byte_exact": true,
+      "antecedent_rows_source_byte_exact": true,
+      "antecedent_rain_mm": 0.0,
+      "antecedent_solar_energy_Wh_m2": 6741.289999999999,
+      "antecedent_min_temperature_C": 20.0,
+      "antecedent_missing_variables": {
+        "precipitation_mm_per_h": 0,
+        "temperature_C": 0,
+        "solar_W_per_m2": 0,
+        "wind_m_per_s": 0
+      },
+      "antecedent_qc": {
+        "precipitation_trace_lower_bound": 0,
+        "temperature_interpolated": 24,
+        "wind_interpolated": 24,
+        "temperature_short_gap_filled": 0,
+        "wind_short_gap_filled": 0
+      },
+      "native_audit": {
+        "raw_sources": {
+          "NOAA_72640014839_2024.csv": {
+            "file": "C/data/raw/NOAA_72640014839_2024.csv",
+            "sha256": "c87a5ee463ceec959ce493bb03499f841731882db7e980b5f61ef015f35c3668",
+            "request": {
+              "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+              "retrieved_utc": "2026-10-28T19:23:17.205710+00:00",
+              "ok": true,
+              "http_status": 200,
+              "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+              "bytes": 2343261,
+              "sha256": "c87a5ee463ceec959ce493bb03499f841731882db7e980b5f61ef015f35c3668"
+            }
+          },
+          "NOAA_72640594869_2024.csv": {
+            "file": "C/data/raw/NOAA_72640594869_2024.csv",
+            "sha256": "8f7fc189bffdb83c03692d894df56c710104d50e0bed1793761a2efa6fcf5016",
+            "request": {
+              "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+              "retrieved_utc": "2026-10-28T19:23:17.480008+00:00",
+              "ok": true,
+              "http_status": 200,
+              "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+              "bytes": 2730566,
+              "sha256": "8f7fc189bffdb83c03692d894df56c710104d50e0bed1793761a2efa6fcf5016"
+            }
+          },
+          "POWER_solar_2024.json": {
+            "file": "C/data/raw/POWER_solar_2024.json",
+            "sha256": "ed24ce8f16fb2e5db3388656e5b1eee2d335852836431afe139e3ed88604444a",
+            "request": {
+              "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20240101&end=20241231&format=JSON&time-standard=UTC",
+              "retrieved_utc": "2026-10-28T19:22:09.153491+00:00",
+              "ok": true,
+              "http_status": 200,
+              "final_url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20240101&end=20241231&format=JSON&time-standard=UTC",
+              "bytes": 160911,
+              "sha256": "ed24ce8f16fb2e5db3388656e5b1eee2d335852836431afe139e3ed88604444a"
+            }
+          }
+        },
+        "native_rain_selected_intervals": 25,
+        "native_rain_end_minutes": [
+          52
+        ],
+        "native_trace_intervals": 0,
+        "native_rain_reconstruction_error_mm": 0.0,
+        "native_met_reconstruction_error": {
+          "temperature_C": 4.285716670437978e-09,
+          "wind_m_per_s": 4.440892098500626e-16
+        },
+        "solar_cached_grid_reconstruction_error_W_m2": 0.0,
+        "solar_native_units": "Wh/m^2",
+        "solar_source": [
+          "SYN1DEG"
+        ],
+        "rain_parser_annual_qc": {
+          "absent_fields": 26155,
+          "not_one_hour": 746,
+          "missing_bad_quality_or_unsupported_condition": 84,
+          "overlapping_intervals_excluded": 3,
+          "selected_intervals": 8040,
+          "trace_intervals": 532
+        },
+        "actual_interval_files": [
+          "historical_20240804T1500Z__antecedent_24h_native_rain.csv",
+          "historical_20240804T1500Z__antecedent_24h_native_met_brackets.csv"
+        ]
+      },
+      "mapping": "Prefix and original event separately mapped by unchanged hourly adapter; event shifted only; no T/wind interpolation across seam",
+      "source_standardized_csv": "C/data/processed/weather_hourly.csv",
+      "source_standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+      "mapping_validation": [
+        {
+          "conditioning_id": "historical_20240804T1500Z__antecedent_24h",
+          "dt_s": 15.0,
+          "source_precipitation_m": 0.0412000000003,
+          "integrated_precipitation_m": 0.041200000000300004,
+          "precipitation_error_m": 6.938893903907228e-18,
+          "source_solar_Wh_m2": 35808.34,
+          "integrated_solar_Wh_m2": 35808.34,
+          "solar_error_Wh_m2": 0.0,
+          "event_weather_and_boundary_inputs_bit_exact": true,
+          "event_output_knots_shift_exact": true,
+          "event_offset_s": 86400,
+          "antecedent_hours": 24,
+          "seam_temperature_jump_C": 1.2763157900000017,
+          "seam_wind_jump_m_s": 0.0,
+          "seam_precipitation_rate_jump_m_s": 0.0,
+          "seam_solar_mean_jump_W_m2": 193.41999999999996,
+          "mapping": "Unchanged mapper applied independently to antecedent and original144h event; time shifted only; controller/state remain continuous in caller",
+          "pass_conservation": true
+        },
+        {
+          "conditioning_id": "historical_20240804T1500Z__antecedent_24h",
+          "dt_s": 7.5,
+          "source_precipitation_m": 0.0412000000003,
+          "integrated_precipitation_m": 0.041200000000300004,
+          "precipitation_error_m": 6.938893903907228e-18,
+          "source_solar_Wh_m2": 35808.34,
+          "integrated_solar_Wh_m2": 35808.34,
+          "solar_error_Wh_m2": 0.0,
+          "event_weather_and_boundary_inputs_bit_exact": true,
+          "event_output_knots_shift_exact": true,
+          "event_offset_s": 86400,
+          "antecedent_hours": 24,
+          "seam_temperature_jump_C": 1.2763157900000017,
+          "seam_wind_jump_m_s": 0.0,
+          "seam_precipitation_rate_jump_m_s": 0.0,
+          "seam_solar_mean_jump_W_m2": 193.41999999999996,
+          "mapping": "Unchanged mapper applied independently to antecedent and original144h event; time shifted only; controller/state remain continuous in caller",
+          "pass_conservation": true
+        }
+      ]
+    },
+    "original_parameter_plan_sha256": "bfd1b8dcf4ef75d6cbd35e8d8c3ba4814bc3ef17679a730ff20d6cb83170c4ea",
+    "continuous_controller_instance": true,
+    "no_state_or_controller_reset": true,
+    "maximum_completed_block_state_continuity_error_m3": 0.0,
+    "maximum_completed_block_gate_continuity_error_m": 0.0,
+    "failed_phase": null,
+    "physical_peak_scope": "Original runner peaks cover the entire extended run; event metrics must be derived from t>=event_offset_s, retaining that event-start state",
+    "residual_scope": "Event residual equals full_run_balance(t)-full_run_balance(event_offset), with its own event inflow scale"
+  },
+  "antecedent_study_plan_sha256": "36e6237aab2b6dcc2843f0df1e0a6290a5de0d38ddd7fcaf393b218200c03e7a"
+}

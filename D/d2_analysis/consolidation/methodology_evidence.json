@@ -1,0 +1,616 @@
+{
+  "audit_kind": "Source and saved-result audit; no physical model, sampler, fitting or plotting runner executed",
+  "audit_date": "2026-11-20",
+  "source_hashes": {
+    "/Users/zhangjiaxuan/Downloads/fair_lite_demo.py": {
+      "sha256": "e5f9d52a926bdfe28075d3a3ecd95abcc239a675696540416605f2a2f9ab9ccd",
+      "bytes": 42382
+    },
+    "/Users/zhangjiaxuan/Downloads/SMCR-project.pdf": {
+      "sha256": "eccfa91d464afc7dc81f85c72a90c6957536caa03e6113d20a1d272eba7d0efd",
+      "bytes": 187705
+    },
+    "/Users/zhangjiaxuan/Downloads/SMCR-JiaxuanZhang-HWD.1-2026.pdf": {
+      "sha256": "0a3defef25bbd437553737624694afee607e2b265f96de3a556c998bfb6c1c0f",
+      "bytes": 34219
+    },
+    "A/work/multivarious/pyproject.toml": {
+      "sha256": "26fd544d5fa9de4fa66169788e1eb253df4f59aaafbfc8a85155b65513a5a340",
+      "bytes": 1141
+    },
+    "A/work/multivarious/multivarious/rvs/uniform.py": {
+      "sha256": "b601783eeaa3afe9fe77daf373642fc81a505d5d920ba2d3bbed3ee59b1c0d67",
+      "bytes": 6443
+    },
+    "A/work/multivarious/multivarious/rvs/normal.py": {
+      "sha256": "99027dd4177967a27a74abdfd6f535189f6b2eb697b810cb7e691ea72a29f635",
+      "bytes": 7017
+    },
+    "A/work/multivarious/multivarious/rvs/lognormal.py": {
+      "sha256": "d22de186be6d111467d462e3a9084254044abde41f7b829fd98b765bc0c47fed",
+      "bytes": 7885
+    },
+    "A/work/multivarious/multivarious/utl/plot_ECDF_ci.py": {
+      "sha256": "3fcfcf204fb9b01793c637247fe0dc4bbb3ccb1bf7ef97fbcd0311e82ce64b35",
+      "bytes": 5918
+    },
+    "A/work/multivarious/multivarious/utl/plot_scatter_dist.py": {
+      "sha256": "e9117b3766c6b59419f4eb1488b7cc84f34802f70a73742bb5f2cf7fb2947791",
+      "bytes": 9860
+    },
+    "A/work/multivarious/multivarious/fit/mimo_srs.py": {
+      "sha256": "36c56bf25006bcc0b9f3af1092c3c0eff07fce150f589341443ab5b1e8ccf38b",
+      "bytes": 39718
+    },
+    "A/work/multivarious/multivarious/fit/__init__.py": {
+      "sha256": "14dc17bf9763c30cd7c689d2f0a09ae08c2f1b9d97c20f9972a142de38e2f860",
+      "bytes": 851
+    },
+    "D/d2_analysis/parameter_uncertainty/results/study_plan.json": {
+      "sha256": "bfd1b8dcf4ef75d6cbd35e8d8c3ba4814bc3ef17679a730ff20d6cb83170c4ea",
+      "bytes": 47071
+    },
+    "D/d2_analysis/parameter_uncertainty/config.json": {
+      "sha256": "d83128019b12ccd3c58ab5f01ddeb56c79843500d871966cf8494c7144949641",
+      "bytes": 2751
+    },
+    "D/d2_analysis/parameter_uncertainty/sampling.py": {
+      "sha256": "2a483b8da647092e3d8c053c726c6fb252f2b34a48387eba1d5d693051989cc3",
+      "bytes": 5266
+    },
+    "A/work/multivarious/multivarious/utl/correlated_rvs.py": {
+      "sha256": "0d099df0ce1b0a23a1f7abbd0c5bd719bcf73d06b79240ec319c3549050a913b",
+      "bytes": 8945
+    },
+    "D/d2_analysis/parameter_uncertainty/adapter.py": {
+      "sha256": "5683059710c59b0d8e2e06fce7d124bc6703c40b05c281990062bdd31c6f5305",
+      "bytes": 8933
+    },
+    "D/d2_analysis/parameter_uncertainty/run_study.py": {
+      "sha256": "27b43701cdefc25001cd1cba16fdc0410495d4b1beafce2893439361142562ee",
+      "bytes": 18953
+    },
+    "D/d2_analysis/parameter_uncertainty/run_official_analysis.py": {
+      "sha256": "7a549b5e49e7d0e5c63e857e33ae4177fcdd3a8b674ca761c398853bb13905a4",
+      "bytes": 8938
+    },
+    "D/d2_analysis/parameter_uncertainty/official_plots.py": {
+      "sha256": "30a70f4a3780ef2c165e532c3f3b11f03df4a0ada0834ddf9d4f6190b42039bb",
+      "bytes": 13799
+    },
+    "D/d2_analysis/historical_storm_robustness/analyze_results.py": {
+      "sha256": "c9185692783a8716893737f3ba94ffdf77744f24fcd6b17b4c61067765f39edf",
+      "bytes": 39478
+    },
+    "D/d2_analysis/parameter_uncertainty/results/monte_carlo/paired_results.csv": {
+      "sha256": "ce87fc49d29d6a06c19a6781a337fdc6c6efae5ce9627574bcbef6917b7ae979",
+      "bytes": 104674
+    },
+    "D/d2_analysis/parameter_uncertainty/results/monte_carlo/counts.json": {
+      "sha256": "5d1e218029f5e633b5efc76d480fb37e49d633db2d3fe1e5077a57fe6941a092",
+      "bytes": 298
+    },
+    "D/d2_analysis/parameter_uncertainty/results/sensitivity/paired_results.csv": {
+      "sha256": "376a96e37ca657fc55a0631ca9180be36de6cde2f1b74b7399aeb8c47fea2198",
+      "bytes": 42851
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_plot_metadata.json": {
+      "sha256": "18a582a6d43c08c05f687d6747ef2bdb1ec2e024948d21f17a6aa47023ff7208",
+      "bytes": 7452
+    },
+    "A/work/multivarious/multivarious/utl/format_plot.py": {
+      "sha256": "83eb7c26465ba076057b7d3f0cf17330c99080e5c3532dbd65fefb6670bd8db2",
+      "bytes": 992
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_wetland_peak_stage_m.csv": {
+      "sha256": "b5d9bad535d8c7a125be7737b6f55ed9553dfd7234f0b1944d85829b1bb4f3ba",
+      "bytes": 4839
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_wetland_peak_stage_m.png": {
+      "sha256": "0db22e7788de10652e763aabad0a403d0bf6af40e37bf3b090ca196fa1e433e9",
+      "bytes": 125475
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_no_wetland_peak_stage_m.csv": {
+      "sha256": "25610f51809335e83a52cbabe6c3a04a495ce043d828e73a3ecdd5605d7290f3",
+      "bytes": 4843
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_no_wetland_peak_stage_m.png": {
+      "sha256": "5077c01f0f863db3e1ad9073462f90544b1d1af074ec0eaa6d4530bd80f9985a",
+      "bytes": 122481
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_delta_peak_stage_m.csv": {
+      "sha256": "820b7765453570232c328bf429bd05a31ae855c7eb03e777d28fb03571e8a0ff",
+      "bytes": 4918
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_delta_peak_stage_m.png": {
+      "sha256": "de457eda2e4a5eae61ecf9ce94a6d81008b33109cc3a4d8b389f091220edcad1",
+      "bytes": 121032
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_wetland_peak_discharge_m3_s.csv": {
+      "sha256": "fe2d2e28be9adc1c241d2d4ab94fa8d070ab9897e92cf2422a7f25516b0f6bfc",
+      "bytes": 4914
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_wetland_peak_discharge_m3_s.png": {
+      "sha256": "275e72fbcb2745c38e67f4855b51d4342656915d29b6ebce70d41843f5384974",
+      "bytes": 124397
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_no_wetland_peak_discharge_m3_s.csv": {
+      "sha256": "c5cc59d268156dbc7f45d02504a5ccd3569088fc2226a72ef71a6d20865a9bf0",
+      "bytes": 4912
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_no_wetland_peak_discharge_m3_s.png": {
+      "sha256": "e411e1d3c6dbeb622119bb4a85a3ffc6296f0ffb2733c2da03f8dbf1ed46998d",
+      "bytes": 121285
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_delta_peak_discharge_m3_s.csv": {
+      "sha256": "6184ebddfa44fc6d800f4fdb524d6902f0b19ace159def1bd856ce6fe89a7220",
+      "bytes": 4916
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_delta_peak_discharge_m3_s.png": {
+      "sha256": "d85dbb104c37ae4c478a5ffcd8eebc42817883119bac3c80da71a227168b5e97",
+      "bytes": 118486
+    },
+    "D/d2_analysis/parameter_uncertainty/plots/official_mc/official_parameter_output_scatter.png": {
+      "sha256": "0877038e236cd531a377f2ae00f3ff4ff8114a96987bb6299d01f5ccf40d4367",
+      "bytes": 170292
+    },
+    "D/d2_analysis/historical_storm_robustness/study_plan.json": {
+      "sha256": "580cf84f31bbc312280b87b37066656afe0f56c5880d501dc8b02c0a5ae7370e",
+      "bytes": 48084
+    },
+    "D/d2_analysis/historical_storm_robustness/events/manifest.json": {
+      "sha256": "66371c784b4a2f9f7ea1c23f142bd7626e505c3558b5b86b4d4b1009631d2115",
+      "bytes": 37222
+    },
+    "D/d2_analysis/historical_storm_robustness/results/ensemble/benchmark_september_2022/paired_results.csv": {
+      "sha256": "ae5e8ea7c80a26f29dbc59bf85d2967983cc0d6c8f1593d41e5db4f24cbe42e7",
+      "bytes": 106631
+    },
+    "D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20230813T0800Z/paired_results.csv": {
+      "sha256": "91616dce3c5761d281c5db377ef75968fe1e29dc5308130cba3124872182e6f2",
+      "bytes": 137012
+    },
+    "D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20220704T2100Z/paired_results.csv": {
+      "sha256": "d33efd513b69879f6b551fa210dafc0a91a5a2783f395c56fb2a8aa25899178e",
+      "bytes": 136699
+    },
+    "D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20190825T0200Z/paired_results.csv": {
+      "sha256": "d058ba5a7fcd02c698af69410754bfe95dcc7b91bfe56e33f4f7d8a9d73fa380",
+      "bytes": 129578
+    },
+    "D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20240804T1500Z/paired_results.csv": {
+      "sha256": "3ee292bb54aeed350c56611f8cdc7daa780063616fbbaed922ad40f75e4f3635",
+      "bytes": 131358
+    },
+    "D/d2_analysis/historical_storm_robustness/tables/analysis_audit.json": {
+      "sha256": "aa5e25917d38d695fdd4213785529cf166d31d47b6a157ca800d311e7eeb5339",
+      "bytes": 36342
+    },
+    "D/d2_analysis/robustness_checks/tables/statistical_audit.json": {
+      "sha256": "e53e5a47c7e7f7933bb754064e3d9dc5ec99c8f9648fbdd14c2db92d7626911d",
+      "bytes": 7362
+    },
+    "D/d2_analysis/results/summary.json": {
+      "sha256": "67e00e527f1bb28daa4a081f178e202f9acc3146a1021c3b4bb7a2bfd79fc91e",
+      "bytes": 2245
+    },
+    "D/d2_analysis/antecedent_conditions/independent_audit.json": {
+      "sha256": "4defef46281cf71274cd66bed1a3c6b8030e944e5915f587dd93392dee03a72e",
+      "bytes": 27563
+    },
+    "C/tables/mimo_srs/model_specification.json": {
+      "sha256": "96c4f5f18e303a42a907e75d41315280d72a80ad67003e29d9cf86fc5a185316",
+      "bytes": 5312
+    },
+    "C/docs/c2_fit_summary.md": {
+      "sha256": "cec4a7df1c0f8617370007321efe4d20db4a08ac16f42b8f568c2eb619d372fa",
+      "bytes": 12841
+    }
+  },
+  "official": {
+    "revision": "06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02",
+    "version": "1.2.1",
+    "git_status_porcelain": [
+      "?? .DS_Store"
+    ],
+    "tracked_source_changes": [],
+    "apis": {
+      "example_analysis": {
+        "signature": "analysis(v, c)",
+        "line": 303
+      },
+      "example_mcs": {
+        "signature": "mcs(v_medn, v_covn, N_mcs)",
+        "line": 543
+      },
+      "multivarious/rvs/uniform.py:rnd": {
+        "signature": "rnd(a, b, N, R=None, seed=None)",
+        "line": 152
+      },
+      "multivarious/rvs/normal.py:rnd": {
+        "signature": "rnd(meanX=0.0, sdvnX=1.0, N=1, R=None, seed=None)",
+        "line": 158
+      },
+      "multivarious/rvs/lognormal.py:rnd": {
+        "signature": "rnd(mednX, covnX, N, R=None, seed=None)",
+        "line": 174
+      },
+      "multivarious/utl/plot_ECDF_ci.py:plot_ECDF_ci": {
+        "signature": "plot_ECDF_ci(data, confidence_level, fig_num, x_label='sorted sample values', save_plots=True)",
+        "line": 7
+      },
+      "multivarious/utl/plot_scatter_dist.py:plot_scatter_dist": {
+        "signature": "plot_scatter_dist(dataX, dataY=None, fig_num=100, var_names=None, n_bins=20, font_size=15, ci=0.95)",
+        "line": 75
+      },
+      "multivarious/fit/mimo_srs.py:mimo_srs": {
+        "signature": "mimo_srs(dataX, dataY, max_order=2, pTrain=70, scaling=1, L1_pnlty=1.0, basis_fctn='H', var_names=None)",
+        "line": 7
+      },
+      "multivarious/fit/mimo_srs.py:compute_model": {
+        "signature": "compute_model(ordr, coeff, meanX, meanY, invTX, TY, dataX, scaling, basis_fctn='H')",
+        "line": 708
+      }
+    },
+    "fit_package_exports_compute_model": false,
+    "fit_package_exports_load_model_npz": false,
+    "notes": "The sole current untracked checkout item is .DS_Store; do not claim the entire external checkout is empty of local files."
+  },
+  "professor_example": {
+    "imported_or_executed_in_this_audit": false,
+    "analysis_and_mcs_are_example_local": true,
+    "mcs_default_N_in_main": 10000,
+    "example_design_cv": 0.3,
+    "example_defaults_adopted_as_wetland_evidence": false,
+    "surrogate_prompt_optional_in_example": true,
+    "actual_example_return_unpacking_differs_from_pinned_fit": true
+  },
+  "sampling": {
+    "config_hash_matches_plan": true,
+    "sampler_hashes_match_plan": true,
+    "master_seed": 69020261118,
+    "seed_children": [
+      {
+        "parameter": "m_K_u",
+        "entropy": 69020261118,
+        "spawn_key": [
+          0
+        ],
+        "pool_size": 4,
+        "state_words": [
+          300548315,
+          3592439765,
+          1266578245,
+          1514668570
+        ],
+        "argument_type": "numpy.random.SeedSequence",
+        "generator": "numpy.random.default_rng inside unchanged official correlated_rvs"
+      },
+      {
+        "parameter": "m_routing",
+        "entropy": 69020261118,
+        "spawn_key": [
+          1
+        ],
+        "pool_size": 4,
+        "state_words": [
+          2030468384,
+          766012281,
+          2212331943,
+          2494059949
+        ],
+        "argument_type": "numpy.random.SeedSequence",
+        "generator": "numpy.random.default_rng inside unchanged official correlated_rvs"
+      },
+      {
+        "parameter": "m_R_r",
+        "entropy": 69020261118,
+        "spawn_key": [
+          2
+        ],
+        "pool_size": 4,
+        "state_words": [
+          1490057551,
+          1834070588,
+          1639769953,
+          2786498760
+        ],
+        "argument_type": "numpy.random.SeedSequence",
+        "generator": "numpy.random.default_rng inside unchanged official correlated_rvs"
+      }
+    ],
+    "marginal_calls": 3,
+    "draws_per_call": 64,
+    "law": "exp(official uniform in log(0.5),log(2)); independent marginal streams",
+    "uncertainty_categories": [
+      "m_K_u",
+      "m_routing",
+      "m_R_r"
+    ],
+    "common_routing_factor": true,
+    "fixed_design_and_policy": true,
+    "fixed_gate_time_series_required": false,
+    "draws_regenerated_in_this_audit": false,
+    "all_saved_mc_vectors_match_plan": true,
+    "grid_points": 27,
+    "grid_valid_pairs": 27,
+    "mc_counts": {
+      "planned_points": 64,
+      "paired_rows": 64,
+      "valid_pairs": 64,
+      "classifications": {
+        "wetland": {
+          "completed_valid_safety_feasible": 64
+        },
+        "no_wetland": {
+          "completed_valid_safety_feasible": 64
+        }
+      },
+      "valid_unsafe": {
+        "wetland": 0,
+        "no_wetland": 0
+      }
+    }
+  },
+  "executed_official_utilities": {
+    "metadata_hash_and_source_hashes_verified": true,
+    "ecdf_figures": 6,
+    "ecdf_saved_array_checks": [
+      {
+        "metric": "wetland_peak_stage_m",
+        "rows": 64,
+        "max_errors": {
+          "sorted_value": 1.4210854715202004e-14,
+          "official_plotting_position": 0.0,
+          "pointwise_lower": 2.220446049250313e-16,
+          "pointwise_upper": 0.0
+        },
+        "png_exists": true
+      },
+      {
+        "metric": "no_wetland_peak_stage_m",
+        "rows": 64,
+        "max_errors": {
+          "sorted_value": 1.4210854715202004e-14,
+          "official_plotting_position": 0.0,
+          "pointwise_lower": 2.220446049250313e-16,
+          "pointwise_upper": 0.0
+        },
+        "png_exists": true
+      },
+      {
+        "metric": "delta_peak_stage_m",
+        "rows": 64,
+        "max_errors": {
+          "sorted_value": 9.71445146547012e-17,
+          "official_plotting_position": 0.0,
+          "pointwise_lower": 2.220446049250313e-16,
+          "pointwise_upper": 0.0
+        },
+        "png_exists": true
+      },
+      {
+        "metric": "wetland_peak_discharge_m3_s",
+        "rows": 64,
+        "max_errors": {
+          "sorted_value": 2.220446049250313e-16,
+          "official_plotting_position": 0.0,
+          "pointwise_lower": 2.220446049250313e-16,
+          "pointwise_upper": 0.0
+        },
+        "png_exists": true
+      },
+      {
+        "metric": "no_wetland_peak_discharge_m3_s",
+        "rows": 64,
+        "max_errors": {
+          "sorted_value": 2.220446049250313e-16,
+          "official_plotting_position": 0.0,
+          "pointwise_lower": 2.220446049250313e-16,
+          "pointwise_upper": 0.0
+        },
+        "png_exists": true
+      },
+      {
+        "metric": "delta_peak_discharge_m3_s",
+        "rows": 64,
+        "max_errors": {
+          "sorted_value": 8.326672684688674e-17,
+          "official_plotting_position": 0.0,
+          "pointwise_lower": 2.220446049250313e-16,
+          "pointwise_upper": 0.0
+        },
+        "png_exists": true
+      }
+    ],
+    "scatter_figure_exists": true,
+    "scatter_input_count": 3,
+    "scatter_output_count": 2,
+    "scatter_outputs": [
+      "delta_peak_stage_m",
+      "delta_peak_discharge_m3_s"
+    ],
+    "ecdf_semantics": "Official rank/(N+1) plotting positions; active pointwise Beta order-statistic limits; not simultaneous, not ties-aggregated count/N ECDF",
+    "scatter_semantics": "Pearson correlation with approximate Fisher-z intervals; not causal or variance-based sensitivity",
+    "surrogate_fit_performed": false
+  },
+  "historical_storms": {
+    "same_64_vectors_per_event": true,
+    "events": [
+      {
+        "event_id": "benchmark_september_2022",
+        "planned": 64,
+        "saved_pairs": 64,
+        "valid_pairs": 64,
+        "wetland_unsafe": 0,
+        "no_wetland_unsafe": 0,
+        "positive_peak_effects": 64,
+        "exact_zero_peak_effects": 0,
+        "negative_peak_effects": 0,
+        "same_original_64_vectors": true
+      },
+      {
+        "event_id": "historical_20230813T0800Z",
+        "planned": 64,
+        "saved_pairs": 64,
+        "valid_pairs": 64,
+        "wetland_unsafe": 0,
+        "no_wetland_unsafe": 0,
+        "positive_peak_effects": 55,
+        "exact_zero_peak_effects": 9,
+        "negative_peak_effects": 0,
+        "same_original_64_vectors": true
+      },
+      {
+        "event_id": "historical_20220704T2100Z",
+        "planned": 64,
+        "saved_pairs": 64,
+        "valid_pairs": 64,
+        "wetland_unsafe": 0,
+        "no_wetland_unsafe": 0,
+        "positive_peak_effects": 53,
+        "exact_zero_peak_effects": 11,
+        "negative_peak_effects": 0,
+        "same_original_64_vectors": true
+      },
+      {
+        "event_id": "historical_20190825T0200Z",
+        "planned": 64,
+        "saved_pairs": 64,
+        "valid_pairs": 64,
+        "wetland_unsafe": 0,
+        "no_wetland_unsafe": 0,
+        "positive_peak_effects": 27,
+        "exact_zero_peak_effects": 37,
+        "negative_peak_effects": 0,
+        "same_original_64_vectors": true
+      },
+      {
+        "event_id": "historical_20240804T1500Z",
+        "planned": 64,
+        "saved_pairs": 64,
+        "valid_pairs": 64,
+        "wetland_unsafe": 0,
+        "no_wetland_unsafe": 0,
+        "positive_peak_effects": 34,
+        "exact_zero_peak_effects": 30,
+        "negative_peak_effects": 0,
+        "same_original_64_vectors": true
+      }
+    ],
+    "new_random_parameter_vectors": 0,
+    "event_occurrence_probabilities_assigned": false,
+    "ecdf_scope": "Separate fixed-event distributions; exact count/N curves and official rank/(N+1) dotted lines. Shading uses atom-safe 95% Clopper-Pearson CDF intervals at fixed grid locations; pointwise, not simultaneous. Official order-statistic Beta intervals retained only as diagnostics.",
+    "statistical_saved_grid_checks": 42030,
+    "cp_scipy_max_error": 4.3548498140921765e-13
+  },
+  "earlier_weather_pilot": {
+    "scope": "Preliminary fixed-policy paired analysis of saved original weather; no new weather or full Monte Carlo",
+    "accounting": [
+      {
+        "dt_s": 15.0,
+        "original_weather_ids": 20,
+        "model_records": 40,
+        "warm_weather_ids": 16,
+        "cold_excluded_ids": 4,
+        "wetland_started": 16,
+        "no_wetland_started": 16,
+        "wetland_completed": 16,
+        "no_wetland_completed": 16,
+        "complete_valid_pairs": 16,
+        "unsafe_valid_model_runs": 0,
+        "incomplete_warm_model_runs": 0,
+        "completed_numerically_invalid_runs": 0
+      },
+      {
+        "dt_s": 7.5,
+        "original_weather_ids": 20,
+        "model_records": 40,
+        "warm_weather_ids": 16,
+        "cold_excluded_ids": 4,
+        "wetland_started": 16,
+        "no_wetland_started": 16,
+        "wetland_completed": 16,
+        "no_wetland_completed": 16,
+        "complete_valid_pairs": 16,
+        "unsafe_valid_model_runs": 0,
+        "incomplete_warm_model_runs": 0,
+        "completed_numerically_invalid_runs": 0
+      }
+    ],
+    "flood_probability_estimated": false
+  },
+  "antecedent_study": {
+    "status": "pass",
+    "primary_physical_pairs": 12,
+    "numerical_refinement_pairs": 1,
+    "retained_model_records": 26,
+    "valid_model_records": 26,
+    "invalid_model_records": 0,
+    "unsafe_valid_model_records": 0
+  },
+  "fit_scope": {
+    "D2_mimo_srs_call_sites": [],
+    "D2_surrogate_fit_completed": false,
+    "C_model_outputs": [
+      "P",
+      "T",
+      "Rs",
+      "W"
+    ],
+    "C_predictors": [
+      "P_completed_1h_at_cutoff",
+      "T_latest_at_cutoff",
+      "Rs_completed_clock_hour",
+      "W_latest_at_cutoff",
+      "sin_annual",
+      "cos_annual",
+      "sin_diurnal",
+      "cos_diurnal"
+    ],
+    "C_fit_is_MC_parameter_to_flood_response_fit": false,
+    "why_not": "Stage C predicts meteorological observations; final-project item 12 asks polynomial sensitivity from MCS inputs and outputs."
+  },
+  "rubric": {
+    "source": "SMCR-project.pdf",
+    "status": "Draft Project Assignment - 2026-11-16",
+    "pages": 4,
+    "due_date_in_source": "December 13, 5:00 pm",
+    "standalone_HW_D2_rubric_verified": false,
+    "D1_is_student_plan_not_professor_rubric": true,
+    "verified_requirements": [
+      {
+        "page": 3,
+        "item": 7,
+        "requirement": "At least three uncertain constants; justify distribution/parameters, discuss correlation, describe failure analysis",
+        "status": "Three approved categories and exploratory assumptions documented; not calibrated local uncertainty"
+      },
+      {
+        "page": 3,
+        "item": 8,
+        "requirement": "Adapt the fair_lite_demo.py systems engineering framework",
+        "status": "Physical-analysis/MCS workflow adapted to wetland code; climate script not edited or executed"
+      },
+      {
+        "page": 3,
+        "item": 11,
+        "requirement": "Run random-v/random-c, constant-v/random-c and random-v/constant-c MCS combinations",
+        "status": "Current parameter MCS covers fixed design/policy with random c; random-v arms not implemented"
+      },
+      {
+        "page": 3,
+        "item": 12,
+        "requirement": "Fit polynomials to MCS input/output data for sensitivity analysis",
+        "status": "Not performed for D2 MCS; Stage C weather fit is a different task"
+      }
+    ],
+    "no_unrequested_gap_filling_performed": true
+  },
+  "actions_this_audit": {
+    "ODE_evaluations": 0,
+    "new_parameter_vectors": 0,
+    "new_weather_scenarios": 0,
+    "new_fits": 0,
+    "old_outputs_rewritten": 0
+  }
+}

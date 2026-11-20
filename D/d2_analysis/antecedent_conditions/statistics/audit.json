@@ -1,0 +1,62 @@
+{
+  "source_hashes_unchanged": true,
+  "source_sha256": {
+    "parameter_uncertainty/results/study_plan.json": "bfd1b8dcf4ef75d6cbd35e8d8c3ba4814bc3ef17679a730ff20d6cb83170c4ea",
+    "robustness_checks/tables/statistical_law_weights.csv": "5ca0a7213e52e42b0f521bc8c90b8b2e860e9be3e72c53be47504b6742d239b1",
+    "robustness_checks/tables/statistical_law_diagnostics.csv": "97f860abca63bd5dc542a8cd4e4478ed98854c27529396f64d9df65d68741b61",
+    "historical_storm_robustness/events/manifest.json": "66371c784b4a2f9f7ea1c23f142bd7626e505c3558b5b86b4d4b1009631d2115",
+    "robustness_checks/tables/statistical_law_outcomes.csv": "3c3b2c98f439c089c9296135f4523465e58c8a4f7b394a0fae6fdeac233c4d73",
+    "historical_storm_robustness/results/ensemble/benchmark_september_2022/paired_results.csv": "ae5e8ea7c80a26f29dbc59bf85d2967983cc0d6c8f1593d41e5db4f24cbe42e7",
+    "historical_storm_robustness/results/ensemble/historical_20230813T0800Z/paired_results.csv": "91616dce3c5761d281c5db377ef75968fe1e29dc5308130cba3124872182e6f2",
+    "historical_storm_robustness/results/ensemble/historical_20220704T2100Z/paired_results.csv": "d33efd513b69879f6b551fa210dafc0a91a5a2783f395c56fb2a8aa25899178e",
+    "historical_storm_robustness/results/ensemble/historical_20190825T0200Z/paired_results.csv": "d058ba5a7fcd02c698af69410754bfe95dcc7b91bfe56e33f4f7d8a9d73fa380",
+    "historical_storm_robustness/results/ensemble/historical_20240804T1500Z/paired_results.csv": "3ee292bb54aeed350c56611f8cdc7daa780063616fbbaed922ad40f75e4f3635"
+  },
+  "script_sha256": "3b61c7925d35f922314e4385113a98774c9b7c729d0548bd1217565106b0551d",
+  "numpy_version": "2.2.6",
+  "pandas_version": "2.3.2",
+  "new_physical_vectors": 0,
+  "new_ode_runs": 0,
+  "saved_events": 5,
+  "saved_pairs": 320,
+  "weight_summary": {
+    "original_parameter_vectors": 64,
+    "original_seed": 69020261118,
+    "proposal": "Independent log-uniform multipliers [0.5,2] in the three approved categories",
+    "target": "Exploratory independent uniform multipliers [0.5,2], not calibrated",
+    "ratio": "p/q = product_j[m_j ln(4)/1.5]",
+    "normalized_weight": "(p/q)_i / sum_j (p/q)_j",
+    "ess_diagnostic": 43.99349928403784,
+    "ess_fraction_of_original_64": 0.6873984263130912,
+    "maximum_normalized_weight": 0.04978510963290285,
+    "maximum_weight_sample_id": "mc_00018",
+    "minimum_normalized_weight": 0.0023019949155366993,
+    "mean_raw_ratio": 0.9642978965462383,
+    "top_weight_mass": [
+      {
+        "top_k": 1,
+        "normalized_weight_mass": 0.04978510963290285,
+        "equal_weight_mass_for_k_of_64": 0.015625,
+        "sample_ids": "mc_00018"
+      },
+      {
+        "top_k": 5,
+        "normalized_weight_mass": 0.2088633125458996,
+        "equal_weight_mass_for_k_of_64": 0.078125,
+        "sample_ids": "mc_00018;mc_00059;mc_00057;mc_00049;mc_00035"
+      },
+      {
+        "top_k": 10,
+        "normalized_weight_mass": 0.356482508846858,
+        "equal_weight_mass_for_k_of_64": 0.15625,
+        "sample_ids": "mc_00018;mc_00059;mc_00057;mc_00049;mc_00035;mc_00046;mc_00052;mc_00045;mc_00012;mc_00028"
+      }
+    ],
+    "prior_normalized_weights_max_absolute_difference": 1.3877787807814457e-17,
+    "prior_ess_absolute_difference": 1.4210854715202004e-14,
+    "ess_is_confidence_interval_sample_size": false,
+    "new_parameter_vectors": 0,
+    "new_ode_runs": 0
+  },
+  "maximum_prior_outcome_error": 9.094947017729282e-13
+}

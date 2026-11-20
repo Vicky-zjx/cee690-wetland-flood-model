@@ -1,0 +1,52 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "event_id": "historical_20240804T1500Z",
+      "sample_id": "mc_00018",
+      "antecedent_hours": 72,
+      "case_name": "wetland",
+      "coarse_dt_s": 15,
+      "refined_dt_s": 7.5,
+      "both_valid": true,
+      "passed": true,
+      "common_grid_exact": true,
+      "controller_clock_exact": true,
+      "weather_inputs_exact": true,
+      "max_state_equivalent_depth_difference_m": 1.2627608043658257e-09,
+      "max_stage_difference_m": 1.2627623391381348e-09,
+      "max_all_stage_native_peak_difference_m": 4.185437774140155e-08,
+      "max_actual_opening_difference_m": 2.1088963908511005e-12,
+      "latch_mismatch_count": 0,
+      "event_peak_stage_difference_m": 6.413358732970664e-11,
+      "mass_pass": true,
+      "coarse_unsafe": false,
+      "fine_unsafe": false
+    },
+    {
+      "event_id": "historical_20240804T1500Z",
+      "sample_id": "mc_00018",
+      "antecedent_hours": 72,
+      "case_name": "no_wetland",
+      "coarse_dt_s": 15,
+      "refined_dt_s": 7.5,
+      "both_valid": true,
+      "passed": true,
+      "common_grid_exact": true,
+      "controller_clock_exact": true,
+      "weather_inputs_exact": true,
+      "max_state_equivalent_depth_difference_m": 3.5832158573612104e-10,
+      "max_stage_difference_m": 3.583267016438185e-10,
+      "max_all_stage_native_peak_difference_m": 4.185437774140155e-08,
+      "max_actual_opening_difference_m": 2.1088963908511005e-12,
+      "latch_mismatch_count": 0,
+      "event_peak_stage_difference_m": 1.460591647628462e-10,
+      "mass_pass": true,
+      "coarse_unsafe": false,
+      "fine_unsafe": false
+    }
+  ],
+  "extra_parameter_draws": 0,
+  "physical_pair_count": 1,
+  "numerical_model_executions": 4
+}

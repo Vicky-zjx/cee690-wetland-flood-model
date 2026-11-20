@@ -1,0 +1,17 @@
+{
+  "source": "C/data/processed/weather_hourly.csv",
+  "source_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+  "manifest_sha256": "66371c784b4a2f9f7ea1c23f142bd7626e505c3558b5b86b4d4b1009631d2115",
+  "script_sha256": "70aa81f24aea46776f3951280451160af4f59cda7d47c8858d037504623557ee",
+  "window_hours": [
+    24,
+    48,
+    72,
+    168,
+    336
+  ],
+  "model_simulations": 0,
+  "initial_states_changed": false,
+  "rule": "Same finite joint weather, full native-rain coverage and T>0 checks as the original selection; no interpolation/filling added.",
+  "limitation": "Coverage does not demonstrate dynamic equilibration or independence from starting storage. No antecedent experiment has been approved or executed."
+}

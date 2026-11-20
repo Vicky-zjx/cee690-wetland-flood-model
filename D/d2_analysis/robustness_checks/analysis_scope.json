@@ -1,0 +1,28 @@
+{
+  "purpose": "Saved-result robustness checks; not the final HW D.2 report",
+  "source_git_commit": "ffc7ee4f81b70af2c687288250f9082de1657b9f",
+  "physical_simulations_authorized": false,
+  "parameter_samples_authorized": false,
+  "existing_events": 5,
+  "existing_matched_parameter_vectors": 64,
+  "existing_pairs": 320,
+  "analysis_only": "Read saved outputs; observational waveform and mass-accounting checks; conditional CDF validation; finite-sample and exploratory law-reweighting diagnostics",
+  "prohibited_changes": [
+    "A/B/C files",
+    "previous Stage D files/results",
+    "hydraulic laws or constraints",
+    "feedback controller",
+    "physical initial conditions",
+    "Git commits or pushes"
+  ],
+  "full_horizon_metric": "Retain t=0 and all initial maxima. Secondary rain-response diagnostics never replace this metric.",
+  "uncertainty_scope": "Separate fixed historical events; no event occurrence model; same 64 parameter IDs matched across events.",
+  "interpretation_limit": "Mass-accounting differences do not identify causal effects of initial wetland water without a separate initial-condition experiment.",
+  "input_sha256": {
+    "D/d2_analysis/historical_storm_robustness/study_plan.json": "580cf84f31bbc312280b87b37066656afe0f56c5880d501dc8b02c0a5ae7370e",
+    "D/d2_analysis/historical_storm_robustness/events/manifest.json": "66371c784b4a2f9f7ea1c23f142bd7626e505c3558b5b86b4d4b1009631d2115",
+    "D/d2_analysis/parameter_uncertainty/results/study_plan.json": "bfd1b8dcf4ef75d6cbd35e8d8c3ba4814bc3ef17679a730ff20d6cb83170c4ea",
+    "D/feedback_control/policy.json": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+    "D/gate_hydraulics_revision/hydraulics.py": "7c5a58997a15f13210ad3ccc38c593d59b1cb91dd008f9ff7fb7577382ce120e"
+  }
+}

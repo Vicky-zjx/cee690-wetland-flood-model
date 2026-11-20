@@ -1,0 +1,26 @@
+interval_start_utc,interval_end_utc,duration_h,observed_depth_mm,trace_quantified_lower_bound,overlap_with_antecedent_h,attributed_antecedent_depth_mm,rule
+2024-08-03 14:52:00+00:00,2024-08-03 15:52:00+00:00,1.0,0.0,False,0.8666666666666667,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-03 15:52:00+00:00,2024-08-03 16:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-03 16:52:00+00:00,2024-08-03 17:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-03 17:52:00+00:00,2024-08-03 18:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-03 18:52:00+00:00,2024-08-03 19:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-03 19:52:00+00:00,2024-08-03 20:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-03 20:52:00+00:00,2024-08-03 21:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-03 21:52:00+00:00,2024-08-03 22:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-03 22:52:00+00:00,2024-08-03 23:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-03 23:52:00+00:00,2024-08-04 00:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 00:52:00+00:00,2024-08-04 01:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 01:52:00+00:00,2024-08-04 02:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 02:52:00+00:00,2024-08-04 03:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 03:52:00+00:00,2024-08-04 04:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 04:52:00+00:00,2024-08-04 05:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 05:52:00+00:00,2024-08-04 06:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 06:52:00+00:00,2024-08-04 07:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 07:52:00+00:00,2024-08-04 08:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 08:52:00+00:00,2024-08-04 09:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 09:52:00+00:00,2024-08-04 10:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 10:52:00+00:00,2024-08-04 11:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 11:52:00+00:00,2024-08-04 12:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 12:52:00+00:00,2024-08-04 13:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 13:52:00+00:00,2024-08-04 14:52:00+00:00,1.0,0.0,False,1.0,0.0,Uniform rate within actual native1h interval; overlap cropping only
+2024-08-04 14:52:00+00:00,2024-08-04 15:52:00+00:00,1.0,0.0,False,0.13333333333333333,0.0,Uniform rate within actual native1h interval; overlap cropping only

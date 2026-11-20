@@ -1,0 +1,6 @@
+event_id,planned_pairs,saved_pairs,valid_pairs,invalid_pairs,wetland_unsafe,no_wetland_unsafe,excluded_for_zero_or_negative_outcome
+benchmark_september_2022,64,64,64,0,0,0,0
+historical_20230813T0800Z,64,64,64,0,0,0,0
+historical_20220704T2100Z,64,64,64,0,0,0,0
+historical_20190825T0200Z,64,64,64,0,0,0,0
+historical_20240804T1500Z,64,64,64,0,0,0,0

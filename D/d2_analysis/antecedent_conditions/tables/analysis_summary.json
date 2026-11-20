@@ -1,0 +1,12 @@
+{
+  "original_baseline_pairs_reused": 6,
+  "new_primary_pairs": 12,
+  "new_primary_valid_pairs": 12,
+  "max_paired_balance_identity_error_m3": 0.0,
+  "any_node_unsafe": false,
+  "full_horizon_max_paired_gate_difference_m": 5.695444116327053e-15,
+  "paired_latch_mismatches": 0,
+  "no_new_ODE_or_sampling_in_analysis": true,
+  "original_results_untouched": true,
+  "interpretation": "Three selected saved parameter configurations do not estimate probabilities; event-window starts can differ between models after conditioning."
+}

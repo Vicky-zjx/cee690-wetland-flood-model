@@ -1,0 +1,39 @@
+{
+  "original_parameter_vectors": 64,
+  "original_seed": 69020261118,
+  "proposal": "Independent log-uniform multipliers [0.5,2] in the three approved categories",
+  "target": "Exploratory independent uniform multipliers [0.5,2], not calibrated",
+  "ratio": "p/q = product_j[m_j ln(4)/1.5]",
+  "normalized_weight": "(p/q)_i / sum_j (p/q)_j",
+  "ess_diagnostic": 43.99349928403784,
+  "ess_fraction_of_original_64": 0.6873984263130912,
+  "maximum_normalized_weight": 0.04978510963290285,
+  "maximum_weight_sample_id": "mc_00018",
+  "minimum_normalized_weight": 0.0023019949155366993,
+  "mean_raw_ratio": 0.9642978965462383,
+  "top_weight_mass": [
+    {
+      "top_k": 1,
+      "normalized_weight_mass": 0.04978510963290285,
+      "equal_weight_mass_for_k_of_64": 0.015625,
+      "sample_ids": "mc_00018"
+    },
+    {
+      "top_k": 5,
+      "normalized_weight_mass": 0.2088633125458996,
+      "equal_weight_mass_for_k_of_64": 0.078125,
+      "sample_ids": "mc_00018;mc_00059;mc_00057;mc_00049;mc_00035"
+    },
+    {
+      "top_k": 10,
+      "normalized_weight_mass": 0.356482508846858,
+      "equal_weight_mass_for_k_of_64": 0.15625,
+      "sample_ids": "mc_00018;mc_00059;mc_00057;mc_00049;mc_00035;mc_00046;mc_00052;mc_00045;mc_00012;mc_00028"
+    }
+  ],
+  "prior_normalized_weights_max_absolute_difference": 1.3877787807814457e-17,
+  "prior_ess_absolute_difference": 1.4210854715202004e-14,
+  "ess_is_confidence_interval_sample_size": false,
+  "new_parameter_vectors": 0,
+  "new_ode_runs": 0
+}
