@@ -1,0 +1,14 @@
+{
+  "event_id": "historical_20220704T2100Z",
+  "planned_parameter_vectors": 3,
+  "paired_evaluations": 6,
+  "valid_pairs": 6,
+  "classifications": {
+    "wetland": {
+      "completed_valid_safety_feasible": 6
+    },
+    "no_wetland": {
+      "completed_valid_safety_feasible": 6
+    }
+  }
+}

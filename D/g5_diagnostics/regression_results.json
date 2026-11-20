@@ -1,0 +1,441 @@
+{
+  "original_120s_regression": [
+    {
+      "case": "wetland",
+      "design": "reference",
+      "saved_trajectory": "B/results/wetland_only/fixed_reference_120s.npz",
+      "saved_sha256": "77a6f06cbf03422146dadc0a66aaee36528dfcd5999baf4a37bc9780e43d0c8c",
+      "exact_original_grid_and_schedule": true,
+      "pass_regression": true,
+      "storage_atol_m3": 1e-07,
+      "output_atol": 1e-09,
+      "numerical_differences": {
+        "x": 0.0,
+        "y": 0.0,
+        "u": 0.0
+      },
+      "missing_saved_columns": [
+        "dx"
+      ],
+      "saved_file_unchanged": true
+    },
+    {
+      "case": "wetland",
+      "design": "best",
+      "saved_trajectory": "B/results/wetland_only/wetland_best_120s.npz",
+      "saved_sha256": "062c121ba72e1447cb5fe9b08b870d592c3880de736dc01d26afcfb16290cd15",
+      "exact_original_grid_and_schedule": true,
+      "pass_regression": true,
+      "storage_atol_m3": 1e-07,
+      "output_atol": 1e-09,
+      "numerical_differences": {
+        "x": 0.0,
+        "y": 0.0,
+        "u": 0.0
+      },
+      "missing_saved_columns": [
+        "dx"
+      ],
+      "saved_file_unchanged": true
+    },
+    {
+      "case": "no_wetland",
+      "design": "best",
+      "saved_trajectory": "B/results/wetland_counterfactual/bypass_120s.npz",
+      "saved_sha256": "609d739cfd705fc172b901e85b351a65b50e2c68487e9f4353f540a846aad744",
+      "exact_original_grid_and_schedule": true,
+      "pass_regression": true,
+      "storage_atol_m3": 1e-07,
+      "output_atol": 1e-09,
+      "numerical_differences": {
+        "x": 0.0,
+        "dx": 0.0,
+        "y": 0.0,
+        "u": 0.0
+      },
+      "missing_saved_columns": [],
+      "saved_file_unchanged": true
+    }
+  ],
+  "gate_and_full_rhs_tests": {
+    "regression_checks": 22,
+    "regression_passed": 22,
+    "regression_failed": 0,
+    "requested_low_head_physical_coverage_pass": false,
+    "hydraulic_G5_resolved": false,
+    "explanation": "Expected low-head rejections are passing regression tests, not supported low-head physics. Known 0.67 jump remains.",
+    "original_physical_configuration": true,
+    "trajectory_integration_performed": false,
+    "sources_sha256": {
+      "B/gate_hydraulics.py": "d5f0779ec1593b837cbff2851a16bc5fe3f7602b4b8484576247e62b77e24cdc",
+      "B/no_spillway_model.py": "54ea9a6e730af5a532f5b7f5e321d9f0a3c771edfbc5755d5c78185497b57649",
+      "B/wetland_counterfactual.py": "30b00f96f014ecd849cd4c11477acae1f2108afdf23dc299ff922babfefaccc1",
+      "B/no_spillway_config.json": "b4f07d6fd516c39b14e34a7210aa8f00aa6f01e93cb8eaa9a788ecf9cad186c1",
+      "B/wetland_only_config.json": "c4f695ca2b10da53a8095452a165961af304300715a302ae4de5602981f0565c"
+    },
+    "initial_state_wetland_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2500.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "initial_state_no_wetland_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "records": [
+      {
+        "name": "gate1_H_over_a_0.5",
+        "group": "head_opening_coverage",
+        "regression_pass": true,
+        "expected_rejection": true,
+        "physical_coverage_pass": false,
+        "branch": 1,
+        "H_over_a": 0.5,
+        "H_m": 0.0625,
+        "a_m": 0.125,
+        "implemented": false,
+        "regime": "weir_or_partially_wetted_opening",
+        "discharge_m3_s": null
+      },
+      {
+        "name": "gate1_H_over_a_1",
+        "group": "head_opening_coverage",
+        "regression_pass": true,
+        "expected_rejection": true,
+        "physical_coverage_pass": false,
+        "branch": 1,
+        "H_over_a": 1.0,
+        "H_m": 0.125,
+        "a_m": 0.125,
+        "implemented": false,
+        "regime": "weir_or_partially_wetted_opening",
+        "discharge_m3_s": null
+      },
+      {
+        "name": "gate1_H_over_a_1.125",
+        "group": "head_opening_coverage",
+        "regression_pass": true,
+        "expected_rejection": true,
+        "physical_coverage_pass": false,
+        "branch": 1,
+        "H_over_a": 1.125,
+        "H_m": 0.140625,
+        "a_m": 0.125,
+        "implemented": false,
+        "regime": "weir_gate_transition",
+        "discharge_m3_s": null
+      },
+      {
+        "name": "gate1_H_over_a_1.25",
+        "group": "head_opening_coverage",
+        "regression_pass": true,
+        "expected_rejection": false,
+        "physical_coverage_pass": true,
+        "branch": 1,
+        "H_over_a": 1.25,
+        "H_m": 0.15625,
+        "a_m": 0.125,
+        "implemented": true,
+        "regime": "free",
+        "discharge_m3_s": 0.13129452369815353
+      },
+      {
+        "name": "gate1_H_over_a_1.5",
+        "group": "head_opening_coverage",
+        "regression_pass": true,
+        "expected_rejection": false,
+        "physical_coverage_pass": true,
+        "branch": 1,
+        "H_over_a": 1.5,
+        "H_m": 0.1875,
+        "a_m": 0.125,
+        "implemented": true,
+        "regime": "free",
+        "discharge_m3_s": 0.14382594461275058
+      },
+      {
+        "name": "gate1_closed_dry_adverse",
+        "group": "gate_limits",
+        "regression_pass": true,
+        "cases": 5,
+        "scope": "One-way zero routes; low-head wet limit remains unsupported"
+      },
+      {
+        "name": "gate1_dimensions_scaling_limits",
+        "group": "gate_units",
+        "regression_pass": true,
+        "unit": "m3/s",
+        "length_unit_scaling_factor": 100.0,
+        "discharge_scaling_factor": 1000000.0,
+        "approaches_zero_at_equal_head": true
+      },
+      {
+        "name": "gate1_submergence_boundaries",
+        "group": "continuity",
+        "regression_pass": true,
+        "lower_limit_Q_m3_s": 1.9929107481269703,
+        "lower_right_Q_m3_s": 1.9829211570095187,
+        "lower_relative_jump": -0.005012563220325061,
+        "lower_boundary_continuous": false,
+        "upper_boundary_continuous": true,
+        "upper_absolute_difference_m3_s": 5.704392513905532e-10,
+        "known_limitation": "Published rounded 0.67 causes sqrt(0.99)-1 jump; not smoothed",
+        "samples": [
+          {
+            "submergence": 0.6699999999,
+            "discharge_m3_s": 1.9929107481269703,
+            "regime": "free"
+          },
+          {
+            "submergence": 0.67,
+            "discharge_m3_s": 1.9929107481269703,
+            "regime": "free"
+          },
+          {
+            "submergence": 0.6700000001,
+            "discharge_m3_s": 1.9829211570095187,
+            "regime": "transition"
+          },
+          {
+            "submergence": 0.7999999999,
+            "discharge_m3_s": 1.1883423754776037,
+            "regime": "transition"
+          },
+          {
+            "submergence": 0.8,
+            "discharge_m3_s": 1.1883423749071644,
+            "regime": "submerged"
+          },
+          {
+            "submergence": 0.8000000001,
+            "discharge_m3_s": 1.1883423746100787,
+            "regime": "submerged"
+          }
+        ]
+      },
+      {
+        "name": "gate1_invalid_inputs_not_clipped",
+        "group": "input_validation",
+        "regression_pass": true,
+        "rejections": 3
+      },
+      {
+        "name": "gate2_H_over_a_0.5",
+        "group": "head_opening_coverage",
+        "regression_pass": true,
+        "expected_rejection": true,
+        "physical_coverage_pass": false,
+        "branch": 2,
+        "H_over_a": 0.5,
+        "H_m": 0.0625,
+        "a_m": 0.125,
+        "implemented": false,
+        "regime": "weir_or_partially_wetted_opening",
+        "discharge_m3_s": null
+      },
+      {
+        "name": "gate2_H_over_a_1",
+        "group": "head_opening_coverage",
+        "regression_pass": true,
+        "expected_rejection": true,
+        "physical_coverage_pass": false,
+        "branch": 2,
+        "H_over_a": 1.0,
+        "H_m": 0.125,
+        "a_m": 0.125,
+        "implemented": false,
+        "regime": "weir_or_partially_wetted_opening",
+        "discharge_m3_s": null
+      },
+      {
+        "name": "gate2_H_over_a_1.125",
+        "group": "head_opening_coverage",
+        "regression_pass": true,
+        "expected_rejection": true,
+        "physical_coverage_pass": false,
+        "branch": 2,
+        "H_over_a": 1.125,
+        "H_m": 0.140625,
+        "a_m": 0.125,
+        "implemented": false,
+        "regime": "weir_gate_transition",
+        "discharge_m3_s": null
+      },
+      {
+        "name": "gate2_H_over_a_1.25",
+        "group": "head_opening_coverage",
+        "regression_pass": true,
+        "expected_rejection": false,
+        "physical_coverage_pass": true,
+        "branch": 2,
+        "H_over_a": 1.25,
+        "H_m": 0.15625,
+        "a_m": 0.125,
+        "implemented": true,
+        "regime": "free",
+        "discharge_m3_s": 0.10503561895852283
+      },
+      {
+        "name": "gate2_H_over_a_1.5",
+        "group": "head_opening_coverage",
+        "regression_pass": true,
+        "expected_rejection": false,
+        "physical_coverage_pass": true,
+        "branch": 2,
+        "H_over_a": 1.5,
+        "H_m": 0.1875,
+        "a_m": 0.125,
+        "implemented": true,
+        "regime": "free",
+        "discharge_m3_s": 0.11506075569020047
+      },
+      {
+        "name": "gate2_closed_dry_adverse",
+        "group": "gate_limits",
+        "regression_pass": true,
+        "cases": 5,
+        "scope": "One-way zero routes; low-head wet limit remains unsupported"
+      },
+      {
+        "name": "gate2_dimensions_scaling_limits",
+        "group": "gate_units",
+        "regression_pass": true,
+        "unit": "m3/s",
+        "length_unit_scaling_factor": 100.0,
+        "discharge_scaling_factor": 1000000.0,
+        "approaches_zero_at_equal_head": true
+      },
+      {
+        "name": "gate2_submergence_boundaries",
+        "group": "continuity",
+        "regression_pass": true,
+        "lower_limit_Q_m3_s": 1.594328598501576,
+        "lower_right_Q_m3_s": 1.586336925607615,
+        "lower_relative_jump": -0.005012563220324839,
+        "lower_boundary_continuous": false,
+        "upper_boundary_continuous": true,
+        "upper_absolute_difference_m3_s": 4.563512900901401e-10,
+        "known_limitation": "Published rounded 0.67 causes sqrt(0.99)-1 jump; not smoothed",
+        "samples": [
+          {
+            "submergence": 0.6699999999,
+            "discharge_m3_s": 1.594328598501576,
+            "regime": "free"
+          },
+          {
+            "submergence": 0.67,
+            "discharge_m3_s": 1.594328598501576,
+            "regime": "free"
+          },
+          {
+            "submergence": 0.6700000001,
+            "discharge_m3_s": 1.586336925607615,
+            "regime": "transition"
+          },
+          {
+            "submergence": 0.7999999999,
+            "discharge_m3_s": 0.9506739003820829,
+            "regime": "transition"
+          },
+          {
+            "submergence": 0.8,
+            "discharge_m3_s": 0.9506738999257316,
+            "regime": "submerged"
+          },
+          {
+            "submergence": 0.8000000001,
+            "discharge_m3_s": 0.950673899688063,
+            "regime": "submerged"
+          }
+        ]
+      },
+      {
+        "name": "gate2_invalid_inputs_not_clipped",
+        "group": "input_validation",
+        "regression_pass": true,
+        "rejections": 3
+      },
+      {
+        "name": "wetland_full_ODE_mass_identity_and_rain_units",
+        "group": "ODE_mass",
+        "regression_pass": true,
+        "samples": [
+          {
+            "fixture": "unchanged_initial_state_and_input",
+            "derivative_balance_m3_s": 0.0
+          },
+          {
+            "fixture": "perturbed_boundary_hg_97.0",
+            "derivative_balance_m3_s": -2.220446049250313e-16
+          },
+          {
+            "fixture": "perturbed_boundary_hg_97.5",
+            "derivative_balance_m3_s": -2.220446049250313e-16
+          }
+        ],
+        "rainfall_1mm_per_hour_total_m3_s": 0.18333333333333332,
+        "expected_1mm_per_hour_total_m3_s": 0.18333333333333332,
+        "scope": "Instantaneous full RHS conservation identity, not integrated numerical mass balance"
+      },
+      {
+        "name": "wetland_safety_exceedance_is_not_storage_clipping",
+        "group": "safety_classification",
+        "regression_pass": true,
+        "RHS_completed": true,
+        "safety_feasible": false,
+        "storage_unchanged_by_RHS": true,
+        "safety_margins_m": {
+          "H_d1_safe": -0.01999999999999602,
+          "H_d2_safe": -0.01999999999999602,
+          "H_w1_safe": -0.01999999999999602,
+          "H_w2_safe": -0.01999999999999602
+        },
+        "scope": "Artificial safety-exceeding states distinguish safety outcomes from hydraulic validity"
+      },
+      {
+        "name": "no_wetland_full_ODE_mass_identity_and_rain_units",
+        "group": "ODE_mass",
+        "regression_pass": true,
+        "samples": [
+          {
+            "fixture": "unchanged_initial_state_and_input",
+            "derivative_balance_m3_s": 0.0
+          },
+          {
+            "fixture": "perturbed_boundary_hg_97.0",
+            "derivative_balance_m3_s": -1.1102230246251565e-16
+          },
+          {
+            "fixture": "perturbed_boundary_hg_97.5",
+            "derivative_balance_m3_s": -1.6653345369377348e-16
+          }
+        ],
+        "rainfall_1mm_per_hour_total_m3_s": 0.1833333333333333,
+        "expected_1mm_per_hour_total_m3_s": 0.18333333333333332,
+        "scope": "Instantaneous full RHS conservation identity, not integrated numerical mass balance"
+      },
+      {
+        "name": "no_wetland_safety_exceedance_is_not_storage_clipping",
+        "group": "safety_classification",
+        "regression_pass": true,
+        "RHS_completed": true,
+        "safety_feasible": false,
+        "storage_unchanged_by_RHS": true,
+        "safety_margins_m": {
+          "H_d1_safe": -0.01999999999999602,
+          "H_d2_safe": -0.01999999999999602
+        },
+        "scope": "Artificial safety-exceeding states distinguish safety outcomes from hydraulic validity"
+      }
+    ]
+  }
+}

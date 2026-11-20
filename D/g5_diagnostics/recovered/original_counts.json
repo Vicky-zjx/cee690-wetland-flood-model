@@ -1,0 +1,142 @@
+{
+  "scope": "Meteorological uncertainty conditional on accepted structures, physical parameters, boundaries, fixed gate histories, wetland design and initial conditions.",
+  "interpretation": "Ordinary seasonal six-day windows, not annual flood probabilities. Scenario quantiles differ from Monte Carlo confidence intervals.",
+  "flood_threshold_m": null,
+  "flood_threshold_status": "No justified downstream flood threshold; no flood-exceedance probability is claimed.",
+  "total_attempted_scenarios": 16,
+  "adapter_evaluated_scenarios": 20,
+  "preflight_skipped_scenarios": 4,
+  "attempt_count_meaning": "Distinct scenario IDs with at least one actual ODE integration start. Preflight-only skips are excluded. All adapter-evaluated IDs remain in exclusion denominators.",
+  "executions_by_case": {
+    "no_wetland": {
+      "adapter_evaluations": 20,
+      "ode_integrations_started": 16,
+      "completed": 0,
+      "integration_stopped": 16,
+      "preflight_skipped": 4,
+      "execution_unknown": 0
+    },
+    "wetland": {
+      "adapter_evaluations": 20,
+      "ode_integrations_started": 16,
+      "completed": 0,
+      "integration_stopped": 16,
+      "preflight_skipped": 4,
+      "execution_unknown": 0
+    }
+  },
+  "valid_paired_scenarios": 0,
+  "total_case_executions_or_exclusions": 40,
+  "applicability_excluded_scenarios": 20,
+  "applicability_excluded_fraction": 1.0,
+  "numerical_failure_scenarios": 0,
+  "numerical_failure_fraction": 0.0,
+  "failure_count_meaning": "Scenario counts flag at least one affected case; applicability and numerical categories may overlap if the two cases have different outcomes. Case status counts count each case separately.",
+  "solver_status_counts": {
+    "applicability_excluded": 40
+  },
+  "generated_weather_validation": null,
+  "timestep_checks": null,
+  "methods": {
+    "copula_var": {
+      "attempted": 10,
+      "adapter_evaluated_scenarios": 10,
+      "executions_by_case": {
+        "no_wetland": {
+          "adapter_evaluations": 10,
+          "ode_integrations_started": 10,
+          "completed": 0,
+          "integration_stopped": 10,
+          "preflight_skipped": 0,
+          "execution_unknown": 0
+        },
+        "wetland": {
+          "adapter_evaluations": 10,
+          "ode_integrations_started": 10,
+          "completed": 0,
+          "integration_stopped": 10,
+          "preflight_skipped": 0,
+          "execution_unknown": 0
+        }
+      },
+      "valid_pairs": 0,
+      "invalid_or_excluded_pairs": 10,
+      "applicability_excluded_scenarios": 10,
+      "applicability_excluded_fraction": 1.0,
+      "numerical_failure_scenarios": 0,
+      "numerical_failure_fraction": 0.0,
+      "status_counts": {
+        "applicability_excluded": 20
+      },
+      "failure_reasons": {
+        "unsupported_gate_regime": 20
+      },
+      "benefit_tolerance_m": 0.001,
+      "benefit_tolerance_basis": "Existing Stage B peak-grid screen 0.001 m, conservatively above the saved deterministic 60-to-30 s changes. Check against Stage C representative refinement; unresolved or larger error prevents millimetre-effect claims.",
+      "numerical_resolution_status": "not_checked",
+      "numerically_supported_benefit_classification": false,
+      "benefit_classification_interpretation": "Provisional descriptive classifications at the configured tolerance only. Stage C refinement is absent, incomplete, invalid or failed; improvement/worsening fractions are not established numerical effects.",
+      "weather_probability_readiness": false,
+      "probability_readiness": false,
+      "probability_readiness_note": "Requires weather validation and training persistence screens, representative numerical checks, and no unaccounted applicability/numerical selection. Passing still does not establish annual or rare-tail flood accuracy.",
+      "selection_warning": "Response summaries, if available, describe completed valid pairs only. Applicability failures remain in the attempted denominator and can induce selection bias. They are not assigned zero benefit.",
+      "peak_stage_no_wetland": null,
+      "peak_stage_wetland": null,
+      "paired_benefit_m": null,
+      "scenario_quantile_interval": null,
+      "monte_carlo_confidence_intervals": null
+    },
+    "block_bootstrap": {
+      "attempted": 6,
+      "adapter_evaluated_scenarios": 10,
+      "executions_by_case": {
+        "no_wetland": {
+          "adapter_evaluations": 10,
+          "ode_integrations_started": 6,
+          "completed": 0,
+          "integration_stopped": 6,
+          "preflight_skipped": 4,
+          "execution_unknown": 0
+        },
+        "wetland": {
+          "adapter_evaluations": 10,
+          "ode_integrations_started": 6,
+          "completed": 0,
+          "integration_stopped": 6,
+          "preflight_skipped": 4,
+          "execution_unknown": 0
+        }
+      },
+      "valid_pairs": 0,
+      "invalid_or_excluded_pairs": 10,
+      "applicability_excluded_scenarios": 10,
+      "applicability_excluded_fraction": 1.0,
+      "numerical_failure_scenarios": 0,
+      "numerical_failure_fraction": 0.0,
+      "status_counts": {
+        "applicability_excluded": 20
+      },
+      "failure_reasons": {
+        "unsupported_gate_regime": 12,
+        "nonfreezing_liquid_water_domain": 8
+      },
+      "benefit_tolerance_m": 0.001,
+      "benefit_tolerance_basis": "Existing Stage B peak-grid screen 0.001 m, conservatively above the saved deterministic 60-to-30 s changes. Check against Stage C representative refinement; unresolved or larger error prevents millimetre-effect claims.",
+      "numerical_resolution_status": "not_checked",
+      "numerically_supported_benefit_classification": false,
+      "benefit_classification_interpretation": "Provisional descriptive classifications at the configured tolerance only. Stage C refinement is absent, incomplete, invalid or failed; improvement/worsening fractions are not established numerical effects.",
+      "weather_probability_readiness": false,
+      "probability_readiness": false,
+      "probability_readiness_note": "Requires weather validation and training persistence screens, representative numerical checks, and no unaccounted applicability/numerical selection. Passing still does not establish annual or rare-tail flood accuracy.",
+      "selection_warning": "Response summaries, if available, describe completed valid pairs only. Applicability failures remain in the attempted denominator and can induce selection bias. They are not assigned zero benefit.",
+      "peak_stage_no_wetland": null,
+      "peak_stage_wetland": null,
+      "paired_benefit_m": null,
+      "scenario_quantile_interval": null,
+      "monte_carlo_confidence_intervals": null
+    }
+  },
+  "analysis_status": "no_valid_pairs_no_response_distribution_estimated",
+  "total_generated_scenarios": 20,
+  "audit_kind": "Read-only audit of original saved pilot outputs"
+}

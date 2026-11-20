@@ -1,0 +1,8 @@
+{
+  "no_wetland / completed_valid_safety_feasible": 1,
+  "no_wetland / meteorological_liquid_water_applicability": 4,
+  "no_wetland / revised_hydraulic_applicability_failure": 16,
+  "wetland / completed_valid_safety_feasible": 2,
+  "wetland / meteorological_liquid_water_applicability": 4,
+  "wetland / revised_hydraulic_applicability_failure": 16
+}

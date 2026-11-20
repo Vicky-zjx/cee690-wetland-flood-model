@@ -1,0 +1,42 @@
+{
+  "sensitivity": {
+    "planned_pairs": 27,
+    "valid_pairs": 27,
+    "invalid_pairs": 0,
+    "unsafe_valid_pairs": 0,
+    "failure_sample_ids": [],
+    "unsafe_sample_ids": [],
+    "maximum_paired_gate_difference_m": 5.695444116327053e-15,
+    "paired_latch_mismatch_count": 0,
+    "all_valid_pairs_have_identical_weather": true,
+    "maximum_relative_mass_residual": 5.5329949618928854e-08,
+    "minimum_wetland_safety_margin_m": 0.1488592632952645,
+    "minimum_no_wetland_safety_margin_m": 0.3113420638381257,
+    "wetland_initial_peak_count": 2,
+    "no_wetland_initial_peak_count": 0,
+    "wetland_outlet_cap_peak_count": 0,
+    "no_wetland_outlet_cap_peak_count": 0,
+    "flood_threshold_status": "Undefined: no accepted downstream flood threshold",
+    "initial_reference_warning": "Initial-stage/discharge exceedance is a response benchmark, not a flood exceedance statistic"
+  },
+  "monte_carlo": {
+    "planned_pairs": 64,
+    "valid_pairs": 64,
+    "invalid_pairs": 0,
+    "unsafe_valid_pairs": 0,
+    "failure_sample_ids": [],
+    "unsafe_sample_ids": [],
+    "maximum_paired_gate_difference_m": 5.728750807065808e-15,
+    "paired_latch_mismatch_count": 0,
+    "all_valid_pairs_have_identical_weather": true,
+    "maximum_relative_mass_residual": 4.905548293303468e-08,
+    "minimum_wetland_safety_margin_m": 0.1534897368677406,
+    "minimum_no_wetland_safety_margin_m": 0.3137195997597075,
+    "wetland_initial_peak_count": 0,
+    "no_wetland_initial_peak_count": 0,
+    "wetland_outlet_cap_peak_count": 0,
+    "no_wetland_outlet_cap_peak_count": 0,
+    "flood_threshold_status": "Undefined: no accepted downstream flood threshold",
+    "initial_reference_warning": "Initial-stage/discharge exceedance is a response benchmark, not a flood exceedance statistic"
+  }
+}

@@ -1,0 +1,6 @@
+event_id,valid_pairs,uncapped_pairs,maximum_absolute_identity_residual_m,identity
+benchmark_september_2022,64,64,2.856048730848215e-14,delta_H_peak = R_r * delta_Q_peak only when both peaks are on the uncapped linear rating branch
+historical_20230813T0800Z,64,64,2.842170943040401e-14,delta_H_peak = R_r * delta_Q_peak only when both peaks are on the uncapped linear rating branch
+historical_20220704T2100Z,64,64,2.842170943040401e-14,delta_H_peak = R_r * delta_Q_peak only when both peaks are on the uncapped linear rating branch
+historical_20190825T0200Z,64,64,2.8380076066980564e-14,delta_H_peak = R_r * delta_Q_peak only when both peaks are on the uncapped linear rating branch
+historical_20240804T1500Z,64,64,2.8449465006019636e-14,delta_H_peak = R_r * delta_Q_peak only when both peaks are on the uncapped linear rating branch

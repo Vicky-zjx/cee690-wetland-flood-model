@@ -55,3 +55,18 @@ parameters.md
 # Stage C local observations, fitted models and diagnostic outputs
 /C/data/
 /C/results/
+
+# Stage D: retain summaries, diagnostics, plans and figures; bulk traces stay local.
+/D/**/*.npz
+/D/**/*_controller.csv.gz
+
+# Exact saved fixtures used by the final historical hydrograph/mechanism figures.
+!/D/d2_analysis/parameter_uncertainty/results/pilot/pilot_mc_00000__wetland__15s.npz
+!/D/d2_analysis/parameter_uncertainty/results/pilot/pilot_mc_00000__no_wetland__15s.npz
+!/D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20190825T0200Z/mc_00000__*__15s.npz
+!/D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20220704T2100Z/mc_00000__*__15s.npz
+!/D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20230813T0800Z/mc_00000__*__15s.npz
+!/D/d2_analysis/historical_storm_robustness/results/ensemble/historical_20240804T1500Z/mc_00000__*__15s.npz
+
+# Small byte-identical frozen inputs, bundled without changing the original A/B/C folders.
+!/D/reproducibility_inputs/B/results/**/*.npz

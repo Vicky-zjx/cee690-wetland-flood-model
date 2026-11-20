@@ -1,0 +1,445 @@
+{
+  "study_plan_sha256": "bfd1b8dcf4ef75d6cbd35e8d8c3ba4814bc3ef17679a730ff20d6cb83170c4ea",
+  "driver_sha256": "27b43701cdefc25001cd1cba16fdc0410495d4b1beafce2893439361142562ee",
+  "points": [
+    {
+      "sample_id": "grid_000",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 0.5,
+      "m_routing": 0.5,
+      "m_R_r": 0.5,
+      "physical_values": {
+        "K_u": 5e-07,
+        "k_ud": [
+          1.736111111111111e-05,
+          1.388888888888889e-05
+        ],
+        "k_ur": 6.944444444444445e-06,
+        "R_r": 0.225
+      }
+    },
+    {
+      "sample_id": "grid_001",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 0.5,
+      "m_routing": 0.5,
+      "m_R_r": 1.0,
+      "physical_values": {
+        "K_u": 5e-07,
+        "k_ud": [
+          1.736111111111111e-05,
+          1.388888888888889e-05
+        ],
+        "k_ur": 6.944444444444445e-06,
+        "R_r": 0.45
+      }
+    },
+    {
+      "sample_id": "grid_002",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 0.5,
+      "m_routing": 0.5,
+      "m_R_r": 2.0,
+      "physical_values": {
+        "K_u": 5e-07,
+        "k_ud": [
+          1.736111111111111e-05,
+          1.388888888888889e-05
+        ],
+        "k_ur": 6.944444444444445e-06,
+        "R_r": 0.9
+      }
+    },
+    {
+      "sample_id": "grid_003",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 0.5,
+      "m_routing": 1.0,
+      "m_R_r": 0.5,
+      "physical_values": {
+        "K_u": 5e-07,
+        "k_ud": [
+          3.472222222222222e-05,
+          2.777777777777778e-05
+        ],
+        "k_ur": 1.388888888888889e-05,
+        "R_r": 0.225
+      }
+    },
+    {
+      "sample_id": "grid_004",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 0.5,
+      "m_routing": 1.0,
+      "m_R_r": 1.0,
+      "physical_values": {
+        "K_u": 5e-07,
+        "k_ud": [
+          3.472222222222222e-05,
+          2.777777777777778e-05
+        ],
+        "k_ur": 1.388888888888889e-05,
+        "R_r": 0.45
+      }
+    },
+    {
+      "sample_id": "grid_005",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 0.5,
+      "m_routing": 1.0,
+      "m_R_r": 2.0,
+      "physical_values": {
+        "K_u": 5e-07,
+        "k_ud": [
+          3.472222222222222e-05,
+          2.777777777777778e-05
+        ],
+        "k_ur": 1.388888888888889e-05,
+        "R_r": 0.9
+      }
+    },
+    {
+      "sample_id": "grid_006",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 0.5,
+      "m_routing": 2.0,
+      "m_R_r": 0.5,
+      "physical_values": {
+        "K_u": 5e-07,
+        "k_ud": [
+          6.944444444444444e-05,
+          5.555555555555556e-05
+        ],
+        "k_ur": 2.777777777777778e-05,
+        "R_r": 0.225
+      }
+    },
+    {
+      "sample_id": "grid_007",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 0.5,
+      "m_routing": 2.0,
+      "m_R_r": 1.0,
+      "physical_values": {
+        "K_u": 5e-07,
+        "k_ud": [
+          6.944444444444444e-05,
+          5.555555555555556e-05
+        ],
+        "k_ur": 2.777777777777778e-05,
+        "R_r": 0.45
+      }
+    },
+    {
+      "sample_id": "grid_008",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 0.5,
+      "m_routing": 2.0,
+      "m_R_r": 2.0,
+      "physical_values": {
+        "K_u": 5e-07,
+        "k_ud": [
+          6.944444444444444e-05,
+          5.555555555555556e-05
+        ],
+        "k_ur": 2.777777777777778e-05,
+        "R_r": 0.9
+      }
+    },
+    {
+      "sample_id": "grid_009",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 1.0,
+      "m_routing": 0.5,
+      "m_R_r": 0.5,
+      "physical_values": {
+        "K_u": 1e-06,
+        "k_ud": [
+          1.736111111111111e-05,
+          1.388888888888889e-05
+        ],
+        "k_ur": 6.944444444444445e-06,
+        "R_r": 0.225
+      }
+    },
+    {
+      "sample_id": "grid_010",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 1.0,
+      "m_routing": 0.5,
+      "m_R_r": 1.0,
+      "physical_values": {
+        "K_u": 1e-06,
+        "k_ud": [
+          1.736111111111111e-05,
+          1.388888888888889e-05
+        ],
+        "k_ur": 6.944444444444445e-06,
+        "R_r": 0.45
+      }
+    },
+    {
+      "sample_id": "grid_011",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 1.0,
+      "m_routing": 0.5,
+      "m_R_r": 2.0,
+      "physical_values": {
+        "K_u": 1e-06,
+        "k_ud": [
+          1.736111111111111e-05,
+          1.388888888888889e-05
+        ],
+        "k_ur": 6.944444444444445e-06,
+        "R_r": 0.9
+      }
+    },
+    {
+      "sample_id": "grid_012",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 1.0,
+      "m_routing": 1.0,
+      "m_R_r": 0.5,
+      "physical_values": {
+        "K_u": 1e-06,
+        "k_ud": [
+          3.472222222222222e-05,
+          2.777777777777778e-05
+        ],
+        "k_ur": 1.388888888888889e-05,
+        "R_r": 0.225
+      }
+    },
+    {
+      "sample_id": "grid_013",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 1.0,
+      "m_routing": 1.0,
+      "m_R_r": 1.0,
+      "physical_values": {
+        "K_u": 1e-06,
+        "k_ud": [
+          3.472222222222222e-05,
+          2.777777777777778e-05
+        ],
+        "k_ur": 1.388888888888889e-05,
+        "R_r": 0.45
+      }
+    },
+    {
+      "sample_id": "grid_014",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 1.0,
+      "m_routing": 1.0,
+      "m_R_r": 2.0,
+      "physical_values": {
+        "K_u": 1e-06,
+        "k_ud": [
+          3.472222222222222e-05,
+          2.777777777777778e-05
+        ],
+        "k_ur": 1.388888888888889e-05,
+        "R_r": 0.9
+      }
+    },
+    {
+      "sample_id": "grid_015",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 1.0,
+      "m_routing": 2.0,
+      "m_R_r": 0.5,
+      "physical_values": {
+        "K_u": 1e-06,
+        "k_ud": [
+          6.944444444444444e-05,
+          5.555555555555556e-05
+        ],
+        "k_ur": 2.777777777777778e-05,
+        "R_r": 0.225
+      }
+    },
+    {
+      "sample_id": "grid_016",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 1.0,
+      "m_routing": 2.0,
+      "m_R_r": 1.0,
+      "physical_values": {
+        "K_u": 1e-06,
+        "k_ud": [
+          6.944444444444444e-05,
+          5.555555555555556e-05
+        ],
+        "k_ur": 2.777777777777778e-05,
+        "R_r": 0.45
+      }
+    },
+    {
+      "sample_id": "grid_017",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 1.0,
+      "m_routing": 2.0,
+      "m_R_r": 2.0,
+      "physical_values": {
+        "K_u": 1e-06,
+        "k_ud": [
+          6.944444444444444e-05,
+          5.555555555555556e-05
+        ],
+        "k_ur": 2.777777777777778e-05,
+        "R_r": 0.9
+      }
+    },
+    {
+      "sample_id": "grid_018",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 2.0,
+      "m_routing": 0.5,
+      "m_R_r": 0.5,
+      "physical_values": {
+        "K_u": 2e-06,
+        "k_ud": [
+          1.736111111111111e-05,
+          1.388888888888889e-05
+        ],
+        "k_ur": 6.944444444444445e-06,
+        "R_r": 0.225
+      }
+    },
+    {
+      "sample_id": "grid_019",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 2.0,
+      "m_routing": 0.5,
+      "m_R_r": 1.0,
+      "physical_values": {
+        "K_u": 2e-06,
+        "k_ud": [
+          1.736111111111111e-05,
+          1.388888888888889e-05
+        ],
+        "k_ur": 6.944444444444445e-06,
+        "R_r": 0.45
+      }
+    },
+    {
+      "sample_id": "grid_020",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 2.0,
+      "m_routing": 0.5,
+      "m_R_r": 2.0,
+      "physical_values": {
+        "K_u": 2e-06,
+        "k_ud": [
+          1.736111111111111e-05,
+          1.388888888888889e-05
+        ],
+        "k_ur": 6.944444444444445e-06,
+        "R_r": 0.9
+      }
+    },
+    {
+      "sample_id": "grid_021",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 2.0,
+      "m_routing": 1.0,
+      "m_R_r": 0.5,
+      "physical_values": {
+        "K_u": 2e-06,
+        "k_ud": [
+          3.472222222222222e-05,
+          2.777777777777778e-05
+        ],
+        "k_ur": 1.388888888888889e-05,
+        "R_r": 0.225
+      }
+    },
+    {
+      "sample_id": "grid_022",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 2.0,
+      "m_routing": 1.0,
+      "m_R_r": 1.0,
+      "physical_values": {
+        "K_u": 2e-06,
+        "k_ud": [
+          3.472222222222222e-05,
+          2.777777777777778e-05
+        ],
+        "k_ur": 1.388888888888889e-05,
+        "R_r": 0.45
+      }
+    },
+    {
+      "sample_id": "grid_023",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 2.0,
+      "m_routing": 1.0,
+      "m_R_r": 2.0,
+      "physical_values": {
+        "K_u": 2e-06,
+        "k_ud": [
+          3.472222222222222e-05,
+          2.777777777777778e-05
+        ],
+        "k_ur": 1.388888888888889e-05,
+        "R_r": 0.9
+      }
+    },
+    {
+      "sample_id": "grid_024",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 2.0,
+      "m_routing": 2.0,
+      "m_R_r": 0.5,
+      "physical_values": {
+        "K_u": 2e-06,
+        "k_ud": [
+          6.944444444444444e-05,
+          5.555555555555556e-05
+        ],
+        "k_ur": 2.777777777777778e-05,
+        "R_r": 0.225
+      }
+    },
+    {
+      "sample_id": "grid_025",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 2.0,
+      "m_routing": 2.0,
+      "m_R_r": 1.0,
+      "physical_values": {
+        "K_u": 2e-06,
+        "k_ud": [
+          6.944444444444444e-05,
+          5.555555555555556e-05
+        ],
+        "k_ur": 2.777777777777778e-05,
+        "R_r": 0.45
+      }
+    },
+    {
+      "sample_id": "grid_026",
+      "study_kind": "grid_not_probability",
+      "m_K_u": 2.0,
+      "m_routing": 2.0,
+      "m_R_r": 2.0,
+      "physical_values": {
+        "K_u": 2e-06,
+        "k_ud": [
+          6.944444444444444e-05,
+          5.555555555555556e-05
+        ],
+        "k_ur": 2.777777777777778e-05,
+        "R_r": 0.9
+      }
+    }
+  ],
+  "dt_s": [
+    15.0
+  ],
+  "workers": 2,
+  "full_trajectories_saved": false,
+  "valid_unsafe_retained": true,
+  "no_samples_resampled_or_dropped": true
+}

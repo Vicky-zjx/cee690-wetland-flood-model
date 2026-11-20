@@ -1,0 +1,150 @@
+{
+  "provenance": {
+    "study_kind": "fixed_storm_parameter_uncertainty",
+    "sampling_kind": "iid_monte_carlo",
+    "distribution_status": "explicit_exploratory_assumptions",
+    "distribution_config_sha256": "d83128019b12ccd3c58ab5f01ddeb56c79843500d871966cf8494c7144949641",
+    "seed": 69020261118,
+    "sample_count": 64,
+    "sampling_plan_sha256": "bfd1b8dcf4ef75d6cbd35e8d8c3ba4814bc3ef17679a730ff20d6cb83170c4ea",
+    "sampling_plan_verified": true,
+    "dt_s": 15.0,
+    "distribution": "log-uniform",
+    "support": [
+      0.5,
+      2.0
+    ],
+    "interpretation": "Uncalibrated hypothetical sensitivity and uncertainty assumptions; not observed parameter bounds or a Milwaukee engineering risk estimate.",
+    "paired_difference": "no-wetland minus wetland; negative values are retained",
+    "fixed_weather": "September 9\u201315, 2022 prepared deterministic event; no weather draws",
+    "flood_threshold_m": null,
+    "surrogate_fit_performed": false
+  },
+  "input_csv": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/results/monte_carlo/paired_results.csv",
+  "input_csv_sha256": "ce87fc49d29d6a06c19a6781a337fdc6c6efae5ce9627574bcbef6917b7ae979",
+  "official_revision": "06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02",
+  "official_sources": {
+    "multivarious/utl/plot_ECDF_ci.py": "3fcfcf204fb9b01793c637247fe0dc4bbb3ccb1bf7ef97fbcd0311e82ce64b35",
+    "multivarious/utl/plot_scatter_dist.py": "e9117b3766c6b59419f4eb1488b7cc84f34802f70a73742bb5f2cf7fb2947791",
+    "multivarious/utl/format_plot.py": "83eb7c26465ba076057b7d3f0cf17330c99080e5c3532dbd65fefb6670bd8db2"
+  },
+  "total_draws": 64,
+  "valid_draws": 64,
+  "invalid_draws": 0,
+  "invalid_records": [],
+  "conditioning": "All configured parameter draws",
+  "safety_or_benefit_sign_filter_applied": false,
+  "ecdf_method": "Official rank/(N+1) plotting positions; active pointwise Beta order-statistic limits; not simultaneous, not ties-aggregated count/N ECDF",
+  "ci_scope": "Conditional on declared sampling laws; not calibrated parameter uncertainty or flood probability",
+  "ecdf_confidence_percent": 95.0,
+  "correlation_confidence": 0.95,
+  "scatter_method": "Pearson correlation with approximate Fisher-z intervals; not causal or variance-based sensitivity",
+  "dependencies": {
+    "numpy": "2.2.6",
+    "scipy": "1.16.2",
+    "matplotlib": "3.10.6"
+  },
+  "scatter_output_columns": [
+    "delta_peak_stage_m",
+    "delta_peak_discharge_m3_s"
+  ],
+  "outputs": {
+    "wetland_peak_stage_m": {
+      "n": 64,
+      "unique_values": 64,
+      "negative_count": 0,
+      "zero_count": 0,
+      "positive_count": 64,
+      "conventional_median": 97.60757235311807,
+      "official_index_median": 97.6084516666103,
+      "median_annotation_corrected": true,
+      "ties_present": false,
+      "continuous_exact_beta_coverage_asserted": false,
+      "returned_array_csv": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_wetland_peak_stage_m.csv"
+    },
+    "no_wetland_peak_stage_m": {
+      "n": 64,
+      "unique_values": 64,
+      "negative_count": 0,
+      "zero_count": 0,
+      "positive_count": 64,
+      "conventional_median": 97.69665786736726,
+      "official_index_median": 97.70017720983834,
+      "median_annotation_corrected": true,
+      "ties_present": false,
+      "continuous_exact_beta_coverage_asserted": false,
+      "returned_array_csv": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_no_wetland_peak_stage_m.csv"
+    },
+    "delta_peak_stage_m": {
+      "n": 64,
+      "unique_values": 64,
+      "negative_count": 0,
+      "zero_count": 0,
+      "positive_count": 64,
+      "conventional_median": 0.094054930990822,
+      "official_index_median": 0.0942909452482325,
+      "median_annotation_corrected": true,
+      "ties_present": false,
+      "continuous_exact_beta_coverage_asserted": false,
+      "returned_array_csv": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_delta_peak_stage_m.csv"
+    },
+    "wetland_peak_discharge_m3_s": {
+      "n": 64,
+      "unique_values": 64,
+      "negative_count": 0,
+      "zero_count": 0,
+      "positive_count": 64,
+      "conventional_median": 1.0134405175693961,
+      "official_index_median": 1.0176637980130616,
+      "median_annotation_corrected": true,
+      "ties_present": false,
+      "continuous_exact_beta_coverage_asserted": false,
+      "returned_array_csv": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_wetland_peak_discharge_m3_s.csv"
+    },
+    "no_wetland_peak_discharge_m3_s": {
+      "n": 64,
+      "unique_values": 64,
+      "negative_count": 0,
+      "zero_count": 0,
+      "positive_count": 64,
+      "conventional_median": 1.186136935156171,
+      "official_index_median": 1.1877200635725895,
+      "median_annotation_corrected": true,
+      "ties_present": false,
+      "continuous_exact_beta_coverage_asserted": false,
+      "returned_array_csv": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_no_wetland_peak_discharge_m3_s.csv"
+    },
+    "delta_peak_discharge_m3_s": {
+      "n": 64,
+      "unique_values": 64,
+      "negative_count": 0,
+      "zero_count": 0,
+      "positive_count": 64,
+      "conventional_median": 0.1763302905967555,
+      "official_index_median": 0.1766408379671269,
+      "median_annotation_corrected": true,
+      "ties_present": false,
+      "continuous_exact_beta_coverage_asserted": false,
+      "returned_array_csv": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_delta_peak_discharge_m3_s.csv"
+    }
+  },
+  "plots": [
+    "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_wetland_peak_stage_m.png",
+    "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_no_wetland_peak_stage_m.png",
+    "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_delta_peak_stage_m.png",
+    "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_wetland_peak_discharge_m3_s.png",
+    "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_no_wetland_peak_discharge_m3_s.png",
+    "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_ecdf_delta_peak_discharge_m3_s.png",
+    "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/parameter_uncertainty/plots/official_mc/official_parameter_output_scatter.png"
+  ],
+  "warnings": [
+    "FigureCanvasAgg is non-interactive, and thus cannot be shown",
+    "FigureCanvasAgg is non-interactive, and thus cannot be shown",
+    "FigureCanvasAgg is non-interactive, and thus cannot be shown",
+    "FigureCanvasAgg is non-interactive, and thus cannot be shown",
+    "FigureCanvasAgg is non-interactive, and thus cannot be shown",
+    "FigureCanvasAgg is non-interactive, and thus cannot be shown",
+    "FigureCanvasAgg is non-interactive, and thus cannot be shown"
+  ],
+  "constant_columns_omitted_from_correlation_only": []
+}

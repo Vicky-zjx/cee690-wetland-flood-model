@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "study": "Stage C meteorological uncertainty around accepted Stage B dynamic models",
+  "seed": 6902026,
+  "data": {
+    "train_years": [2019, 2020, 2021, 2022, 2023],
+    "validation_years": [2024],
+    "precipitation_station": "72640014839",
+    "met_station": "72640594869",
+    "latitude": 43.0547222,
+    "longitude": -88.0461111,
+    "raw_dir": "data/raw",
+    "processed_path": "data/processed/weather_hourly.csv",
+    "max_met_gap_hours": 2,
+    "download": true
+  },
+  "weather": {
+    "latitude": 43.0547222,
+    "longitude": -88.0461111,
+    "timezone": "America/Chicago",
+    "pit_seed": 1729,
+    "burn_in_hours": 336,
+    "block_hours": 48,
+    "bootstrap_month_radius": 1,
+    "minimum_group_samples": 80,
+    "max_var_radius": 0.98
+  },
+  "validation": {
+    "wet_frequency_absolute": 0.03,
+    "positive_p99_relative": 0.5,
+    "storm_p95_relative": 0.5,
+    "wet_spell_p95_relative": 0.5,
+    "lag1_absolute": 0.25,
+    "physical_violations": 0,
+    "criteria_status": "Declared before inspecting generated validation results. Exploratory adequacy screens, not physical calibration or extreme-risk certification."
+  },
+  "scenarios": {
+    "methods": ["copula_var", "block_bootstrap"],
+    "count_per_method": 10,
+    "larger_count_per_method": 200,
+    "start_utc": "2022-09-09T00:00:00Z",
+    "duration_hours": 144,
+    "resolution_hours": 1,
+    "population": "Ordinary September six-day weather windows conditioned on the target calendar, without storm, flood or successful-simulation selection",
+    "nonfreezing_minimum_C": 0.0,
+    "cold_rule": "Do not simulate any window containing T_air <= 0 C. Retain and count excluded windows. No temperature clipping.",
+    "hydrologic_spinup": false
+  },
+  "hydrology": {
+    "wetland_design": "best",
+    "timestep_s": 120,
+    "refined_timestep_s": 60,
+    "convergence_scenarios_per_method": 2,
+    "flood_threshold_m": null,
+    "flood_threshold_source": null,
+    "controls": "Existing frozen Stage B prescribed gate schedules",
+    "boundary_policy": "Keep Q_ext, h_d, h_g and B from accepted Stage B configuration",
+    "initial_policy": "Match shared states by name and retain accepted wetland-specific initial water. No hydrologic spin-up."
+  },
+  "summary": {
+    "paired_bootstrap_replicates": 2000,
+    "confidence_level": 0.95,
+    "benefit_tolerance_m": 0.001,
+    "benefit_tolerance_basis": "Existing Stage B peak-grid screen 0.001 m, conservatively above the saved deterministic 60-to-30 s changes. Check against Stage C representative refinement; unresolved or larger error prevents millimetre-effect claims.",
+    "scenario_quantiles": [0.05, 0.5, 0.95],
+    "minimum_pairs_for_confidence_interval": 2
+  },
+  "paths": {
+    "fitted_model": "data/processed/weather_model.json",
+    "validation_dir": "results/weather_validation",
+    "run_root": "results",
+    "plot_root": "plots",
+    "table_root": "tables"
+  }
+}

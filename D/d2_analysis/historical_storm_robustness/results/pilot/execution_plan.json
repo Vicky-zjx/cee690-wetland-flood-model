@@ -1,0 +1,17 @@
+{
+  "study_plan_sha256": "580cf84f31bbc312280b87b37066656afe0f56c5880d501dc8b02c0a5ae7370e",
+  "workers": 4,
+  "event_ids": [
+    "historical_20230813T0800Z",
+    "historical_20220704T2100Z",
+    "historical_20190825T0200Z",
+    "historical_20240804T1500Z"
+  ],
+  "sample_ids": [
+    "mc_00016",
+    "mc_00018",
+    "mc_00024"
+  ],
+  "all_planned_cases_retained": true,
+  "safety_is_reported_separately_from_model_validity": true
+}

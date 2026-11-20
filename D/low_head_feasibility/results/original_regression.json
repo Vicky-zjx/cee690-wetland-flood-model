@@ -1,0 +1,76 @@
+[
+  {
+    "case": "wetland",
+    "design": "reference",
+    "valid": true,
+    "physical_peak_m": 97.5584415143834,
+    "physical_peak_discharge_m3_s": 0.9076478097408842,
+    "safety_violation": false,
+    "balance_relative": 7.33808289095133e-07,
+    "derivative_mass_identity_m3_s": 1.3322676295501878e-15,
+    "saved_trajectory": "B/results/wetland_only/fixed_reference_120s.npz",
+    "saved_sha256": "77a6f06cbf03422146dadc0a66aaee36528dfcd5999baf4a37bc9780e43d0c8c",
+    "exact_original_grid_and_schedule": true,
+    "pass_regression": true,
+    "storage_atol_m3": 1e-07,
+    "output_atol": 1e-09,
+    "numerical_differences": {
+      "x": 0.0,
+      "y": 0.0,
+      "u": 0.0
+    },
+    "missing_saved_columns": [
+      "dx"
+    ],
+    "saved_file_unchanged": true
+  },
+  {
+    "case": "wetland",
+    "design": "best",
+    "valid": true,
+    "physical_peak_m": 97.55342909286543,
+    "physical_peak_discharge_m3_s": 0.8965090952564954,
+    "safety_violation": false,
+    "balance_relative": 6.261095615309292e-07,
+    "derivative_mass_identity_m3_s": 1.3322676295501878e-15,
+    "saved_trajectory": "B/results/wetland_only/wetland_best_120s.npz",
+    "saved_sha256": "062c121ba72e1447cb5fe9b08b870d592c3880de736dc01d26afcfb16290cd15",
+    "exact_original_grid_and_schedule": true,
+    "pass_regression": true,
+    "storage_atol_m3": 1e-07,
+    "output_atol": 1e-09,
+    "numerical_differences": {
+      "x": 0.0,
+      "y": 0.0,
+      "u": 0.0
+    },
+    "missing_saved_columns": [
+      "dx"
+    ],
+    "saved_file_unchanged": true
+  },
+  {
+    "case": "no_wetland",
+    "design": "best",
+    "valid": true,
+    "physical_peak_m": 97.63774482150569,
+    "physical_peak_discharge_m3_s": 1.0838773811237463,
+    "safety_violation": false,
+    "balance_relative": 1.0521725187475994e-06,
+    "derivative_mass_identity_m3_s": 1.3322676295501878e-15,
+    "saved_trajectory": "B/results/wetland_counterfactual/bypass_120s.npz",
+    "saved_sha256": "609d739cfd705fc172b901e85b351a65b50e2c68487e9f4353f540a846aad744",
+    "exact_original_grid_and_schedule": true,
+    "pass_regression": true,
+    "storage_atol_m3": 1e-07,
+    "output_atol": 1e-09,
+    "numerical_differences": {
+      "x": 0.0,
+      "dx": 0.0,
+      "y": 0.0,
+      "u": 0.0
+    },
+    "missing_saved_columns": [],
+    "saved_file_unchanged": true
+  }
+]

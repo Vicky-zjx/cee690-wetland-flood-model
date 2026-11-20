@@ -13,7 +13,7 @@ This page presents the model, data, method and main results. The stage pages con
 | A | Initial eight-state model, algebraic relationships and synthetic baseline | [A — Model, data and baseline](A/README.md) |
 | B | Fixed-gate wetland optimization, no-wetland comparison and design-bound verification | [B — Data, optimization and results](B/README.md) |
 | C | Meteorological fitting; official FIT/mimo_srs one-step response, external 2024 evaluation and figures/tables | [C — Weather fitting and diagnostics](C/README.md) |
-| D | Reserved; no confirmed analysis or results yet | [D](D/README.md) |
+| D | Feedback-controlled parameter uncertainty and historical-storm robustness; completed analyses, final submission report pending | [D](D/README.md) |
 
 ## The modeled system
 
@@ -154,7 +154,13 @@ Modeling/
 │   ├── plots/         Weather diagnostic figures
 │   └── tables/        Weather diagnostic tables
 └── D/
-    └── README.md
+    ├── README.md
+    ├── d2_analysis/            Parameter uncertainty and historical-storm analyses
+    ├── feedback_control/      Preserved feedback policy and validation
+    ├── gate_hydraulics_revision/  Stage D hydraulic variant and evidence
+    ├── g5_diagnostics/        Original failure diagnostics
+    ├── low_head_feasibility/  Geometry and energy-limit audit
+    └── reproducibility_inputs/  Selected frozen inputs and publication guide
 ```
 
 A and B are the physical stage folders, without assignment-number subfolders. Within B, names such as `wetland_only` and `wetland_counterfactual` identify different analyses. Wetland response labels A/A and B/B describe the two synthetic wetland classes; they do not subdivide the project stages.
@@ -162,6 +168,8 @@ A and B are the physical stage folders, without assignment-number subfolders. Wi
 ## Running the project and locating every source
 
 Run commands from the repository root. The [A environment guide](A/README.md#install-and-run) gives the exact dependency revision and installation status. Algebraic A plots require NumPy and Matplotlib; dynamic calculations additionally use the official solver. The existing local environment and official checkout were tested; a fresh installation is not claimed to have been tested.
+
+Stage D's completed [27-case sensitivity and 64-pair parameter study](D/d2_analysis/parameter_uncertainty/README.md) and [five-window historical-storm robustness analysis](D/d2_analysis/historical_storm_robustness/FINDINGS.md) retain the validated Stage D feedback controller. See the [Stage D publication and reproduction guide](D/reproducibility_inputs/README.md) for included summaries, selected trajectory fixtures, external solver setup and remaining workstation-path limitations. Bulk Stage D trajectories remain local; selected results and figures are tracked.
 
 ```sh
 python -m A.algebraic_plots       # A–G algebraic figures

@@ -1,0 +1,648 @@
+{
+  "events": [
+    {
+      "event_id": "benchmark_september_2022",
+      "scenario_id": "benchmark_september_2022",
+      "benchmark": true,
+      "start_utc": "2022-09-09 00:00:00+00:00",
+      "end_utc": "2022-09-15 00:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/B/work/event_data/proposed_forcing_120s.csv",
+      "forcing_sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394",
+      "seed_sequence_entropy": null,
+      "forcing_schema": "Original prepared120s model inputs; benchmark flag selects original deterministic execution, not the hourly event adapter",
+      "rainfall_total_mm": 145.29999999992037,
+      "max_hourly_mm": 15.906350574721198,
+      "max_24h_mm": 141.39999999992222,
+      "solar_energy_Wh_m2": 21166.809999997637,
+      "minimum_temperature_C": 12.0,
+      "complete_forcing": true,
+      "hours": 144,
+      "source": "Original approved September2022 KMKE/KMWC/POWER reconstruction, preserved byte-for-byte",
+      "native_maximum_one_hour_mm": 16.0,
+      "provenance": {
+        "prepared_manifest": "B/work/event_data/proposed_forcing_manifest.json",
+        "prepared_manifest_sha256": "e122da512246112a5960ebb94a371dee146a9338ace8f5c0d30a518eedd0974d",
+        "comparison_report": "benchmark_C_comparison.json",
+        "native_peak_source": "B/work/event_data/weather/KMKE_rain_selected_intervals_utc.csv",
+        "native_intervals_sha256": "db9c2c3315e301e22a466b8cfebb811cdc7534ae839f200322e162513f1d2215"
+      },
+      "positive_rain_hours": 27,
+      "first_to_last_positive_span_h": 49,
+      "quantified_wet_spell_count": 2,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2022-09-11 11:00:00+00:00",
+        "end_utc": "2022-09-12 08:00:00+00:00",
+        "span_h": 21,
+        "positive_hours": 21,
+        "depth_mm": 141.3999999999222
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    },
+    {
+      "event_id": "historical_20230813T0800Z",
+      "scenario_id": "historical_20230813T0800Z",
+      "benchmark": false,
+      "start_utc": "2023-08-13 08:00:00+00:00",
+      "end_utc": "2023-08-19 08:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20230813T0800Z.csv",
+      "forcing_sha256": "39bd50a6ba448684a162d0d87a482c897352d188335daec4b069fc36d050ff8c",
+      "seed_sequence_entropy": null,
+      "hours": 144,
+      "complete_forcing": true,
+      "forcing_schema": "Original StageC joint hourly rows, UTC interval starts, all QC flags retained exactly",
+      "rainfall_total_mm": 58.89999999767,
+      "max_hourly_mm": 16.69333333,
+      "max_24h_mm": 53.29999999767,
+      "ranking_24h_mm": 53.29999999767,
+      "ranking_core_start_utc": "2023-08-14 08:00:00+00:00",
+      "ranking_core_end_utc": "2023-08-15 08:00:00+00:00",
+      "rainfall_rank": 47,
+      "selected_additional_rank": 1,
+      "minimum_temperature_C": 12.0,
+      "solar_energy_Wh_m2": 29077.67,
+      "source": "Observed KMKE rainfall and KMWC meteorology with POWER grid solar; existing StageC conservative hourly alignment",
+      "qc_counts": {
+        "precipitation_trace_lower_bound": 15,
+        "temperature_interpolated": 144,
+        "wind_interpolated": 144,
+        "temperature_short_gap_filled": 0,
+        "wind_short_gap_filled": 0
+      },
+      "native_rain_audit": {
+        "raw_file": "C/data/raw/NOAA_72640014839_2023.csv",
+        "raw_sha256": "36aa186f5847dabf0cb34621d64385058e2e32e63a9b749ff3a35ae11e673b81",
+        "native_selected_intervals": 145,
+        "complete_native_one_hour_intervals": 143,
+        "native_end_minutes": [
+          52
+        ],
+        "maximum_native_one_hour_depth_mm": 18.8,
+        "maximum_24_consecutive_native_hours_mm": 53.3,
+        "native_trace_intervals_intersecting_window": 10,
+        "overlap_reconstruction_max_error_mm": 3.333330056420891e-09,
+        "represented_native_window_depth_mm": 58.9,
+        "interpretation": "Native interval depth is an observation; UTC-hour amount is a conservative redistribution with assumed within-hour timing.",
+        "annual_parser_qc": {
+          "absent_fields": 25485,
+          "not_one_hour": 779,
+          "missing_bad_quality_or_unsupported_condition": 23,
+          "overlapping_intervals_excluded": 2,
+          "selected_intervals": 8719,
+          "trace_intervals": 621
+        }
+      },
+      "provenance": {
+        "standardized_file": "C/data/processed/weather_hourly.csv",
+        "standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+        "first_source_row": 40448,
+        "last_source_row": 40591,
+        "row_preservation": "Original CSV header and144 row byte strings copied without rewriting values"
+      },
+      "positive_rain_hours": 19,
+      "first_to_last_positive_span_h": 71,
+      "quantified_wet_spell_count": 2,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2023-08-14 13:00:00+00:00",
+        "end_utc": "2023-08-15 08:00:00+00:00",
+        "span_h": 19,
+        "positive_hours": 16,
+        "depth_mm": 53.29999999766999
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    },
+    {
+      "event_id": "historical_20220704T2100Z",
+      "scenario_id": "historical_20220704T2100Z",
+      "benchmark": false,
+      "start_utc": "2022-07-04 21:00:00+00:00",
+      "end_utc": "2022-07-10 21:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20220704T2100Z.csv",
+      "forcing_sha256": "5fe60cc023ceb3dd4c436d23627e6aa06da67d05485c622076f61a07fc3fdd7f",
+      "seed_sequence_entropy": null,
+      "hours": 144,
+      "complete_forcing": true,
+      "forcing_schema": "Original StageC joint hourly rows, UTC interval starts, all QC flags retained exactly",
+      "rainfall_total_mm": 66.4266666676,
+      "max_hourly_mm": 26.14666667,
+      "max_24h_mm": 47.200000003599996,
+      "ranking_24h_mm": 47.200000003599996,
+      "ranking_core_start_utc": "2022-07-05 21:00:00+00:00",
+      "ranking_core_end_utc": "2022-07-06 21:00:00+00:00",
+      "rainfall_rank": 103,
+      "selected_additional_rank": 2,
+      "minimum_temperature_C": 12.0,
+      "solar_energy_Wh_m2": 37611.48,
+      "source": "Observed KMKE rainfall and KMWC meteorology with POWER grid solar; existing StageC conservative hourly alignment",
+      "qc_counts": {
+        "precipitation_trace_lower_bound": 8,
+        "temperature_interpolated": 143,
+        "wind_interpolated": 143,
+        "temperature_short_gap_filled": 0,
+        "wind_short_gap_filled": 0
+      },
+      "native_rain_audit": {
+        "raw_file": "C/data/raw/NOAA_72640014839_2022.csv",
+        "raw_sha256": "16dae936a32d8be20783c8ec867a97824f2c73903b5f783bab7ad34c013315a9",
+        "native_selected_intervals": 145,
+        "complete_native_one_hour_intervals": 143,
+        "native_end_minutes": [
+          52
+        ],
+        "maximum_native_one_hour_depth_mm": 29.0,
+        "maximum_24_consecutive_native_hours_mm": 47.2,
+        "native_trace_intervals_intersecting_window": 4,
+        "overlap_reconstruction_max_error_mm": 3.33333360913457e-09,
+        "represented_native_window_depth_mm": 66.42666666666666,
+        "interpretation": "Native interval depth is an observation; UTC-hour amount is a conservative redistribution with assumed within-hour timing.",
+        "annual_parser_qc": {
+          "absent_fields": 25596,
+          "not_one_hour": 784,
+          "missing_bad_quality_or_unsupported_condition": 27,
+          "overlapping_intervals_excluded": 5,
+          "selected_intervals": 8616,
+          "trace_intervals": 766
+        }
+      },
+      "provenance": {
+        "standardized_file": "C/data/processed/weather_hourly.csv",
+        "standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+        "first_source_row": 30741,
+        "last_source_row": 30884,
+        "row_preservation": "Original CSV header and144 row byte strings copied without rewriting values"
+      },
+      "positive_rain_hours": 15,
+      "first_to_last_positive_span_h": 93,
+      "quantified_wet_spell_count": 3,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2022-07-05 23:00:00+00:00",
+        "end_utc": "2022-07-06 08:00:00+00:00",
+        "span_h": 9,
+        "positive_hours": 9,
+        "depth_mm": 47.200000003599996
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    },
+    {
+      "event_id": "historical_20190825T0200Z",
+      "scenario_id": "historical_20190825T0200Z",
+      "benchmark": false,
+      "start_utc": "2019-08-25 02:00:00+00:00",
+      "end_utc": "2019-08-31 02:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20190825T0200Z.csv",
+      "forcing_sha256": "85f44c26651e2164f310702c42abce14701f147f15822a1de8647299b5352737",
+      "seed_sequence_entropy": null,
+      "hours": 144,
+      "complete_forcing": true,
+      "forcing_schema": "Original StageC joint hourly rows, UTC interval starts, all QC flags retained exactly",
+      "rainfall_total_mm": 42.80000000437,
+      "max_hourly_mm": 11.36666667,
+      "max_24h_mm": 42.3000000044,
+      "ranking_24h_mm": 42.300000004400005,
+      "ranking_core_start_utc": "2019-08-26 02:00:00+00:00",
+      "ranking_core_end_utc": "2019-08-27 02:00:00+00:00",
+      "rainfall_rank": 133,
+      "selected_additional_rank": 3,
+      "minimum_temperature_C": 11.0,
+      "solar_energy_Wh_m2": 29296.97,
+      "source": "Observed KMKE rainfall and KMWC meteorology with POWER grid solar; existing StageC conservative hourly alignment",
+      "qc_counts": {
+        "precipitation_trace_lower_bound": 8,
+        "temperature_interpolated": 143,
+        "wind_interpolated": 143,
+        "temperature_short_gap_filled": 2,
+        "wind_short_gap_filled": 2
+      },
+      "native_rain_audit": {
+        "raw_file": "C/data/raw/NOAA_72640014839_2019.csv",
+        "raw_sha256": "f14dc8e223e455964e273a2e530a1a5b6f795269be314c41f1cf619be466e862",
+        "native_selected_intervals": 145,
+        "complete_native_one_hour_intervals": 143,
+        "native_end_minutes": [
+          52
+        ],
+        "maximum_native_one_hour_depth_mm": 11.9,
+        "maximum_24_consecutive_native_hours_mm": 42.300000000000004,
+        "native_trace_intervals_intersecting_window": 5,
+        "overlap_reconstruction_max_error_mm": 3.3333353854914094e-09,
+        "represented_native_window_depth_mm": 42.8,
+        "interpretation": "Native interval depth is an observation; UTC-hour amount is a conservative redistribution with assumed within-hour timing.",
+        "annual_parser_qc": {
+          "absent_fields": 25501,
+          "not_one_hour": 907,
+          "missing_bad_quality_or_unsupported_condition": 46,
+          "overlapping_intervals_excluded": 3,
+          "selected_intervals": 8567,
+          "trace_intervals": 804
+        }
+      },
+      "provenance": {
+        "standardized_file": "C/data/processed/weather_hourly.csv",
+        "standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+        "first_source_row": 5666,
+        "last_source_row": 5809,
+        "row_preservation": "Original CSV header and144 row byte strings copied without rewriting values"
+      },
+      "positive_rain_hours": 17,
+      "first_to_last_positive_span_h": 41,
+      "quantified_wet_spell_count": 2,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2019-08-26 11:00:00+00:00",
+        "end_utc": "2019-08-27 02:00:00+00:00",
+        "span_h": 15,
+        "positive_hours": 15,
+        "depth_mm": 42.3000000044
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    },
+    {
+      "event_id": "historical_20240804T1500Z",
+      "scenario_id": "historical_20240804T1500Z",
+      "benchmark": false,
+      "start_utc": "2024-08-04 15:00:00+00:00",
+      "end_utc": "2024-08-10 15:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20240804T1500Z.csv",
+      "forcing_sha256": "da6068843c31b892823353bb81c43cf0c28ab17df77f3f3ad52046eb0c5be586",
+      "seed_sequence_entropy": null,
+      "hours": 144,
+      "complete_forcing": true,
+      "forcing_schema": "Original StageC joint hourly rows, UTC interval starts, all QC flags retained exactly",
+      "rainfall_total_mm": 41.200000000299994,
+      "max_hourly_mm": 20.02,
+      "max_24h_mm": 41.2000000003,
+      "ranking_24h_mm": 41.200000000299994,
+      "ranking_core_start_utc": "2024-08-05 15:00:00+00:00",
+      "ranking_core_end_utc": "2024-08-06 15:00:00+00:00",
+      "rainfall_rank": 148,
+      "selected_additional_rank": 4,
+      "minimum_temperature_C": 11.0,
+      "solar_energy_Wh_m2": 29067.050000000003,
+      "source": "Observed KMKE rainfall and KMWC meteorology with POWER grid solar; existing StageC conservative hourly alignment",
+      "qc_counts": {
+        "precipitation_trace_lower_bound": 9,
+        "temperature_interpolated": 144,
+        "wind_interpolated": 144,
+        "temperature_short_gap_filled": 0,
+        "wind_short_gap_filled": 0
+      },
+      "native_rain_audit": {
+        "raw_file": "C/data/raw/NOAA_72640014839_2024.csv",
+        "raw_sha256": "c87a5ee463ceec959ce493bb03499f841731882db7e980b5f61ef015f35c3668",
+        "native_selected_intervals": 145,
+        "complete_native_one_hour_intervals": 143,
+        "native_end_minutes": [
+          52
+        ],
+        "maximum_native_one_hour_depth_mm": 23.1,
+        "maximum_24_consecutive_native_hours_mm": 41.2,
+        "native_trace_intervals_intersecting_window": 5,
+        "overlap_reconstruction_max_error_mm": 3.33333360913457e-10,
+        "represented_native_window_depth_mm": 41.2,
+        "interpretation": "Native interval depth is an observation; UTC-hour amount is a conservative redistribution with assumed within-hour timing.",
+        "annual_parser_qc": {
+          "absent_fields": 26155,
+          "not_one_hour": 746,
+          "missing_bad_quality_or_unsupported_condition": 84,
+          "overlapping_intervals_excluded": 3,
+          "selected_intervals": 8040,
+          "trace_intervals": 532
+        }
+      },
+      "provenance": {
+        "standardized_file": "C/data/processed/weather_hourly.csv",
+        "standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+        "first_source_row": 49023,
+        "last_source_row": 49166,
+        "row_preservation": "Original CSV header and144 row byte strings copied without rewriting values"
+      },
+      "positive_rain_hours": 9,
+      "first_to_last_positive_span_h": 9,
+      "quantified_wet_spell_count": 1,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2024-08-06 06:00:00+00:00",
+        "end_utc": "2024-08-06 15:00:00+00:00",
+        "span_h": 9,
+        "positive_hours": 9,
+        "depth_mm": 41.200000000299994
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    }
+  ],
+  "total_events": 5,
+  "benchmark_count": 1,
+  "additional_events": 4,
+  "selection_rule": "Reserve original Sep9\u201315,2022. Enumerate all144h UTC windows from2019\u20132024; rank the fixed24h core at hours24..47 by quantified precipitation descending, earliest core UTC start on exact ties. Require all144 original joint weather rows finite, full rain coverage and T>0. Greedily select4 eligible windows not overlapping the benchmark or each other. No ODE result enters selection.",
+  "ranking_is_rainfall_only": true,
+  "complete_joint_and_liquid_domain_are_eligibility_filters": true,
+  "candidate_counts": {
+    "total": 52465,
+    "valid24h_core": 45684,
+    "complete_joint": 20516,
+    "eligible_complete_warm": 9440,
+    "overlapping_benchmark": 287
+  },
+  "standardized_source": {
+    "file": "C/data/processed/weather_hourly.csv",
+    "sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+    "rows": 52608,
+    "quality_report_sha256": "e5c45876c01ab9b09df1c2bf5ebd40d9408d62db286a64011b600d4ad706afb5",
+    "processing_code_sha256": "edc51440f16a61999c742e36a86b149569c478613c3ad67a867e7810fbc47c6b"
+  },
+  "selection_code_sha256": "268a3bdacf42db773492edec88ed447cddc730f8d03d4897396ba415f5d2ca10",
+  "raw_source_manifest": [
+    {
+      "file": "C/data/raw/NOAA_72640014839_2019.csv",
+      "sha256": "f14dc8e223e455964e273a2e530a1a5b6f795269be314c41f1cf619be466e862",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2019-01-01&endDate=2019-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:10.485258+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2019-01-01&endDate=2019-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2373570,
+        "sha256": "f14dc8e223e455964e273a2e530a1a5b6f795269be314c41f1cf619be466e862"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640594869_2019.csv",
+      "sha256": "cf449c9065a4e763a2d8e5c5f82e02bf3f19b22f9aedb84e5d2236cf81b00aa4",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2019-01-01&endDate=2019-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:10.485482+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2019-01-01&endDate=2019-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2826774,
+        "sha256": "cf449c9065a4e763a2d8e5c5f82e02bf3f19b22f9aedb84e5d2236cf81b00aa4"
+      }
+    },
+    {
+      "file": "C/data/raw/POWER_solar_2019.json",
+      "sha256": "aa974a46c7fda0aa5b4d08aa258b7478de75dc8b3eb3a4fd5c47ef5f520cb1c8",
+      "request": {
+        "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20190101&end=20191231&format=JSON&time-standard=UTC",
+        "retrieved_utc": "2026-10-28T19:22:05.074281+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20190101&end=20191231&format=JSON&time-standard=UTC",
+        "bytes": 160329,
+        "sha256": "aa974a46c7fda0aa5b4d08aa258b7478de75dc8b3eb3a4fd5c47ef5f520cb1c8"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640014839_2020.csv",
+      "sha256": "c4c825e0bd593fc19c863f4a8ca85f4ec052b1dac2985627b8be00806297562b",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2020-01-01&endDate=2020-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:10.486640+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2020-01-01&endDate=2020-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2135876,
+        "sha256": "c4c825e0bd593fc19c863f4a8ca85f4ec052b1dac2985627b8be00806297562b"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640594869_2020.csv",
+      "sha256": "b3c1b580c97277958712c1b8a886bdb69a7771e956a4be6841c0dfde089ae57e",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2020-01-01&endDate=2020-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:12.549053+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2020-01-01&endDate=2020-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2783455,
+        "sha256": "b3c1b580c97277958712c1b8a886bdb69a7771e956a4be6841c0dfde089ae57e"
+      }
+    },
+    {
+      "file": "C/data/raw/POWER_solar_2020.json",
+      "sha256": "879374bc05e50b63332f890d6ec52520f592605f8808dc8fc4c3cc63d238933b",
+      "request": {
+        "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20200101&end=20201231&format=JSON&time-standard=UTC",
+        "retrieved_utc": "2026-10-28T19:22:05.832458+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20200101&end=20201231&format=JSON&time-standard=UTC",
+        "bytes": 160905,
+        "sha256": "879374bc05e50b63332f890d6ec52520f592605f8808dc8fc4c3cc63d238933b"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640014839_2021.csv",
+      "sha256": "728ab6537e85700bae9ff02607bf15cd9fae26455ef57f4568bf56dd8b5fc774",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2021-01-01&endDate=2021-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:12.722365+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2021-01-01&endDate=2021-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2129029,
+        "sha256": "728ab6537e85700bae9ff02607bf15cd9fae26455ef57f4568bf56dd8b5fc774"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640594869_2021.csv",
+      "sha256": "426fb633b030a65aee79dd571cd6a7858584dbeff4d0a562f97845f2b35c393b",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2021-01-01&endDate=2021-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:12.931485+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2021-01-01&endDate=2021-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2769888,
+        "sha256": "426fb633b030a65aee79dd571cd6a7858584dbeff4d0a562f97845f2b35c393b"
+      }
+    },
+    {
+      "file": "C/data/raw/POWER_solar_2021.json",
+      "sha256": "961ad12edc8a797765484f50b91637f9d9fc13f0f329b8afbb728dfff52896d4",
+      "request": {
+        "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20210101&end=20211231&format=JSON&time-standard=UTC",
+        "retrieved_utc": "2026-10-28T19:22:06.421743+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20210101&end=20211231&format=JSON&time-standard=UTC",
+        "bytes": 160558,
+        "sha256": "961ad12edc8a797765484f50b91637f9d9fc13f0f329b8afbb728dfff52896d4"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640014839_2022.csv",
+      "sha256": "16dae936a32d8be20783c8ec867a97824f2c73903b5f783bab7ad34c013315a9",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2022-01-01&endDate=2022-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:14.916454+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2022-01-01&endDate=2022-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2177773,
+        "sha256": "16dae936a32d8be20783c8ec867a97824f2c73903b5f783bab7ad34c013315a9"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640594869_2022.csv",
+      "sha256": "d54911ad55c3ce10ba80fa5c7c3df7e8ace8e0b1f256104ff19f47232c366e1f",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2022-01-01&endDate=2022-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:14.960184+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2022-01-01&endDate=2022-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2684611,
+        "sha256": "d54911ad55c3ce10ba80fa5c7c3df7e8ace8e0b1f256104ff19f47232c366e1f"
+      }
+    },
+    {
+      "file": "C/data/raw/POWER_solar_2022.json",
+      "sha256": "f74443356575fa7544eafd539746610108da9629c277fb681b3b306dab156dec",
+      "request": {
+        "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20220101&end=20221231&format=JSON&time-standard=UTC",
+        "retrieved_utc": "2026-10-28T19:22:06.851549+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20220101&end=20221231&format=JSON&time-standard=UTC",
+        "bytes": 160492,
+        "sha256": "f74443356575fa7544eafd539746610108da9629c277fb681b3b306dab156dec"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640014839_2023.csv",
+      "sha256": "36aa186f5847dabf0cb34621d64385058e2e32e63a9b749ff3a35ae11e673b81",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2023-01-01&endDate=2023-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:15.272818+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2023-01-01&endDate=2023-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2207250,
+        "sha256": "36aa186f5847dabf0cb34621d64385058e2e32e63a9b749ff3a35ae11e673b81"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640594869_2023.csv",
+      "sha256": "6b8bd7a175eb3fa3821acb4c1a409f6f9756c4e0c4ad4a7d52b6b2f8a9ee66c6",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2023-01-01&endDate=2023-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:17.014778+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2023-01-01&endDate=2023-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2417596,
+        "sha256": "6b8bd7a175eb3fa3821acb4c1a409f6f9756c4e0c4ad4a7d52b6b2f8a9ee66c6"
+      }
+    },
+    {
+      "file": "C/data/raw/POWER_solar_2023.json",
+      "sha256": "9d6f7c9489d4d5ac73a6180643342e6c8d61152422c76099682bccc312a35fd4",
+      "request": {
+        "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20230101&end=20231231&format=JSON&time-standard=UTC",
+        "retrieved_utc": "2026-10-28T19:22:07.565303+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20230101&end=20231231&format=JSON&time-standard=UTC",
+        "bytes": 160416,
+        "sha256": "9d6f7c9489d4d5ac73a6180643342e6c8d61152422c76099682bccc312a35fd4"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640014839_2024.csv",
+      "sha256": "c87a5ee463ceec959ce493bb03499f841731882db7e980b5f61ef015f35c3668",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:17.205710+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640014839&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2343261,
+        "sha256": "c87a5ee463ceec959ce493bb03499f841731882db7e980b5f61ef015f35c3668"
+      }
+    },
+    {
+      "file": "C/data/raw/NOAA_72640594869_2024.csv",
+      "sha256": "8f7fc189bffdb83c03692d894df56c710104d50e0bed1793761a2efa6fcf5016",
+      "request": {
+        "url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "retrieved_utc": "2026-10-28T19:23:17.480008+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://www.ncei.noaa.gov/access/services/data/v1?dataset=global-hourly&stations=72640594869&startDate=2024-01-01&endDate=2024-12-31&format=csv&dataTypes=TMP%2CWND%2CAA1%2CAA2%2CAA3%2CAA4&includeAttributes=true&includeStationName=true&includeStationLocation=true",
+        "bytes": 2730566,
+        "sha256": "8f7fc189bffdb83c03692d894df56c710104d50e0bed1793761a2efa6fcf5016"
+      }
+    },
+    {
+      "file": "C/data/raw/POWER_solar_2024.json",
+      "sha256": "ed24ce8f16fb2e5db3388656e5b1eee2d335852836431afe139e3ed88604444a",
+      "request": {
+        "url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20240101&end=20241231&format=JSON&time-standard=UTC",
+        "retrieved_utc": "2026-10-28T19:22:09.153491+00:00",
+        "ok": true,
+        "http_status": 200,
+        "final_url": "https://power.larc.nasa.gov/api/temporal/hourly/point?parameters=ALLSKY_SFC_SW_DWN&community=RE&longitude=-88.0461111&latitude=43.0547222&start=20240101&end=20241231&format=JSON&time-standard=UTC",
+        "bytes": 160911,
+        "sha256": "ed24ce8f16fb2e5db3388656e5b1eee2d335852836431afe139e3ed88604444a"
+      }
+    }
+  ],
+  "important_limitations": [
+    "Selection favors well-observed, nonfreezing windows; it does not rank unobserved or freezing storms.",
+    "Rainfall is a regional airport proxy and hourly clock-bin amounts assume constant rates within observed native1h accumulations.",
+    "Trace zeros are quantified lower bounds; six-zero-hour spell separation is not proof of meteorological dry periods.",
+    "Temperature/wind are midpoint interpolation from accepted observations, including flagged gaps up to2h; solar is grid-derived with inherited hour-start convention.",
+    "No joint weather vector is independently shuffled or scaled. New events retain source rows; benchmark retains its different approved120s reconstruction.",
+    "All four selected new windows have smaller24h totals than the September2022 benchmark; this is not a more-extreme-than-benchmark or return-period study.",
+    "The same model initial conditions are assumptions, not reconstructed antecedent storages at each historical date."
+  ],
+  "benchmark_comparison": {
+    "window_start_utc": "2022-09-09 00:00:00+00:00",
+    "window_end_utc": "2022-09-15 00:00:00+00:00",
+    "original_forcing_file": "B/work/event_data/proposed_forcing_120s.csv",
+    "original_forcing_sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394",
+    "original_forcing_manifest_sha256": "e122da512246112a5960ebb94a371dee146a9338ace8f5c0d30a518eedd0974d",
+    "original_quantified_rain_mm": 145.29999999992037,
+    "C_quantified_sum_over_observed_hours_mm": 145.2999999881,
+    "C_rainfall_total_complete": false,
+    "C_missing_rain_hours": [
+      "2022-09-13 12:00:00+00:00",
+      "2022-09-13 13:00:00+00:00",
+      "2022-09-13 14:00:00+00:00"
+    ],
+    "original_solar_energy_Wh_m2": 21166.809999997637,
+    "C_solar_energy_Wh_m2": 21166.809999999998,
+    "common_hour_comparison": {
+      "rainfall_hour_mm": {
+        "common_hours": 141,
+        "C_missing_hours": 3,
+        "max_absolute_difference": 0.2063505747211991,
+        "mean_absolute_difference": 0.008586043904692727
+      },
+      "solar_hour_Wh_m2": {
+        "common_hours": 144,
+        "C_missing_hours": 0,
+        "max_absolute_difference": 4.667128905566642e-10,
+        "mean_absolute_difference": 8.676714593727455e-11
+      },
+      "temperature_midpoint_C": {
+        "common_hours": 144,
+        "C_missing_hours": 0,
+        "max_absolute_difference": 4.600000380605707e-09,
+        "mean_absolute_difference": 2.1180551140136888e-10
+      },
+      "wind_midpoint_m_s": {
+        "common_hours": 144,
+        "C_missing_hours": 0,
+        "max_absolute_difference": 4.4000003640576324e-10,
+        "mean_absolute_difference": 2.1111112857852277e-11
+      }
+    },
+    "known_processing_difference": "Original approved benchmark includes an actual3h trace accumulation spanning the two missing native one-hour reports, uses120s mass-preserving rain/solar ramps and direct met interpolation. C uses strict independent1h rain intervals, overlap-weighted clock hours, midpoint T/wind estimates, and preserves three incomplete clock-hour rain bins as missing. No missing C rain is filled or used to replace the benchmark."
+  },
+  "preservation_before": {
+    "files_checked": 3130,
+    "changed": [],
+    "missing": [],
+    "new_protected_files": [],
+    "passed": true,
+    "scope": "All prior project files plus original professor source and submitted D.1; current historical_storm_robustness directory excluded"
+  }
+}

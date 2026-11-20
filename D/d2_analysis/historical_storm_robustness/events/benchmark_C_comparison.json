@@ -1,0 +1,44 @@
+{
+  "window_start_utc": "2022-09-09 00:00:00+00:00",
+  "window_end_utc": "2022-09-15 00:00:00+00:00",
+  "original_forcing_file": "B/work/event_data/proposed_forcing_120s.csv",
+  "original_forcing_sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394",
+  "original_forcing_manifest_sha256": "e122da512246112a5960ebb94a371dee146a9338ace8f5c0d30a518eedd0974d",
+  "original_quantified_rain_mm": 145.29999999992037,
+  "C_quantified_sum_over_observed_hours_mm": 145.2999999881,
+  "C_rainfall_total_complete": false,
+  "C_missing_rain_hours": [
+    "2022-09-13 12:00:00+00:00",
+    "2022-09-13 13:00:00+00:00",
+    "2022-09-13 14:00:00+00:00"
+  ],
+  "original_solar_energy_Wh_m2": 21166.809999997637,
+  "C_solar_energy_Wh_m2": 21166.809999999998,
+  "common_hour_comparison": {
+    "rainfall_hour_mm": {
+      "common_hours": 141,
+      "C_missing_hours": 3,
+      "max_absolute_difference": 0.2063505747211991,
+      "mean_absolute_difference": 0.008586043904692727
+    },
+    "solar_hour_Wh_m2": {
+      "common_hours": 144,
+      "C_missing_hours": 0,
+      "max_absolute_difference": 4.667128905566642e-10,
+      "mean_absolute_difference": 8.676714593727455e-11
+    },
+    "temperature_midpoint_C": {
+      "common_hours": 144,
+      "C_missing_hours": 0,
+      "max_absolute_difference": 4.600000380605707e-09,
+      "mean_absolute_difference": 2.1180551140136888e-10
+    },
+    "wind_midpoint_m_s": {
+      "common_hours": 144,
+      "C_missing_hours": 0,
+      "max_absolute_difference": 4.4000003640576324e-10,
+      "mean_absolute_difference": 2.1111112857852277e-11
+    }
+  },
+  "known_processing_difference": "Original approved benchmark includes an actual3h trace accumulation spanning the two missing native one-hour reports, uses120s mass-preserving rain/solar ramps and direct met interpolation. C uses strict independent1h rain intervals, overlap-weighted clock hours, midpoint T/wind estimates, and preserves three incomplete clock-hour rain bins as missing. No missing C rain is filled or used to replace the benchmark."
+}

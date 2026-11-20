@@ -1,0 +1,18 @@
+{
+  "status": "blocked_physical_compatibility",
+  "C_ideal_m_half_s": 1.7046037880029699,
+  "old_endpoint_C_m_half_s": 2.1257714646687678,
+  "endpoint_excess_percent": 24.707658144959144,
+  "necessary_not_sufficient_r_min": 1.5588457268119893,
+  "necessary_not_sufficient_Cd_max": 0.4811252243246881,
+  "extra_total_energy_fraction_if_otherwise_fixed": 0.15858726152675562,
+  "warm_scenarios_preserved": 16,
+  "cold_scenarios_preserved": 4,
+  "new_warm_simulations_run": 0,
+  "fresh_original_deterministic_runs": 3,
+  "original_fixed_schedules_preserved": true,
+  "new_hydraulic_model_implemented": false,
+  "hydraulic_pilot_passed": false,
+  "ready_for_bounded_D2": false,
+  "preservation_passed": true
+}

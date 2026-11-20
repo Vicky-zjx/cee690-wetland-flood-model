@@ -1,0 +1,19 @@
+{
+  "total_case_evaluations": 184,
+  "original_counts": {
+    "('no_wetland', 'meteorological_liquid_water_applicability')": 4,
+    "('no_wetland', 'unsupported_gate_hydraulics')": 16,
+    "('wetland', 'meteorological_liquid_water_applicability')": 4,
+    "('wetland', 'unsupported_gate_hydraulics')": 16
+  },
+  "max_rain_mapping_error_m": 3.469446951953614e-18,
+  "max_solar_mapping_error_Wh_m2": 1.0913936421275139e-11,
+  "complete_simulations": 82,
+  "max_complete_balance_relative": 2.161325418723532e-05,
+  "max_derivative_mass_identity_m3_s": 1.7763568394002505e-15,
+  "protected_files_unchanged": true,
+  "hydraulic_G5_resolved": false,
+  "physical_extension_implemented": false,
+  "operating_alternative_accepted": false,
+  "reason": "Missing crest/coefficient/transition specification. Tested common schedules do not meet both reference-event safety and complete pilot applicability."
+}

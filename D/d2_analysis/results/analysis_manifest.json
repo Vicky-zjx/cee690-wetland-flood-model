@@ -1,0 +1,17 @@
+{
+  "analysis_sha256": "c96aa649eda681744ae680cf57c799d22e797bc4a79fe0987fdf53c428b4b3bd",
+  "sources": {
+    "D/feedback_control/policy.json": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+    "B/no_spillway_config.json": "b4f07d6fd516c39b14e34a7210aa8f00aa6f01e93cb8eaa9a788ecf9cad186c1",
+    "D/feedback_control/results/fine_nominal/execution_plan.json": "e9bf3e7d67bb82ea8c8330265a1d3785f4e9b8642d81f7962fa26a643c4c331d",
+    "D/d2_analysis/results/fine_7p5/execution_plan.json": "d451543d8930666b36824c41fa5c9b0bddf444c8a5c34a51e72496ab81332a6d"
+  },
+  "primary_metrics": "Full144h maxima includingt0; maximumriseaboveinitial separately; nofloodthreshold",
+  "reference_excess": "Use exactsavedinitialH/Q, notroundeddisplayvalues; benchmarknotflood",
+  "pair_difference_sign": "no_wetland minus wetland; not automatically a causal wetland effect",
+  "same_policy": true,
+  "common_physical_initial_states": true,
+  "extra_initial_wetland_water_m3": 5500,
+  "draws_regenerated": false,
+  "ode_executed_by_analysis": false
+}

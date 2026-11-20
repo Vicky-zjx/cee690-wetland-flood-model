@@ -1,0 +1,5 @@
+study,model,classification,count,planned
+sensitivity,wetland,completed_valid_safety_feasible,27,27
+sensitivity,no_wetland,completed_valid_safety_feasible,27,27
+monte_carlo,wetland,completed_valid_safety_feasible,64,64
+monte_carlo,no_wetland,completed_valid_safety_feasible,64,64

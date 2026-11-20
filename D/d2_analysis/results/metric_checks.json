@@ -1,0 +1,97 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "check": "below",
+      "passed": true,
+      "actual": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "check": "above",
+      "passed": true,
+      "actual": [
+        2.0,
+        4.0
+      ],
+      "expected": [
+        2,
+        4
+      ]
+    },
+    {
+      "check": "upcross",
+      "passed": true,
+      "actual": [
+        1.5,
+        2.25
+      ],
+      "expected": [
+        1.5,
+        2.25
+      ]
+    },
+    {
+      "check": "downcross",
+      "passed": true,
+      "actual": [
+        1.5,
+        2.25
+      ],
+      "expected": [
+        1.5,
+        2.25
+      ]
+    },
+    {
+      "check": "equal",
+      "passed": true,
+      "actual": [
+        0.0,
+        0.0
+      ],
+      "expected": [
+        0,
+        0
+      ]
+    },
+    {
+      "check": "zero_to_above",
+      "passed": true,
+      "actual": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        2,
+        2
+      ]
+    },
+    {
+      "check": "above_to_zero",
+      "passed": true,
+      "actual": [
+        2.0,
+        2.0
+      ],
+      "expected": [
+        2,
+        2
+      ]
+    },
+    {
+      "check": "Crossing integration invariant to linear subdivision",
+      "passed": true
+    },
+    {
+      "check": "Initial maximum retained and distinguished from drawup",
+      "passed": true
+    }
+  ]
+}

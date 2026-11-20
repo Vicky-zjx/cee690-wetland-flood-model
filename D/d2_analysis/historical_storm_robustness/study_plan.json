@@ -1,0 +1,1474 @@
+{
+  "source_parameter_plan": "D/d2_analysis/parameter_uncertainty/results/study_plan.json",
+  "source_parameter_plan_sha256": "bfd1b8dcf4ef75d6cbd35e8d8c3ba4814bc3ef17679a730ff20d6cb83170c4ea",
+  "events_manifest_sha256": "66371c784b4a2f9f7ea1c23f142bd7626e505c3558b5b86b4d4b1009631d2115",
+  "points": [
+    {
+      "sample_id": "mc_00000",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.932062049779946,
+      "m_routing": 0.6876441547253446,
+      "m_R_r": 1.231930482765727,
+      "physical_values": {
+        "K_u": 1.932062049779946e-06,
+        "k_ud": [
+          2.3876533150185577e-05,
+          1.9101226520148463e-05
+        ],
+        "k_ur": 9.550613260074231e-06,
+        "R_r": 0.5543687172445771
+      },
+      "draw_index": 0
+    },
+    {
+      "sample_id": "mc_00001",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.6280781902194419,
+      "m_routing": 0.6848552063334381,
+      "m_R_r": 1.4234150403840764,
+      "physical_values": {
+        "K_u": 6.280781902194418e-07,
+        "k_ud": [
+          2.377969466435549e-05,
+          1.902375573148439e-05
+        ],
+        "k_ur": 9.511877865742196e-06,
+        "R_r": 0.6405367681728344
+      },
+      "draw_index": 1
+    },
+    {
+      "sample_id": "mc_00002",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.1151786250803797,
+      "m_routing": 1.111195032979795,
+      "m_R_r": 0.532942070931997,
+      "physical_values": {
+        "K_u": 1.1151786250803796e-06,
+        "k_ud": [
+          3.8583160867354e-05,
+          3.08665286938832e-05
+        ],
+        "k_ur": 1.54332643469416e-05,
+        "R_r": 0.23982393191939863
+      },
+      "draw_index": 2
+    },
+    {
+      "sample_id": "mc_00003",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.6903163245914293,
+      "m_routing": 1.24446821387932,
+      "m_R_r": 1.5710505050981036,
+      "physical_values": {
+        "K_u": 6.903163245914293e-07,
+        "k_ud": [
+          4.3210701870809723e-05,
+          3.456856149664778e-05
+        ],
+        "k_ur": 1.728428074832389e-05,
+        "R_r": 0.7069727272941466
+      },
+      "draw_index": 3
+    },
+    {
+      "sample_id": "mc_00004",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.6338891639055592,
+      "m_routing": 1.0321899359662927,
+      "m_R_r": 0.5074453456229794,
+      "physical_values": {
+        "K_u": 6.338891639055592e-07,
+        "k_ud": [
+          3.583992833216294e-05,
+          2.8671942665730353e-05
+        ],
+        "k_ur": 1.4335971332865177e-05,
+        "R_r": 0.22835040553034072
+      },
+      "draw_index": 4
+    },
+    {
+      "sample_id": "mc_00005",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.7201895201043345,
+      "m_routing": 1.6296804665479456,
+      "m_R_r": 0.8485902506678054,
+      "physical_values": {
+        "K_u": 7.201895201043344e-07,
+        "k_ud": [
+          5.6586127310692557e-05,
+          4.526890184855405e-05
+        ],
+        "k_ur": 2.2634450924277024e-05,
+        "R_r": 0.3818656128005124
+      },
+      "draw_index": 5
+    },
+    {
+      "sample_id": "mc_00006",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.7741103000724774,
+      "m_routing": 0.965550451175897,
+      "m_R_r": 0.8196858357664479,
+      "physical_values": {
+        "K_u": 7.741103000724773e-07,
+        "k_ud": [
+          3.352605733249642e-05,
+          2.682084586599714e-05
+        ],
+        "k_ur": 1.341042293299857e-05,
+        "R_r": 0.36885862609490155
+      },
+      "draw_index": 6
+    },
+    {
+      "sample_id": "mc_00007",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.3242528619665777,
+      "m_routing": 1.8186755821815448,
+      "m_R_r": 0.6331907837688173,
+      "physical_values": {
+        "K_u": 1.3242528619665776e-06,
+        "k_ud": [
+          6.314845771463697e-05,
+          5.051876617170958e-05
+        ],
+        "k_ur": 2.525938308585479e-05,
+        "R_r": 0.28493585269596783
+      },
+      "draw_index": 7
+    },
+    {
+      "sample_id": "mc_00008",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5586106054634018,
+      "m_routing": 1.135791463538077,
+      "m_R_r": 1.5606757576642953,
+      "physical_values": {
+        "K_u": 5.586106054634017e-07,
+        "k_ud": [
+          3.943720359507212e-05,
+          3.1549762876057693e-05
+        ],
+        "k_ur": 1.5774881438028847e-05,
+        "R_r": 0.7023040909489329
+      },
+      "draw_index": 8
+    },
+    {
+      "sample_id": "mc_00009",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5279522979599724,
+      "m_routing": 1.7708919208923681,
+      "m_R_r": 1.4600967077111016,
+      "physical_values": {
+        "K_u": 5.279522979599724e-07,
+        "k_ud": [
+          6.148930280876279e-05,
+          4.919144224701023e-05
+        ],
+        "k_ur": 2.4595721123505115e-05,
+        "R_r": 0.6570435184699958
+      },
+      "draw_index": 9
+    },
+    {
+      "sample_id": "mc_00010",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.7490189902513269,
+      "m_routing": 1.2886958203151742,
+      "m_R_r": 1.6184850754582623,
+      "physical_values": {
+        "K_u": 7.490189902513269e-07,
+        "k_ud": [
+          4.4746382649832435e-05,
+          3.579710611986595e-05
+        ],
+        "k_ur": 1.7898553059932975e-05,
+        "R_r": 0.728318283956218
+      },
+      "draw_index": 10
+    },
+    {
+      "sample_id": "mc_00011",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.2793391492062467,
+      "m_routing": 0.5587695806744523,
+      "m_R_r": 0.7735987337565394,
+      "physical_values": {
+        "K_u": 1.2793391492062466e-06,
+        "k_ud": [
+          1.940172155119626e-05,
+          1.5521377240957008e-05
+        ],
+        "k_ur": 7.760688620478504e-06,
+        "R_r": 0.3481194301904427
+      },
+      "draw_index": 11
+    },
+    {
+      "sample_id": "mc_00012",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.7413944094165472,
+      "m_routing": 0.7779881581863959,
+      "m_R_r": 1.637971490406571,
+      "physical_values": {
+        "K_u": 1.7413944094165472e-06,
+        "k_ud": [
+          2.7013477714805414e-05,
+          2.161078217184433e-05
+        ],
+        "k_ur": 1.0805391085922165e-05,
+        "R_r": 0.7370871706829569
+      },
+      "draw_index": 12
+    },
+    {
+      "sample_id": "mc_00013",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5555713482321563,
+      "m_routing": 0.5533579297559689,
+      "m_R_r": 1.6749957567361584,
+      "physical_values": {
+        "K_u": 5.555713482321562e-07,
+        "k_ud": [
+          1.9213817005415585e-05,
+          1.537105360433247e-05
+        ],
+        "k_ur": 7.685526802166234e-06,
+        "R_r": 0.7537480905312713
+      },
+      "draw_index": 13
+    },
+    {
+      "sample_id": "mc_00014",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5117286568055374,
+      "m_routing": 1.7679592377434534,
+      "m_R_r": 1.9855770556021273,
+      "physical_values": {
+        "K_u": 5.117286568055373e-07,
+        "k_ud": [
+          6.13874735327588e-05,
+          4.9109978826207045e-05
+        ],
+        "k_ur": 2.4554989413103523e-05,
+        "R_r": 0.8935096750209572
+      },
+      "draw_index": 14
+    },
+    {
+      "sample_id": "mc_00015",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.9763139898600737,
+      "m_routing": 0.5459609348784698,
+      "m_R_r": 1.7159783202709955,
+      "physical_values": {
+        "K_u": 9.763139898600736e-07,
+        "k_ud": [
+          1.895697690550242e-05,
+          1.5165581524401939e-05
+        ],
+        "k_ur": 7.582790762200969e-06,
+        "R_r": 0.772190244121948
+      },
+      "draw_index": 15
+    },
+    {
+      "sample_id": "mc_00016",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5631927082247021,
+      "m_routing": 0.6208461554659039,
+      "m_R_r": 0.5147092120047647,
+      "physical_values": {
+        "K_u": 5.631927082247021e-07,
+        "k_ud": [
+          2.1557158175899442e-05,
+          1.7245726540719556e-05
+        ],
+        "k_ur": 8.622863270359778e-06,
+        "R_r": 0.23161914540214412
+      },
+      "draw_index": 16
+    },
+    {
+      "sample_id": "mc_00017",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.2080239973651898,
+      "m_routing": 0.6093114123319986,
+      "m_R_r": 1.5829801876480336,
+      "physical_values": {
+        "K_u": 1.2080239973651898e-06,
+        "k_ud": [
+          2.115664626152773e-05,
+          1.6925317009222185e-05
+        ],
+        "k_ur": 8.462658504611092e-06,
+        "R_r": 0.7123410844416151
+      },
+      "draw_index": 17
+    },
+    {
+      "sample_id": "mc_00018",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.424934479761205,
+      "m_routing": 1.4161030546355675,
+      "m_R_r": 1.9288937828168002,
+      "physical_values": {
+        "K_u": 1.424934479761205e-06,
+        "k_ud": [
+          4.917024495262387e-05,
+          3.93361959620991e-05
+        ],
+        "k_ur": 1.966809798104955e-05,
+        "R_r": 0.8680022022675601
+      },
+      "draw_index": 18
+    },
+    {
+      "sample_id": "mc_00019",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.6415358036682995,
+      "m_routing": 1.3968296129366453,
+      "m_R_r": 1.39253447739873,
+      "physical_values": {
+        "K_u": 6.415358036682996e-07,
+        "k_ud": [
+          4.8501028226966854e-05,
+          3.880082258157348e-05
+        ],
+        "k_ur": 1.940041129078674e-05,
+        "R_r": 0.6266405148294285
+      },
+      "draw_index": 19
+    },
+    {
+      "sample_id": "mc_00020",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.7586377451529019,
+      "m_routing": 0.5702010890836363,
+      "m_R_r": 1.722075687187217,
+      "physical_values": {
+        "K_u": 7.586377451529019e-07,
+        "k_ud": [
+          1.979864892651515e-05,
+          1.583891914121212e-05
+        ],
+        "k_ur": 7.91945957060606e-06,
+        "R_r": 0.7749340592342476
+      },
+      "draw_index": 20
+    },
+    {
+      "sample_id": "mc_00021",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.9684883570957924,
+      "m_routing": 0.662782489809892,
+      "m_R_r": 0.9541065362217617,
+      "physical_values": {
+        "K_u": 9.684883570957924e-07,
+        "k_ud": [
+          2.3013280896176803e-05,
+          1.8410624716941445e-05
+        ],
+        "k_ur": 9.205312358470722e-06,
+        "R_r": 0.42934794129979276
+      },
+      "draw_index": 21
+    },
+    {
+      "sample_id": "mc_00022",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5675784508204665,
+      "m_routing": 1.1617760826023915,
+      "m_R_r": 0.6264411950209338,
+      "physical_values": {
+        "K_u": 5.675784508204665e-07,
+        "k_ud": [
+          4.033944731258304e-05,
+          3.227155785006643e-05
+        ],
+        "k_ur": 1.6135778925033215e-05,
+        "R_r": 0.2818985377594202
+      },
+      "draw_index": 22
+    },
+    {
+      "sample_id": "mc_00023",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.9768847680041435,
+      "m_routing": 0.5549477453166126,
+      "m_R_r": 1.2648558576804068,
+      "physical_values": {
+        "K_u": 1.9768847680041436e-06,
+        "k_ud": [
+          1.9269018934604604e-05,
+          1.5415215147683683e-05
+        ],
+        "k_ur": 7.707607573841841e-06,
+        "R_r": 0.569185135956183
+      },
+      "draw_index": 23
+    },
+    {
+      "sample_id": "mc_00024",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.8462077488275175,
+      "m_routing": 1.1400493014053454,
+      "m_R_r": 1.1761245143107526,
+      "physical_values": {
+        "K_u": 8.462077488275174e-07,
+        "k_ud": [
+          3.9585045187685606e-05,
+          3.166803615014848e-05
+        ],
+        "k_ur": 1.583401807507424e-05,
+        "R_r": 0.5292560314398387
+      },
+      "draw_index": 24
+    },
+    {
+      "sample_id": "mc_00025",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.6571003133252503,
+      "m_routing": 1.2973713246604226,
+      "m_R_r": 0.6807378398503553,
+      "physical_values": {
+        "K_u": 6.571003133252503e-07,
+        "k_ud": [
+          4.5047615439598004e-05,
+          3.6038092351678404e-05
+        ],
+        "k_ur": 1.8019046175839202e-05,
+        "R_r": 0.3063320279326599
+      },
+      "draw_index": 25
+    },
+    {
+      "sample_id": "mc_00026",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.0613280110427603,
+      "m_routing": 1.0836252586948123,
+      "m_R_r": 1.0369864479230824,
+      "physical_values": {
+        "K_u": 1.0613280110427603e-06,
+        "k_ud": [
+          3.7625877038014316e-05,
+          3.0100701630411455e-05
+        ],
+        "k_ur": 1.5050350815205727e-05,
+        "R_r": 0.4666439015653871
+      },
+      "draw_index": 26
+    },
+    {
+      "sample_id": "mc_00027",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.6450061962665226,
+      "m_routing": 1.4711893944234786,
+      "m_R_r": 0.7445170623848709,
+      "physical_values": {
+        "K_u": 1.6450061962665225e-06,
+        "k_ud": [
+          5.1082965084148566e-05,
+          4.0866372067318854e-05
+        ],
+        "k_ur": 2.0433186033659427e-05,
+        "R_r": 0.3350326780731919
+      },
+      "draw_index": 27
+    },
+    {
+      "sample_id": "mc_00028",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.6708816737986314,
+      "m_routing": 0.7696991030807968,
+      "m_R_r": 1.402219579958496,
+      "physical_values": {
+        "K_u": 1.6708816737986312e-06,
+        "k_ud": [
+          2.6725663301416555e-05,
+          2.1380530641133246e-05
+        ],
+        "k_ur": 1.0690265320566623e-05,
+        "R_r": 0.6309988109813233
+      },
+      "draw_index": 28
+    },
+    {
+      "sample_id": "mc_00029",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5032619172553391,
+      "m_routing": 1.9504179259681222,
+      "m_R_r": 0.6479991939053324,
+      "physical_values": {
+        "K_u": 5.032619172553391e-07,
+        "k_ud": [
+          6.772284465167091e-05,
+          5.417827572133673e-05
+        ],
+        "k_ur": 2.7089137860668364e-05,
+        "R_r": 0.2915996372573996
+      },
+      "draw_index": 29
+    },
+    {
+      "sample_id": "mc_00030",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.9982931175247777,
+      "m_routing": 0.9299350286889316,
+      "m_R_r": 1.5305581888918158,
+      "physical_values": {
+        "K_u": 9.982931175247777e-07,
+        "k_ud": [
+          3.2289410718365685e-05,
+          2.5831528574692547e-05
+        ],
+        "k_ur": 1.2915764287346274e-05,
+        "R_r": 0.6887511850013172
+      },
+      "draw_index": 30
+    },
+    {
+      "sample_id": "mc_00031",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.6694882647742134,
+      "m_routing": 0.9516537086070629,
+      "m_R_r": 0.5516832676582443,
+      "physical_values": {
+        "K_u": 6.694882647742134e-07,
+        "k_ud": [
+          3.304353154885635e-05,
+          2.6434825239085083e-05
+        ],
+        "k_ur": 1.3217412619542542e-05,
+        "R_r": 0.24825747044620994
+      },
+      "draw_index": 31
+    },
+    {
+      "sample_id": "mc_00032",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.8254073949882792,
+      "m_routing": 1.3158238176789254,
+      "m_R_r": 0.7219868522675782,
+      "physical_values": {
+        "K_u": 8.254073949882792e-07,
+        "k_ud": [
+          4.5688327002740465e-05,
+          3.655066160219238e-05
+        ],
+        "k_ur": 1.827533080109619e-05,
+        "R_r": 0.3248940835204102
+      },
+      "draw_index": 32
+    },
+    {
+      "sample_id": "mc_00033",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.096231115533571,
+      "m_routing": 0.7119865769105345,
+      "m_R_r": 1.602202738695663,
+      "physical_values": {
+        "K_u": 1.0962311155335711e-06,
+        "k_ud": [
+          2.4721756142726892e-05,
+          1.9777404914181514e-05
+        ],
+        "k_ur": 9.888702457090757e-06,
+        "R_r": 0.7209912324130484
+      },
+      "draw_index": 33
+    },
+    {
+      "sample_id": "mc_00034",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5731914567086525,
+      "m_routing": 0.74381404282128,
+      "m_R_r": 0.5377513213473528,
+      "physical_values": {
+        "K_u": 5.731914567086524e-07,
+        "k_ud": [
+          2.582687648685e-05,
+          2.066150118948e-05
+        ],
+        "k_ur": 1.033075059474e-05,
+        "R_r": 0.24198809460630877
+      },
+      "draw_index": 34
+    },
+    {
+      "sample_id": "mc_00035",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.0220014592910982,
+      "m_routing": 1.6208876874651938,
+      "m_R_r": 1.7111358202540663,
+      "physical_values": {
+        "K_u": 1.0220014592910981e-06,
+        "k_ud": [
+          5.6280822481430344e-05,
+          4.5024657985144277e-05
+        ],
+        "k_ur": 2.2512328992572138e-05,
+        "R_r": 0.7700111191143298
+      },
+      "draw_index": 35
+    },
+    {
+      "sample_id": "mc_00036",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.6487125232561705,
+      "m_routing": 0.7911419249832102,
+      "m_R_r": 0.9689874303863748,
+      "physical_values": {
+        "K_u": 6.487125232561704e-07,
+        "k_ud": [
+          2.7470205728583687e-05,
+          2.1976164582866952e-05
+        ],
+        "k_ur": 1.0988082291433476e-05,
+        "R_r": 0.4360443436738687
+      },
+      "draw_index": 36
+    },
+    {
+      "sample_id": "mc_00037",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.6702947054558048,
+      "m_routing": 1.1572136274749454,
+      "m_R_r": 0.6910204522220343,
+      "physical_values": {
+        "K_u": 6.702947054558048e-07,
+        "k_ud": [
+          4.018102873176894e-05,
+          3.214482298541515e-05
+        ],
+        "k_ur": 1.6072411492707575e-05,
+        "R_r": 0.31095920349991546
+      },
+      "draw_index": 37
+    },
+    {
+      "sample_id": "mc_00038",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.8747302770035543,
+      "m_routing": 0.6902120588729327,
+      "m_R_r": 1.3117936310794944,
+      "physical_values": {
+        "K_u": 1.8747302770035542e-06,
+        "k_ud": [
+          2.3965696488643498e-05,
+          1.9172557190914798e-05
+        ],
+        "k_ur": 9.586278595457399e-06,
+        "R_r": 0.5903071339857725
+      },
+      "draw_index": 38
+    },
+    {
+      "sample_id": "mc_00039",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.8266133039556876,
+      "m_routing": 0.5409427989067007,
+      "m_R_r": 1.1824338342573484,
+      "physical_values": {
+        "K_u": 8.266133039556875e-07,
+        "k_ud": [
+          1.878273607314933e-05,
+          1.5026188858519465e-05
+        ],
+        "k_ur": 7.513094429259733e-06,
+        "R_r": 0.5320952254158068
+      },
+      "draw_index": 39
+    },
+    {
+      "sample_id": "mc_00040",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.9297052952643445,
+      "m_routing": 0.9720018745030735,
+      "m_R_r": 0.8796501284939489,
+      "physical_values": {
+        "K_u": 9.297052952643445e-07,
+        "k_ud": [
+          3.3750065086912274e-05,
+          2.7000052069529822e-05
+        ],
+        "k_ur": 1.3500026034764911e-05,
+        "R_r": 0.395842557822277
+      },
+      "draw_index": 40
+    },
+    {
+      "sample_id": "mc_00041",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.8263112068553753,
+      "m_routing": 0.6268830309819056,
+      "m_R_r": 1.6759121706301603,
+      "physical_values": {
+        "K_u": 8.263112068553753e-07,
+        "k_ud": [
+          2.1766771909093944e-05,
+          1.7413417527275155e-05
+        ],
+        "k_ur": 8.706708763637578e-06,
+        "R_r": 0.7541604767835721
+      },
+      "draw_index": 41
+    },
+    {
+      "sample_id": "mc_00042",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5010257635151272,
+      "m_routing": 1.0878582216217623,
+      "m_R_r": 1.9274074257204312,
+      "physical_values": {
+        "K_u": 5.010257635151271e-07,
+        "k_ud": [
+          3.77728549174223e-05,
+          3.0218283933937842e-05
+        ],
+        "k_ur": 1.5109141966968921e-05,
+        "R_r": 0.8673333415741941
+      },
+      "draw_index": 42
+    },
+    {
+      "sample_id": "mc_00043",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.2740238354991698,
+      "m_routing": 1.0956726879121923,
+      "m_R_r": 1.2341323986360326,
+      "physical_values": {
+        "K_u": 1.2740238354991696e-06,
+        "k_ud": [
+          3.804419055250668e-05,
+          3.043535244200534e-05
+        ],
+        "k_ur": 1.521767622100267e-05,
+        "R_r": 0.5553595793862147
+      },
+      "draw_index": 43
+    },
+    {
+      "sample_id": "mc_00044",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.9804044386138577,
+      "m_routing": 1.3051203609357096,
+      "m_R_r": 0.501719857621018,
+      "physical_values": {
+        "K_u": 1.980404438613858e-06,
+        "k_ud": [
+          4.5316679199156584e-05,
+          3.6253343359325266e-05
+        ],
+        "k_ur": 1.8126671679662633e-05,
+        "R_r": 0.2257739359294581
+      },
+      "draw_index": 44
+    },
+    {
+      "sample_id": "mc_00045",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.3311617701904146,
+      "m_routing": 1.668798084508485,
+      "m_R_r": 1.0353303641599856,
+      "physical_values": {
+        "K_u": 1.3311617701904146e-06,
+        "k_ud": [
+          5.79443779343224e-05,
+          4.635550234745792e-05
+        ],
+        "k_ur": 2.317775117372896e-05,
+        "R_r": 0.4658986638719935
+      },
+      "draw_index": 45
+    },
+    {
+      "sample_id": "mc_00046",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.7582924762152619,
+      "m_routing": 0.906997181836218,
+      "m_R_r": 1.7700291740323342,
+      "physical_values": {
+        "K_u": 1.7582924762152618e-06,
+        "k_ud": [
+          3.149295770264646e-05,
+          2.5194366162117167e-05
+        ],
+        "k_ur": 1.2597183081058584e-05,
+        "R_r": 0.7965131283145503
+      },
+      "draw_index": 46
+    },
+    {
+      "sample_id": "mc_00047",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.8781569073834581,
+      "m_routing": 0.5424712742322633,
+      "m_R_r": 1.1257240715997894,
+      "physical_values": {
+        "K_u": 8.78156907383458e-07,
+        "k_ud": [
+          1.8835808133064697e-05,
+          1.5068646506451757e-05
+        ],
+        "k_ur": 7.534323253225879e-06,
+        "R_r": 0.5065758322199052
+      },
+      "draw_index": 47
+    },
+    {
+      "sample_id": "mc_00048",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.0362051540107489,
+      "m_routing": 1.565259467107558,
+      "m_R_r": 0.9101967829642467,
+      "physical_values": {
+        "K_u": 1.0362051540107488e-06,
+        "k_ud": [
+          5.434928705234576e-05,
+          4.347942964187661e-05
+        ],
+        "k_ur": 2.1739714820938305e-05,
+        "R_r": 0.409588552333911
+      },
+      "draw_index": 48
+    },
+    {
+      "sample_id": "mc_00049",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.9964770182463911,
+      "m_routing": 1.2597617636945833,
+      "m_R_r": 1.1640399938703134,
+      "physical_values": {
+        "K_u": 1.996477018246391e-06,
+        "k_ud": [
+          4.374172790606192e-05,
+          3.4993382324849536e-05
+        ],
+        "k_ur": 1.7496691162424768e-05,
+        "R_r": 0.523817997241641
+      },
+      "draw_index": 49
+    },
+    {
+      "sample_id": "mc_00050",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.73821563520434,
+      "m_routing": 0.5540908992897476,
+      "m_R_r": 1.2402508968927424,
+      "physical_values": {
+        "K_u": 1.73821563520434e-06,
+        "k_ud": [
+          1.923926733644957e-05,
+          1.539141386915966e-05
+        ],
+        "k_ur": 7.69570693457983e-06,
+        "R_r": 0.558112903601734
+      },
+      "draw_index": 50
+    },
+    {
+      "sample_id": "mc_00051",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.6173074588721138,
+      "m_routing": 0.640925751707864,
+      "m_R_r": 0.972684589543018,
+      "physical_values": {
+        "K_u": 6.173074588721138e-07,
+        "k_ud": [
+          2.225436637874528e-05,
+          1.7803493102996226e-05
+        ],
+        "k_ur": 8.901746551498113e-06,
+        "R_r": 0.4377080652943581
+      },
+      "draw_index": 51
+    },
+    {
+      "sample_id": "mc_00052",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.9334608451328883,
+      "m_routing": 1.4420767581928644,
+      "m_R_r": 1.7797643314911022,
+      "physical_values": {
+        "K_u": 9.334608451328882e-07,
+        "k_ud": [
+          5.007210965947446e-05,
+          4.005768772757957e-05
+        ],
+        "k_ur": 2.0028843863789784e-05,
+        "R_r": 0.800893949170996
+      },
+      "draw_index": 52
+    },
+    {
+      "sample_id": "mc_00053",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.4092103980602155,
+      "m_routing": 0.6808809357383293,
+      "m_R_r": 0.5539194413594826,
+      "physical_values": {
+        "K_u": 1.4092103980602154e-06,
+        "k_ud": [
+          2.364169915758088e-05,
+          1.8913359326064705e-05
+        ],
+        "k_ur": 9.456679663032352e-06,
+        "R_r": 0.24926374861176717
+      },
+      "draw_index": 53
+    },
+    {
+      "sample_id": "mc_00054",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.5128407695428646,
+      "m_routing": 1.353617059629464,
+      "m_R_r": 0.6915886194725471,
+      "physical_values": {
+        "K_u": 5.128407695428645e-07,
+        "k_ud": [
+          4.700059234824528e-05,
+          3.760047387859623e-05
+        ],
+        "k_ur": 1.8800236939298114e-05,
+        "R_r": 0.3112148787626462
+      },
+      "draw_index": 54
+    },
+    {
+      "sample_id": "mc_00055",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.124514490984559,
+      "m_routing": 0.7671466246588285,
+      "m_R_r": 1.463863783989534,
+      "physical_values": {
+        "K_u": 1.124514490984559e-06,
+        "k_ud": [
+          2.6637035578431547e-05,
+          2.130962846274524e-05
+        ],
+        "k_ur": 1.065481423137262e-05,
+        "R_r": 0.6587387027952903
+      },
+      "draw_index": 55
+    },
+    {
+      "sample_id": "mc_00056",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.42058276474838,
+      "m_routing": 0.8823815494471224,
+      "m_R_r": 1.035633062796833,
+      "physical_values": {
+        "K_u": 1.4205827647483798e-06,
+        "k_ud": [
+          3.063824824469175e-05,
+          2.4510598595753403e-05
+        ],
+        "k_ur": 1.2255299297876702e-05,
+        "R_r": 0.4660348782585749
+      },
+      "draw_index": 56
+    },
+    {
+      "sample_id": "mc_00057",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.7971614843343613,
+      "m_routing": 0.9421750619072756,
+      "m_R_r": 1.878556111307531,
+      "physical_values": {
+        "K_u": 1.7971614843343611e-06,
+        "k_ud": [
+          3.27144118717804e-05,
+          2.6171529497424324e-05
+        ],
+        "k_ur": 1.3085764748712162e-05,
+        "R_r": 0.845350250088389
+      },
+      "draw_index": 57
+    },
+    {
+      "sample_id": "mc_00058",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 0.817549041662145,
+      "m_routing": 0.7647352441205747,
+      "m_R_r": 0.7190019198209593,
+      "physical_values": {
+        "K_u": 8.17549041662145e-07,
+        "k_ud": [
+          2.6553307087519955e-05,
+          2.1242645670015965e-05
+        ],
+        "k_ur": 1.0621322835007983e-05,
+        "R_r": 0.32355086391943166
+      },
+      "draw_index": 58
+    },
+    {
+      "sample_id": "mc_00059",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.4081122021052268,
+      "m_routing": 1.375610302590781,
+      "m_R_r": 1.8036676564311183,
+      "physical_values": {
+        "K_u": 1.4081122021052268e-06,
+        "k_ud": [
+          4.7764246617735455e-05,
+          3.821139729418836e-05
+        ],
+        "k_ur": 1.910569864709418e-05,
+        "R_r": 0.8116504453940032
+      },
+      "draw_index": 59
+    },
+    {
+      "sample_id": "mc_00060",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.5212991879130016,
+      "m_routing": 0.6692463939973233,
+      "m_R_r": 0.5370818975809812,
+      "physical_values": {
+        "K_u": 1.5212991879130014e-06,
+        "k_ud": [
+          2.323772201379595e-05,
+          1.859017761103676e-05
+        ],
+        "k_ur": 9.29508880551838e-06,
+        "R_r": 0.24168685391144157
+      },
+      "draw_index": 60
+    },
+    {
+      "sample_id": "mc_00061",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.2695273879372486,
+      "m_routing": 0.8337546921585357,
+      "m_R_r": 1.0887168083550787,
+      "physical_values": {
+        "K_u": 1.2695273879372485e-06,
+        "k_ud": [
+          2.8949815699949155e-05,
+          2.3159852559959326e-05
+        ],
+        "k_ur": 1.1579926279979663e-05,
+        "R_r": 0.48992256375978543
+      },
+      "draw_index": 61
+    },
+    {
+      "sample_id": "mc_00062",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.0408005556728428,
+      "m_routing": 1.497209040444567,
+      "m_R_r": 0.5689407129737002,
+      "physical_values": {
+        "K_u": 1.0408005556728428e-06,
+        "k_ud": [
+          5.198642501543636e-05,
+          4.1589140012349084e-05
+        ],
+        "k_ur": 2.0794570006174542e-05,
+        "R_r": 0.2560233208381651
+      },
+      "draw_index": 62
+    },
+    {
+      "sample_id": "mc_00063",
+      "study_kind": "explicit_exploratory_mc",
+      "m_K_u": 1.0035771042902377,
+      "m_routing": 0.8375807239791874,
+      "m_R_r": 0.6711235702847448,
+      "physical_values": {
+        "K_u": 1.0035771042902377e-06,
+        "k_ud": [
+          2.9082664027055117e-05,
+          2.3266131221644096e-05
+        ],
+        "k_ur": 1.1633065610822048e-05,
+        "R_r": 0.30200560662813514
+      },
+      "draw_index": 63
+    }
+  ],
+  "events": [
+    {
+      "event_id": "benchmark_september_2022",
+      "scenario_id": "benchmark_september_2022",
+      "benchmark": true,
+      "start_utc": "2022-09-09 00:00:00+00:00",
+      "end_utc": "2022-09-15 00:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/B/work/event_data/proposed_forcing_120s.csv",
+      "forcing_sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394",
+      "seed_sequence_entropy": null,
+      "forcing_schema": "Original prepared120s model inputs; benchmark flag selects original deterministic execution, not the hourly event adapter",
+      "rainfall_total_mm": 145.29999999992037,
+      "max_hourly_mm": 15.906350574721198,
+      "max_24h_mm": 141.39999999992222,
+      "solar_energy_Wh_m2": 21166.809999997637,
+      "minimum_temperature_C": 12.0,
+      "complete_forcing": true,
+      "hours": 144,
+      "source": "Original approved September2022 KMKE/KMWC/POWER reconstruction, preserved byte-for-byte",
+      "native_maximum_one_hour_mm": 16.0,
+      "provenance": {
+        "prepared_manifest": "B/work/event_data/proposed_forcing_manifest.json",
+        "prepared_manifest_sha256": "e122da512246112a5960ebb94a371dee146a9338ace8f5c0d30a518eedd0974d",
+        "comparison_report": "benchmark_C_comparison.json",
+        "native_peak_source": "B/work/event_data/weather/KMKE_rain_selected_intervals_utc.csv",
+        "native_intervals_sha256": "db9c2c3315e301e22a466b8cfebb811cdc7534ae839f200322e162513f1d2215"
+      },
+      "positive_rain_hours": 27,
+      "first_to_last_positive_span_h": 49,
+      "quantified_wet_spell_count": 2,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2022-09-11 11:00:00+00:00",
+        "end_utc": "2022-09-12 08:00:00+00:00",
+        "span_h": 21,
+        "positive_hours": 21,
+        "depth_mm": 141.3999999999222
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    },
+    {
+      "event_id": "historical_20230813T0800Z",
+      "scenario_id": "historical_20230813T0800Z",
+      "benchmark": false,
+      "start_utc": "2023-08-13 08:00:00+00:00",
+      "end_utc": "2023-08-19 08:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20230813T0800Z.csv",
+      "forcing_sha256": "39bd50a6ba448684a162d0d87a482c897352d188335daec4b069fc36d050ff8c",
+      "seed_sequence_entropy": null,
+      "hours": 144,
+      "complete_forcing": true,
+      "forcing_schema": "Original StageC joint hourly rows, UTC interval starts, all QC flags retained exactly",
+      "rainfall_total_mm": 58.89999999767,
+      "max_hourly_mm": 16.69333333,
+      "max_24h_mm": 53.29999999767,
+      "ranking_24h_mm": 53.29999999767,
+      "ranking_core_start_utc": "2023-08-14 08:00:00+00:00",
+      "ranking_core_end_utc": "2023-08-15 08:00:00+00:00",
+      "rainfall_rank": 47,
+      "selected_additional_rank": 1,
+      "minimum_temperature_C": 12.0,
+      "solar_energy_Wh_m2": 29077.67,
+      "source": "Observed KMKE rainfall and KMWC meteorology with POWER grid solar; existing StageC conservative hourly alignment",
+      "qc_counts": {
+        "precipitation_trace_lower_bound": 15,
+        "temperature_interpolated": 144,
+        "wind_interpolated": 144,
+        "temperature_short_gap_filled": 0,
+        "wind_short_gap_filled": 0
+      },
+      "native_rain_audit": {
+        "raw_file": "C/data/raw/NOAA_72640014839_2023.csv",
+        "raw_sha256": "36aa186f5847dabf0cb34621d64385058e2e32e63a9b749ff3a35ae11e673b81",
+        "native_selected_intervals": 145,
+        "complete_native_one_hour_intervals": 143,
+        "native_end_minutes": [
+          52
+        ],
+        "maximum_native_one_hour_depth_mm": 18.8,
+        "maximum_24_consecutive_native_hours_mm": 53.3,
+        "native_trace_intervals_intersecting_window": 10,
+        "overlap_reconstruction_max_error_mm": 3.333330056420891e-09,
+        "represented_native_window_depth_mm": 58.9,
+        "interpretation": "Native interval depth is an observation; UTC-hour amount is a conservative redistribution with assumed within-hour timing.",
+        "annual_parser_qc": {
+          "absent_fields": 25485,
+          "not_one_hour": 779,
+          "missing_bad_quality_or_unsupported_condition": 23,
+          "overlapping_intervals_excluded": 2,
+          "selected_intervals": 8719,
+          "trace_intervals": 621
+        }
+      },
+      "provenance": {
+        "standardized_file": "C/data/processed/weather_hourly.csv",
+        "standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+        "first_source_row": 40448,
+        "last_source_row": 40591,
+        "row_preservation": "Original CSV header and144 row byte strings copied without rewriting values"
+      },
+      "positive_rain_hours": 19,
+      "first_to_last_positive_span_h": 71,
+      "quantified_wet_spell_count": 2,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2023-08-14 13:00:00+00:00",
+        "end_utc": "2023-08-15 08:00:00+00:00",
+        "span_h": 19,
+        "positive_hours": 16,
+        "depth_mm": 53.29999999766999
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    },
+    {
+      "event_id": "historical_20220704T2100Z",
+      "scenario_id": "historical_20220704T2100Z",
+      "benchmark": false,
+      "start_utc": "2022-07-04 21:00:00+00:00",
+      "end_utc": "2022-07-10 21:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20220704T2100Z.csv",
+      "forcing_sha256": "5fe60cc023ceb3dd4c436d23627e6aa06da67d05485c622076f61a07fc3fdd7f",
+      "seed_sequence_entropy": null,
+      "hours": 144,
+      "complete_forcing": true,
+      "forcing_schema": "Original StageC joint hourly rows, UTC interval starts, all QC flags retained exactly",
+      "rainfall_total_mm": 66.4266666676,
+      "max_hourly_mm": 26.14666667,
+      "max_24h_mm": 47.200000003599996,
+      "ranking_24h_mm": 47.200000003599996,
+      "ranking_core_start_utc": "2022-07-05 21:00:00+00:00",
+      "ranking_core_end_utc": "2022-07-06 21:00:00+00:00",
+      "rainfall_rank": 103,
+      "selected_additional_rank": 2,
+      "minimum_temperature_C": 12.0,
+      "solar_energy_Wh_m2": 37611.48,
+      "source": "Observed KMKE rainfall and KMWC meteorology with POWER grid solar; existing StageC conservative hourly alignment",
+      "qc_counts": {
+        "precipitation_trace_lower_bound": 8,
+        "temperature_interpolated": 143,
+        "wind_interpolated": 143,
+        "temperature_short_gap_filled": 0,
+        "wind_short_gap_filled": 0
+      },
+      "native_rain_audit": {
+        "raw_file": "C/data/raw/NOAA_72640014839_2022.csv",
+        "raw_sha256": "16dae936a32d8be20783c8ec867a97824f2c73903b5f783bab7ad34c013315a9",
+        "native_selected_intervals": 145,
+        "complete_native_one_hour_intervals": 143,
+        "native_end_minutes": [
+          52
+        ],
+        "maximum_native_one_hour_depth_mm": 29.0,
+        "maximum_24_consecutive_native_hours_mm": 47.2,
+        "native_trace_intervals_intersecting_window": 4,
+        "overlap_reconstruction_max_error_mm": 3.33333360913457e-09,
+        "represented_native_window_depth_mm": 66.42666666666666,
+        "interpretation": "Native interval depth is an observation; UTC-hour amount is a conservative redistribution with assumed within-hour timing.",
+        "annual_parser_qc": {
+          "absent_fields": 25596,
+          "not_one_hour": 784,
+          "missing_bad_quality_or_unsupported_condition": 27,
+          "overlapping_intervals_excluded": 5,
+          "selected_intervals": 8616,
+          "trace_intervals": 766
+        }
+      },
+      "provenance": {
+        "standardized_file": "C/data/processed/weather_hourly.csv",
+        "standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+        "first_source_row": 30741,
+        "last_source_row": 30884,
+        "row_preservation": "Original CSV header and144 row byte strings copied without rewriting values"
+      },
+      "positive_rain_hours": 15,
+      "first_to_last_positive_span_h": 93,
+      "quantified_wet_spell_count": 3,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2022-07-05 23:00:00+00:00",
+        "end_utc": "2022-07-06 08:00:00+00:00",
+        "span_h": 9,
+        "positive_hours": 9,
+        "depth_mm": 47.200000003599996
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    },
+    {
+      "event_id": "historical_20190825T0200Z",
+      "scenario_id": "historical_20190825T0200Z",
+      "benchmark": false,
+      "start_utc": "2019-08-25 02:00:00+00:00",
+      "end_utc": "2019-08-31 02:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20190825T0200Z.csv",
+      "forcing_sha256": "85f44c26651e2164f310702c42abce14701f147f15822a1de8647299b5352737",
+      "seed_sequence_entropy": null,
+      "hours": 144,
+      "complete_forcing": true,
+      "forcing_schema": "Original StageC joint hourly rows, UTC interval starts, all QC flags retained exactly",
+      "rainfall_total_mm": 42.80000000437,
+      "max_hourly_mm": 11.36666667,
+      "max_24h_mm": 42.3000000044,
+      "ranking_24h_mm": 42.300000004400005,
+      "ranking_core_start_utc": "2019-08-26 02:00:00+00:00",
+      "ranking_core_end_utc": "2019-08-27 02:00:00+00:00",
+      "rainfall_rank": 133,
+      "selected_additional_rank": 3,
+      "minimum_temperature_C": 11.0,
+      "solar_energy_Wh_m2": 29296.97,
+      "source": "Observed KMKE rainfall and KMWC meteorology with POWER grid solar; existing StageC conservative hourly alignment",
+      "qc_counts": {
+        "precipitation_trace_lower_bound": 8,
+        "temperature_interpolated": 143,
+        "wind_interpolated": 143,
+        "temperature_short_gap_filled": 2,
+        "wind_short_gap_filled": 2
+      },
+      "native_rain_audit": {
+        "raw_file": "C/data/raw/NOAA_72640014839_2019.csv",
+        "raw_sha256": "f14dc8e223e455964e273a2e530a1a5b6f795269be314c41f1cf619be466e862",
+        "native_selected_intervals": 145,
+        "complete_native_one_hour_intervals": 143,
+        "native_end_minutes": [
+          52
+        ],
+        "maximum_native_one_hour_depth_mm": 11.9,
+        "maximum_24_consecutive_native_hours_mm": 42.300000000000004,
+        "native_trace_intervals_intersecting_window": 5,
+        "overlap_reconstruction_max_error_mm": 3.3333353854914094e-09,
+        "represented_native_window_depth_mm": 42.8,
+        "interpretation": "Native interval depth is an observation; UTC-hour amount is a conservative redistribution with assumed within-hour timing.",
+        "annual_parser_qc": {
+          "absent_fields": 25501,
+          "not_one_hour": 907,
+          "missing_bad_quality_or_unsupported_condition": 46,
+          "overlapping_intervals_excluded": 3,
+          "selected_intervals": 8567,
+          "trace_intervals": 804
+        }
+      },
+      "provenance": {
+        "standardized_file": "C/data/processed/weather_hourly.csv",
+        "standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+        "first_source_row": 5666,
+        "last_source_row": 5809,
+        "row_preservation": "Original CSV header and144 row byte strings copied without rewriting values"
+      },
+      "positive_rain_hours": 17,
+      "first_to_last_positive_span_h": 41,
+      "quantified_wet_spell_count": 2,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2019-08-26 11:00:00+00:00",
+        "end_utc": "2019-08-27 02:00:00+00:00",
+        "span_h": 15,
+        "positive_hours": 15,
+        "depth_mm": 42.3000000044
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    },
+    {
+      "event_id": "historical_20240804T1500Z",
+      "scenario_id": "historical_20240804T1500Z",
+      "benchmark": false,
+      "start_utc": "2024-08-04 15:00:00+00:00",
+      "end_utc": "2024-08-10 15:00:00+00:00",
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/d2_analysis/historical_storm_robustness/events/historical_20240804T1500Z.csv",
+      "forcing_sha256": "da6068843c31b892823353bb81c43cf0c28ab17df77f3f3ad52046eb0c5be586",
+      "seed_sequence_entropy": null,
+      "hours": 144,
+      "complete_forcing": true,
+      "forcing_schema": "Original StageC joint hourly rows, UTC interval starts, all QC flags retained exactly",
+      "rainfall_total_mm": 41.200000000299994,
+      "max_hourly_mm": 20.02,
+      "max_24h_mm": 41.2000000003,
+      "ranking_24h_mm": 41.200000000299994,
+      "ranking_core_start_utc": "2024-08-05 15:00:00+00:00",
+      "ranking_core_end_utc": "2024-08-06 15:00:00+00:00",
+      "rainfall_rank": 148,
+      "selected_additional_rank": 4,
+      "minimum_temperature_C": 11.0,
+      "solar_energy_Wh_m2": 29067.050000000003,
+      "source": "Observed KMKE rainfall and KMWC meteorology with POWER grid solar; existing StageC conservative hourly alignment",
+      "qc_counts": {
+        "precipitation_trace_lower_bound": 9,
+        "temperature_interpolated": 144,
+        "wind_interpolated": 144,
+        "temperature_short_gap_filled": 0,
+        "wind_short_gap_filled": 0
+      },
+      "native_rain_audit": {
+        "raw_file": "C/data/raw/NOAA_72640014839_2024.csv",
+        "raw_sha256": "c87a5ee463ceec959ce493bb03499f841731882db7e980b5f61ef015f35c3668",
+        "native_selected_intervals": 145,
+        "complete_native_one_hour_intervals": 143,
+        "native_end_minutes": [
+          52
+        ],
+        "maximum_native_one_hour_depth_mm": 23.1,
+        "maximum_24_consecutive_native_hours_mm": 41.2,
+        "native_trace_intervals_intersecting_window": 5,
+        "overlap_reconstruction_max_error_mm": 3.33333360913457e-10,
+        "represented_native_window_depth_mm": 41.2,
+        "interpretation": "Native interval depth is an observation; UTC-hour amount is a conservative redistribution with assumed within-hour timing.",
+        "annual_parser_qc": {
+          "absent_fields": 26155,
+          "not_one_hour": 746,
+          "missing_bad_quality_or_unsupported_condition": 84,
+          "overlapping_intervals_excluded": 3,
+          "selected_intervals": 8040,
+          "trace_intervals": 532
+        }
+      },
+      "provenance": {
+        "standardized_file": "C/data/processed/weather_hourly.csv",
+        "standardized_sha256": "7edf24675b891d680863079323efb5da46e3d0c89a0640ed5852378a4be58fc4",
+        "first_source_row": 49023,
+        "last_source_row": 49166,
+        "row_preservation": "Original CSV header and144 row byte strings copied without rewriting values"
+      },
+      "positive_rain_hours": 9,
+      "first_to_last_positive_span_h": 9,
+      "quantified_wet_spell_count": 1,
+      "largest_quantified_wet_spell": {
+        "start_utc": "2024-08-06 06:00:00+00:00",
+        "end_utc": "2024-08-06 15:00:00+00:00",
+        "span_h": 9,
+        "positive_hours": 9,
+        "depth_mm": 41.200000000299994
+      },
+      "spell_definition": "Positive quantified hours joined unless separated by at least6 quantified-zero hours. Trace-zero is not verified dry; exploratory operational definition, not certified storm delineation."
+    }
+  ],
+  "source_seed": 69020261118,
+  "source_distribution": {
+    "study_kind": "explicit_exploratory_mc",
+    "sampling_kind": "iid_monte_carlo",
+    "sample_count": 64,
+    "seed": 69020261118,
+    "multiplier_distribution": "log-uniform",
+    "lower_multiplier": 0.5,
+    "upper_multiplier": 2.0,
+    "independence": "Three independent marginal SeedSequence children; no estimated dependence is claimed.",
+    "official_sampler": "multivarious.rvs.uniform.rnd(log(0.5), log(2), 64, seed=child), then exp",
+    "ecdf_confidence_percent": 95.0,
+    "correlation_confidence": 0.95,
+    "confidence_scope": "Pointwise intervals conditional on the declared exploratory iid assumptions; not simultaneous bands."
+  },
+  "parameter_sampling_calls": 0,
+  "pilot_sample_ids": [
+    "mc_00016",
+    "mc_00024",
+    "mc_00018"
+  ],
+  "pilot_selection": "Lowest, nearest median, highest mean log multiplier among original 64 vectors; not risk ranks",
+  "pilot_tolerances": {
+    "selection": [
+      "first MC draw",
+      "second MC draw",
+      "all multipliers 0.5",
+      "all multipliers 2.0"
+    ],
+    "max_state_equivalent_depth_difference_m": 0.0001,
+    "max_stage_difference_m": 0.0001,
+    "max_physical_peak_stage_difference_m": 0.0001,
+    "max_actual_gate_opening_difference_m": 1e-05,
+    "latch_mismatch_requires_review": true,
+    "valid_unsafe_is_numerically_eligible": true
+  },
+  "numerics": {
+    "primary_dt_s": 15.0,
+    "refined_dt_s": 7.5,
+    "control_period_s": 120.0,
+    "mass_balance_relative_tolerance": 0.0001
+  },
+  "primary_dt_s": 15.0,
+  "refined_dt_s": 7.5,
+  "original_initial_conditions_preserved": true,
+  "no_pooling_interpretation": "Selected observed events have no occurrence probabilities; the same parameter rows are dependent across events",
+  "benchmark_reuse": "Existing 64-pair 2022 outputs reused exactly after one complete trajectory adapter regression",
+  "runtime_source_sha256": {
+    "run_study.py": "60c72780f5fa5b885f14f2231cbf8128830a7e36daa829ed1e52a97383d691a5",
+    "adapter.py": "e61bfb7b34da2964d74cb74bc52e3bbbac41812105d21c223be26c151d6416e2"
+  }
+}

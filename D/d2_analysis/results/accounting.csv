@@ -1,0 +1,3 @@
+dt_s,original_weather_ids,model_records,warm_weather_ids,cold_excluded_ids,wetland_started,no_wetland_started,wetland_completed,no_wetland_completed,complete_valid_pairs,unsafe_valid_model_runs,incomplete_warm_model_runs,completed_numerically_invalid_runs
+15.0,20,40,16,4,16,16,16,16,16,0,0,0
+7.5,20,40,16,4,16,16,16,16,16,0,0,0

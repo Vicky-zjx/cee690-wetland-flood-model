@@ -1,0 +1,173 @@
+scenario_id,method,case_name,design,dt_s,branch,records,evaluated,passed,failed_checks,maximum_actual_history_error_m,maximum_head_record_error_m,maximum_actual_rate_m_s,continuity_error_m,latch_changes,latch_change_times_s
+block_bootstrap_00000,block_bootstrap,no_wetland,best,15.0,1,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 309960.0, 384240.0]"
+block_bootstrap_00000,block_bootstrap,no_wetland,best,15.0,2,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 309960.0, 384240.0]"
+block_bootstrap_00000,block_bootstrap,wetland,best,15.0,1,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 309960.0, 384240.0]"
+block_bootstrap_00000,block_bootstrap,wetland,best,15.0,2,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 309960.0, 384240.0]"
+block_bootstrap_00001,block_bootstrap,no_wetland,best,15.0,1,4320,True,True,,9.71445146547012e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 116760.0, 134400.0]"
+block_bootstrap_00001,block_bootstrap,no_wetland,best,15.0,2,4320,True,True,,9.71445146547012e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 116760.0, 134400.0]"
+block_bootstrap_00001,block_bootstrap,wetland,best,15.0,1,4320,True,True,,9.71445146547012e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 116760.0, 134400.0]"
+block_bootstrap_00001,block_bootstrap,wetland,best,15.0,2,4320,True,True,,9.71445146547012e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 116760.0, 134400.0]"
+block_bootstrap_00002,block_bootstrap,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00002,block_bootstrap,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00002,block_bootstrap,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00002,block_bootstrap,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00003,block_bootstrap,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00003,block_bootstrap,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00003,block_bootstrap,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00003,block_bootstrap,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00004,block_bootstrap,no_wetland,best,15.0,1,0,False,,,,,,,,
+block_bootstrap_00004,block_bootstrap,no_wetland,best,15.0,2,0,False,,,,,,,,
+block_bootstrap_00004,block_bootstrap,wetland,best,15.0,1,0,False,,,,,,,,
+block_bootstrap_00004,block_bootstrap,wetland,best,15.0,2,0,False,,,,,,,,
+block_bootstrap_00005,block_bootstrap,no_wetland,best,15.0,1,0,False,,,,,,,,
+block_bootstrap_00005,block_bootstrap,no_wetland,best,15.0,2,0,False,,,,,,,,
+block_bootstrap_00005,block_bootstrap,wetland,best,15.0,1,0,False,,,,,,,,
+block_bootstrap_00005,block_bootstrap,wetland,best,15.0,2,0,False,,,,,,,,
+block_bootstrap_00006,block_bootstrap,no_wetland,best,15.0,1,0,False,,,,,,,,
+block_bootstrap_00006,block_bootstrap,no_wetland,best,15.0,2,0,False,,,,,,,,
+block_bootstrap_00006,block_bootstrap,wetland,best,15.0,1,0,False,,,,,,,,
+block_bootstrap_00006,block_bootstrap,wetland,best,15.0,2,0,False,,,,,,,,
+block_bootstrap_00007,block_bootstrap,no_wetland,best,15.0,1,0,False,,,,,,,,
+block_bootstrap_00007,block_bootstrap,no_wetland,best,15.0,2,0,False,,,,,,,,
+block_bootstrap_00007,block_bootstrap,wetland,best,15.0,1,0,False,,,,,,,,
+block_bootstrap_00007,block_bootstrap,wetland,best,15.0,2,0,False,,,,,,,,
+block_bootstrap_00008,block_bootstrap,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00008,block_bootstrap,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00008,block_bootstrap,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00008,block_bootstrap,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00009,block_bootstrap,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00009,block_bootstrap,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00009,block_bootstrap,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00009,block_bootstrap,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00000,copula_var,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[19320.0, 208200.0, 218040.0]"
+copula_var_00000,copula_var,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[19320.0, 208200.0, 218040.0]"
+copula_var_00000,copula_var,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[19320.0, 208200.0, 218040.0]"
+copula_var_00000,copula_var,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[19320.0, 208200.0, 218040.0]"
+copula_var_00001,copula_var,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00001,copula_var,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00001,copula_var,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00001,copula_var,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00002,copula_var,no_wetland,best,15.0,1,4320,True,True,,2.7755575615628914e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 265560.0, 276360.0]"
+copula_var_00002,copula_var,no_wetland,best,15.0,2,4320,True,True,,2.7755575615628914e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 265560.0, 276360.0]"
+copula_var_00002,copula_var,wetland,best,15.0,1,4320,True,True,,2.7755575615628914e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 265560.0, 276360.0]"
+copula_var_00002,copula_var,wetland,best,15.0,2,4320,True,True,,2.7755575615628914e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 265560.0, 276360.0]"
+copula_var_00003,copula_var,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 331680.0, 341640.0]"
+copula_var_00003,copula_var,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 331680.0, 341640.0]"
+copula_var_00003,copula_var,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 331680.0, 341640.0]"
+copula_var_00003,copula_var,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 331680.0, 341640.0]"
+copula_var_00004,copula_var,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,2.0,"[10440.0, 516000.0]"
+copula_var_00004,copula_var,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,2.0,"[10440.0, 516000.0]"
+copula_var_00004,copula_var,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,2.0,"[10440.0, 516000.0]"
+copula_var_00004,copula_var,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,2.0,"[10440.0, 516000.0]"
+copula_var_00005,copula_var,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 449280.0, 461400.0]"
+copula_var_00005,copula_var,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 449280.0, 461400.0]"
+copula_var_00005,copula_var,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 449280.0, 461400.0]"
+copula_var_00005,copula_var,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 449280.0, 461400.0]"
+copula_var_00006,copula_var,no_wetland,best,15.0,1,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[11040.0, 240480.0, 254280.0]"
+copula_var_00006,copula_var,no_wetland,best,15.0,2,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[11040.0, 240480.0, 254280.0]"
+copula_var_00006,copula_var,wetland,best,15.0,1,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[11040.0, 240480.0, 254280.0]"
+copula_var_00006,copula_var,wetland,best,15.0,2,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[11040.0, 240480.0, 254280.0]"
+copula_var_00007,copula_var,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00007,copula_var,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00007,copula_var,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00007,copula_var,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00008,copula_var,no_wetland,best,15.0,1,4320,True,True,,8.326672684688674e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 476760.0, 488640.0]"
+copula_var_00008,copula_var,no_wetland,best,15.0,2,4320,True,True,,8.326672684688674e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 476760.0, 488640.0]"
+copula_var_00008,copula_var,wetland,best,15.0,1,4320,True,True,,8.326672684688674e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 476760.0, 488640.0]"
+copula_var_00008,copula_var,wetland,best,15.0,2,4320,True,True,,8.326672684688674e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 476760.0, 488640.0]"
+copula_var_00009,copula_var,no_wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00009,copula_var,no_wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00009,copula_var,wetland,best,15.0,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00009,copula_var,wetland,best,15.0,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+deterministic_september_2022,deterministic,no_wetland,best,15.0,1,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+deterministic_september_2022,deterministic,no_wetland,best,15.0,2,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+deterministic_september_2022,deterministic,wetland,best,15.0,1,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+deterministic_september_2022,deterministic,wetland,best,15.0,2,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+deterministic_september_2022,deterministic,wetland,reference,15.0,1,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+deterministic_september_2022,deterministic,wetland,reference,15.0,2,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+block_bootstrap_00000,block_bootstrap,no_wetland,best,7.5,1,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 309960.0, 384240.0]"
+block_bootstrap_00000,block_bootstrap,no_wetland,best,7.5,2,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 309960.0, 384240.0]"
+block_bootstrap_00000,block_bootstrap,wetland,best,7.5,1,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 309960.0, 384240.0]"
+block_bootstrap_00000,block_bootstrap,wetland,best,7.5,2,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 309960.0, 384240.0]"
+block_bootstrap_00001,block_bootstrap,no_wetland,best,7.5,1,4320,True,True,,9.71445146547012e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 116760.0, 134400.0]"
+block_bootstrap_00001,block_bootstrap,no_wetland,best,7.5,2,4320,True,True,,9.71445146547012e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 116760.0, 134400.0]"
+block_bootstrap_00001,block_bootstrap,wetland,best,7.5,1,4320,True,True,,9.71445146547012e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 116760.0, 134400.0]"
+block_bootstrap_00001,block_bootstrap,wetland,best,7.5,2,4320,True,True,,9.71445146547012e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 116760.0, 134400.0]"
+block_bootstrap_00002,block_bootstrap,no_wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00002,block_bootstrap,no_wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00002,block_bootstrap,wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00002,block_bootstrap,wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00003,block_bootstrap,no_wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00003,block_bootstrap,no_wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00003,block_bootstrap,wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00003,block_bootstrap,wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00004,block_bootstrap,no_wetland,best,7.5,1,0,False,,,,,,,,
+block_bootstrap_00004,block_bootstrap,no_wetland,best,7.5,2,0,False,,,,,,,,
+block_bootstrap_00004,block_bootstrap,wetland,best,7.5,1,0,False,,,,,,,,
+block_bootstrap_00004,block_bootstrap,wetland,best,7.5,2,0,False,,,,,,,,
+block_bootstrap_00005,block_bootstrap,no_wetland,best,7.5,1,0,False,,,,,,,,
+block_bootstrap_00005,block_bootstrap,no_wetland,best,7.5,2,0,False,,,,,,,,
+block_bootstrap_00005,block_bootstrap,wetland,best,7.5,1,0,False,,,,,,,,
+block_bootstrap_00005,block_bootstrap,wetland,best,7.5,2,0,False,,,,,,,,
+block_bootstrap_00006,block_bootstrap,no_wetland,best,7.5,1,0,False,,,,,,,,
+block_bootstrap_00006,block_bootstrap,no_wetland,best,7.5,2,0,False,,,,,,,,
+block_bootstrap_00006,block_bootstrap,wetland,best,7.5,1,0,False,,,,,,,,
+block_bootstrap_00006,block_bootstrap,wetland,best,7.5,2,0,False,,,,,,,,
+block_bootstrap_00007,block_bootstrap,no_wetland,best,7.5,1,0,False,,,,,,,,
+block_bootstrap_00007,block_bootstrap,no_wetland,best,7.5,2,0,False,,,,,,,,
+block_bootstrap_00007,block_bootstrap,wetland,best,7.5,1,0,False,,,,,,,,
+block_bootstrap_00007,block_bootstrap,wetland,best,7.5,2,0,False,,,,,,,,
+block_bootstrap_00008,block_bootstrap,no_wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00008,block_bootstrap,no_wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00008,block_bootstrap,wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00008,block_bootstrap,wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00009,block_bootstrap,no_wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00009,block_bootstrap,no_wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00009,block_bootstrap,wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+block_bootstrap_00009,block_bootstrap,wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00000,copula_var,no_wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[19320.0, 208200.0, 218040.0]"
+copula_var_00000,copula_var,no_wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[19320.0, 208200.0, 218040.0]"
+copula_var_00000,copula_var,wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[19320.0, 208200.0, 218040.0]"
+copula_var_00000,copula_var,wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[19320.0, 208200.0, 218040.0]"
+copula_var_00001,copula_var,no_wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00001,copula_var,no_wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00001,copula_var,wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00001,copula_var,wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00002,copula_var,no_wetland,best,7.5,1,4320,True,True,,8.326672684688674e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 265560.0, 276360.0]"
+copula_var_00002,copula_var,no_wetland,best,7.5,2,4320,True,True,,8.326672684688674e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 265560.0, 276360.0]"
+copula_var_00002,copula_var,wetland,best,7.5,1,4320,True,True,,8.326672684688674e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 265560.0, 276360.0]"
+copula_var_00002,copula_var,wetland,best,7.5,2,4320,True,True,,8.326672684688674e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 265560.0, 276360.0]"
+copula_var_00003,copula_var,no_wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 331680.0, 341640.0]"
+copula_var_00003,copula_var,no_wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 331680.0, 341640.0]"
+copula_var_00003,copula_var,wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 331680.0, 341640.0]"
+copula_var_00003,copula_var,wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 331680.0, 341640.0]"
+copula_var_00004,copula_var,no_wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,2.0,"[10440.0, 516000.0]"
+copula_var_00004,copula_var,no_wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,2.0,"[10440.0, 516000.0]"
+copula_var_00004,copula_var,wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,2.0,"[10440.0, 516000.0]"
+copula_var_00004,copula_var,wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,2.0,"[10440.0, 516000.0]"
+copula_var_00005,copula_var,no_wetland,best,7.5,1,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 449280.0, 461400.0]"
+copula_var_00005,copula_var,no_wetland,best,7.5,2,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 449280.0, 461400.0]"
+copula_var_00005,copula_var,wetland,best,7.5,1,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 449280.0, 461400.0]"
+copula_var_00005,copula_var,wetland,best,7.5,2,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 449280.0, 461400.0]"
+copula_var_00006,copula_var,no_wetland,best,7.5,1,4320,True,True,,4.163336342344337e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[11040.0, 240480.0, 254280.0]"
+copula_var_00006,copula_var,no_wetland,best,7.5,2,4320,True,True,,4.163336342344337e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[11040.0, 240480.0, 254280.0]"
+copula_var_00006,copula_var,wetland,best,7.5,1,4320,True,True,,4.163336342344337e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[11040.0, 240480.0, 254280.0]"
+copula_var_00006,copula_var,wetland,best,7.5,2,4320,True,True,,4.163336342344337e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[11040.0, 240480.0, 254280.0]"
+copula_var_00007,copula_var,no_wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00007,copula_var,no_wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00007,copula_var,wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00007,copula_var,wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00008,copula_var,no_wetland,best,7.5,1,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 476760.0, 488640.0]"
+copula_var_00008,copula_var,no_wetland,best,7.5,2,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 476760.0, 488640.0]"
+copula_var_00008,copula_var,wetland,best,7.5,1,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 476760.0, 488640.0]"
+copula_var_00008,copula_var,wetland,best,7.5,2,4320,True,True,,6.938893903907228e-17,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 476760.0, 488640.0]"
+copula_var_00009,copula_var,no_wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00009,copula_var,no_wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00009,copula_var,wetland,best,7.5,1,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+copula_var_00009,copula_var,wetland,best,7.5,2,4320,True,True,,1.3877787807814457e-17,8.326672684688674e-17,0.0005,0.0,1.0,[10440.0]
+deterministic_september_2022,deterministic,no_wetland,best,7.5,1,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+deterministic_september_2022,deterministic,no_wetland,best,7.5,2,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+deterministic_september_2022,deterministic,wetland,best,7.5,1,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+deterministic_september_2022,deterministic,wetland,best,7.5,2,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+deterministic_september_2022,deterministic,wetland,reference,7.5,1,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"
+deterministic_september_2022,deterministic,wetland,reference,7.5,2,4320,True,True,,1.1102230246251565e-16,8.326672684688674e-17,0.0005,0.0,3.0,"[10440.0, 224160.0, 328440.0]"

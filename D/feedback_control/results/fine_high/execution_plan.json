@@ -1,0 +1,384 @@
+{
+  "plans": [
+    {
+      "case": "wetland",
+      "scenario_id": "block_bootstrap_00008",
+      "design": "best",
+      "dt": 15
+    },
+    {
+      "case": "no_wetland",
+      "scenario_id": "block_bootstrap_00008",
+      "design": "best",
+      "dt": 15
+    }
+  ],
+  "weather": [
+    {
+      "scenario_id": "copula_var_00000",
+      "method": "copula_var",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        11,
+        0
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00000.csv",
+      "forcing_sha256": "322705131f414ce135e30258960179394203c8c16e59f52798a21648d3edbba1",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 11.695793864585406,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "copula_var_00001",
+      "method": "copula_var",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        11,
+        1
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00001.csv",
+      "forcing_sha256": "0b2d78e49f47ba5674810ecf4f836c8f8e2dc8d9768f355ec10694b1b2223ce5",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 9.322787491478662,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "copula_var_00002",
+      "method": "copula_var",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        11,
+        2
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00002.csv",
+      "forcing_sha256": "5aa824761d7dbcf283ae4fbff5c79597bb8e5352d3673d8edbdb9b08e9ca998b",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 11.18647855496594,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "copula_var_00003",
+      "method": "copula_var",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        11,
+        3
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00003.csv",
+      "forcing_sha256": "5f21a3cd1e1692db7bd5a9b541915c05470885503cea08754723c9026a31d670",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 8.664107668592457,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "copula_var_00004",
+      "method": "copula_var",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        11,
+        4
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00004.csv",
+      "forcing_sha256": "77f8006520cd55abd99d0456001a7aa31827e62425430d427d1a9627e6cc57c0",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 13.064320529169423,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "copula_var_00005",
+      "method": "copula_var",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        11,
+        5
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00005.csv",
+      "forcing_sha256": "d192b7230cdb4f6c95bc579c7330552c439551120297cd07518086e449f30167",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 6.000479693926167,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "copula_var_00006",
+      "method": "copula_var",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        11,
+        6
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00006.csv",
+      "forcing_sha256": "fe22c104845a25f37f4638b78eebb2d6eb9ff21c8accb69510970bccfefed363",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 9.906071591114015,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "copula_var_00007",
+      "method": "copula_var",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        11,
+        7
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00007.csv",
+      "forcing_sha256": "6f33fc833f8d42842a9cafec3e63df66d5d5aa6fc51ee13770b98a9993ac7c5d",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 10.247053229359148,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "copula_var_00008",
+      "method": "copula_var",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        11,
+        8
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00008.csv",
+      "forcing_sha256": "ea64c62aac8da912d77e5c73d6cc2eb11e3b6be4103c5e90fc8ad8add63f3d98",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 8.047545931107658,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "copula_var_00009",
+      "method": "copula_var",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        11,
+        9
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00009.csv",
+      "forcing_sha256": "efdb294b9e5904514251414607252024381d838d71b65ccb01094e8661da50a9",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 5.188340290056566,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "block_bootstrap_00000",
+      "method": "block_bootstrap",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        22,
+        0
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00000.csv",
+      "forcing_sha256": "00b4cca8bfd73d761fa17981f34b48ab56b050dc59b3aa11e794b2f9944c0de7",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 12.75,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "block_bootstrap_00001",
+      "method": "block_bootstrap",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        22,
+        1
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00001.csv",
+      "forcing_sha256": "9ebac7f0690a89217179c1911edbb319d0f4ac2f8eeebafbb8ed6253b51a2128",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 10.0,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "block_bootstrap_00002",
+      "method": "block_bootstrap",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        22,
+        2
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00002.csv",
+      "forcing_sha256": "267ec8482f8be6165d7924e8013fd293ebc45c99f21cfda7eb27854eab0a2785",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 3.0,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "block_bootstrap_00003",
+      "method": "block_bootstrap",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        22,
+        3
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00003.csv",
+      "forcing_sha256": "fe87d0bb6d391293640f525de563b4dd5ed57ea0ee26bcfe7eeb43293f25f702",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 11.0,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "block_bootstrap_00004",
+      "method": "block_bootstrap",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        22,
+        4
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00004.csv",
+      "forcing_sha256": "ab52ea7af8f748e9a1662eb949f2c182ec4a541074a619f36340503acaaf439d",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 0.0,
+      "nonpositive_temperature_hours": 2,
+      "original_liquid_domain_admissible": false
+    },
+    {
+      "scenario_id": "block_bootstrap_00005",
+      "method": "block_bootstrap",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        22,
+        5
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00005.csv",
+      "forcing_sha256": "7af273756bda47cf35bbd5a5018efc5696215732191e5c5e1e95e2bcf70982dc",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": -1.5,
+      "nonpositive_temperature_hours": 9,
+      "original_liquid_domain_admissible": false
+    },
+    {
+      "scenario_id": "block_bootstrap_00006",
+      "method": "block_bootstrap",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        22,
+        6
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00006.csv",
+      "forcing_sha256": "f7569970adf67f69e66c45e04f9754b6e84bb08d424a8d2a07d98a1a10894a22",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": -5.25,
+      "nonpositive_temperature_hours": 13,
+      "original_liquid_domain_admissible": false
+    },
+    {
+      "scenario_id": "block_bootstrap_00007",
+      "method": "block_bootstrap",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        22,
+        7
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00007.csv",
+      "forcing_sha256": "e4614939328cd97d5b6f8eeaac110c171e9bcd7fa2dc23e4f644b4d292b006d7",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 0.0,
+      "nonpositive_temperature_hours": 3,
+      "original_liquid_domain_admissible": false
+    },
+    {
+      "scenario_id": "block_bootstrap_00008",
+      "method": "block_bootstrap",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        22,
+        8
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00008.csv",
+      "forcing_sha256": "78833777bef3e19806f4c723a553ef82084a1732e96f511a16cdc957ca7d9dbb",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 9.0,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    },
+    {
+      "scenario_id": "block_bootstrap_00009",
+      "method": "block_bootstrap",
+      "seed_sequence_entropy": [
+        6902026,
+        1,
+        22,
+        9
+      ],
+      "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00009.csv",
+      "forcing_sha256": "11d2d7bf9b5badf6f34ab1aa4c4d4276edf706bc029af72cb261774cf5e68e56",
+      "rows": 144,
+      "start_utc": "2022-09-09T00:00:00+00:00",
+      "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+      "minimum_temperature_C": 1.0,
+      "nonpositive_temperature_hours": 0,
+      "original_liquid_domain_admissible": true
+    }
+  ],
+  "hydraulics": "D",
+  "Cw_US": 3.0,
+  "control_period_s": 120,
+  "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+  "entrypoint_sha256": "b2d1f1e2c462fc3077667bceea237c1ef14810be400196671545436ccc7c4418",
+  "scope": "Targeted paired refinement of the near-dry balance-audit failure; no scenario exclusion or coefficient adjustment"
+}

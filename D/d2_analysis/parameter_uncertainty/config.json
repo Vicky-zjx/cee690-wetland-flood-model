@@ -1,0 +1,58 @@
+{
+  "study": "fixed_storm_parameter_uncertainty",
+  "distribution_status": "explicit_exploratory_assumptions",
+  "interpretation": "Uncalibrated hypothetical sensitivity and uncertainty assumptions; not observed parameter bounds or a Milwaukee engineering risk estimate.",
+  "fixed_weather": "September 9–15, 2022 prepared deterministic event; no weather draws",
+  "fixed_hydraulics": "Stage D nominal Cw_US=2.8",
+  "fixed_policy": "Existing 120 s sampled upstream-level feedback with unchanged actuator limits",
+  "design": "Historical B-selected wetland design",
+  "nominal_physical_values": {
+    "K_u": 0.000001,
+    "k_ud": [0.00003472222222222222, 0.00002777777777777778],
+    "k_ur": 0.00001388888888888889,
+    "R_r": 0.45
+  },
+  "multiplier_order": ["m_K_u", "m_routing", "m_R_r"],
+  "mapping": {
+    "m_K_u": "K_u = nominal K_u * multiplier; m/s",
+    "m_routing": "Both k_ud branches and k_ur share one multiplier; 1/s. Flow caps remain unchanged.",
+    "m_R_r": "R_r = nominal R_r * multiplier; s/m2. Larger resistance means slower drainage. Boundary inputs stay fixed."
+  },
+  "grid": {
+    "study_kind": "grid_not_probability",
+    "levels": [0.5, 1.0, 2.0],
+    "sample_count": 27,
+    "probability_weights": null
+  },
+  "monte_carlo": {
+    "study_kind": "explicit_exploratory_mc",
+    "sampling_kind": "iid_monte_carlo",
+    "sample_count": 64,
+    "seed": 69020261118,
+    "multiplier_distribution": "log-uniform",
+    "lower_multiplier": 0.5,
+    "upper_multiplier": 2.0,
+    "independence": "Three independent marginal SeedSequence children; no estimated dependence is claimed.",
+    "official_sampler": "multivarious.rvs.uniform.rnd(log(0.5), log(2), 64, seed=child), then exp",
+    "ecdf_confidence_percent": 95.0,
+    "correlation_confidence": 0.95,
+    "confidence_scope": "Pointwise intervals conditional on the declared exploratory iid assumptions; not simultaneous bands."
+  },
+  "numerics": {"primary_dt_s": 15.0, "refined_dt_s": 7.5, "control_period_s": 120.0, "mass_balance_relative_tolerance": 0.0001},
+  "pilot": {
+    "selection": ["first MC draw", "second MC draw", "all multipliers 0.5", "all multipliers 2.0"],
+    "max_state_equivalent_depth_difference_m": 0.0001,
+    "max_stage_difference_m": 0.0001,
+    "max_physical_peak_stage_difference_m": 0.0001,
+    "max_actual_gate_opening_difference_m": 0.00001,
+    "latch_mismatch_requires_review": true,
+    "valid_unsafe_is_numerically_eligible": true
+  },
+  "outcomes": {
+    "retain_all_planned_samples": true,
+    "retain_valid_unsafe_and_negative_benefits": true,
+    "flood_threshold_m": null,
+    "initial_reference": "Each model/draw uses its own exact saved H_r(0) and Q_out(0); no fixed rounded Q0.",
+    "reference_excess_is_not_flood_risk": true
+  }
+}

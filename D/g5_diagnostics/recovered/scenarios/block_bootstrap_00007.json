@@ -1,0 +1,54 @@
+{
+  "scenario_id": "block_bootstrap_00007",
+  "method": "block_bootstrap",
+  "seed_sequence_entropy": [
+    6902026,
+    1,
+    22,
+    7
+  ],
+  "bit_generator": "PCG64",
+  "forcing_file": "scenarios/block_bootstrap_00007.csv",
+  "forcing_sha256": "e4614939328cd97d5b6f8eeaac110c171e9bcd7fa2dc23e4f644b4d292b006d7",
+  "start_utc": "2022-09-09T00:00:00+00:00",
+  "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+  "resolution_seconds": 3600,
+  "interval_meaning": "timestamp_utc marks interval start; precipitation and radiation are hourly interval-average rates",
+  "population": "Ordinary September six-day weather windows conditioned on the target calendar, without storm, flood or successful-simulation selection",
+  "selection": "No screening for storm totals, flooding, successful integration or benefit sign",
+  "units": {
+    "precipitation_mm_per_h": "mm/h",
+    "temperature_C": "degC",
+    "solar_W_per_m2": "W/m2",
+    "wind_m_per_s": "m/s"
+  },
+  "training_data_version": "a8a6f2611cb911b7b372163fa92f9046f5a418320f0f07e762b3787be1b3d2ad",
+  "fitted_model_version": "091846c79f8aae71a006691b2561d6338d7418aafcf517a2029d0ddf74a679e7",
+  "fitted_model_sha256": "24f0f16b832bdd7aa8a956a63a748c66a8857c8fdd64b54a7cae1b5feb47bfd0",
+  "generation_diagnostics": {
+    "block_hours": 48,
+    "source_blocks": [
+      {
+        "target_offset_hours": 0,
+        "source_start_utc": "2020-10-17T00:00:00+00:00",
+        "hours": 48,
+        "eligible_matched_blocks": 322
+      },
+      {
+        "target_offset_hours": 48,
+        "source_start_utc": "2022-09-09T00:00:00+00:00",
+        "hours": 48,
+        "eligible_matched_blocks": 322
+      },
+      {
+        "target_offset_hours": 96,
+        "source_start_utc": "2020-08-18T00:00:00+00:00",
+        "hours": 48,
+        "eligible_matched_blocks": 322
+      }
+    ],
+    "night_solar_mask_altered_hours": 0,
+    "night_solar_removed_Wh_m2": 0.0,
+    "night_solar_note": "Joint observed blocks retained except deterministic target-night solar mask; source/target calendar daylight differs"
+  }
+}

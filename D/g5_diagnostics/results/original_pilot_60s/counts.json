@@ -1,0 +1,6 @@
+{
+  "no_wetland / meteorological_liquid_water_applicability": 1,
+  "no_wetland / unsupported_gate_hydraulics": 9,
+  "wetland / meteorological_liquid_water_applicability": 1,
+  "wetland / unsupported_gate_hydraulics": 9
+}

@@ -1,0 +1,17 @@
+{
+  "planned_points": 64,
+  "paired_rows": 64,
+  "valid_pairs": 64,
+  "classifications": {
+    "wetland": {
+      "completed_valid_safety_feasible": 64
+    },
+    "no_wetland": {
+      "completed_valid_safety_feasible": 64
+    }
+  },
+  "valid_unsafe": {
+    "wetland": 0,
+    "no_wetland": 0
+  }
+}

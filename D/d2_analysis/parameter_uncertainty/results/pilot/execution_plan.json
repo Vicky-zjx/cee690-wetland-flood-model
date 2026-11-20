@@ -1,0 +1,84 @@
+{
+  "study_plan_sha256": "bfd1b8dcf4ef75d6cbd35e8d8c3ba4814bc3ef17679a730ff20d6cb83170c4ea",
+  "driver_sha256": "27b43701cdefc25001cd1cba16fdc0410495d4b1beafce2893439361142562ee",
+  "points": [
+    {
+      "sample_id": "pilot_mc_00000",
+      "study_kind": "numerical_pilot",
+      "m_K_u": 1.932062049779946,
+      "m_routing": 0.6876441547253446,
+      "m_R_r": 1.231930482765727,
+      "physical_values": {
+        "K_u": 1.932062049779946e-06,
+        "k_ud": [
+          2.3876533150185577e-05,
+          1.9101226520148463e-05
+        ],
+        "k_ur": 9.550613260074231e-06,
+        "R_r": 0.5543687172445771
+      },
+      "draw_index": 0,
+      "source_sample_id": "mc_00000"
+    },
+    {
+      "sample_id": "pilot_mc_00001",
+      "study_kind": "numerical_pilot",
+      "m_K_u": 0.6280781902194419,
+      "m_routing": 0.6848552063334381,
+      "m_R_r": 1.4234150403840764,
+      "physical_values": {
+        "K_u": 6.280781902194418e-07,
+        "k_ud": [
+          2.377969466435549e-05,
+          1.902375573148439e-05
+        ],
+        "k_ur": 9.511877865742196e-06,
+        "R_r": 0.6405367681728344
+      },
+      "draw_index": 1,
+      "source_sample_id": "mc_00001"
+    },
+    {
+      "sample_id": "pilot_low_corner",
+      "study_kind": "numerical_pilot",
+      "m_K_u": 0.5,
+      "m_routing": 0.5,
+      "m_R_r": 0.5,
+      "physical_values": {
+        "K_u": 5e-07,
+        "k_ud": [
+          1.736111111111111e-05,
+          1.388888888888889e-05
+        ],
+        "k_ur": 6.944444444444445e-06,
+        "R_r": 0.225
+      },
+      "source_sample_id": "grid_000"
+    },
+    {
+      "sample_id": "pilot_high_corner",
+      "study_kind": "numerical_pilot",
+      "m_K_u": 2.0,
+      "m_routing": 2.0,
+      "m_R_r": 2.0,
+      "physical_values": {
+        "K_u": 2e-06,
+        "k_ud": [
+          6.944444444444444e-05,
+          5.555555555555556e-05
+        ],
+        "k_ur": 2.777777777777778e-05,
+        "R_r": 0.9
+      },
+      "source_sample_id": "grid_026"
+    }
+  ],
+  "dt_s": [
+    15.0,
+    7.5
+  ],
+  "workers": 2,
+  "full_trajectories_saved": true,
+  "valid_unsafe_retained": true,
+  "no_samples_resampled_or_dropped": true
+}

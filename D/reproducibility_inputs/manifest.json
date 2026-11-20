@@ -1,0 +1,36 @@
+{
+  "purpose": "Byte-identical frozen inputs required by existing Stage D loaders; no model changes or recomputation",
+  "original_files_unchanged": true,
+  "files": [
+    {
+      "bundle_path": "B/results/no_spillway_revision/reference.npz",
+      "restore_path": "B/results/no_spillway_revision/reference.npz",
+      "bytes": 1228198,
+      "sha256": "77a6f06cbf03422146dadc0a66aaee36528dfcd5999baf4a37bc9780e43d0c8c"
+    },
+    {
+      "bundle_path": "B/results/wetland_only/wetland_best_120s.npz",
+      "restore_path": "B/results/wetland_only/wetland_best_120s.npz",
+      "bytes": 1224479,
+      "sha256": "062c121ba72e1447cb5fe9b08b870d592c3880de736dc01d26afcfb16290cd15"
+    },
+    {
+      "bundle_path": "B/results/wetland_only/fixed_reference_120s.npz",
+      "restore_path": "B/results/wetland_only/fixed_reference_120s.npz",
+      "bytes": 1228198,
+      "sha256": "77a6f06cbf03422146dadc0a66aaee36528dfcd5999baf4a37bc9780e43d0c8c"
+    },
+    {
+      "bundle_path": "B/work/event_data/proposed_forcing_120s.csv",
+      "restore_path": "B/work/event_data/proposed_forcing_120s.csv",
+      "bytes": 213460,
+      "sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394"
+    },
+    {
+      "bundle_path": "B/work/event_data/proposed_forcing_manifest.json",
+      "restore_path": "B/work/event_data/proposed_forcing_manifest.json",
+      "bytes": 3090,
+      "sha256": "e122da512246112a5960ebb94a371dee146a9338ace8f5c0d30a518eedd0974d"
+    }
+  ]
+}

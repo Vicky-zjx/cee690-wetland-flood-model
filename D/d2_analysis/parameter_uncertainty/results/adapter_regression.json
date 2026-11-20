@@ -1,0 +1,330 @@
+{
+  "scope": "Paired nominal software regression only, before the separately authorized exploratory parameter sensitivity. No random draws or distribution claims.",
+  "baseline_dt_s": 15,
+  "nominal_physical_values": {
+    "K_u": 1e-06,
+    "k_ud": [
+      3.472222222222222e-05,
+      2.777777777777778e-05
+    ],
+    "k_ur": 1.388888888888889e-05,
+    "R_r": 0.45
+  },
+  "cases": {
+    "wetland": {
+      "passed": true,
+      "classification": "completed_valid_safety_feasible",
+      "reference_path": "D/feedback_control/results/fine_nominal/deterministic_september_2022__wetland__best__15s.npz",
+      "reference_sha256": "6043636ad1c3a9996e8ba2e44c23ddf6fbcbd0272beeef49f928b79429666439",
+      "arrays": {
+        "time": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "x": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "dx": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "y": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "u": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "balance": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "downstream_stage": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "downstream_discharge": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "parameter_evaluation": {
+        "parameter_vector_sha256": "cf20270b697f0807f39b5a6e5e6e62a922de997ec35ca02bc88d64c5df22d757",
+        "requested_physical_overrides": {
+          "K_u": 1e-06,
+          "k_ud": [
+            3.472222222222222e-05,
+            2.777777777777778e-05
+          ],
+          "k_ur": 1.388888888888889e-05,
+          "R_r": 0.45
+        },
+        "effective_physical_values": {
+          "K_u": 1e-06,
+          "k_ud": [
+            3.472222222222222e-05,
+            2.777777777777778e-05
+          ],
+          "k_ur": 1.388888888888889e-05,
+          "R_r": 0.45
+        },
+        "units": {
+          "K_u": "m/s",
+          "k_ud": "1/s (two branches)",
+          "k_ur": "1/s",
+          "R_r": "s/m2"
+        },
+        "unspecified_values_rule": "Retain existing nominal values; never sample or infer a value",
+        "soil_capacity_m3": 120000.0,
+        "soil_field_capacity_m3": 60000.0,
+        "derived_initial_soil_fraction": 0.75,
+        "initial_wetland_m3": [
+          600.0,
+          90000.0,
+          3000.0,
+          2500.0,
+          3000.0,
+          2400.0,
+          409600.00000000035,
+          7000.0
+        ],
+        "initial_no_wetland_m3": [
+          600.0,
+          90000.0,
+          3000.0,
+          2400.0,
+          409600.00000000035,
+          7000.0
+        ],
+        "additional_initial_wetland_water_m3": 5500.0,
+        "gate_parameters": [
+          {
+            "gravity": 9.80665,
+            "gate_width": 1.0,
+            "gate_max_opening": 0.3,
+            "gate_sill_z": 100.0,
+            "Cd_gate_free": 0.6,
+            "Cd_gate_submerged": 0.8,
+            "neglect_approach_velocity_head": true
+          },
+          {
+            "gravity": 9.80665,
+            "gate_width": 0.8,
+            "gate_max_opening": 0.3,
+            "gate_sill_z": 99.8,
+            "Cd_gate_free": 0.6,
+            "Cd_gate_submerged": 0.8,
+            "neglect_approach_velocity_head": true
+          }
+        ],
+        "initial_actual_opening_m": [
+          0.0015,
+          0.0015
+        ],
+        "controller_period_s": 120.0,
+        "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+        "design_categories": [
+          "type_b",
+          "type_b"
+        ],
+        "design_covers": [
+          0.2714117624187232,
+          0.2141279193188096
+        ],
+        "design_label": "Historical B-selected wetland design; no new optimization",
+        "deterministic_weather_id": "deterministic_september_2022",
+        "prepared_forcing_path": "B/work/event_data/proposed_forcing_120s.csv",
+        "prepared_forcing_sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394",
+        "prepared_forcing_manifest_sha256": "e122da512246112a5960ebb94a371dee146a9338ace8f5c0d30a518eedd0974d",
+        "boundaries": {
+          "Q_ext_m3_s": 0.0,
+          "h_d_m": 97.15,
+          "h_g_m": 97.15,
+          "B": 0.0
+        },
+        "dt_s": 15.0,
+        "hydraulic_arm": "D",
+        "Cw_US": 2.8,
+        "conditioning": "Fixed September 2022 event weather and boundaries, physical initial storages, historical B-selected wetland design, Stage D hydraulics and 120 s feedback policy; only the explicitly recorded physical parameters vary. No uncertainty law is implied.",
+        "adapter_method": "Private function globals with a per-call loader proxy; no original function/module/cache mutation",
+        "adapter_sha256": "5683059710c59b0d8e2e06fce7d124bc6703c40b05c281990062bdd31c6f5305",
+        "frozen_driver_sha256": "73a69dbe4ab8f13b93227697fd763ce3fb25e24f1eedff49a3bbe5269b711aa3",
+        "refinement_metadata": null
+      }
+    },
+    "no_wetland": {
+      "passed": true,
+      "classification": "completed_valid_safety_feasible",
+      "reference_path": "D/feedback_control/results/fine_nominal/deterministic_september_2022__no_wetland__best__15s.npz",
+      "reference_sha256": "fd18d83862d5d1049fef80e83d82206162fec5fd1bb03b2a8692a51379b3450b",
+      "arrays": {
+        "time": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "x": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "dx": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "y": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "u": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "balance": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "downstream_stage": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        },
+        "downstream_discharge": {
+          "same_shape": true,
+          "exactly_equal": true,
+          "maximum_absolute_difference": 0.0
+        }
+      },
+      "parameter_evaluation": {
+        "parameter_vector_sha256": "cf20270b697f0807f39b5a6e5e6e62a922de997ec35ca02bc88d64c5df22d757",
+        "requested_physical_overrides": {
+          "K_u": 1e-06,
+          "k_ud": [
+            3.472222222222222e-05,
+            2.777777777777778e-05
+          ],
+          "k_ur": 1.388888888888889e-05,
+          "R_r": 0.45
+        },
+        "effective_physical_values": {
+          "K_u": 1e-06,
+          "k_ud": [
+            3.472222222222222e-05,
+            2.777777777777778e-05
+          ],
+          "k_ur": 1.388888888888889e-05,
+          "R_r": 0.45
+        },
+        "units": {
+          "K_u": "m/s",
+          "k_ud": "1/s (two branches)",
+          "k_ur": "1/s",
+          "R_r": "s/m2"
+        },
+        "unspecified_values_rule": "Retain existing nominal values; never sample or infer a value",
+        "soil_capacity_m3": 120000.0,
+        "soil_field_capacity_m3": 60000.0,
+        "derived_initial_soil_fraction": 0.75,
+        "initial_wetland_m3": [
+          600.0,
+          90000.0,
+          3000.0,
+          2500.0,
+          3000.0,
+          2400.0,
+          409600.00000000035,
+          7000.0
+        ],
+        "initial_no_wetland_m3": [
+          600.0,
+          90000.0,
+          3000.0,
+          2400.0,
+          409600.00000000035,
+          7000.0
+        ],
+        "additional_initial_wetland_water_m3": 5500.0,
+        "gate_parameters": [
+          {
+            "gravity": 9.80665,
+            "gate_width": 1.0,
+            "gate_max_opening": 0.3,
+            "gate_sill_z": 100.0,
+            "Cd_gate_free": 0.6,
+            "Cd_gate_submerged": 0.8,
+            "neglect_approach_velocity_head": true
+          },
+          {
+            "gravity": 9.80665,
+            "gate_width": 0.8,
+            "gate_max_opening": 0.3,
+            "gate_sill_z": 99.8,
+            "Cd_gate_free": 0.6,
+            "Cd_gate_submerged": 0.8,
+            "neglect_approach_velocity_head": true
+          }
+        ],
+        "initial_actual_opening_m": [
+          0.0015,
+          0.0015
+        ],
+        "controller_period_s": 120.0,
+        "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+        "design_categories": [
+          "type_b",
+          "type_b"
+        ],
+        "design_covers": [
+          0.2714117624187232,
+          0.2141279193188096
+        ],
+        "design_label": "Historical B-selected wetland design; no new optimization",
+        "deterministic_weather_id": "deterministic_september_2022",
+        "prepared_forcing_path": "B/work/event_data/proposed_forcing_120s.csv",
+        "prepared_forcing_sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394",
+        "prepared_forcing_manifest_sha256": "e122da512246112a5960ebb94a371dee146a9338ace8f5c0d30a518eedd0974d",
+        "boundaries": {
+          "Q_ext_m3_s": 0.0,
+          "h_d_m": 97.15,
+          "h_g_m": 97.15,
+          "B": 0.0
+        },
+        "dt_s": 15.0,
+        "hydraulic_arm": "D",
+        "Cw_US": 2.8,
+        "conditioning": "Fixed September 2022 event weather and boundaries, physical initial storages, historical B-selected wetland design, Stage D hydraulics and 120 s feedback policy; only the explicitly recorded physical parameters vary. No uncertainty law is implied.",
+        "adapter_method": "Private function globals with a per-call loader proxy; no original function/module/cache mutation",
+        "adapter_sha256": "5683059710c59b0d8e2e06fce7d124bc6703c40b05c281990062bdd31c6f5305",
+        "frozen_driver_sha256": "73a69dbe4ab8f13b93227697fd763ce3fb25e24f1eedff49a3bbe5269b711aa3",
+        "refinement_metadata": null
+      }
+    }
+  },
+  "adapter_sha256": "5683059710c59b0d8e2e06fce7d124bc6703c40b05c281990062bdd31c6f5305",
+  "cached_original_configuration_unchanged": true,
+  "original_function_bindings_unchanged": true,
+  "preservation": {
+    "files_checked": 2659,
+    "changed": [],
+    "missing": [],
+    "new_protected_files": [],
+    "passed": true,
+    "scope": "All prior project files plus original professor source and submitted D.1; current parameter_uncertainty directory excluded"
+  },
+  "elapsed_s": 19.48103629099205,
+  "passed": true
+}

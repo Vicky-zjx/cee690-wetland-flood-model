@@ -1,0 +1,18 @@
+{
+  "name": "upstream_level_hysteresis_v1",
+  "status": "Predetermined hypothetical operating policy; not optimized or calibrated",
+  "control_period_s": 120.0,
+  "close_head_m": 0.20,
+  "reopen_head_m": 0.30,
+  "full_open_head_m": 0.80,
+  "enabled_low_head_target_m": 0.10,
+  "maximum_opening_m": 0.30,
+  "opening_rate_limit_m_per_s": 0.0005,
+  "closing_rate_limit_m_per_s": 0.0005,
+  "initial_enabled": [true, true],
+  "unchanged_dam_safe_head_m": [1.20, 1.20],
+  "rate_basis": "Illustrative analogue to USACE rule-operation example 0.1 ft/min = 0.000508 m/s; not a measured actuator specification",
+  "head_basis": "Upstream pool elevation minus its existing gate sill; identical relative-head thresholds for both branches",
+  "slew_basis": "At each scheduled update choose a rate-limited endpoint; actual opening moves linearly to that endpoint during the next 120 seconds. Small movements use less than the maximum rate.",
+  "selection_basis": "Low-water hysteresis and energy-gate target ratios provide an applicability buffer; full opening is requested 0.4 m below the unchanged dam limit. Values declared before simulations."
+}

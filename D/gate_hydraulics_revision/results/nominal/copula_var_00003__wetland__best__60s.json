@@ -1,0 +1,582 @@
+{
+  "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/copula_var_00003.csv",
+  "forcing_file_sha256": "5f21a3cd1e1692db7bd5a9b541915c05470885503cea08754723c9026a31d670",
+  "forcing_array_sha256": "b10f069c02c9c62e4433a4f445e37435ddc9db7508072a67c3389ee95857bf8b",
+  "timestamp_meaning": "UTC beginning of a one-hour accumulation/mean interval",
+  "forcing_rows": 144,
+  "ode_started": true,
+  "ode_segment_calls": 74,
+  "rhs_evaluations": 17651,
+  "fixed_configuration": {
+    "source_sha256": {
+      "A/wetland_flood_model.py": "2b94de4cf0aad9d875c72c0a4d927ca7169e0bc70d6cea4b475683ea7d7979b1",
+      "B/no_spillway_model.py": "54ea9a6e730af5a532f5b7f5e321d9f0a3c771edfbc5755d5c78185497b57649",
+      "B/wetland_counterfactual.py": "30b00f96f014ecd849cd4c11477acae1f2108afdf23dc299ff922babfefaccc1",
+      "B/gate_hydraulics.py": "d5f0779ec1593b837cbff2851a16bc5fe3f7602b4b8484576247e62b77e24cdc",
+      "A/work/multivarious/multivarious/ode/ode4u.py": "0b55c31e77b0bae0205342e9e3118fb11db7c35f2fee2468149587151b077569",
+      "B/no_spillway_config.json": "b4f07d6fd516c39b14e34a7210aa8f00aa6f01e93cb8eaa9a788ecf9cad186c1",
+      "B/wetland_only_config.json": "c4f695ca2b10da53a8095452a165961af304300715a302ae4de5602981f0565c",
+      "B/results/no_spillway_revision/reference.npz": "77a6f06cbf03422146dadc0a66aaee36528dfcd5999baf4a37bc9780e43d0c8c",
+      "B/results/wetland_only/wetland_best_120s.npz": "062c121ba72e1447cb5fe9b08b870d592c3880de736dc01d26afcfb16290cd15"
+    },
+    "solver": {
+      "version": "1.2.1",
+      "revision": "06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02",
+      "ode4u_signature": "(odefun, time, x0, u=None, c=None)"
+    },
+    "model_scope": "Accepted Stage B no-independent-dam-spillway models; wetland overflow retained",
+    "design_categories": [
+      "type_b",
+      "type_b"
+    ],
+    "design_covers": [
+      0.2714117624187232,
+      0.2141279193188096
+    ],
+    "fixed_gate_values": [
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.336,
+      0.384,
+      0.696,
+      0.36,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.36,
+      0.42,
+      0.78,
+      0.324,
+      0.005,
+      0.005
+    ],
+    "gate1_hours": [
+      0,
+      17,
+      18,
+      26,
+      28,
+      50,
+      65,
+      66,
+      76,
+      80,
+      110,
+      144
+    ],
+    "gate2_hours": [
+      0,
+      18,
+      20,
+      27,
+      30,
+      52,
+      66,
+      68,
+      78,
+      82,
+      112,
+      144
+    ],
+    "boundaries": {
+      "Q_ext_m3_s": 0.0,
+      "h_d_m": 97.15,
+      "h_g_m": 97.15,
+      "B": 0.0
+    },
+    "initial_wetland_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2500.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "initial_no_wetland_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "initial_extra_wetland_water_m3": 5500.0,
+    "initial_condition_note": "Matched shared storages. Wetland case retains 5500 m3 additional accepted wetland water; no spin-up or redistribution.",
+    "datum": "assumed common model datum; not NAVD88; no conversion to gauge elevation",
+    "dt_s": 60.0,
+    "duration_s": 518400.0,
+    "conditional_on": "Fixed models, parameters, boundary paths, gate schedule, wetland design and initial assumptions; meteorology only varies.",
+    "original_fixed_gate_values": [
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.336,
+      0.384,
+      0.696,
+      0.36,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.36,
+      0.42,
+      0.78,
+      0.324,
+      0.005,
+      0.005
+    ],
+    "schedule_scale": 1.0,
+    "schedule_is_original": true,
+    "design_source_label": "best",
+    "schedule_kind": "original",
+    "constant_opening": null,
+    "schedule_description": "Original accepted Stage B fixed schedule",
+    "recovered_adapter_sha256": "483124a917aac6e56c28bb1eab26c2afef5cc4b913438ebcfc7fa8dfe92616ba",
+    "hydraulic_variant": "Stage D opt-in hydraulic revision",
+    "hydraulic_variant_settings": {
+      "crest_length_m": 1.0,
+      "Cw_US": 2.8,
+      "contraction_at_zero_relative_opening": 0.617,
+      "transition_end_ratio": 1.5,
+      "minimum_crest_head_length_ratio": 0.05,
+      "maximum_crest_head_length_ratio": 0.5
+    },
+    "stage_d_source_sha256": {
+      "D/gate_hydraulics_revision/run_study.py": "e87ed18819b7be48a9617f28a3742878505f8c006598ab58ac2193dcede4846b",
+      "D/gate_hydraulics_revision/model.py": "730e36db790ac0c7e3ff1ac14c9708e4a8b9e5defc380397f3b53b0c73bcf3c6",
+      "D/gate_hydraulics_revision/hydraulics.py": "7c5a58997a15f13210ad3ccc38c593d59b1cb91dd008f9ff7fb7577382ce120e"
+    },
+    "legacy_G5_note": "The old H>=1.25a margin is diagnostic only for the revised law; new physical applicability is enforced inside the revised gate evaluator."
+  },
+  "forcing_conservation": {
+    "source_precipitation_m": 0.019449960353226145,
+    "integrated_precipitation_m": 0.01944996035322615,
+    "precipitation_error_m": 3.469446951953614e-18,
+    "source_solar_Wh_m2": 16440.76743474652,
+    "integrated_solar_Wh_m2": 16440.76743474652,
+    "solar_error_Wh_m2": 0.0,
+    "mapping": "Official ode4u hourly restarts; constant P/R_s per segment, linear center-time T/wind",
+    "pass_conservation": true
+  },
+  "state_names": [
+    "S_u",
+    "S_m",
+    "S_w1",
+    "S_w2",
+    "S_d1",
+    "S_d2",
+    "S_g",
+    "S_r"
+  ],
+  "initial_storage_m3": [
+    600.0,
+    90000.0,
+    3000.0,
+    2500.0,
+    3000.0,
+    2400.0,
+    409600.00000000035,
+    7000.0
+  ],
+  "rainfall_area_m2": 660000.0,
+  "former_wetland_rainfall_area_m2": 22000.0,
+  "former_wetland_rainfall_routing": "wetland storages",
+  "safety_is_a_reported_outcome": true,
+  "completed_until_s": 262800.0,
+  "expected_output_samples": 8641,
+  "downstream_output_columns": {
+    "H_r": 5,
+    "Q_out": 20
+  },
+  "last_successful_rhs_time_s": 263640.0,
+  "failure_stage": "ode_rhs_revised_hydraulic_applicability",
+  "exception_type": "HydraulicApplicabilityFailure",
+  "root_exception_type": "ApplicabilityError",
+  "root_exception_message": "{'reason': 'broad_crest_head_length_outside_supported_range', 'head_length_ratio': 0.04995442983566534, 'required_range': [0.05, 0.5], 'upstream_stage_m': 100.04995442983567, 'tailwater_stage_m': 98.08126435542522, 'water_depth_m': 0.04995442983566534, 'opening_height_m': 0.18298199999999998, 'head_opening_ratio': 0.2730018790682436, 'legacy_G5_residual_m': 0.17877307016433464}",
+  "exception_traceback": "Traceback (most recent call last):\n  File \"/Users/zhangjiaxuan/Documents/Codex/Modeling/D/gate_hydraulics_revision/model.py\", line 24, in rhs\n    flow = gate_flow(head, tail, u[i], gates[i], settings)\n  File \"/Users/zhangjiaxuan/Documents/Codex/Modeling/D/gate_hydraulics_revision/hydraulics.py\", line 81, in gate_flow\n    raise ApplicabilityError('broad_crest_head_length_outside_supported_range',\n        head_length_ratio=h_over_l, required_range=[0.05, 0.5], **details)\nD.gate_hydraulics_revision.hydraulics.ApplicabilityError: {'reason': 'broad_crest_head_length_outside_supported_range', 'head_length_ratio': 0.04995442983566534, 'required_range': [0.05, 0.5], 'upstream_stage_m': 100.04995442983567, 'tailwater_stage_m': 98.08126435542522, 'water_depth_m': 0.04995442983566534, 'opening_height_m': 0.18298199999999998, 'head_opening_ratio': 0.2730018790682436, 'legacy_G5_residual_m': 0.17877307016433464}\n\nThe above exception was the direct cause of the following exception:\n\nTraceback (most recent call last):\n  File \"/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/model_adapters.py\", line 281, in _integrate\n    t, x, dx, y = fixed[\"official\"][\"ode4u\"](checked_rhs, time, initial, u, params)\n                  ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/runner.py\", line 234, in observed_solver\n    return original_solver(observed_rhs, time, initial, inputs, params)\n  File \"/Users/zhangjiaxuan/Documents/Codex/Modeling/A/work/multivarious/multivarious/ode/ode4u.py\", line 66, in ode4u\n    dxdt1, _ = odefun(t + dt2, x0 + dxdt0 * dt2, u_mid, c)\n               ~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/runner.py\", line 212, in observed_rhs\n    dx, y = rhs(t, x, u, p)\n            ~~~^^^^^^^^^^^^\n  File \"/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/model_adapters.py\", line 234, in checked_rhs\n    dx, y = raw_rhs(t, x, u, p)\n            ~~~~~~~^^^^^^^^^^^^\n  File \"/Users/zhangjiaxuan/Documents/Codex/Modeling/D/gate_hydraulics_revision/model.py\", line 32, in rhs\n    raise wet.HydraulicApplicabilityFailure(record) from exc\nB.optimize_wetland.HydraulicApplicabilityFailure: Approved gate head/opening constraint violated: {\"reason\": \"broad_crest_head_length_outside_supported_range\", \"head_length_ratio\": 0.04995442983566534, \"required_range\": [0.05, 0.5], \"upstream_stage_m\": 100.04995442983567, \"tailwater_stage_m\": 98.08126435542522, \"water_depth_m\": 0.04995442983566534, \"opening_height_m\": 0.18298199999999998, \"head_opening_ratio\": 0.2730018790682436, \"legacy_G5_residual_m\": 0.17877307016433464, \"branch\": 1, \"time_s\": 263670.0, \"normalized_opening\": 0.6099399999999999, \"regime\": \"broad_crest_head_length_outside_supported_range\", \"residual_m\": 0.17877307016433464, \"rule\": \"Stage D physical domain; legacy G5 is reported only\"}\n",
+  "failure_location": {
+    "file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/gate_hydraulics_revision/hydraulics.py",
+    "line": 81,
+    "function": "gate_flow"
+  },
+  "last_completed_state_m3": [
+    7.316379093820413,
+    76731.28743272973,
+    985.3982939755213,
+    827.9288124303131,
+    514.797302182022,
+    433.75762472247607,
+    423865.463328108,
+    3533.9259192695854
+  ],
+  "failure_rhs_state_m3": [
+    5.017335135222236,
+    76695.11407070645,
+    975.1722651026915,
+    818.7889613803068,
+    499.5442983566064,
+    420.5687326846074,
+    423900.20829519903,
+    3524.5353281064845
+  ],
+  "failure_rhs_inputs": [
+    0.6099399999999999,
+    0.6087,
+    0.0,
+    15.163335126560087,
+    0.0,
+    3.0636904765083335,
+    0.0,
+    97.15,
+    97.15,
+    0.0
+  ],
+  "failure_reason": "broad_crest_head_length_outside_supported_range",
+  "first_violation": {
+    "reason": "broad_crest_head_length_outside_supported_range",
+    "head_length_ratio": 0.04995442983566534,
+    "required_range": [
+      0.05,
+      0.5
+    ],
+    "upstream_stage_m": 100.04995442983567,
+    "tailwater_stage_m": 98.08126435542522,
+    "water_depth_m": 0.04995442983566534,
+    "opening_height_m": 0.18298199999999998,
+    "head_opening_ratio": 0.2730018790682436,
+    "legacy_G5_residual_m": 0.17877307016433464,
+    "branch": 1,
+    "time_s": 263670.0,
+    "normalized_opening": 0.6099399999999999,
+    "regime": "broad_crest_head_length_outside_supported_range",
+    "rule": "Stage D physical domain; legacy G5 is reported only",
+    "H_over_a": 0.2730018790682436,
+    "timestamp_utc": "2022-09-12T01:14:30+00:00",
+    "scenario_id": "copula_var_00003",
+    "case_name": "wetland",
+    "legacy_G5_role": "Descriptive comparison with Stage B; not the revised failure criterion",
+    "detection": "First encountered official ode4u RHS/RK evaluation, not a continuous-time crossing estimate",
+    "applicability_residual": 4.557016433466565e-05,
+    "applicability_residual_units": "1",
+    "applicability_rule": "0.05 <= upstream head / crest length <= 0.5 for this branch",
+    "time_s_meaning": "First evaluated failing RHS/RK stage; not an exact continuous-time crossing"
+  },
+  "failure_message": "Stage D hydraulic applicability failure: broad_crest_head_length_outside_supported_range",
+  "attempted_until_s": 263670.0,
+  "scenario_id": "copula_var_00003",
+  "original_seed": [
+    6902026,
+    1,
+    11,
+    3
+  ],
+  "dt_s": 60.0,
+  "gate_scale": 1.0,
+  "schedule_kind": "original",
+  "constant_opening": null,
+  "design_source_label": "best",
+  "all_rhs_observations": {
+    "ode_segment_calls": 74,
+    "rhs_attempts": 17651,
+    "rhs_successes": 17650,
+    "rhs_failures": 1,
+    "last_rhs_time_s": 263670.0,
+    "observation_scope": "Every official ode4u RHS/RK stage; separate preflight validator RHS is not counted. Attempted maxima may include the first rejected stage.",
+    "safety_successful_rhs": [
+      {
+        "variable": "H_d1",
+        "threshold_m": 101.2,
+        "peak_m": 100.30950619457414,
+        "peak_time_s": 81810.0,
+        "margin_m": 0.8904938054258622,
+        "exceeded": false
+      },
+      {
+        "variable": "H_d2",
+        "threshold_m": 101.0,
+        "peak_m": 100.10950619457414,
+        "peak_time_s": 81810.0,
+        "margin_m": 0.8904938054258622,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w1",
+        "threshold_m": 98.9,
+        "peak_m": 98.25,
+        "peak_time_s": 0.0,
+        "margin_m": 0.6500000000000057,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w2",
+        "threshold_m": 98.8,
+        "peak_m": 98.15,
+        "peak_time_s": 0.0,
+        "margin_m": 0.6499999999999915,
+        "exceeded": false
+      }
+    ],
+    "safety_attempted_rhs": [
+      {
+        "variable": "H_d1",
+        "threshold_m": 101.2,
+        "peak_m": 100.30950619457414,
+        "peak_time_s": 81810.0,
+        "margin_m": 0.8904938054258622,
+        "exceeded": false
+      },
+      {
+        "variable": "H_d2",
+        "threshold_m": 101.0,
+        "peak_m": 100.10950619457414,
+        "peak_time_s": 81810.0,
+        "margin_m": 0.8904938054258622,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w1",
+        "threshold_m": 98.9,
+        "peak_m": 98.25,
+        "peak_time_s": 0.0,
+        "margin_m": 0.6500000000000057,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w2",
+        "threshold_m": 98.8,
+        "peak_m": 98.15,
+        "peak_time_s": 0.0,
+        "margin_m": 0.6499999999999915,
+        "exceeded": false
+      }
+    ],
+    "wetland_safety_applicable": true,
+    "geometry_attempted_rhs": [
+      {
+        "variable": "H_g",
+        "threshold_m": 97.9,
+        "peak_m": 97.31172037730624,
+        "peak_time_s": 263670.0,
+        "margin_m": 0.5882796226937614,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 0.5872796226937614
+      },
+      {
+        "variable": "H_g",
+        "threshold_m": 100.0,
+        "peak_m": 97.31172037730624,
+        "peak_time_s": 263670.0,
+        "margin_m": 2.6882796226937558,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 2.687279622693756
+      },
+      {
+        "variable": "H_r",
+        "threshold_m": 99.0,
+        "peak_m": 97.35,
+        "peak_time_s": 0.0,
+        "margin_m": 1.6500000000000057,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 1.6490000000000058
+      },
+      {
+        "variable": "H_g",
+        "threshold_m": 97.9,
+        "peak_m": 97.31172037730624,
+        "peak_time_s": 263670.0,
+        "margin_m": 0.5882796226937614,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 0.5872796226937614
+      }
+    ],
+    "min_storage_by_state_m3": {
+      "S_u": 7.253680037928783e-11,
+      "S_m": 76032.76294871757,
+      "S_w1": 41.60256989292694,
+      "S_w2": 52.56800002019023,
+      "S_d1": 499.5442983566064,
+      "S_d2": 420.5687326846074,
+      "S_g": 409600.00000000035,
+      "S_r": 3059.2192848570903
+    },
+    "max_soil_capacity_residual_m3": -30000.0,
+    "minimum_G5_by_branch": [
+      {
+        "branch": 1,
+        "margin_m": -0.17877307016433464,
+        "residual_m": 0.17877307016433464,
+        "time_s": 263670.0,
+        "upstream_stage_m": 100.04995442983567,
+        "tailwater_stage_m": 98.08126435542522,
+        "water_depth_m": 0.04995442983566534,
+        "opening_height_m": 0.18298199999999998,
+        "H_over_a": 0.2730018790682436
+      },
+      {
+        "branch": 2,
+        "margin_m": -0.17569140841442318,
+        "residual_m": 0.17569140841442318,
+        "time_s": 263670.0,
+        "upstream_stage_m": 99.85257109158557,
+        "tailwater_stage_m": 97.98187889613804,
+        "water_depth_m": 0.052571091585576823,
+        "opening_height_m": 0.18261,
+        "H_over_a": 0.2878872547263393
+      }
+    ],
+    "minimum_gate_sill_above_tailwater_m": [
+      1.75,
+      1.6499999999999915
+    ],
+    "derivative_physical_mass_identity_max_abs_m3_s": 3.3306690738754696e-16,
+    "declared_external_net_identity_max_abs_m3_s": 0.0,
+    "physical_mass_identity": "sum(dx) = P*A_rain + Q_ext + Q_gx - Q_out - E_tot; internal transfers cancel once",
+    "first_rhs_exception": {
+      "time_s": 263670.0,
+      "call_index": 17651,
+      "segment_index": 73,
+      "segment_rhs_index": 58,
+      "rk_evaluation": "k2",
+      "exception_type": "HydraulicApplicabilityFailure",
+      "message": "Approved gate head/opening constraint violated: {\"reason\": \"broad_crest_head_length_outside_supported_range\", \"head_length_ratio\": 0.04995442983566534, \"required_range\": [0.05, 0.5], \"upstream_stage_m\": 100.04995442983567, \"tailwater_stage_m\": 98.08126435542522, \"water_depth_m\": 0.04995442983566534, \"opening_height_m\": 0.18298199999999998, \"head_opening_ratio\": 0.2730018790682436, \"legacy_G5_residual_m\": 0.17877307016433464, \"branch\": 1, \"time_s\": 263670.0, \"normalized_opening\": 0.6099399999999999, \"regime\": \"broad_crest_head_length_outside_supported_range\", \"residual_m\": 0.17877307016433464, \"rule\": \"Stage D physical domain; legacy G5 is reported only\"}",
+      "stage_levels_m": {
+        "H_d1": 100.04995442983567,
+        "H_w1": 98.08126435542522,
+        "H_d2": 99.85257109158557,
+        "H_w2": 97.98187889613804,
+        "H_g": 97.31172037730624,
+        "H_r": 97.17622676640532
+      },
+      "diagnostic": {
+        "reason": "broad_crest_head_length_outside_supported_range",
+        "head_length_ratio": 0.04995442983566534,
+        "required_range": [
+          0.05,
+          0.5
+        ],
+        "upstream_stage_m": 100.04995442983567,
+        "tailwater_stage_m": 98.08126435542522,
+        "water_depth_m": 0.04995442983566534,
+        "opening_height_m": 0.18298199999999998,
+        "head_opening_ratio": 0.2730018790682436,
+        "legacy_G5_residual_m": 0.17877307016433464,
+        "branch": 1,
+        "time_s": 263670.0,
+        "normalized_opening": 0.6099399999999999,
+        "regime": "broad_crest_head_length_outside_supported_range",
+        "rule": "Stage D physical domain; legacy G5 is reported only",
+        "H_over_a": 0.2730018790682436,
+        "timestamp_utc": "2022-09-12T01:14:30+00:00",
+        "scenario_id": "copula_var_00003",
+        "case_name": "wetland",
+        "legacy_G5_role": "Descriptive comparison with Stage B; not the revised failure criterion",
+        "detection": "First encountered official ode4u RHS/RK evaluation, not a continuous-time crossing estimate",
+        "applicability_residual": 4.557016433466565e-05,
+        "applicability_residual_units": "1",
+        "applicability_rule": "0.05 <= upstream head / crest length <= 0.5 for this branch",
+        "time_s_meaning": "First evaluated failing RHS/RK stage; not an exact continuous-time crossing"
+      },
+      "timestamp_utc": "2022-09-12T01:14:30+00:00",
+      "time_s_meaning": "First evaluated failing RHS/RK stage",
+      "physical_failure_reason": "broad_crest_head_length_outside_supported_range"
+    }
+  },
+  "safety_violation_at_output_nodes": null,
+  "safety_violation_any_successful_rhs": false,
+  "classification": "revised_hydraulic_applicability_failure",
+  "full_valid_trajectory_available": false,
+  "full_integration_horizon_completed": false,
+  "legacy_adapter_failure_reason": "unsupported_gate_regime",
+  "first_failure_time_s": 263670.0,
+  "first_failure_timestamp_utc": "2022-09-12T01:14:30+00:00",
+  "hydraulic_variant": "Stage D opt-in hydraulic revision",
+  "hydraulic_variant_settings": {
+    "crest_length_m": 1.0,
+    "Cw_US": 2.8,
+    "contraction_at_zero_relative_opening": 0.617,
+    "transition_end_ratio": 1.5,
+    "minimum_crest_head_length_ratio": 0.05,
+    "maximum_crest_head_length_ratio": 0.5
+  },
+  "hydraulic_diagnostics": {
+    "regime_rhs_counts": {
+      "gate_1:energy_gate": 14977,
+      "gate_2:energy_gate": 15202,
+      "gate_1:assumed_weir_gate_transition": 401,
+      "gate_2:assumed_weir_gate_transition": 381,
+      "gate_1:free_weir": 2272,
+      "gate_2:free_weir": 2067
+    },
+    "energy_head_range_m": {
+      "1": [
+        0.05000601022044293,
+        0.30950619457414064
+      ],
+      "2": [
+        0.05262680384730345,
+        0.30950619457414064
+      ]
+    },
+    "first_applicability_failure": {
+      "reason": "broad_crest_head_length_outside_supported_range",
+      "head_length_ratio": 0.04995442983566534,
+      "required_range": [
+        0.05,
+        0.5
+      ],
+      "upstream_stage_m": 100.04995442983567,
+      "tailwater_stage_m": 98.08126435542522,
+      "water_depth_m": 0.04995442983566534,
+      "opening_height_m": 0.18298199999999998,
+      "head_opening_ratio": 0.2730018790682436,
+      "legacy_G5_residual_m": 0.17877307016433464,
+      "branch": 1,
+      "time_s": 263670.0,
+      "normalized_opening": 0.6099399999999999,
+      "regime": "broad_crest_head_length_outside_supported_range",
+      "rule": "Stage D physical domain; legacy G5 is reported only",
+      "H_over_a": 0.2730018790682436,
+      "timestamp_utc": "2022-09-12T01:14:30+00:00",
+      "scenario_id": "copula_var_00003",
+      "case_name": "wetland",
+      "legacy_G5_role": "Descriptive comparison with Stage B; not the revised failure criterion",
+      "detection": "First encountered official ode4u RHS/RK evaluation, not a continuous-time crossing estimate",
+      "applicability_residual": 4.557016433466565e-05,
+      "applicability_residual_units": "1",
+      "applicability_rule": "0.05 <= upstream head / crest length <= 0.5 for this branch"
+    }
+  },
+  "original_G5_margin_role": "Historical diagnostic, not the revised-law rejection rule",
+  "physical_river_peak_m": null,
+  "physical_river_peak_discharge_m3_s": null
+}

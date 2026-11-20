@@ -1,0 +1,20 @@
+{
+  "planned_points": 64,
+  "paired_rows": 64,
+  "valid_pairs": 64,
+  "classifications": {
+    "wetland": {
+      "completed_valid_safety_feasible": 64
+    },
+    "no_wetland": {
+      "completed_valid_safety_feasible": 64
+    }
+  },
+  "valid_unsafe": {
+    "wetland": 0,
+    "no_wetland": 0
+  },
+  "event_id": "benchmark_september_2022",
+  "reused_existing_benchmark": true,
+  "source_csv_sha256": "ce87fc49d29d6a06c19a6781a337fdc6c6efae5ce9627574bcbef6917b7ae979"
+}

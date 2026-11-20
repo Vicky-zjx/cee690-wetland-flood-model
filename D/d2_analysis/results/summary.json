@@ -1,0 +1,62 @@
+{
+  "scope": "Preliminary fixed-policy paired analysis of saved original weather; no new weather or full Monte Carlo",
+  "primary_dt_s": 15,
+  "fine_dt_s": 7.5,
+  "control_period_s": 120,
+  "accounting": [
+    {
+      "dt_s": 15.0,
+      "original_weather_ids": 20,
+      "model_records": 40,
+      "warm_weather_ids": 16,
+      "cold_excluded_ids": 4,
+      "wetland_started": 16,
+      "no_wetland_started": 16,
+      "wetland_completed": 16,
+      "no_wetland_completed": 16,
+      "complete_valid_pairs": 16,
+      "unsafe_valid_model_runs": 0,
+      "incomplete_warm_model_runs": 0,
+      "completed_numerically_invalid_runs": 0
+    },
+    {
+      "dt_s": 7.5,
+      "original_weather_ids": 20,
+      "model_records": 40,
+      "warm_weather_ids": 16,
+      "cold_excluded_ids": 4,
+      "wetland_started": 16,
+      "no_wetland_started": 16,
+      "wetland_completed": 16,
+      "no_wetland_completed": 16,
+      "complete_valid_pairs": 16,
+      "unsafe_valid_model_runs": 0,
+      "incomplete_warm_model_runs": 0,
+      "completed_numerically_invalid_runs": 0
+    }
+  ],
+  "flood_threshold_m": null,
+  "flood_probability_estimated": false,
+  "initial_conditions_changed": false,
+  "hydrologic_spinup_performed": false,
+  "primary_initial_peak_model_runs": 30,
+  "primary_warm_method_counts": {
+    "block_bootstrap": 6,
+    "copula_var": 10
+  },
+  "controller_audits_passed": true,
+  "safety_violations_successful_evaluations": 0,
+  "minimum_fine_weather_safety_margin_m": 0.40425628559350457,
+  "max_15_to_7p5_river_difference_m": 2.6603714786688215e-09,
+  "max_15_to_7p5_discharge_difference_m3_s": 5.911936620806024e-09,
+  "max_15_to_7p5_gate_difference_m": 7.349870712047846e-12,
+  "total_latch_record_mismatches": 0,
+  "maximum_fine_balance_relative": 8.655790610866848e-06,
+  "all_common_weather_identical": true,
+  "all_initial_states_identical": true,
+  "all_controller_policies_identical": true,
+  "all_hydraulic_settings_identical": true,
+  "minimum_fine_open_gate_H_over_a": 1.9896878689495168,
+  "maximum_pair_gate_difference_m": 5.6787907709576755e-15,
+  "plotting_denominator_note": "16 warm pairs:10 copula/VAR and6 block-bootstrap;4 cold original IDs remain in accounting; no representative flood probability asserted"
+}

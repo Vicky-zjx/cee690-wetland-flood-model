@@ -1,0 +1,6 @@
+# Direct dependencies verified in the completed Stage D environment (Python 3.13.5).
+# Install the separate official multivarious checkout as documented in reproducibility_inputs/README.md.
+numpy==2.2.6
+pandas==2.3.2
+scipy==1.16.2
+matplotlib==3.10.6

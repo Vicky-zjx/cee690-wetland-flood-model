@@ -1,0 +1,236 @@
+{
+  "archive": "../Modeling_cleanup_backups/C2_scope_cleanup_20261028T205724Z",
+  "copied_files": [
+    {
+      "archive_relative_path": "C/uncertainty/model_adapters.py",
+      "destination": "recovered/model_adapters.py",
+      "sha256": "483124a917aac6e56c28bb1eab26c2afef5cc4b913438ebcfc7fa8dfe92616ba"
+    },
+    {
+      "archive_relative_path": "C/configs/uncertainty.json",
+      "destination": "recovered/original_config.json",
+      "sha256": "3646e2eee1b2eee9e3af1eb13503ec3782cca227a338631e8faf5576ba21b834"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/fixed_hydrologic_configuration.json",
+      "destination": "recovered/fixed_hydrologic_configuration.json",
+      "sha256": "b9530fd3c174c66a17f4498f271d229ddbe546b32f76606dde7d07720dfc4c31"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenario_manifest.json",
+      "destination": "recovered/scenario_manifest.json",
+      "sha256": "35d036b159dbcd2a476896597bb92c5452909d66a9a292497d14f3ea57dd91ae"
+    },
+    {
+      "archive_relative_path": "C/tables/failure_audit/original_all_case_diagnostics.csv",
+      "destination": "recovered/original_all_case_diagnostics.csv",
+      "sha256": "06de83328b7e0f3ee8ae9308e2ac71e15e86207d89f9be1a6e504a9686ac2a8a"
+    },
+    {
+      "archive_relative_path": "C/tables/failure_audit/original_counts.json",
+      "destination": "recovered/original_counts.json",
+      "sha256": "7aa5d3334d98f5811249c181419c0029cad195893be8cc34ca8f5db09e3f38ab"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00000.csv",
+      "destination": "recovered/scenarios/block_bootstrap_00000.csv",
+      "sha256": "00b4cca8bfd73d761fa17981f34b48ab56b050dc59b3aa11e794b2f9944c0de7"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00000.json",
+      "destination": "recovered/scenarios/block_bootstrap_00000.json",
+      "sha256": "3d334b93be86e6a1282486da07809f88d56d166fd5f2c608878a821072758927"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00001.csv",
+      "destination": "recovered/scenarios/block_bootstrap_00001.csv",
+      "sha256": "9ebac7f0690a89217179c1911edbb319d0f4ac2f8eeebafbb8ed6253b51a2128"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00001.json",
+      "destination": "recovered/scenarios/block_bootstrap_00001.json",
+      "sha256": "22e4de1a3a59a753660760701bd6ab2c7a715926c71d5d220d8a0ee8f8118124"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00002.csv",
+      "destination": "recovered/scenarios/block_bootstrap_00002.csv",
+      "sha256": "267ec8482f8be6165d7924e8013fd293ebc45c99f21cfda7eb27854eab0a2785"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00002.json",
+      "destination": "recovered/scenarios/block_bootstrap_00002.json",
+      "sha256": "4eeb1ce628b698393008e2f38e8d0095895f7b96edac81c7ee9f717bdf8c7bd5"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00003.csv",
+      "destination": "recovered/scenarios/block_bootstrap_00003.csv",
+      "sha256": "fe87d0bb6d391293640f525de563b4dd5ed57ea0ee26bcfe7eeb43293f25f702"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00003.json",
+      "destination": "recovered/scenarios/block_bootstrap_00003.json",
+      "sha256": "5363c7780098ef73f35f180169aab3154094ead8ed54ac91bdc034d3b4cb8171"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00004.csv",
+      "destination": "recovered/scenarios/block_bootstrap_00004.csv",
+      "sha256": "ab52ea7af8f748e9a1662eb949f2c182ec4a541074a619f36340503acaaf439d"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00004.json",
+      "destination": "recovered/scenarios/block_bootstrap_00004.json",
+      "sha256": "963db939dd52ec88f24a5aaed620b34a6e03ec2fa9a7323c8653e4ca91c4026e"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00005.csv",
+      "destination": "recovered/scenarios/block_bootstrap_00005.csv",
+      "sha256": "7af273756bda47cf35bbd5a5018efc5696215732191e5c5e1e95e2bcf70982dc"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00005.json",
+      "destination": "recovered/scenarios/block_bootstrap_00005.json",
+      "sha256": "2c9789bd248b81a7900792f1cb9a8593429150c5c2252e00c77524e8c8872ab6"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00006.csv",
+      "destination": "recovered/scenarios/block_bootstrap_00006.csv",
+      "sha256": "f7569970adf67f69e66c45e04f9754b6e84bb08d424a8d2a07d98a1a10894a22"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00006.json",
+      "destination": "recovered/scenarios/block_bootstrap_00006.json",
+      "sha256": "bd62e1ccb79c573e5d14b4acaa27602304ee43d3e33df6e482e2cf1502011149"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00007.csv",
+      "destination": "recovered/scenarios/block_bootstrap_00007.csv",
+      "sha256": "e4614939328cd97d5b6f8eeaac110c171e9bcd7fa2dc23e4f644b4d292b006d7"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00007.json",
+      "destination": "recovered/scenarios/block_bootstrap_00007.json",
+      "sha256": "abea2b99ee1d33d4f94a7100ceed8576569a8ce1c14371cb9bf3f8d4ebb60948"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00008.csv",
+      "destination": "recovered/scenarios/block_bootstrap_00008.csv",
+      "sha256": "78833777bef3e19806f4c723a553ef82084a1732e96f511a16cdc957ca7d9dbb"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00008.json",
+      "destination": "recovered/scenarios/block_bootstrap_00008.json",
+      "sha256": "e3940d9d96f14de63d03057c772819b9101e08f8f90096e75de410bae2440112"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00009.csv",
+      "destination": "recovered/scenarios/block_bootstrap_00009.csv",
+      "sha256": "11d2d7bf9b5badf6f34ab1aa4c4d4276edf706bc029af72cb261774cf5e68e56"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/block_bootstrap_00009.json",
+      "destination": "recovered/scenarios/block_bootstrap_00009.json",
+      "sha256": "7ba4baab0c290222ffaf9f43073575e0249001331c2dd86dcd6a2a8cb5145250"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00000.csv",
+      "destination": "recovered/scenarios/copula_var_00000.csv",
+      "sha256": "322705131f414ce135e30258960179394203c8c16e59f52798a21648d3edbba1"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00000.json",
+      "destination": "recovered/scenarios/copula_var_00000.json",
+      "sha256": "1847ef8aa5b3a13560356b9c0d21aea2220975a562078618ea8f8ab20c9c92a4"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00001.csv",
+      "destination": "recovered/scenarios/copula_var_00001.csv",
+      "sha256": "0b2d78e49f47ba5674810ecf4f836c8f8e2dc8d9768f355ec10694b1b2223ce5"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00001.json",
+      "destination": "recovered/scenarios/copula_var_00001.json",
+      "sha256": "553d9010acff264611dc317533cdc725a3b55c28edfc7db8af210961a0392b36"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00002.csv",
+      "destination": "recovered/scenarios/copula_var_00002.csv",
+      "sha256": "5aa824761d7dbcf283ae4fbff5c79597bb8e5352d3673d8edbdb9b08e9ca998b"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00002.json",
+      "destination": "recovered/scenarios/copula_var_00002.json",
+      "sha256": "00e9d9c706749f807a3f23b9615e7513b07054c6a72572e402e9b5f491024806"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00003.csv",
+      "destination": "recovered/scenarios/copula_var_00003.csv",
+      "sha256": "5f21a3cd1e1692db7bd5a9b541915c05470885503cea08754723c9026a31d670"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00003.json",
+      "destination": "recovered/scenarios/copula_var_00003.json",
+      "sha256": "e6a5f0e7d89bd08c40bfa1f69fced1a89529111e0397c58aca262e935283c289"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00004.csv",
+      "destination": "recovered/scenarios/copula_var_00004.csv",
+      "sha256": "77f8006520cd55abd99d0456001a7aa31827e62425430d427d1a9627e6cc57c0"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00004.json",
+      "destination": "recovered/scenarios/copula_var_00004.json",
+      "sha256": "551e7f687a3ec91924d8a074f2006bd6169f133adadbdb43d9b4f9fd47545b14"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00005.csv",
+      "destination": "recovered/scenarios/copula_var_00005.csv",
+      "sha256": "d192b7230cdb4f6c95bc579c7330552c439551120297cd07518086e449f30167"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00005.json",
+      "destination": "recovered/scenarios/copula_var_00005.json",
+      "sha256": "e438453637c113294ec6f2fdcd23fdb041370486a3e99c505a840bc5ebd53516"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00006.csv",
+      "destination": "recovered/scenarios/copula_var_00006.csv",
+      "sha256": "fe22c104845a25f37f4638b78eebb2d6eb9ff21c8accb69510970bccfefed363"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00006.json",
+      "destination": "recovered/scenarios/copula_var_00006.json",
+      "sha256": "b5ed8fcfefa61fedc90a225bf4474b4cbbf4fd8bcfa659e5ae1e10b7a59d724b"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00007.csv",
+      "destination": "recovered/scenarios/copula_var_00007.csv",
+      "sha256": "6f33fc833f8d42842a9cafec3e63df66d5d5aa6fc51ee13770b98a9993ac7c5d"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00007.json",
+      "destination": "recovered/scenarios/copula_var_00007.json",
+      "sha256": "cfa1478bf805cc64a48d19f0819b8995e4cab1e889082216789d6e43018b0867"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00008.csv",
+      "destination": "recovered/scenarios/copula_var_00008.csv",
+      "sha256": "ea64c62aac8da912d77e5c73d6cc2eb11e3b6be4103c5e90fc8ad8add63f3d98"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00008.json",
+      "destination": "recovered/scenarios/copula_var_00008.json",
+      "sha256": "74a63dd5a5288137db07c2211ddfa0f4b10141d3fb287d3dcf5e7ab386acb904"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00009.csv",
+      "destination": "recovered/scenarios/copula_var_00009.csv",
+      "sha256": "efdb294b9e5904514251414607252024381d838d71b65ccb01094e8661da50a9"
+    },
+    {
+      "archive_relative_path": "C/results/pilot_10/scenarios/copula_var_00009.json",
+      "destination": "recovered/scenarios/copula_var_00009.json",
+      "sha256": "1098e25f9010297b64cd1e4e0fde24dffd840fcfe21f68672dd1aa1727b2ff02"
+    }
+  ],
+  "purpose": "Exact original scenario recovery for a bounded G5 diagnostic replay; no weather generation."
+}

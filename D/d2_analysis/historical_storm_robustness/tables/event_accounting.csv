@@ -1,0 +1,16 @@
+event_id,case,planned,valid,invalid,valid_unsafe,gate_history_disagreement_count,maximum_paired_gate_opening_difference_m,paired_latch_mismatch_count,denominator,initial_peak_count,outlet_cap_peak_count,minimum_safety_margin_m,maximum_relative_mass_residual
+benchmark_september_2022,paired,64,64,0,0,0.0,5.728750807065808e-15,0.0,All 64 planned parameter draws; no resampling; actual gate differences retained,,,,
+benchmark_september_2022,wetland,64,64,0,0,,,,All model-valid trajectories; unsafe and initial-peak outcomes retained,0.0,0.0,0.1534897368677406,3.517679029203513e-08
+benchmark_september_2022,no_wetland,64,64,0,0,,,,All model-valid trajectories; unsafe and initial-peak outcomes retained,0.0,0.0,0.3137195997597075,4.905548293303468e-08
+historical_20230813T0800Z,paired,64,64,0,0,0.0,5.695444116327053e-15,0.0,All 64 planned parameter draws; no resampling; actual gate differences retained,,,,
+historical_20230813T0800Z,wetland,64,64,0,0,,,,All model-valid trajectories; unsafe and initial-peak outcomes retained,38.0,0.0,0.4013308345952282,7.703403157568465e-08
+historical_20230813T0800Z,no_wetland,64,64,0,0,,,,All model-valid trajectories; unsafe and initial-peak outcomes retained,9.0,0.0,0.4794361405569276,1.1220468568871579e-07
+historical_20220704T2100Z,paired,64,64,0,0,0.0,5.728750807065808e-15,0.0,All 64 planned parameter draws; no resampling; actual gate differences retained,,,,
+historical_20220704T2100Z,wetland,64,64,0,0,,,,All model-valid trajectories; unsafe and initial-peak outcomes retained,39.0,0.0,0.4432199804595029,6.917623140840743e-08
+historical_20220704T2100Z,no_wetland,64,64,0,0,,,,All model-valid trajectories; unsafe and initial-peak outcomes retained,11.0,0.0,0.523518149520612,1.0164822522410176e-07
+historical_20190825T0200Z,paired,64,64,0,0,0.0,5.695444116327053e-15,0.0,All 64 planned parameter draws; no resampling; actual gate differences retained,,,,
+historical_20190825T0200Z,wetland,64,64,0,0,,,,All model-valid trajectories; unsafe and initial-peak outcomes retained,54.0,0.0,0.5681815865718534,9.755881307962597e-08
+historical_20190825T0200Z,no_wetland,64,64,0,0,,,,All model-valid trajectories; unsafe and initial-peak outcomes retained,37.0,0.0,0.6956804489499433,1.5498794068684486e-07
+historical_20240804T1500Z,paired,64,64,0,0,0.0,5.695444116327053e-15,0.0,All 64 planned parameter draws; no resampling; actual gate differences retained,,,,
+historical_20240804T1500Z,wetland,64,64,0,0,,,,All model-valid trajectories; unsafe and initial-peak outcomes retained,52.0,0.0,0.5240214142823874,1.1033587426286952e-07
+historical_20240804T1500Z,no_wetland,64,64,0,0,,,,All model-valid trajectories; unsafe and initial-peak outcomes retained,30.0,0.0,0.6153796062425698,1.600628735964265e-07

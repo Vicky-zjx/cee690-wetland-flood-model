@@ -1,0 +1,40 @@
+{
+  "passed": true,
+  "checks": [
+    {
+      "case_name": "wetland",
+      "valid": true,
+      "exact_arrays": {
+        "time": true,
+        "x": true,
+        "dx": true,
+        "y": true,
+        "u": true,
+        "balance": true,
+        "downstream_stage": true,
+        "downstream_discharge": true
+      },
+      "passed": true,
+      "reference_path": "D/d2_analysis/parameter_uncertainty/results/pilot/pilot_mc_00000__wetland__15s.npz",
+      "reference_sha256": "b14276788c3f66d9ed956fe020a302aa27ced2a28d27dc27b50eedc0f70d0b18"
+    },
+    {
+      "case_name": "no_wetland",
+      "valid": true,
+      "exact_arrays": {
+        "time": true,
+        "x": true,
+        "dx": true,
+        "y": true,
+        "u": true,
+        "balance": true,
+        "downstream_stage": true,
+        "downstream_discharge": true
+      },
+      "passed": true,
+      "reference_path": "D/d2_analysis/parameter_uncertainty/results/pilot/pilot_mc_00000__no_wetland__15s.npz",
+      "reference_sha256": "abab5423192dd2ff27b167a6d305871e29d6db554b169e4901296e3f71f1a687"
+    }
+  ],
+  "purpose": "Exact original September 2022 forcing/parameter/controller regression before new events"
+}

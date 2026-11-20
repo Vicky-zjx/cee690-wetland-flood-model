@@ -1,0 +1,11 @@
+H_m,H_over_a,a_m,branch,discharge_m3_s,implemented,regime
+0.0625,0.5,0.125,1,,False,weir_or_partially_wetted_opening
+0.125,1.0,0.125,1,,False,weir_or_partially_wetted_opening
+0.140625,1.125,0.125,1,,False,weir_gate_transition
+0.15625,1.25,0.125,1,0.13129452369815353,True,free
+0.1875,1.5,0.125,1,0.14382594461275058,True,free
+0.0625,0.5,0.125,2,,False,weir_or_partially_wetted_opening
+0.125,1.0,0.125,2,,False,weir_or_partially_wetted_opening
+0.140625,1.125,0.125,2,,False,weir_gate_transition
+0.15625,1.25,0.125,2,0.10503561895852283,True,free
+0.1875,1.5,0.125,2,0.11506075569020047,True,free

@@ -1,0 +1,647 @@
+{
+  "scope": "Saved-output analysis only; no model fitting, ODE execution, optimization or weather generation",
+  "run_records": 307,
+  "independent_saved_weather_ids": 20,
+  "suite_checks": [
+    {
+      "tag": "B_feedback",
+      "planned_cases": 43,
+      "completed_result_records": 43,
+      "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "preservation_passed": true,
+      "execution_plan_sha256": "7225a8f9760c15db9c6ebad9c22368c5b44a77494d3f93f7aa97997d1f8936c0"
+    },
+    {
+      "tag": "deterministic",
+      "planned_cases": 9,
+      "completed_result_records": 9,
+      "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "preservation_passed": true,
+      "execution_plan_sha256": "d06b7744ceaea724e58232e66c966c8baaf71d093bc85765adbe4ffd31f60499"
+    },
+    {
+      "tag": "fine_B_feedback",
+      "planned_cases": 2,
+      "completed_result_records": 2,
+      "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "preservation_passed": true,
+      "execution_plan_sha256": "9f6cecd4028892945b770c31120ada9c07454a53e1fe3ab66bca845b6daa246c"
+    },
+    {
+      "tag": "fine_high",
+      "planned_cases": 2,
+      "completed_result_records": 2,
+      "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "preservation_passed": true,
+      "execution_plan_sha256": "5f813d1f53bf6c2899ae0947484b2e12e0005934d3fd2b678ac8eb03169c9a38"
+    },
+    {
+      "tag": "fine_low",
+      "planned_cases": 2,
+      "completed_result_records": 2,
+      "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "preservation_passed": true,
+      "execution_plan_sha256": "1962e6d8fa43771da6a2c7d21f4ec1f698aa354b47c54be348dc26ea0a2a7a8d"
+    },
+    {
+      "tag": "fine_nominal",
+      "planned_cases": 43,
+      "completed_result_records": 43,
+      "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "preservation_passed": true,
+      "execution_plan_sha256": "e9bf3e7d67bb82ea8c8330265a1d3785f4e9b8642d81f7962fa26a643c4c331d"
+    },
+    {
+      "tag": "high",
+      "planned_cases": 43,
+      "completed_result_records": 43,
+      "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "preservation_passed": true,
+      "execution_plan_sha256": "2ee4bdcbaa19340f86283f059e94534fb91bf09dcca77dab7722e8cd1dc6d8e2"
+    },
+    {
+      "tag": "low",
+      "planned_cases": 43,
+      "completed_result_records": 43,
+      "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "preservation_passed": true,
+      "execution_plan_sha256": "c7943ab75cefa5d5d7f320a1548b8004666b38b22811a6ceecfbf76faae76382"
+    },
+    {
+      "tag": "weather_nominal",
+      "planned_cases": 120,
+      "completed_result_records": 120,
+      "policy_sha256": "4148599dd774d791a3687b0ca5e5dacfd1335e68bcef88b94cf8d96527e95f83",
+      "preservation_passed": true,
+      "execution_plan_sha256": "f6e1f2d948f61302aa9e16d431a02a6e21820f6b9fc35dbb9b854361f9fd7560"
+    }
+  ],
+  "nominal_weather_pair_counts": [
+    {
+      "dt_s": 15,
+      "original_ids": 20,
+      "hydraulically_completed_pairs": 16,
+      "complete_valid_pairs": 16,
+      "safe_complete_pairs": 16,
+      "cold_excluded_ids": 4,
+      "invalid_or_incomplete_non_cold_ids": 0,
+      "identical_actual_gate_pairs": 16,
+      "negative_wetland_peak_reduction_pairs": 0,
+      "zero_wetland_peak_reduction_pairs": 15,
+      "positive_wetland_peak_reduction_pairs": 1,
+      "both_peak_at_initial_time_pairs": 15
+    },
+    {
+      "dt_s": 30,
+      "original_ids": 20,
+      "hydraulically_completed_pairs": 16,
+      "complete_valid_pairs": 15,
+      "safe_complete_pairs": 15,
+      "cold_excluded_ids": 4,
+      "invalid_or_incomplete_non_cold_ids": 1,
+      "identical_actual_gate_pairs": 15,
+      "negative_wetland_peak_reduction_pairs": 0,
+      "zero_wetland_peak_reduction_pairs": 14,
+      "positive_wetland_peak_reduction_pairs": 1,
+      "both_peak_at_initial_time_pairs": 14
+    },
+    {
+      "dt_s": 60,
+      "original_ids": 20,
+      "hydraulically_completed_pairs": 16,
+      "complete_valid_pairs": 15,
+      "safe_complete_pairs": 15,
+      "cold_excluded_ids": 4,
+      "invalid_or_incomplete_non_cold_ids": 1,
+      "identical_actual_gate_pairs": 14,
+      "negative_wetland_peak_reduction_pairs": 0,
+      "zero_wetland_peak_reduction_pairs": 14,
+      "positive_wetland_peak_reduction_pairs": 1,
+      "both_peak_at_initial_time_pairs": 14
+    },
+    {
+      "dt_s": 120,
+      "original_ids": 20,
+      "hydraulically_completed_pairs": 16,
+      "complete_valid_pairs": 15,
+      "safe_complete_pairs": 15,
+      "cold_excluded_ids": 4,
+      "invalid_or_incomplete_non_cold_ids": 1,
+      "identical_actual_gate_pairs": 15,
+      "negative_wetland_peak_reduction_pairs": 0,
+      "zero_wetland_peak_reduction_pairs": 14,
+      "positive_wetland_peak_reduction_pairs": 1,
+      "both_peak_at_initial_time_pairs": 14
+    }
+  ],
+  "all_recorded_source_hashes_match": false,
+  "all_recorded_source_bytes_available": true,
+  "canonical_uniform_weather_dt_s": 15,
+  "canonical_initial_peak_pairs": 15,
+  "canonical_positive_peak_contrasts": [
+    {
+      "scenario_id": "block_bootstrap_00000",
+      "wetland_peak_m": 97.39327735361226,
+      "no_wetland_peak_m": 97.50360594651812,
+      "wetland_peak_time_s": 359925.0,
+      "no_wetland_peak_time_s": 352560.0,
+      "no_wetland_minus_wetland_peak_m": 0.11032859290585861
+    }
+  ],
+  "maximum_completed_balance_relative": 0.002216911736440759,
+  "maximum_completed_balance_m3": 0.10706202090295847,
+  "maximum_accepted_balance_relative": 6.574120148302015e-05,
+  "canonical_nominal_maximum_balance_relative": 3.462427946832384e-05,
+  "completed_numerical_validation_failure_count": 11,
+  "minimum_successful_rhs_open_gate_H_over_a": 1.9873176727530506,
+  "minimum_successful_rhs_head_m": 0.1794621806625969,
+  "canonical_nominal_minimum_successful_rhs_open_gate_H_over_a": 1.9896878689782227,
+  "maximum_derivative_mass_identity_m3_s": 1.3322676295501878e-15,
+  "maximum_60_to_30_common_grid_river_difference_m": 2.8077437264073524e-08,
+  "maximum_30_to_15_common_grid_river_difference_m": 7.493241582778865e-09,
+  "maximum_60_to_30_actual_gate_difference_m": 1.8968592030432775e-09,
+  "counts": [
+    {
+      "hydraulic_arm": "B",
+      "Cw_US": null,
+      "dt_s": 15,
+      "case_name": "no_wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "B",
+      "Cw_US": null,
+      "dt_s": 15,
+      "case_name": "wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "B",
+      "Cw_US": null,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 16
+    },
+    {
+      "hydraulic_arm": "B",
+      "Cw_US": null,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "B",
+      "Cw_US": null,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "B",
+      "Cw_US": null,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 17
+    },
+    {
+      "hydraulic_arm": "B",
+      "Cw_US": null,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "B",
+      "Cw_US": null,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.6,
+      "dt_s": 15,
+      "case_name": "no_wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.6,
+      "dt_s": 15,
+      "case_name": "wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.6,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 16
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.6,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.6,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.6,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 17
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.6,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.6,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 15,
+      "case_name": "no_wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 17
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 15,
+      "case_name": "no_wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 15,
+      "case_name": "wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 18
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 15,
+      "case_name": "wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 30,
+      "case_name": "no_wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 16
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 30,
+      "case_name": "no_wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 30,
+      "case_name": "no_wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 30,
+      "case_name": "wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 18
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 30,
+      "case_name": "wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 60,
+      "case_name": "no_wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 16
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 60,
+      "case_name": "no_wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 60,
+      "case_name": "no_wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 60,
+      "case_name": "wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 17
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 60,
+      "case_name": "wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 60,
+      "case_name": "wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 16
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 17
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 2.8,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 3.0,
+      "dt_s": 15,
+      "case_name": "no_wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 3.0,
+      "dt_s": 15,
+      "case_name": "wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 3.0,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 16
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 3.0,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 3.0,
+      "dt_s": 120,
+      "case_name": "no_wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 3.0,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "completed_valid_safety_feasible",
+      "case_count": 17
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 3.0,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "meteorological_liquid_water_applicability",
+      "case_count": 4
+    },
+    {
+      "hydraulic_arm": "D",
+      "Cw_US": 3.0,
+      "dt_s": 120,
+      "case_name": "wetland",
+      "classification": "numerical_or_state_failure",
+      "case_count": 1
+    }
+  ],
+  "deterministic_attribution": [
+    {
+      "case_name": "wetland",
+      "design": "reference",
+      "dt_s": 120,
+      "B_fixed_source": "B/results/wetland_only/fixed_reference_120s.npz",
+      "B_fixed_sha256": "77a6f06cbf03422146dadc0a66aaee36528dfcd5999baf4a37bc9780e43d0c8c",
+      "D_fixed_source": "D/gate_hydraulics_revision/results/nominal/deterministic_september_2022__wetland__reference__120s.json",
+      "Bfixed_Dfixed_initial_identical": true,
+      "Bfixed_Dfixed_time_identical": true,
+      "Bfixed_Dfixed_all_inputs_identical": true,
+      "D_fixed_safety_feasible": false,
+      "D_feedback_classification": "completed_valid_safety_feasible",
+      "B_feedback_classification": "completed_valid_safety_feasible",
+      "D_feedback_safety_feasible": true,
+      "Dfixed_Dfeedback_initial_identical": true,
+      "Dfixed_Dfeedback_weather_identical": true,
+      "B_fixed_river_peak_m": 97.5584415143834,
+      "B_fixed_outlet_peak_m3_s": 0.9076478097408842,
+      "D_fixed_river_peak_m": 97.52734422450764,
+      "D_fixed_outlet_peak_m3_s": 0.8385427211280848,
+      "D_feedback_river_peak_m": 97.62174711874546,
+      "D_feedback_outlet_peak_m3_s": 1.0483269305454554,
+      "B_feedback_river_peak_m": 97.63388920922708,
+      "B_feedback_outlet_peak_m3_s": 1.075309353837939,
+      "hydraulic_change_under_fixed_river_peak_m": -0.03109728987575977,
+      "control_change_under_D_river_peak_m": 0.09440289423781678,
+      "total_path_change_river_peak_m": 0.06330560436205701,
+      "additive_identity_error_river_peak_m": 0.0,
+      "hydraulic_change_under_fixed_outlet_peak_m3_s": -0.0691050886127994,
+      "control_change_under_D_outlet_peak_m3_s": 0.20978420941737064,
+      "total_path_change_outlet_peak_m3_s": 0.14067912080457123,
+      "additive_identity_error_outlet_peak_m3_s": 0.0,
+      "Bfeedback_Dfeedback_gate_max_difference_m": 0.1,
+      "Bfeedback_Dfeedback_actual_gates_identical": false,
+      "DminusB_under_common_feedback_peak_m": -0.012142090481617629,
+      "interpretation": "Signed path differences (new minus prior); arithmetic decomposition, not optimization or unconditional causal attribution. Common feedback policy can produce different actual gates."
+    },
+    {
+      "case_name": "wetland",
+      "design": "best",
+      "dt_s": 120,
+      "B_fixed_source": "B/results/wetland_only/wetland_best_120s.npz",
+      "B_fixed_sha256": "062c121ba72e1447cb5fe9b08b870d592c3880de736dc01d26afcfb16290cd15",
+      "D_fixed_source": "D/gate_hydraulics_revision/results/nominal/deterministic_september_2022__wetland__best__120s.json",
+      "Bfixed_Dfixed_initial_identical": true,
+      "Bfixed_Dfixed_time_identical": true,
+      "Bfixed_Dfixed_all_inputs_identical": true,
+      "D_fixed_safety_feasible": false,
+      "D_feedback_classification": "completed_valid_safety_feasible",
+      "B_feedback_classification": "completed_valid_safety_feasible",
+      "D_feedback_safety_feasible": true,
+      "Dfixed_Dfeedback_initial_identical": true,
+      "Dfixed_Dfeedback_weather_identical": true,
+      "B_fixed_river_peak_m": 97.55342909286543,
+      "B_fixed_outlet_peak_m3_s": 0.8965090952564954,
+      "D_fixed_river_peak_m": 97.52851997418996,
+      "D_fixed_outlet_peak_m3_s": 0.8411554981999024,
+      "D_feedback_river_peak_m": 97.6155172053528,
+      "D_feedback_outlet_peak_m3_s": 1.0344826785617696,
+      "B_feedback_river_peak_m": 97.6281576838821,
+      "B_feedback_outlet_peak_m3_s": 1.062572630849085,
+      "hydraulic_change_under_fixed_river_peak_m": -0.024909118675466857,
+      "control_change_under_D_river_peak_m": 0.0869972311628402,
+      "total_path_change_river_peak_m": 0.06208811248737334,
+      "additive_identity_error_river_peak_m": 0.0,
+      "hydraulic_change_under_fixed_outlet_peak_m3_s": -0.05535359705659293,
+      "control_change_under_D_outlet_peak_m3_s": 0.19332718036186713,
+      "total_path_change_outlet_peak_m3_s": 0.1379735833052742,
+      "additive_identity_error_outlet_peak_m3_s": 0.0,
+      "Bfeedback_Dfeedback_gate_max_difference_m": 0.1,
+      "Bfeedback_Dfeedback_actual_gates_identical": false,
+      "DminusB_under_common_feedback_peak_m": -0.012640478529291954,
+      "interpretation": "Signed path differences (new minus prior); arithmetic decomposition, not optimization or unconditional causal attribution. Common feedback policy can produce different actual gates."
+    },
+    {
+      "case_name": "no_wetland",
+      "design": "best",
+      "dt_s": 120,
+      "B_fixed_source": "B/results/wetland_counterfactual/bypass_120s.npz",
+      "B_fixed_sha256": "609d739cfd705fc172b901e85b351a65b50e2c68487e9f4353f540a846aad744",
+      "D_fixed_source": "D/gate_hydraulics_revision/results/nominal/deterministic_september_2022__no_wetland__best__120s.json",
+      "Bfixed_Dfixed_initial_identical": true,
+      "Bfixed_Dfixed_time_identical": true,
+      "Bfixed_Dfixed_all_inputs_identical": true,
+      "D_fixed_safety_feasible": false,
+      "D_feedback_classification": "completed_valid_safety_feasible",
+      "B_feedback_classification": "completed_valid_safety_feasible",
+      "D_feedback_safety_feasible": true,
+      "Dfixed_Dfeedback_initial_identical": true,
+      "Dfixed_Dfeedback_weather_identical": true,
+      "B_fixed_river_peak_m": 97.63774482150569,
+      "B_fixed_outlet_peak_m3_s": 1.0838773811237463,
+      "D_fixed_river_peak_m": 97.61704504027371,
+      "D_fixed_outlet_peak_m3_s": 1.037877867274896,
+      "D_feedback_river_peak_m": 97.69510463579232,
+      "D_feedback_outlet_peak_m3_s": 1.2113436350940294,
+      "B_feedback_river_peak_m": 97.70342966823904,
+      "B_feedback_outlet_peak_m3_s": 1.2298437071978519,
+      "hydraulic_change_under_fixed_river_peak_m": -0.020699781231982683,
+      "control_change_under_D_river_peak_m": 0.07805959551861008,
+      "total_path_change_river_peak_m": 0.0573598142866274,
+      "additive_identity_error_river_peak_m": 0.0,
+      "hydraulic_change_under_fixed_outlet_peak_m3_s": -0.04599951384885026,
+      "control_change_under_D_outlet_peak_m3_s": 0.17346576781913337,
+      "total_path_change_outlet_peak_m3_s": 0.1274662539702831,
+      "additive_identity_error_outlet_peak_m3_s": 0.0,
+      "Bfeedback_Dfeedback_gate_max_difference_m": 0.1,
+      "Bfeedback_Dfeedback_actual_gates_identical": false,
+      "DminusB_under_common_feedback_peak_m": -0.008325032446720115,
+      "interpretation": "Signed path differences (new minus prior); arithmetic decomposition, not optimization or unconditional causal attribution. Common feedback policy can produce different actual gates."
+    }
+  ],
+  "interpretation": [
+    "Safety exceedances are retained separately from trajectory validity.",
+    "Negative modeled wetland benefit, if present, is retained.",
+    "Shared feedback policy is not automatically identical actual gate operation.",
+    "Coefficient changes can alter actual feedback gate histories as well as hydraulics.",
+    "Grid comparisons are finite numerical consistency checks, not empirical validation or a convergence proof.",
+    "Four original cold scenarios remain in each 20-ID accounting denominator.",
+    "Wetland initial states retain 5500 m3 more water; no redistribution or spin-up."
+  ]
+}

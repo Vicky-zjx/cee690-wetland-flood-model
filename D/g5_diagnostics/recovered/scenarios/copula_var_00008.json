@@ -1,0 +1,32 @@
+{
+  "scenario_id": "copula_var_00008",
+  "method": "copula_var",
+  "seed_sequence_entropy": [
+    6902026,
+    1,
+    11,
+    8
+  ],
+  "bit_generator": "PCG64",
+  "forcing_file": "scenarios/copula_var_00008.csv",
+  "forcing_sha256": "ea64c62aac8da912d77e5c73d6cc2eb11e3b6be4103c5e90fc8ad8add63f3d98",
+  "start_utc": "2022-09-09T00:00:00+00:00",
+  "end_exclusive_utc": "2022-09-15T00:00:00+00:00",
+  "resolution_seconds": 3600,
+  "interval_meaning": "timestamp_utc marks interval start; precipitation and radiation are hourly interval-average rates",
+  "population": "Ordinary September six-day weather windows conditioned on the target calendar, without storm, flood or successful-simulation selection",
+  "selection": "No screening for storm totals, flooding, successful integration or benefit sign",
+  "units": {
+    "precipitation_mm_per_h": "mm/h",
+    "temperature_C": "degC",
+    "solar_W_per_m2": "W/m2",
+    "wind_m_per_s": "m/s"
+  },
+  "training_data_version": "a8a6f2611cb911b7b372163fa92f9046f5a418320f0f07e762b3787be1b3d2ad",
+  "fitted_model_version": "091846c79f8aae71a006691b2561d6338d7418aafcf517a2029d0ddf74a679e7",
+  "fitted_model_sha256": "24f0f16b832bdd7aa8a956a63a748c66a8857c8fdd64b54a7cae1b5feb47bfd0",
+  "generation_diagnostics": {
+    "burn_in_hours": 336,
+    "stationary_normalization": "fitted_process_not_scenario"
+  }
+}

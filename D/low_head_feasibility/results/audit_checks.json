@@ -1,0 +1,280 @@
+{
+  "checks": 38,
+  "passed": 38,
+  "records": [
+    {
+      "check": "coefficient_dimensions_and_SI_conversion",
+      "pass_regression": true,
+      "evidence": "Q[L^3/T]=C[L^.5/T]*b[L]*H[L]^1.5; C_SI=C_US*sqrt(0.3048)."
+    },
+    {
+      "check": "critical_capacity_derivation",
+      "pass_regression": true,
+      "evidence": {
+        "H_m": 0.125,
+        "y_critical_m": 0.08333333333333333,
+        "Q_critical_m3_s": 0.0753335561083235
+      }
+    },
+    {
+      "check": "specific_energy_minimum",
+      "pass_regression": true,
+      "evidence": "Specific energy has its minimum at critical depth."
+    },
+    {
+      "check": "length_unit_covariance",
+      "pass_regression": true,
+      "evidence": "All lengths and gravity length unit converted by100 -> Q by100^3."
+    },
+    {
+      "check": "incompatible_endpoint_detected",
+      "pass_regression": true,
+      "evidence": {
+        "old_effective_coefficient": 2.1257714646687678,
+        "ideal_coefficient": 1.7046037880029699
+      }
+    },
+    {
+      "check": "necessary_domain_threshold",
+      "pass_regression": true,
+      "evidence": {
+        "necessary_not_sufficient_H_over_a": 1.5588457268119893
+      }
+    },
+    {
+      "check": "gate1_original_coverage_r0.5",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "weir_or_partially_wetted_opening",
+        "Q_m3_s": null
+      }
+    },
+    {
+      "check": "gate1_original_coverage_r1",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "weir_or_partially_wetted_opening",
+        "Q_m3_s": null
+      }
+    },
+    {
+      "check": "gate1_original_coverage_r1.125",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "weir_gate_transition",
+        "Q_m3_s": null
+      }
+    },
+    {
+      "check": "gate1_original_coverage_r1.25",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "free",
+        "Q_m3_s": 0.13129452369815353
+      }
+    },
+    {
+      "check": "gate1_original_coverage_r1.5",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "free",
+        "Q_m3_s": 0.14382594461275058
+      }
+    },
+    {
+      "check": "gate1_original_coverage_r1.55885",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "free",
+        "Q_m3_s": 0.14661998607239854
+      }
+    },
+    {
+      "check": "gate1_original_coverage_r2",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "free",
+        "Q_m3_s": 0.16607589567724748
+      }
+    },
+    {
+      "check": "gate1_closed",
+      "pass_regression": true,
+      "evidence": {
+        "Q": 0.0,
+        "regime": "closed"
+      }
+    },
+    {
+      "check": "gate1_dry",
+      "pass_regression": true,
+      "evidence": {
+        "Q": 0.0,
+        "regime": "dry"
+      }
+    },
+    {
+      "check": "gate1_negative_head",
+      "pass_regression": true,
+      "evidence": {
+        "Q": 0.0,
+        "regime": "dry"
+      }
+    },
+    {
+      "check": "gate1_equal_head",
+      "pass_regression": true,
+      "evidence": {
+        "Q": 0.0,
+        "regime": "adverse_head"
+      }
+    },
+    {
+      "check": "gate1_adverse_head",
+      "pass_regression": true,
+      "evidence": {
+        "Q": 0.0,
+        "regime": "adverse_head"
+      }
+    },
+    {
+      "check": "gate2_original_coverage_r0.5",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "weir_or_partially_wetted_opening",
+        "Q_m3_s": null
+      }
+    },
+    {
+      "check": "gate2_original_coverage_r1",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "weir_or_partially_wetted_opening",
+        "Q_m3_s": null
+      }
+    },
+    {
+      "check": "gate2_original_coverage_r1.125",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "weir_gate_transition",
+        "Q_m3_s": null
+      }
+    },
+    {
+      "check": "gate2_original_coverage_r1.25",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "free",
+        "Q_m3_s": 0.10503561895852283
+      }
+    },
+    {
+      "check": "gate2_original_coverage_r1.5",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "free",
+        "Q_m3_s": 0.11506075569020047
+      }
+    },
+    {
+      "check": "gate2_original_coverage_r1.55885",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "free",
+        "Q_m3_s": 0.11729598885791882
+      }
+    },
+    {
+      "check": "gate2_original_coverage_r2",
+      "pass_regression": true,
+      "evidence": {
+        "regime": "free",
+        "Q_m3_s": 0.13286071654179799
+      }
+    },
+    {
+      "check": "gate2_closed",
+      "pass_regression": true,
+      "evidence": {
+        "Q": 0.0,
+        "regime": "closed"
+      }
+    },
+    {
+      "check": "gate2_dry",
+      "pass_regression": true,
+      "evidence": {
+        "Q": 0.0,
+        "regime": "dry"
+      }
+    },
+    {
+      "check": "gate2_negative_head",
+      "pass_regression": true,
+      "evidence": {
+        "Q": 0.0,
+        "regime": "dry"
+      }
+    },
+    {
+      "check": "gate2_equal_head",
+      "pass_regression": true,
+      "evidence": {
+        "Q": 0.0,
+        "regime": "adverse_head"
+      }
+    },
+    {
+      "check": "gate2_adverse_head",
+      "pass_regression": true,
+      "evidence": {
+        "Q": 0.0,
+        "regime": "adverse_head"
+      }
+    },
+    {
+      "check": "diagnostic_blend_continuity_Cus2.6",
+      "pass_regression": true,
+      "evidence": "Algebraic continuity only; the energy compatibility test fails."
+    },
+    {
+      "check": "diagnostic_blend_incompatibility_Cus2.6",
+      "pass_regression": true,
+      "evidence": "Correctly detects incompatible endpoint. This is not a passing physical model."
+    },
+    {
+      "check": "diagnostic_blend_continuity_Cus2.8",
+      "pass_regression": true,
+      "evidence": "Algebraic continuity only; the energy compatibility test fails."
+    },
+    {
+      "check": "diagnostic_blend_incompatibility_Cus2.8",
+      "pass_regression": true,
+      "evidence": "Correctly detects incompatible endpoint. This is not a passing physical model."
+    },
+    {
+      "check": "diagnostic_blend_continuity_Cus3",
+      "pass_regression": true,
+      "evidence": "Algebraic continuity only; the energy compatibility test fails."
+    },
+    {
+      "check": "diagnostic_blend_incompatibility_Cus3",
+      "pass_regression": true,
+      "evidence": "Correctly detects incompatible endpoint. This is not a passing physical model."
+    },
+    {
+      "check": "diagnostic_blend_continuity_Cus3.1",
+      "pass_regression": true,
+      "evidence": "Algebraic continuity only; the energy compatibility test fails."
+    },
+    {
+      "check": "diagnostic_blend_incompatibility_Cus3.1",
+      "pass_regression": true,
+      "evidence": "Correctly detects incompatible endpoint. This is not a passing physical model."
+    }
+  ],
+  "physical_compatibility_pass": false,
+  "new_hydraulic_model_implemented": false,
+  "note": "Regression checks validate the diagnostic calculation and historical behavior; they do not validate a low-head model."
+}

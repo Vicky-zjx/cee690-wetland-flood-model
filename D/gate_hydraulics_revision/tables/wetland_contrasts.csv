@@ -1,0 +1,11 @@
+group,dt_s,wetland_design,both_trajectories_valid,both_safety_feasible,no_wetland_peak_m,wetland_peak_m,no_wetland_minus_wetland_peak_m,interpretation,saved_B_design_labels_are_not_D_optima,initial_extra_wetland_water_m3
+nominal,30.0,reference,True,False,97.61708089995322,97.52734569449865,0.08973520545457347,"Fixed-control structural comparison; unsafe D trajectories, not an admissible design benefit",True,5500
+nominal,30.0,best,True,False,97.61708089995322,97.528520065822,0.08856083413122917,"Fixed-control structural comparison; unsafe D trajectories, not an admissible design benefit",True,5500
+nominal,60.0,reference,True,False,97.61706215749453,97.52734569578564,0.08971646170888903,"Fixed-control structural comparison; unsafe D trajectories, not an admissible design benefit",True,5500
+nominal,60.0,best,True,False,97.61706215749453,97.52851996364124,0.08854219385328577,"Fixed-control structural comparison; unsafe D trajectories, not an admissible design benefit",True,5500
+nominal,120.0,reference,True,False,97.61704504027371,97.52734422450764,0.08970081576606503,"Fixed-control structural comparison; unsafe D trajectories, not an admissible design benefit",True,5500
+nominal,120.0,best,True,False,97.61704504027371,97.52851997418996,0.0885250660837471,"Fixed-control structural comparison; unsafe D trajectories, not an admissible design benefit",True,5500
+low,120.0,reference,True,False,97.60778169009492,97.51481061771783,0.09297107237709668,"Fixed-control structural comparison; unsafe D trajectories, not an admissible design benefit",True,5500
+low,120.0,best,True,False,97.60778169009492,97.5206859073663,0.08709578272862473,"Fixed-control structural comparison; unsafe D trajectories, not an admissible design benefit",True,5500
+high,120.0,reference,True,True,97.6260123584496,97.53966773731042,0.08634462113917607,Fixed-control structural comparison; no new D optimization was performed,True,5500
+high,120.0,best,True,True,97.6260123584496,97.53734633775596,0.08866602069363694,Fixed-control structural comparison; no new D optimization was performed,True,5500

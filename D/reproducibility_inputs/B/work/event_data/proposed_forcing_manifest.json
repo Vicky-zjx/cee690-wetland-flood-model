@@ -1,0 +1,48 @@
+{
+  "approved": true,
+  "status": "User-approved first exploratory case only; retain observation, grid estimate, transfer, trace lower bound, timing and boundary distinctions",
+  "sha256": "883135c877699ec0354f7a4abdcaffe326953293f88fe1dc7d5d6d7824336394",
+  "source_ids": [
+    "NOAA_ISD",
+    "NASA_POWER_EVENT",
+    "B2_PROPOSAL"
+  ],
+  "event_start_utc": "2022-09-09T00:00:00Z",
+  "event_end_utc": "2022-09-15T00:00:00Z",
+  "timezone": "UTC",
+  "original_timezone": "NOAA ISD DATE is UTC; POWER requested time-standard=UTC; USGS localoffsets retained separately and not used as forcing",
+  "timestamp_convention": "Rain AA periods end at actual report times; radiation UTC labels provisionally denote start of hour; T and wind instantaneous-report linear interpolation",
+  "qc_summary": "NOAA processed accepted records only; KMKE two unavailable hourly amounts represented by retained nonoverlapping observed3hour TRACE interval; subinterval amounts remain unresolved; no bad/missing value becomes an observed zero",
+  "gap_policy": "No missing-data zero filling. Trace depth uses quantified lower bound0 as explicit processing assumption approved for this exploratory case only. Meteorology interpolation gaps <=70min. MMSD historicalresponse unsuitable and excluded.",
+  "derivations": [
+    "Rain mm/interval converted to m/s; intervals clipped by proportional within-interval assumption; exactly preserved each represented interval depth.",
+    "T and reported airport wind interpolated to120s model knots; no unsupported wind-height conversion; wind exposure remains an approximation in the empirical ET closure.",
+    "POWER Wh/m2 per hour converted to meanW/m2; coarse SYN1DEG estimate, not a local radiometer.",
+    "Rain/radiation node reconstruction: endpoints=min(adjacent mean rates), interior plateau adjusted to preserve integral,120s linear ramps. Dry/no-energy intervals remain zero. Not measured subhour variability.",
+    "Refined ODE evaluations must reuse these same120s forcing knots, not reconstruct a new storm shape."
+  ],
+  "vertical_datum": "assumed common model datum; not NAVD88; no conversion to gauge elevation",
+  "Q_ext_accounting": "Q_ext=0: no external surface catchment in proposed hypothetical installation; USGS totalflow excluded",
+  "rain_depth_m": 0.14529999999999996,
+  "rain_mass_tolerance_m": 1e-10,
+  "solar_energy_Wh_m2": 21166.81,
+  "trace_intervals_in_event": 5,
+  "rows": 4321,
+  "dt_s": 120.0,
+  "local_observations_used_for_preparation": true,
+  "model_simulation_performed": false,
+  "source_files": [
+    {
+      "path": "work/b2/event_data/weather/KMKE_rain_selected_intervals_utc.csv",
+      "sha256": "db9c2c3315e301e22a466b8cfebb811cdc7534ae839f200322e162513f1d2215"
+    },
+    {
+      "path": "work/b2/event_data/weather/KMWC_meteorology_observations_utc.csv",
+      "sha256": "fadc5f2c256f9dc3256d5c92088d3151458d1c9a4c7170ee565707c947550ec1"
+    },
+    {
+      "path": "work/b2/event_data/weather/NASA_POWER_solar_hourly_utc.csv",
+      "sha256": "702a80a86bde204118dc6e7a44e412efc0c5298ec4317a8d1e5edb8fff5930fe"
+    }
+  ]
+}

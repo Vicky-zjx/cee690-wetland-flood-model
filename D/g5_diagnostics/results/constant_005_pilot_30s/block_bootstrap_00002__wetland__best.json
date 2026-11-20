@@ -1,0 +1,431 @@
+{
+  "forcing_file": "/Users/zhangjiaxuan/Documents/Codex/Modeling/D/g5_diagnostics/recovered/scenarios/block_bootstrap_00002.csv",
+  "forcing_file_sha256": "267ec8482f8be6165d7924e8013fd293ebc45c99f21cfda7eb27854eab0a2785",
+  "forcing_array_sha256": "d2a1083ac471ca685fa60cda94c80fb9ae4eef4a3286430abf3c605981f1bd37",
+  "timestamp_meaning": "UTC beginning of a one-hour accumulation/mean interval",
+  "forcing_rows": 144,
+  "ode_started": true,
+  "ode_segment_calls": 144,
+  "rhs_evaluations": 69264,
+  "fixed_configuration": {
+    "source_sha256": {
+      "A/wetland_flood_model.py": "2b94de4cf0aad9d875c72c0a4d927ca7169e0bc70d6cea4b475683ea7d7979b1",
+      "B/no_spillway_model.py": "54ea9a6e730af5a532f5b7f5e321d9f0a3c771edfbc5755d5c78185497b57649",
+      "B/wetland_counterfactual.py": "30b00f96f014ecd849cd4c11477acae1f2108afdf23dc299ff922babfefaccc1",
+      "B/gate_hydraulics.py": "d5f0779ec1593b837cbff2851a16bc5fe3f7602b4b8484576247e62b77e24cdc",
+      "A/work/multivarious/multivarious/ode/ode4u.py": "0b55c31e77b0bae0205342e9e3118fb11db7c35f2fee2468149587151b077569",
+      "B/no_spillway_config.json": "b4f07d6fd516c39b14e34a7210aa8f00aa6f01e93cb8eaa9a788ecf9cad186c1",
+      "B/wetland_only_config.json": "c4f695ca2b10da53a8095452a165961af304300715a302ae4de5602981f0565c",
+      "B/results/no_spillway_revision/reference.npz": "77a6f06cbf03422146dadc0a66aaee36528dfcd5999baf4a37bc9780e43d0c8c",
+      "B/results/wetland_only/wetland_best_120s.npz": "062c121ba72e1447cb5fe9b08b870d592c3880de736dc01d26afcfb16290cd15"
+    },
+    "solver": {
+      "version": "1.2.1",
+      "revision": "06d7aed5b541ec7fe26a6dc69be6aa7fb610aa02",
+      "ode4u_signature": "(odefun, time, x0, u=None, c=None)"
+    },
+    "model_scope": "Accepted Stage B no-independent-dam-spillway models; wetland overflow retained",
+    "design_categories": [
+      "type_b",
+      "type_b"
+    ],
+    "design_covers": [
+      0.2714117624187232,
+      0.2141279193188096
+    ],
+    "fixed_gate_values": [
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005
+    ],
+    "gate1_hours": [
+      0,
+      17,
+      18,
+      26,
+      28,
+      50,
+      65,
+      66,
+      76,
+      80,
+      110,
+      144
+    ],
+    "gate2_hours": [
+      0,
+      18,
+      20,
+      27,
+      30,
+      52,
+      66,
+      68,
+      78,
+      82,
+      112,
+      144
+    ],
+    "boundaries": {
+      "Q_ext_m3_s": 0.0,
+      "h_d_m": 97.15,
+      "h_g_m": 97.15,
+      "B": 0.0
+    },
+    "initial_wetland_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2500.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "initial_no_wetland_m3": [
+      600.0,
+      90000.0,
+      3000.0,
+      2400.0,
+      409600.00000000035,
+      7000.0
+    ],
+    "initial_extra_wetland_water_m3": 5500.0,
+    "initial_condition_note": "Matched shared storages. Wetland case retains 5500 m3 additional accepted wetland water; no spin-up or redistribution.",
+    "datum": "assumed common model datum; not NAVD88; no conversion to gauge elevation",
+    "dt_s": 30.0,
+    "duration_s": 518400.0,
+    "conditional_on": "Fixed models, parameters, boundary paths, gate schedule, wetland design and initial assumptions; meteorology only varies.",
+    "original_fixed_gate_values": [
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.336,
+      0.384,
+      0.696,
+      0.36,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.005,
+      0.36,
+      0.42,
+      0.78,
+      0.324,
+      0.005,
+      0.005
+    ],
+    "schedule_scale": null,
+    "schedule_is_original": false,
+    "design_source_label": "best",
+    "schedule_kind": "constant_base_opening",
+    "constant_opening": 0.005,
+    "schedule_description": "Explicit weather-independent constant base-opening alternative: both gate fractions remain 0.005 at every original knot; no search or state feedback",
+    "recovered_adapter_sha256": "483124a917aac6e56c28bb1eab26c2afef5cc4b913438ebcfc7fa8dfe92616ba"
+  },
+  "forcing_conservation": {
+    "source_precipitation_m": 0.0,
+    "integrated_precipitation_m": 0.0,
+    "precipitation_error_m": 0.0,
+    "source_solar_Wh_m2": 21372.66,
+    "integrated_solar_Wh_m2": 21372.660000000003,
+    "solar_error_Wh_m2": 3.637978807091713e-12,
+    "mapping": "Official ode4u hourly restarts; constant P/R_s per segment, linear center-time T/wind",
+    "pass_conservation": true
+  },
+  "state_names": [
+    "S_u",
+    "S_m",
+    "S_w1",
+    "S_w2",
+    "S_d1",
+    "S_d2",
+    "S_g",
+    "S_r"
+  ],
+  "initial_storage_m3": [
+    600.0,
+    90000.0,
+    3000.0,
+    2500.0,
+    3000.0,
+    2400.0,
+    409600.00000000035,
+    7000.0
+  ],
+  "rainfall_area_m2": 660000.0,
+  "former_wetland_rainfall_area_m2": 22000.0,
+  "former_wetland_rainfall_routing": "wetland storages",
+  "safety_is_a_reported_outcome": true,
+  "completed_until_s": 518400.0,
+  "expected_output_samples": 17281,
+  "downstream_output_columns": {
+    "H_r": 5,
+    "Q_out": 20
+  },
+  "last_successful_rhs_time_s": 518400.0,
+  "balance_max_m3": 0.0017247776231670287,
+  "balance_relative": 3.3290438586508926e-09,
+  "balance_relative_tolerance": 0.0001,
+  "derivative_balance_max_m3s": 1.6653345369377348e-16,
+  "balance_method": "Cumulative trapezoidal external net flux within each official-solver segment; jumps not smeared",
+  "safety": [
+    {
+      "variable": "H_d1",
+      "threshold_m": 101.2,
+      "peak_m": 100.30581778767551,
+      "peak_time_s": 8640.0,
+      "margin_m": 0.8941822123244947,
+      "exceeded": false
+    },
+    {
+      "variable": "H_d2",
+      "threshold_m": 101.0,
+      "peak_m": 100.1058177876755,
+      "peak_time_s": 8640.0,
+      "margin_m": 0.8941822123244947,
+      "exceeded": false
+    },
+    {
+      "variable": "H_w1",
+      "threshold_m": 98.9,
+      "peak_m": 98.25,
+      "peak_time_s": 0.0,
+      "margin_m": 0.6500000000000057,
+      "exceeded": false
+    },
+    {
+      "variable": "H_w2",
+      "threshold_m": 98.8,
+      "peak_m": 98.15,
+      "peak_time_s": 0.0,
+      "margin_m": 0.6499999999999915,
+      "exceeded": false
+    }
+  ],
+  "safety_violation": false,
+  "minimum_G5_margin_m": [
+    0.18527279248986703,
+    0.18527279248986703
+  ],
+  "mapped_input_array_sha256": "69a8efb835d18162e3936c47ce326b9c46065a5a2c45ca62aa5cd22cc7ddc446",
+  "solver_termination": "Completed fixed interval",
+  "min_storage_m3": 7.508166488800082e-101,
+  "scenario_id": "block_bootstrap_00002",
+  "original_seed": [
+    6902026,
+    1,
+    22,
+    2
+  ],
+  "dt_s": 30.0,
+  "gate_scale": null,
+  "schedule_kind": "constant_base_opening",
+  "constant_opening": 0.005,
+  "design_source_label": "best",
+  "all_rhs_observations": {
+    "ode_segment_calls": 144,
+    "rhs_attempts": 69264,
+    "rhs_successes": 69264,
+    "rhs_failures": 0,
+    "last_rhs_time_s": 518400.0,
+    "observation_scope": "Every official ode4u RHS/RK stage; separate preflight validator RHS is not counted. Attempted maxima may include the first rejected stage.",
+    "safety_successful_rhs": [
+      {
+        "variable": "H_d1",
+        "threshold_m": 101.2,
+        "peak_m": 100.30581778793861,
+        "peak_time_s": 8625.0,
+        "margin_m": 0.8941822120613949,
+        "exceeded": false
+      },
+      {
+        "variable": "H_d2",
+        "threshold_m": 101.0,
+        "peak_m": 100.1058177879386,
+        "peak_time_s": 8625.0,
+        "margin_m": 0.8941822120613949,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w1",
+        "threshold_m": 98.9,
+        "peak_m": 98.25,
+        "peak_time_s": 0.0,
+        "margin_m": 0.6500000000000057,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w2",
+        "threshold_m": 98.8,
+        "peak_m": 98.15,
+        "peak_time_s": 0.0,
+        "margin_m": 0.6499999999999915,
+        "exceeded": false
+      }
+    ],
+    "safety_attempted_rhs": [
+      {
+        "variable": "H_d1",
+        "threshold_m": 101.2,
+        "peak_m": 100.30581778793861,
+        "peak_time_s": 8625.0,
+        "margin_m": 0.8941822120613949,
+        "exceeded": false
+      },
+      {
+        "variable": "H_d2",
+        "threshold_m": 101.0,
+        "peak_m": 100.1058177879386,
+        "peak_time_s": 8625.0,
+        "margin_m": 0.8941822120613949,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w1",
+        "threshold_m": 98.9,
+        "peak_m": 98.25,
+        "peak_time_s": 0.0,
+        "margin_m": 0.6500000000000057,
+        "exceeded": false
+      },
+      {
+        "variable": "H_w2",
+        "threshold_m": 98.8,
+        "peak_m": 98.15,
+        "peak_time_s": 0.0,
+        "margin_m": 0.6499999999999915,
+        "exceeded": false
+      }
+    ],
+    "wetland_safety_applicable": true,
+    "geometry_attempted_rhs": [
+      {
+        "variable": "H_g",
+        "threshold_m": 97.9,
+        "peak_m": 97.30490584096749,
+        "peak_time_s": 414945.0,
+        "margin_m": 0.595094159032513,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 0.594094159032513
+      },
+      {
+        "variable": "H_g",
+        "threshold_m": 100.0,
+        "peak_m": 97.30490584096749,
+        "peak_time_s": 414945.0,
+        "margin_m": 2.6950941590325073,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 2.6940941590325074
+      },
+      {
+        "variable": "H_r",
+        "threshold_m": 99.0,
+        "peak_m": 97.35,
+        "peak_time_s": 0.0,
+        "margin_m": 1.6500000000000057,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 1.6490000000000058
+      },
+      {
+        "variable": "H_g",
+        "threshold_m": 97.9,
+        "peak_m": 97.30490584096749,
+        "peak_time_s": 414945.0,
+        "margin_m": 0.595094159032513,
+        "exceeded": false,
+        "invalid_at_equality": true,
+        "strict_margin_m": 0.001,
+        "applicability_violated": false,
+        "margin_after_configured_strict_margin_m": 0.594094159032513
+      }
+    ],
+    "min_storage_by_state_m3": {
+      "S_u": 7.508163706404315e-101,
+      "S_m": 63921.62319015561,
+      "S_w1": 22.920482551222626,
+      "S_w2": 22.943522339931878,
+      "S_d1": 1871.477924898634,
+      "S_d2": 1497.1823399189075,
+      "S_g": 409600.00000000035,
+      "S_r": 3050.2196610679184
+    },
+    "max_soil_capacity_residual_m3": -29999.634556622375,
+    "minimum_G5_by_branch": [
+      {
+        "branch": 1,
+        "margin_m": 0.18527279248986703,
+        "residual_m": -0.18527279248986703,
+        "time_s": 518400.0,
+        "upstream_stage_m": 100.18714779248987,
+        "tailwater_stage_m": 98.00192596239484,
+        "water_depth_m": 0.18714779248986702,
+        "opening_height_m": 0.0015,
+        "H_over_a": 124.76519499324468
+      },
+      {
+        "branch": 2,
+        "margin_m": 0.18527279248986703,
+        "residual_m": -0.18527279248986703,
+        "time_s": 518400.0,
+        "upstream_stage_m": 99.98714779248986,
+        "tailwater_stage_m": 97.90230992315425,
+        "water_depth_m": 0.18714779248986702,
+        "opening_height_m": 0.0015,
+        "H_over_a": 124.76519499324468
+      }
+    ],
+    "minimum_gate_sill_above_tailwater_m": [
+      1.75,
+      1.6499999999999915
+    ],
+    "derivative_physical_mass_identity_max_abs_m3_s": 1.1102230246251565e-16,
+    "declared_external_net_identity_max_abs_m3_s": 0.0,
+    "physical_mass_identity": "sum(dx) = P*A_rain + Q_ext + Q_gx - Q_out - E_tot; internal transfers cancel once",
+    "first_rhs_exception": null
+  },
+  "safety_violation_at_output_nodes": false,
+  "safety_violation_any_successful_rhs": false,
+  "classification": "completed_valid_safety_feasible",
+  "physical_river_peak_m": 97.35,
+  "physical_river_peak_time_s": 0.0,
+  "full_valid_trajectory_available": true,
+  "full_integration_horizon_completed": true
+}
